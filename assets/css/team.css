@@ -1,0 +1,48 @@
+.haggle-team {
+	background: #f2f2f2;
+	min-height: 100%;
+	height: 100%;
+}
+
+.haggle-team-large-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+	line-height:45px;
+	color:#e58170;
+}
+
+.haggle-team-member-name {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	color:#666666;
+	line-height: 18px;
+	margin:0px;
+}
+
+.haggle-team-member-role {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	color:#e58170;
+	line-height: 18px;
+	margin:0px;
+}
+
+.haggle-team-member-description {
+	font-family: 'Arial';
+	font-weight: 400;
+	font-size: 10px;
+	color:#666666;
+	line-height: 20px;
+	margin:0px;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+@media (max-width: 767px) {
+	#team .row-fluid [class*="haggle-filler"] {
+		display:none;
+	}
+}

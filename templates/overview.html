@@ -1,0 +1,146 @@
+{% extends "developers_base.html" %}
+{% block Styles %}
+<link href="/assets/css/overview.css" type="text/css" rel="stylesheet">
+{% endblock %}
+{% block Content %}
+<div class="row-fluid">
+	<div class="haggle-careers-text span12" style="padding-left:2%">
+		<h2>The Haggle Platform</h2>
+	</div>
+</div>
+			<div class="row-fluid">
+				<div class="haggle-filler span2">
+				</div>
+				<div class="haggle-overview-text1 span8" style="padding-left:2%">
+					<div class="accordion" id="accordion2" style="background-color: #FFFFFF;">
+					  <div class="accordion-group">
+					    <div class="accordion-heading">
+					      <a class="haggle-overview-text2 accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse1"
+						  onclick="ga('send', 'event', 'senior-developer-dropdown', 'click', 'Careers Job Profiles')">
+						  General Integration
+					      </a>
+					    </div>
+					    <div id="collapse1" class="accordion-body collapse">
+					      <div class="accordion-inner">
+				  			<div class="row-fluid">
+				  				<div class="haggle-overview-text3 span12" style="padding-left:2%">
+				  					<p>Gain access to our vast network of API endpoints to improve your app. Apps connect to the Haggle API using Oauth2. You can connect by following these easy steps:</p>
+				  				</div>
+				  			</div>
+				  			<div class="row-fluid">
+				  				<div class="haggle-overview-text2 span12" style="padding-left:2%">
+				  					<p style="text-align:left">
+				  								<br>
+				  						<h4>Registration</h4>
+				  						<p>
+				  							<a href='/developers/my_apps'>Register</a> with our app to obtain a Client ID and Secret. You can use this information to make calls to our API.
+				  						</p>
+				  						<h4>Access Token</h4>
+				  						<p>Some of our endpoints require explicit user approval to access. You will need an access token to use these endpoints. Here are the steps taken to obtain and use an access token.</p>
+				  						<br>
+				  						<p>You can explore our API by checking out our 
+				  							<a href='/endpoints'>endpoints</a>
+				  							. Check our 
+				  							<a href='/documentation'>documentation</a>
+				  							 to learn more about accessing our API</p>
+				  					</p>
+				  				</div>
+				  			</div>
+				  			<div class="row-fluid">
+				  				<div class="haggle-overview-text2 span12" style="padding-left:2%">
+				  					<p><br></p>
+				  				</div>
+				  			</div>
+				  			<div class="row-fluid">
+				  			</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="accordion-group">
+					    <div class="accordion-heading">
+					      <a class="haggle-overview-text2 accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse2"
+						  onclick="ga('send', 'event', 'iOS-developer-dropdown', 'click', 'Careers Job Profiles')">
+					       SDK Packages
+					      </a>
+					    </div>
+					    <div id="collapse2" class="accordion-body collapse">
+					      <div class="accordion-inner">
+				  			<div class="row-fluid">
+				  				<div class="haggle-overview-text2 span12" style="padding-left:2%">
+				  					<p></p>
+				  				</div>
+				  			</div>
+				  			<div class="row-fluid">
+				  				<div class="haggle-overview-text3 span12" style="padding-left:2%">
+				  					<p style="text-align:left">
+				  						Our SDK will take care of the hard stuff so your app can easily use our API.
+				  					</p>
+				  				</div>
+				  			</div>
+				  			<div class="row-fluid">
+				  				<div class="haggle-overview-text2 span12" style="padding-left:2%">
+				  					<p><br> </p>
+				  				</div>
+				  			</div>
+				  			<div class="row-fluid">
+				  				<div class="haggle-overview-text3 span12" style="padding-left:2%">
+				  					<p style="text-align:left">
+				  						<h1>iPhone and Android SDK</h1>
+				  						<p>Our SDK packages make obtaining and using access tokens a cinch</p>
+				  						<button type="button" onClick="location.href='http://github.com/linktoSDK'">Download latest SDK</button>
+				  						<p>(explanation how to use SDK)</p>
+				  						<p>If you have specific endpoints in mind, we may have prepackaged what you're looking for in one of our Haggling screens built for third party use</p>
+				  					</p>
+				  				</div>
+				  			</div>
+				  			<div class="row-fluid">
+				  			</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="accordion-group">
+					    <div class="accordion-heading">
+					      <a class="haggle-overview-text2 accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3"
+						  onclick="ga('send', 'event', 'senior-UX-developer-dropdown', 'click', 'Careers Job Profiles')">
+					        In-app iPhone Redirect
+					      </a>
+					    </div>
+					    <div id="collapse3" class="accordion-body collapse">
+					      <div class="accordion-inner">
+				  			<div class="row-fluid">
+				  				<div class="haggle-overview-text3 span12" style="padding-left:2%">
+				  					<p>See how your iPhone app can harness the power of Haggle without the need to talk to our API</p>
+				  				</div>
+				  			</div>
+				  			<div class="row-fluid">
+				  				<div class="haggle-overview-text3 span12" style="padding-left:2%">
+				  					<p style="text-align:left">
+				  						By simply redirecting to our Haggle app, you can skip the line and get the info you need without authenticating or accessing our API.
+				  					</p>
+				  				</div>
+				  			</div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="span2">
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+{% endblock %}

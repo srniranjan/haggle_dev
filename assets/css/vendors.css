@@ -1,0 +1,314 @@
+.vendor-information{
+    padding: 10px 19px 19px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+#edit-campaign{
+    margin-left: 50px;
+}
+
+@media (max-width:767px) {
+    #edit-campaign{
+        float: right;
+    }
+}
+
+#campaign-report span.date input[type="text"]{
+    width: 75px;
+}
+
+#campaignSettingsModal input[type="number"]{
+    width: 50px;
+    margin-right: 50px;
+}
+
+#campaignSettingsModal label,
+#registration-form label{
+    font-weight: bold;
+    font-size: small;
+}
+
+.restaurant-image{
+    max-height: 128px;
+    max-width: 128px;
+}
+
+#registration-form label {
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    #campaignSettingsModal a,
+    #registration-form a {
+        margin-bottom: 10px;
+    }
+}
+
+.modal-body-phone{
+    overflow-y: scroll;
+    height: 101%;
+    width: 85%;
+}
+
+#busy-hours-area ul{
+    margin-right: 20px;
+}
+
+.tabs-top>.nav-tabs {
+    margin-bottom: 0px;
+}
+
+.tabs-left>.nav-tabs {
+    margin-right: 0px;
+}
+
+.vendor-tabs-tablet-phone li{
+    width: 50%;
+}
+
+#patron-activity li{
+    width: auto;
+}
+
+.vendor-tab-area{
+    padding: 10px 19px 19px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+    clear: none;
+}
+
+.vendor-dashboard-section{
+    border: 1px solid #DDDDDD;
+    padding: 5px 5px 20px 10px;
+}
+
+.vendor-dashboard-section-item{
+    background-color: #ebebeb;
+    border: 1px solid #DDDDDD;
+    padding: 5px 5px 10px 10px;
+    display: inline-block;
+    width: 42%;
+}
+
+.vendor-dashboard-availed{
+    width:90%;
+}
+
+@media (min-width: 979px) {
+    .vendor-dashboard-section-item {
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+.campaign-preference li {
+    background-color: #ebebeb;
+    border: 1px solid #DDDDDD;
+    padding: 5px 5px 10px 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+.vendor-image{
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.deal-value{
+    color: #e0850c;
+}
+
+.deal-time{
+    color: #39ae16;
+}
+
+.deal-checkin{
+    background-image: url('../img/btn-check-deal.png');
+    background-size: 50px 50px;
+}
+
+.form-data-error{
+    color: #A81919;
+}
+
+.campaign-report-section{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.deals-text{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.patrons-text{
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #999999;
+}
+
+.deals-delta-text{
+    margin-top: -5px;
+}
+
+.forgot-password{
+    margin-left: 5px;
+}
+
+.form-signin {
+    max-width: 340px;
+    padding: 20px 29px 29px;
+    margin: 0 auto 20px;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.align-center{
+    text-align: center;
+    display: block;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password] {
+
+    border: none;
+    background: url('../img/text-boxes.png') no-repeat top left;
+    font: 14px 'Segoe UI', 'Arial', sans-serif;
+    color: #888;
+
+    outline: none;
+
+    height: 48px;
+    margin: 0 auto 22px;
+    padding: 0 10px 0 50px;
+}
+
+.form-signin input[disabled] {
+    opacity: 0.5;
+}
+
+.form-signin .email input {
+    background-position: 0 0;
+}
+
+.form-signin .email input:focus {
+    background-position: 0 -48px;
+}
+
+.form-signin .pass input {
+    background-position: 0 -96px;
+}
+
+.form-signin .pass input:focus {
+    background-position: 0 -144px;
+}
+
+/*Password reset form*/
+
+#passwordStrength {
+    height: 10px;
+    display: block;
+    float: left;
+}
+
+.strength0 {
+    width: 250px;
+    background: #cccccc;
+}
+
+.strength1 {
+    width: 50px;
+    background: #ff0000;
+}
+
+.strength2 {
+    width: 100px;
+    background: #ff5f5f;
+}
+
+.strength3 {
+    width: 150px;
+    background: #56e500;
+}
+
+.strength4 {
+    background: #4dcd00;
+    width: 200px;
+}
+
+.strength5 {
+    background: #399800;
+    width: 250px;
+}
+
+#password-reset-form .form-row.error:after {
+    background-position: 0 -79px;
+}
+
+#password-reset-form button[type=submit] {
+
+    border: 1px solid #004C9B;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 1px rgba(0, 0, 0, 0.3);
+    color: #D3EBFF;
+    cursor: pointer;
+    display: block;
+    font: bold 24px Cambria, "Hoefler Text", serif;
+    margin: 50px auto 0;
+    padding: 10px;
+    text-shadow: 0 -1px 0 #444444;
+    width: 340px;
+
+    background-color: #0496DA;
+
+    background-image: linear-gradient(top, #0496DA 0%, #0067CD 100%);
+    background-image: -o-linear-gradient(top, #0496DA 0%, #0067CD 100%);
+    background-image: -moz-linear-gradient(top, #0496DA 0%, #0067CD 100%);
+    background-image: -webkit-linear-gradient(top, #0496DA 0%, #0067CD 100%);
+    background-image: -ms-linear-gradient(top, #0496DA 0%, #0067CD 100%);
+}
+
+#password-reset-form button[type=submit]:hover {
+
+    background-color: #0383d3;
+
+    background-image: linear-gradient(top, #0383d3 0%, #004c9b 100%);
+    background-image: -o-linear-gradient(top, #0383d3 0%, #004c9b 100%);
+    background-image: -moz-linear-gradient(top, #0383d3 0%, #004c9b 100%);
+    background-image: -webkit-linear-gradient(top, #0383d3 0%, #004c9b 100%);
+    background-image: -ms-linear-gradient(top, #0383d3 0%, #004c9b 100%);
+}
+
+#password-reset-form button[type=submit]:active {
+
+    background-color: #026fcb;
+
+    background-image: linear-gradient(top, #026fcb 0%, #004c9b 100%);
+    background-image: -o-linear-gradient(top, #026fcb 0%, #004c9b 100%);
+    background-image: -moz-linear-gradient(top, #026fcb 0%, #004c9b 100%);
+    background-image: -webkit-linear-gradient(top, #026fcb 0%, #004c9b 100%);
+    background-image: -ms-linear-gradient(top, #026fcb 0%, #004c9b 100%);
+}

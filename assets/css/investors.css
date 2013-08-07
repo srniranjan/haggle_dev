@@ -1,0 +1,47 @@
+.haggle-investors-large-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 36px;
+	line-height:40px;
+	color:#e58170;
+}
+
+.haggle-investors-dark-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height:20px;
+	color:#666666;
+}
+
+.haggle-investors-red-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	color:#e58170;
+	line-height: 20px;
+	margin:0px;
+	text-align:left;
+}
+
+.haggle-investors-red-text li {
+	float: left;
+}
+
+.haggle-investors-download-bg {
+	background: url('/assets/img/investors/Investors_Infographic_Download_Box_bkd.png') center top no-repeat;
+	background-size: 50%;
+}
+
+.infographic-hover:hover {
+	cursor: -webkit-zoom-in; cursor: -moz-zoom-in;
+}
+
+@media (max-width: 767px) {
+	#investors .row-fluid [class*="haggle-filler"] {
+		display:none;
+	}
+	.haggle-investors-download-bg {
+		background-size:100%;
+	}
+}

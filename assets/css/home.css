@@ -1,0 +1,93 @@
+.haggle-home {
+	background: #E58170;
+	min-height: 100%;
+	height: 100%;
+}
+
+.haggle-home-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 36px;
+	line-height:40px;
+	color:#ffffff;
+}
+
+.haggle-home-large-text {
+	font-size: 40px;
+	line-height:50px;
+}
+
+.haggle-home-small-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	line-height:25px;
+	color:#666666;
+}
+
+.haggle-home-smaller-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	line-height:25px;
+	color:#666666;
+}
+
+.haggle-home-business-connector {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	color:#ffffff;
+	line-height: 25px;
+	margin:0px;
+	text-align:center;
+}
+
+.haggle-home-special-message {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+	color:#ffffff;
+	line-height: 25px;
+	text-align:center;
+}
+
+.haggle-home-pull-right {
+	float: right;
+}
+
+.haggle-home-pull-left {
+	float: left;
+}
+
+#haggle_story {
+	position: relative;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#page7 .container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+@media (max-width: 767px) {
+	#home-icon-section p{
+		font-size: 65% !important;
+	}
+	#haggle_story p{
+		font-size:42%;
+	}
+	#haggle_story .row-fluid [class*="haggle-filler"] {
+		display:none;
+	}
+	.haggle-home-special-message {
+		font-size: 67% !important;
+	}
+	.haggle-home-pull-right {
+		float: none;
+	}
+	.haggle-home-pull-left {
+		float: none;
+	}
+}
