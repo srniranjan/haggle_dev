@@ -1,3 +1,4 @@
+/*
 $(document).ready(function() {
 	$(window).scroll( function(){
 		var top_of_window = $(window).scrollTop();
@@ -23,7 +24,7 @@ $(document).ready(function() {
 		}
 	});
 });
-
+*/
 $(document).ready(function() {
 	var url = document.URL;
 	var accessed_page = url.substring(url.lastIndexOf('/'));

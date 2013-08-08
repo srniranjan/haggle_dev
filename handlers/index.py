@@ -54,37 +54,6 @@ class DevelopersEndpoints(WebRequestHandler):
 		path = 'endpoints.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
-class DevelopersAPIUsers(WebRequestHandler):
-	def get(self):
-		path = 'users.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
-class DevelopersAPIVendors(WebRequestHandler):
-	def get(self):
-		path = 'vendors.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
-class DevelopersAPIAggregateCampaigns(WebRequestHandler):
-	def get(self):
-		path = 'aggregate_campaigns.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-		
-class DevelopersAPIIndividualCampaigns(WebRequestHandler):
-	def get(self):
-		path = 'individual_campaigns.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
-class DevelopersAPIAggregateDeals(WebRequestHandler):
-	def get(self):
-		path = 'aggregate_deals.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-		
-class DevelopersAPIIndividualDeals(WebRequestHandler):
-	def get(self):
-		path = 'individual_deals.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
-
 
 app = webapp2.WSGIApplication([('/', DevelopersHomepageHandler),
 	('/overview', DevelopersOverview),
@@ -94,11 +63,5 @@ app = webapp2.WSGIApplication([('/', DevelopersHomepageHandler),
 	('/sdk_iphone', DevelopersSDK),
 	('/sdk_android', DevelopersSDKAndroid),
 	('/iphone_app', DevelopersAppRedirect),
-	('/endpoints', DevelopersEndpoints),
-	('/api/users', DevelopersAPIUsers),
-	('/api/vendors', DevelopersAPIVendors),
-	('/api/aggregate_campaigns', DevelopersAPIAggregateCampaigns),
-	('/api/individual_campaigns', DevelopersAPIIndividualCampaigns),
-	('/api/aggregate_deals', DevelopersAPIAggregateDeals),
-	('/api/individual_deals', DevelopersAPIIndividualDeals),
+	('/endpoints', DevelopersEndpoints)
 	])

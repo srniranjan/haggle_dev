@@ -22,9 +22,14 @@ handlers:
   static_dir: assets/fonts
   secure: always
 
+- url: /api/.*
+  script: handlers.api.app
+  secure: always
+
 - url: /.*
   script: handlers.index.app
   secure: always
+
 
 libraries:
 - name: django
