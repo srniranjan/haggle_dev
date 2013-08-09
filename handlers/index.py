@@ -54,6 +54,11 @@ class Endpoints(WebRequestHandler):
 		path = 'endpoints.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
+class Contact(WebRequestHandler):
+	def get(self):
+		path = 'contact.html'
+		self.response.out.write(self.get_rendered_html(path, dict()))
+
 
 app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/overview', Overview),
@@ -63,5 +68,6 @@ app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/sdk_iphone', SDK),
 	('/sdk_android', SDKAndroid),
 	('/iphone_app', AppRedirect),
-	('/endpoints', Endpoints)
+	('/endpoints', Endpoints),
+	('/contact', Contact)
 	])
