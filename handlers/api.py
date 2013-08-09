@@ -9,32 +9,32 @@ class WebRequestHandler(webapp2.RequestHandler):
     def get_rendered_html(self, template_name, template_values = None):
         return loader.render_to_string(template_name, template_values)
 
-class DevelopersAPIUsers(WebRequestHandler):
+class APIUsers(WebRequestHandler):
 	def get(self):
 		path = 'users.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
-class DevelopersAPIVendors(WebRequestHandler):
+class APIVendors(WebRequestHandler):
 	def get(self):
 		path = 'vendors.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
-class DevelopersAPIAggregateCampaigns(WebRequestHandler):
+class APIAggregateCampaigns(WebRequestHandler):
 	def get(self):
 		path = 'aggregate_campaigns.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 		
-class DevelopersAPIIndividualCampaigns(WebRequestHandler):
+class APIIndividualCampaigns(WebRequestHandler):
 	def get(self):
 		path = 'individual_campaigns.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
-class DevelopersAPIAggregateDeals(WebRequestHandler):
+class APIAggregateDeals(WebRequestHandler):
 	def get(self):
 		path = 'aggregate_deals.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 		
-class DevelopersAPIIndividualDeals(WebRequestHandler):
+class APIIndividualDeals(WebRequestHandler):
 	def get(self):
 		path = 'individual_deals.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
@@ -42,10 +42,10 @@ class DevelopersAPIIndividualDeals(WebRequestHandler):
 
 
 app = webapp2.WSGIApplication([
-	('/api/users', DevelopersAPIUsers),
-	('/api/vendors', DevelopersAPIVendors),
-	('/api/aggregate_campaigns', DevelopersAPIAggregateCampaigns),
-	('/api/individual_campaigns', DevelopersAPIIndividualCampaigns),
-	('/api/aggregate_deals', DevelopersAPIAggregateDeals),
-	('/api/individual_deals', DevelopersAPIIndividualDeals),
+	('/api/users', APIUsers),
+	('/api/vendors', APIVendors),
+	('/api/aggregate_campaigns', APIAggregateCampaigns),
+	('/api/individual_campaigns', APIIndividualCampaigns),
+	('/api/aggregate_deals', APIAggregateDeals),
+	('/api/individual_deals', APIIndividualDeals),
 	])
