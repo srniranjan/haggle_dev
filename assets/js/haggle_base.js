@@ -43,6 +43,8 @@ $(document).ready(function() {
 	});
 });
 
+
+
 function highlightNavbarLink(selectedLink) {
 	$("#c820 a").each(function() {
 		this.style.color="#ffffff";
@@ -53,3 +55,19 @@ function highlightNavbarLink(selectedLink) {
 $('navbar').on('touchstart', function(e) {
   e.stopPropagation();
 });
+
+
+
+function show(selectedLink) {
+	$('.q').hide();
+	$('.'+selectedLink).show();
+	if(parseInt($('.'+selectedLink).css('height'))>798)
+	{
+		$('#documentation-sidebar')[0].style.height=$('.'+selectedLink).css('height');
+	}
+	else
+	{
+		$('#documentation-sidebar')[0].style.height="798px";
+	}
+	return false;
+	}

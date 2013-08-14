@@ -389,3 +389,12 @@ img.bg {
 .devIndent .selected{font-weight:bold;background-color:#f9f9f9;margin-left:-20px;text-decoration:none;padding-left:20px;border-top:1px solid #dae4e6;border-bottom:1px solid #dae4e6;}
 .devSidebarMenu .divider{border-top:1px solid #E8E9EB;margin-right:17px;padding-top:12px;margin-top:7px;padding-bottom:1px;}
 .devSidebarMenu li{padding-top:5px;padding-bottom:7px;}
+html, body {
+  height:100%;
+}
+
+#float{
+    position:fixed;
+    top:100px;
+    left:50;
+}
