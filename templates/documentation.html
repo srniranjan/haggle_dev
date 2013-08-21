@@ -52,12 +52,14 @@
       <br><br><br><br><br><br><br><br><br id="oauth"><br>
       <h2 id="connecting">OAUTH</h2>
       Haggle API uses <a href='http://oauth.net/2/'>OAuth 2.0</a>. Here is some information about Oauth.
-      <h2 id="accessing">CONNECTING</h2>
-      <h2 id="data">ACCESSING</h2>
-      <h2 id="attribution">DATA</h2>
-      <h2 id="ratelimits">ATTRIBUTION</h2>
-      <h2 id="policies">RATE LIMITS</h2>
-      <h2>POLICIES</h2>
+      <h2 id="accessing">Connecting to Oauth</h2>
+      Connecting to Oauth is simple and easy. Just <a href="http://haggle-dev.appspot.com/developers/my_apps">sign up</a> with our api to obtain a client ID and secret. Using this, you can connect using them as parameters. Here is an example:
+      <br>(this is where I'll put an example)
+      <h2 id="data">Accessing</h2>
+      <h2 id="attribution">Data</h2>
+      <h2 id="ratelimits">Attribution</h2>
+      <h2 id="policies">Rate Limits</h2>
+      <h2>Policies</h2>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h3>THIS IS JUST FILLER TO SEE THE ANCHORS WORK</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
     <div id="apis" class="span10 q apis" style="display:none">
@@ -66,6 +68,7 @@
     </div>
     <div id="documentation" class="span10 q documentation" style="display:none">
       <h1>Documentation</h1>
+      endpoints and stuff
       
     </div>
     <div id="resources" class="span10 q resources" style="display:none">
@@ -78,45 +81,44 @@
     </div>
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class= "span 1 visible-phone" style="display:inline;font-family: 'Open Sans', sans-serif;float:left;overflow:hidden;padding:0px;background:white;">
+        <div class= "span 2 visible-phone" style="display:inline;font-family: 'Open Sans', sans-serif;float:left;overflow:hidden;padding:0px;background:white;">
           <ul class="devSidebarMenu">
-            <li><a class="categoryLink" href="/overview" id="overview">Getting Started</a>
-              <ul class="devIndent">
-                <li><a href="/oauth">Oauth 2.0</a></li>
-                <li><a href="/connecting">Connecting to Haggle</a></li>
-                <li><a href="/accessing">Accessing Endpoints</a></li>
-                <li><a href="/data">Sending Data</a></li>
-                <li><a href="/attribution">Attribution</a></li>
-                <li><a href="/ratelimits">Rate Limits</a></li>
-                <li><a href="/policies">Policies</a></li>
-                <li></li>
-                <li><a href="/general">General API</a></li>
-                <li><a href="/sdk">SDK Platform</a></li>
-                <li><a href="/iphone">iPhone Redirect</a></li>
-            </ul>
-          </li>
-          <li><a class="categoryLink" href="/documentation">Documentation</a>
-            <ul class="devIndent">
-                <li><a href="/endpoints">API Endpoints</a></li>
-                <li><a href="/explore">Explorer</a></li>
-                <li><a href="/realtime">Real-Time API</a></li>
-                <li><a href="/responses">Responses and Errors</a></li>
-                <li><a href="/changelog">Changelog</a></li>
-            </ul>
-          </li>
+      <li><a class="categoryLink" href="#" id="overview" onclick="show('getting-started');">Getting Started</a>
+        <ul class="devIndent">
+          <li><a href="#oauth" onclick="show('getting-started');">Oauth 2.0</a></li>
+          <li><a href="#connecting" onclick="show('getting-started');">Connecting to Haggle</a></li>
+          <li><a href="#accessing" onclick="show('getting-started');">Accessing Endpoints</a></li>
+          <li><a href="#data" onclick="show('getting-started');">Sending Data</a></li>
+          <li><a href="#attribution" onclick="show('getting-started');">Attribution</a></li>
+          <li><a href="#ratelimits" onclick="show('getting-started');">Rate Limits</a></li>
+          <li><a href="#policies" onclick="show('getting-started');">Policies</a></li>
+          <li></li>
+          <li><a href="#general" onclick="show('apis');">General API</a></li>
+          <li><a href="#sdk" onclick="show('apis');">SDK Platform</a></li>
+          <li><a href="#iphone" onclick="show('apis');">iPhone Redirect</a></li>
         </ul>
-      </div>
-      <div class= "span 1 visible-phone" style="display:inline;font-family: 'Open Sans', sans-serif;float:left;overflow:hidden;padding:0px;background:white;">
-        <ul class="devSidebarMenu">
-          <li><a class="categoryLink" href="/resources" id="resources">Resources</a>
-            <ul class="devIndent">
-                <li><a href="/logos">Buttons &amp; Logos</a></li>
-                <li><a href="/libraries">Libraries</a></li>
-                <li><a href="/client">Client Resources</a></li>
-                <li><a href="/tutorial">Tutorials and Samples</a></li>
-              </ul>
+      </li>
+      <li><a class="categoryLink" href="#" onclick="show('dochome');">Documentation</a>
+        <ul class="devIndent">
+          <li><a href="#endpoints" onclick="show('documentation');">API Endpoints</a></li>
+          <li><a href="#explore" onclick="show('documentation');">Explorer</a></li>
+          <li><a href="#realtime" onclick="show('documentation');">Real-Time API</a></li>
+          <li><a href="#responses" onclick="show('documentation');">Responses and Errors</a></li>
+          <li><a href="#changelog" onclick="show('documentation');">Changelog</a></li>
+        </ul>
+      </li>
+      <li><a class="categoryLink" href="#" id="resources" onclick="show('resources');">Resources</a>
+        <ul class="devIndent">
+          <li><a href="#logos" onclick="show('resources');">Buttons &amp; Logos</a></li>
+          <li><a href="#libraries" onclick="show('resources');">Libraries</a></li>
+          <li><a href="#client" onclick="show('resources');">Client Resources</a></li>
+          <li><a href="#tutorial" onclick="show('resources');">Tutorials and Samples</a></li>
+        </ul>
+      </li>
+      <li><a class="categoryLink" href="#" onclick="show('support');">Support</a>
+      </li>
+      </ul>
           </li>
-          <li><a class="categoryLink" href="/support">Support</a></li>
         </ul>
       </div>
     </div>
