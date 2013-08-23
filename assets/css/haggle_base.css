@@ -46,6 +46,10 @@
 	background-color:#f2f2f2;
 }
 
+.haggle-font-type {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .haggle-contact-section {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
@@ -141,7 +145,7 @@ hr{
 /* Global Styling */
 
 .wrap {
-    min-height: 100%;
+    min-height: 92%;
 }
 
 .content-page {
