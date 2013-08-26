@@ -19,10 +19,6 @@ class Overview(WebRequestHandler):
 		path = 'overview.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
-class Documentation(WebRequestHandler):
-	def get(self):
-		path = 'documentation.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
 
 class Tutorial(WebRequestHandler):
 	def get(self):
@@ -49,25 +45,23 @@ class AppRedirect(WebRequestHandler):
 		path = 'iphone_app.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
-class Endpoints(WebRequestHandler):
-	def get(self):
-		path = 'endpoints.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
 class Contact(WebRequestHandler):
 	def get(self):
 		path = 'contact.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
+class Documentation(WebRequestHandler):
+	def get(self):
+		path = 'documentation.html'
+		self.response.out.write(self.get_rendered_html(path, dict()))
 
 app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/overview', Overview),
-	('/documentation', Documentation),
 	('/tutorial', Tutorial),
+    ('/documentation', Documentation),
 	('/rest_api', RestAPI),
 	('/sdk_iphone', SDK),
 	('/sdk_android', SDKAndroid),
 	('/iphone_app', AppRedirect),
-	('/endpoints', Endpoints),
 	('/contact', Contact)
 	])
