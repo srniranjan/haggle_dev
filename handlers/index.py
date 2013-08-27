@@ -1,6 +1,11 @@
 import webapp2
 import logging
+import urllib
 from django.template import loader
+
+from google.appengine.api import urlfetch
+
+URL = 'https://haggle-test1.appspot.com/api/analytics/'
 
 class WebRequestHandler(webapp2.RequestHandler):
     def render_template(self, template_name, template_values = None):
@@ -55,6 +60,23 @@ class Documentation(WebRequestHandler):
 		path = 'documentation.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
+class ServerFetchHandler(webapp2.RequestHandler):
+    def post(self):
+        endpoint = self.request.get('endpoint')
+        property = self.request.get('property')
+        lat = self.request.get('lat')
+        lon = self.request.get('lon')
+        radius = self.request.get('radius')
+        params = {
+                'property': property,
+                'lat': lat,
+                'lon': lon,
+                'radius': radius
+                }
+        url = URL + endpoint + '?' +  urllib.urlencode(params)
+        response = urlfetch.fetch(url).content
+        self.response.out.write(response)
+        
 app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/overview', Overview),
 	('/tutorial', Tutorial),
@@ -63,5 +85,6 @@ app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/sdk_iphone', SDK),
 	('/sdk_android', SDKAndroid),
 	('/iphone_app', AppRedirect),
+	('/fetch_from_server', ServerFetchHandler),
 	('/contact', Contact)
 	])
