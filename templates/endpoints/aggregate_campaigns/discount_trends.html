@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 {% block Content %}
-<div>
-	<h1>Discount Trends<h1>
-	<h2>Parameters</h2>
+<script src='/assets/js/endpoints/fetch_from_server.js' type='text/javascript'></script>
+<div style='float:left;width:50%'>
+	<h2>Discount Trends</h2>
+	<p>https://haggle-test1.appspot.com/api/analytics/aggregate_campaigns</p>
+	</br>
+	<h3>Parameters</h3>
 	<table cellpadding="5" cellspacing="0" border="1" class="c7">
 		<tbody>
 			<tr>
@@ -24,11 +27,15 @@
 		</tbody>
 	</table>
 	</br>
-	<a href="https://haggle-test1.appspot.com/api/analytics/aggregate_campaigns?property=average_discounts&lat=40.745619&lon=-73.985296&radius=3000">
-		<input 	type="button"
-				value="Try it out!"
-				class="haggle-font-type"
-				style="height: 40px; width: 200px; border-radius: 5px; background-color: #45acbf; font-weight: 200;font-size: 15px; color:#ffffff"/>
-	</a>
+	<input 	type="button"
+			id="try-it"
+			value="Try it out!"
+			class="haggle-font-type"
+			style="height: 40px; width: 200px; border-radius: 5px; background-color: #45acbf; font-weight: 200;font-size: 15px; color:#ffffff"/>
+</div>
+<div style="position:relative;width:40%;float:left;">
+	<h3>Response</h3>
+	<pre id="response" style="height:250px;width:500px;">
+	</pre>
 </div>
 {% endblock %}
