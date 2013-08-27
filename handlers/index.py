@@ -86,6 +86,6 @@ app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/sdk_iphone', SDK),
 	('/sdk_android', SDKAndroid),
 	('/iphone_app', AppRedirect),
-	('/fetch_from_server', ServerFetchHandler),
+	('/fetch_from_api_server', ServerFetchHandler),
 	('/contact', Contact)
 	])
