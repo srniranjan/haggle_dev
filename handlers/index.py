@@ -1,3 +1,4 @@
+import json
 import webapp2
 import logging
 import urllib
@@ -61,7 +62,7 @@ class Documentation(WebRequestHandler):
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
 class ServerFetchHandler(webapp2.RequestHandler):
-    def get(self):
+    def post(self):
         endpoint = self.request.get('endpoint')
         property = self.request.get('property')
         lat = self.request.get('lat')
@@ -74,7 +75,6 @@ class ServerFetchHandler(webapp2.RequestHandler):
                 'radius': radius
                 }
         url = URL + endpoint + '?' +  urllib.urlencode(params)
-        logging.info(url)
         response = urlfetch.fetch(url).content
         self.response.out.write(response)
         
