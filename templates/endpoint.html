@@ -6,6 +6,21 @@
 	</div>
 </div>
 <div class="row-fluid">
+	<div class="span-12">
+		<p>
+			OAuth token automatically added. <input type="button" value="Log In" id="fetch_token" name="fetch_token"/> to use your own access token.
+		</p>
+		<div hidden="hidden" class="row-fluid">
+			<div class="span3">
+				<p>Token</p>
+			</div>
+			<div class="span9">
+				<input type="text" id="token" value="f377b77df0584f68a445080edda6a436">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-fluid">
 	<div class="span6">
 		<div class="row-fluid">
 			<div class="span12">
@@ -25,6 +40,7 @@
 						</div>
 					</div>
 					{% endfor %}
+					
 				</div>
 			</div>
 			<div class="row-fluid">
@@ -63,4 +79,5 @@
 	</div>
 </div>
 <script src='/assets/js/endpoints/fetch-from-api-server.js' type='text/javascript'></script>
+<script src='/assets/js/endpoints/fetch-token.js' type='text/javascript'></script>
 {% endblock %}

@@ -26,6 +26,14 @@ handlers:
 #  static_dir: handlers/endpoints 
 #  secure: always
 
+- url: /fetch_token
+  script: handlers.endpoints.app
+  secure: always
+
+- url: /callback
+  script: handlers.endpoints.app
+  secure: always
+
 - url: /endpoints.*
   script: handlers.endpoints.app
   secure: always

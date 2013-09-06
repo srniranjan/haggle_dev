@@ -25,3 +25,6 @@ TEMPLATE_VALUES = {
             }
         }
 
+client_id = 'MQ2SDSAN0EVC11ZX0QV6O411GQJZP2KZ1T10L'
+client_secret = 'WJXHM3SAPVMTGBDV2SHMBS5J54NGLPDA5444G'
+redirect_uri = 'http://haggle-dev.appspot.com/api/test'
