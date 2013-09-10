@@ -1,120 +1,211 @@
 {% extends "base.html" %}
 {% block Content %}
 
-<div class="row-fluid" style="overflow:hidden; position:relative; width:100%;height:100%;">
-	<div id="documentation-sidebar" class="span2 hidden-phone" style="display:inline;font-family: 'Open Sans', sans-serif;float:left;overflow:hidden;padding:0px;background:white;height:100%;">
-		<ul class="devSidebarMenu">
-			<li><a class="categoryLink" href="#" id="overview" onclick="show('getting-started');">Getting Started</a>
-				<ul class="devIndent">
-					<li><a href="#oauth" onclick="show('getting-started');">Oauth 2.0</a></li>
-					<li><a href="#connecting" onclick="show('getting-started');">Connecting to Haggle</a></li>
-					<li><a href="#accessing" onclick="show('getting-started');">Accessing Endpoints</a></li>
-					<li><a href="#data" onclick="show('getting-started');">Sending Data</a></li>
-					<li><a href="#attribution" onclick="show('getting-started');">Attribution</a></li>
-					<li><a href="#ratelimits" onclick="show('getting-started');">Rate Limits</a></li>
-					<li><a href="#policies" onclick="show('getting-started');">Policies</a></li>
-					<li></li>
-					<li><a href="#general" onclick="show('apis');">General API</a></li>
-					<li><a href="#sdk" onclick="show('apis');">SDK Platform</a></li>
-					<li><a href="#iphone" onclick="show('apis');">iPhone Redirect</a></li>
-        		</ul>
-      		</li>
-      		<li><a class="categoryLink" href="#" onclick="show('dochome');">Documentation</a>
-		        <ul class="devIndent">
-		          <li><a href="/endpoints">API Endpoints</a></li>
-		          <li><a href="/api/explorer">Explorer</a></li>
-		          <li><a href="#realtime" onclick="show('documentation');">Real-Time API</a></li>
-		          <li><a href="#responses" onclick="show('documentation');">Responses and Errors</a></li>
-		          <li><a href="#changelog" onclick="show('documentation');">Changelog</a></li>
-		        </ul>
-      		</li>
-      		<li><a class="categoryLink" href="#" id="resources" onclick="show('resources');">Resources</a>
-		        <ul class="devIndent">
-		      		<li><a href="#logos" onclick="show('resources');">Buttons &amp; Logos</a></li>
-		      		<li><a href="#libraries" onclick="show('resources');">Libraries</a></li>
-		      		<li><a href="#client" onclick="show('resources');">Client Resources</a></li>
-		      		<li><a href="#tutorial" onclick="show('resources');">Tutorials and Samples</a></li>
-		        </ul>
-	      	</li>
-      		<li><a class="categoryLink" href="#" onclick="show('support');">Support</a>
-      		</li>
-		</ul>
-	</div>
-    <div id="dochome" class="span10 dochome q" style="display:block; height=100%;">
-		<h1>Documentation</h1>
-		This is where you put stuff
+<div class="row-fluid">
+    <div id="documentation-sidebar" class="span3" style="display:inline;font-family: 'Open Sans', sans-serif;float:left;padding: 0px;">
+        <ul class="devSidebarMenu affix nav nav-list" style="overflow-y:scroll;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;background-color: #fff;margin: 30px 0 0;padding-left:30px;padding-right:30px;max-height:450px">
+            <li><a id="overview">Getting Started</a>
+                <ul class="devSidebarSubMenu nav nav-list">
+                    <li><a href="#oauth">Oauth 2.0</a></li>
+                    <li><a href="#connecting">Connecting to Haggle</a></li>
+                    <li><a href="#accessing">Accessing Endpoints</a></li>
+                    <li><a href="#data">Sending Data</a></li>
+                    <li><a href="#attribution">Attribution</a></li>
+                    <li><a href="#ratelimits">Rate Limits</a></li>
+                    <li><a href="#policies">Policies</a></li>
+                    <li><a href="#general">General API</a></li>
+                    <li><a href="#sdk">SDK Platform</a></li>
+                    <li><a href="#iphone">iPhone Redirect</a></li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="#docsx">Docs</a>
+                <ul class="devSidebarSubMenu nav nav-list">
+                    <li><a href="#endpoints">API Endpoints</a></li>
+                    <li><a href="/api/explorer">Explorer</a></li>
+                    <li><a href="#realtime">Real-Time API</a></li>
+                    <li><a href="#responses">Responses and Errors</a></li>
+                    <li><a href="#changelog">Changelog</a></li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="#" id="resources">Resources</a>
+                <ul class="devSidebarSubMenu nav nav-list">
+                    <li><a href="#logos">Buttons &amp; Logos</a></li>
+                    <li><a href="#libraries">Libraries</a></li>
+                    <li><a href="#client">Client Resources</a></li>
+                    <li><a href="#tutorial">Tutorials and Samples</a></li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="#">Support</a></li>
+            <li class="divider" style="border:none"></li>
+        </ul>
     </div>
-    <div id="getting-started" class="span10 q getting-started" style="display:none; height=100%;">
-		<h1>Getting Started</h1>
-		<br><br><br><br><br><br><br><br><br id="oauth"><br>
-		<h2 id="connecting">OAUTH</h2>
-		Haggle API uses <a href='http://oauth.net/2/'>OAuth 2.0</a>. Here is some information about Oauth.
-		<h2 id="accessing">Connecting to Oauth</h2>
-		Connecting to Oauth is simple and easy. Just <a href="http://haggle-dev.appspot.com/developers/my_apps">sign up</a> with our api to obtain a client ID and secret. Using this, you can connect using them as parameters. Here is an example:
-		<br>(this is where I'll put an example)
-		<h2 id="data">Accessing</h2>
-		<h2 id="attribution">Data</h2>
-		<h2 id="ratelimits">Attribution</h2>
-		<h2 id="policies">Rate Limits</h2>
-		<h2>Policies</h2>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h3>THIS IS JUST FILLER TO SEE THE ANCHORS WORK</h3><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="documentation-body span9" style="margin-left:0px">
+        <div id="getting-started">
+            <h1>Getting Started</h1>
+            <div id="oauth" class="docPage">
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <h2>OAUTH</h2>
+                <div>
+                    <p>Haggle API uses <a href='http://oauth.net/2/'>OAuth 2.0</a>. Here is some information about Oauth.</p>
+                    <div style="width:600px;height:400px">
+                        <img src="/assets/img/documentation/OAuth2.svg">
+                    </div>
+                    <p>
+                        <b>OAuth 2.0 involves three main entities :</b>
+                    </p>
+                    <ol>
+                        <li>The client needs to access a protected resource.</li>
+                        <li>The resource (server hosting the resource) and the resource owner who controls access to the resource.</li>
+                        <li>The authorization entity.</li>
+                    </ol>
+                    <br>
+                   <p><b>The 'abstract protocol flow' as per the Oauth 2.0 spec suggests the following steps :</b></p>
+                    <ol>
+                        <li>The client requests the resource owner to grant authorization to some resources that the owner controls.</li>
+                        <li>The resource owner issues an authorization grant to the client.</li>
+                        <li>The client authenticates with the authorization server and presents the authorization grant, requesting for an access token.</li>
+                        <li>The authorization server verifies the client and the authorization grant and issues an access token.</li>
+                        <li>The client then authenticates with the resource server by presenting the access token and requests for protected resources.</li>
+                        <li>The resource server on validating the access token, provides the client with the requested protected resources.</li>
+                    </ol>
+                </div>
+            </div>
+            <div id="connecting" class="docPage">
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <h2>Connecting to Oauth</h2>
+                <p>Connecting to Oauth is simple and easy. Just <a href="http://haggle-dev.appspot.com/developers/my_apps">sign up</a> with our api to obtain a client ID and secret. Using this, you can connect using them as parameters. Here is an example:(this is where I'll put an example)</p>
+                <br>
+                <ol>
+                    <li>The client intending to access protected Haggle resources registers with Haggle.</li>
+                    <li>Haggle issues a Client ID and Client Secret.</li>
+                    <li>The client uses the client ID and Client Secret to send an authorization request.</li>
+                    <li>Haggle authenticates the client, grants the authorization request and returns a authorization code.</li>
+                    <li>The client sends the client ID and secret along with the authorization code to request for an access token from Haggle.</li>
+                    <li>Haggle authenticates the client, validates the authorization code and returns an access token</li>
+                </ol>
+            </div>
+            <div id="accessing" class="docPage">
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <h2>Accessing</h2>
+                <br>
+                <p>
+                    <b>OAuth End Points</b>
+                    <ul>
+                        <li><a href="https://haggle-test1.appspot.com/clients">/clients</a></li>
+                        <li><a href="https://haggle-test1.appspot.com/oauth2/authorize">/oauth2/authorize</a></li>
+                        <li><a href="https://haggle-test1.appspot.com/oauth2/token">/oauth2/token</a></li>
+                    </ul>
+                </p>
+            </div>
+            <div id="data" class="docPage">
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <h2>Data</h2>
+            </div>
+            <div id="attribution" class="docPage">
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <h2>Attribution</h2>
+            </div>
+            <div id="ratelimits" class="docPage">
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <h2>Rate Limits</h2>
+            </div>
+            <div id="policies" class="docPage">
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <h2>Policies</h2>
+            </div>
+        </div>
+        <div id="apis" class="docPage">
+            <div class="row-fluid">
+                <div class="span12">
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                </div>
+            </div>
+            <h1>API</h1>
+        </div>
+        <div id="docs" class="docPage">
+            <div class="row-fluid">
+                <div class="span12">
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                </div>
+            </div>
+            <h1>Docs</h1>
+            <div id="endpoints" class="docPage">
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span12">
+                    </div>
+                </div>
+                <h1>API End Points</h1>
+                {% include 'endpoints.html' %}
+            </div>
+        </div>
+        <div id="resources" class="span10 q resources" style="display:none">
+            <h1>Resources</h1>
+        </div>
+        <div id="support" class="span10 q support" style="display:none">
+            <h1>Support</h1>
+        </div>
     </div>
-    <div id="apis" class="span10 q apis" style="display:none">
-		<h1>API</h1>
-    </div>
-    <div id="documentation" class="span10 q documentation" style="display:none">
-		<h1>Documentation</h1>
-		endpoints and stuff
-    </div>
-    <div id="resources" class="span10 q resources" style="display:none">
-		<h1>Resources</h1>
-    </div>
-    <div id="support" class="span10 q support" style="display:none">
-		<h1>Support</h1>
-    </div>
-    <div class="container-fluid">
-		<div class="row-fluid">
-			<div class= "span 2 visible-phone" style="display:inline;font-family: 'Open Sans', sans-serif;float:left;overflow:hidden;padding:0px;background:white;">
-				<ul class="devSidebarMenu">
-					<li><a class="categoryLink" href="#" id="overview" onclick="show('getting-started');">Getting Started</a>
-						<ul class="devIndent">
-							<li><a href="#oauth" onclick="show('getting-started');">Oauth 2.0</a></li>
-							<li><a href="#connecting" onclick="show('getting-started');">Connecting to Haggle</a></li>
-							<li><a href="#accessing" onclick="show('getting-started');">Accessing Endpoints</a></li>
-							<li><a href="#data" onclick="show('getting-started');">Sending Data</a></li>
-							<li><a href="#attribution" onclick="show('getting-started');">Attribution</a></li>
-							<li><a href="#ratelimits" onclick="show('getting-started');">Rate Limits</a></li>
-							<li><a href="#policies" onclick="show('getting-started');">Policies</a></li>
-							<li></li>
-							<li><a href="#general" onclick="show('apis');">General API</a></li>
-							<li><a href="#sdk" onclick="show('apis');">SDK Platform</a></li>
-							<li><a href="#iphone" onclick="show('apis');">iPhone Redirect</a></li>
-						</ul>
-					</li>
-					<li><a class="categoryLink" href="#" onclick="show('dochome');">Documentation</a>
-						<ul class="devIndent">
-							<li><a href="/endpoints">API Endpoints</a></li>
-							<li><a href="/api/explorer">Explorer</a></li>
-							<li><a href="#realtime" onclick="show('documentation');">Real-Time API</a></li>
-							<li><a href="#responses" onclick="show('documentation');">Responses and Errors</a></li>
-							<li><a href="#changelog" onclick="show('documentation');">Changelog</a></li>
-						</ul>
-					</li>
-					<li><a class="categoryLink" href="#" id="resources" onclick="show('resources');">Resources</a>
-						<ul class="devIndent">
-							<li><a href="#logos" onclick="show('resources');">Buttons &amp; Logos</a></li>
-							<li><a href="#libraries" onclick="show('resources');">Libraries</a></li>
-							<li><a href="#client" onclick="show('resources');">Client Resources</a></li>
-							<li><a href="#tutorial" onclick="show('resources');">Tutorials and Samples</a></li>
-						</ul>
-					</li>
-					<li><a class="categoryLink" href="#" onclick="show('support');">Support</a>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-</div>
-</div>
 </div>
 {% endblock %}

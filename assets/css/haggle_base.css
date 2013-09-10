@@ -300,6 +300,36 @@ a, a:hover {
 	color:#45acbf;
 }
 
+.affix {
+    top: 40px;
+}
+
+.devSidebarMenu>li>a {
+    display: block;
+    width: 190px \9;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 28px;
+    font-size: 18px;
+}
+
+.docPage {
+    min-height: 800px !important;
+    height: 800px !important;
+}
+
+.devSidebarSubMenu>li>a {
+    display: block;
+    padding-left: 36px;
+    padding-top: 4px;
+}
+
+.devSidebarSubMenu {
+    padding-left: 0px;
+    padding-right: 0px;
+    list-style: none;
+}
+
 .navbar .nav>li>a.hover-enabled:hover{
   color:#e58170 !important;
 }
@@ -385,14 +415,10 @@ img.bg {
 .devTwoColumns{width:92%px;margin:0 auto;}
 .wideColumn{display:inline;overflow:hidden;padding:25px 50px 30px 30px;width:68%;min-height:800px;border-left:1px solid #e8e9eb;float:left;}
 .devNarrowColumn{width:15%;display:inline;font-family: 'Open Sans', sans-serif;float:left;overflow:hidden;padding:0px;background:white;}
-.devSidebarMenu{display:block;line-height:20px;text-indent:20px;list-style:none;margin:20px 0 0;}
-.devSidebarMenu a{font-weight:400;}
 .devNarrowColumn a:hover{text-decoration:underline;}
 .devNarrowColumn .categoryLink{color:#4d4d4d;font-family: 'Open Sans', sans-serif;font-size:15px;font-weight:bold;letter-spacing:-1px;line-height:140%;margin:0 0 10px;}
 .devIndent{text-indent:0px;list-style:none;font-size:12px;padding-top:10px;}
 .devIndent .selected{font-weight:bold;background-color:#f9f9f9;margin-left:-20px;text-decoration:none;padding-left:20px;border-top:1px solid #dae4e6;border-bottom:1px solid #dae4e6;}
-.devSidebarMenu .divider{border-top:1px solid #E8E9EB;margin-right:17px;padding-top:12px;margin-top:7px;padding-bottom:1px;}
-.devSidebarMenu li{padding-top:5px;padding-bottom:7px;}
 html, body {
   height:100%;
 }
