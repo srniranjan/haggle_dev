@@ -30,6 +30,14 @@
 		<form id="params">
 			<div class="row-fluid">
 				<div class="span12">
+					<div hidden="hidden" class"row-fluid">
+						<div class="span3">
+							<p> endpoint </p>
+						</div>
+						<div class="span9">
+							<input type="text" id="endpoint" name="endpoint" value={{ endpoint }} />
+						</div>
+					</div>
 					{% for key, value in params.items %}
 					<div class="row-fluid">
 						<div class="span3">

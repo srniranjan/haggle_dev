@@ -63,21 +63,12 @@ class Documentation(WebRequestHandler):
 
 class ServerFetchHandler(webapp2.RequestHandler):
     def post(self):
+        data = self.request.get('data')
         endpoint = self.request.get('endpoint')
-        property = self.request.get('property')
-        lat = self.request.get('lat')
-        lon = self.request.get('lon')
-        radius = self.request.get('radius')
-        params = {
-                'property': property,
-                'lat': lat,
-                'lon': lon,
-                'radius': radius
-                }
-        url = URL + endpoint + '?' +  urllib.urlencode(params)
+        url = URL + endpoint + '?' + data
         response = urlfetch.fetch(url).content
         self.response.out.write(response)
-        
+
 app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/overview', Overview),
 	('/tutorial', Tutorial),
