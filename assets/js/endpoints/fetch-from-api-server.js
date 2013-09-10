@@ -1,10 +1,8 @@
-var post_data = {"endpoint": $("#endpoint").val(), "data": $("#params").serialize()};
-
 $('#params').submit(function(){
 	$.ajax({
 		type: "POST",
 		url: "/fetch_from_api_server",
-		data: post_data,
+		data: {"endpoint": $("#endpoint").val(), "data": $("#params").serialize()},
 		beforeSend: function(){
 			$('#loading_indicator').show();
 		},
