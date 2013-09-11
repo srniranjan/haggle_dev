@@ -2,7 +2,7 @@ $('#params').submit(function(){
 	$.ajax({
 		type: "POST",
 		url: "/fetch_from_api_server",
-		data: {"endpoint": $("#endpoint").val(), "data": $("#params").serialize()},
+		data: {"endpoint": $("#endpoint").val(), "data": $("#params").serialize(), "token": $("#token").val()},
 		beforeSend: function(){
 			$('#loading_indicator').show();
 		},
