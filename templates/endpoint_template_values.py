@@ -1,39 +1,147 @@
 TEMPLATE_VALUES = {
         'discount_trends': {
             'header': 'Discount Trends',
-            'description': 'Placeholder description for Discount Trends',
+            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'description': 'Returns average maximum and minimum discounts being offered in the given area.',
             'endpoint': 'aggregate_campaigns',
-            'params': { 'property': 'discount_trends', 'lat': 40.745619, 'lon': -73.985296, 'radius': 3000 }
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude of the location.'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
             },
         'score_preference_trends': {
             'header': 'Score Preference Trends',
-            'description': 'Placeholder description for Score Preference Trends',
+            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'description': 'Returns the score preference trends in the given area.',
             'endpoint': 'aggregate_campaigns',
-            'params': { 'property': 'score_preference_trends', 'lat': 40.745619, 'lon': -73.985296, 'radius': 3000 }
+            'params': {
+                'property': { 
+                    'value': 'score_preference_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude of the location.'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
             },
         'bids_trends': {
             'header': 'Bids Trends',
-            'description': 'Placeholder description for Bids Trends',
+            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'description': "Returns Users' bidding trends in the given area.",
             'endpoint': 'aggregate_deals',
-            'params': { 'property': 'bids_trends', 'lat': 40.745619, 'lon': -73.985296, 'radius': 3000 }
+            'params': {
+                'property': { 
+                    'value': 'bids_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude of the location.'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
             },
         'user_trends': {
             'header': 'User Trends',
+            'url': 'https://haggle-test1.appspot.com/api/analytics/',
             'description': 'Placeholder description for User Trends',
             'endpoint': 'aggregate_deals',
-            'params': { 'property': 'user_trends', 'lat': 40.745619, 'lon': -73.985296, 'radius': 3000 }
+            'params': {
+                'property': { 
+                    'value': 'user_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude of the location.'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
             },
         'time_trends': {
             'header': 'Time Trends',
+            'url': 'https://haggle-test1.appspot.com/api/analytics/',
             'description': 'Placeholder description for Time Trends',
             'endpoint': 'aggregate_deals',
-            'params': { 'property': 'time_trends', 'lat': 40.745619, 'lon': -73.985296, 'radius': 3000 }
+            'params': {
+                'property': { 
+                    'value': 'time_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude of the location.'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
             },
         'average_spending': {
             'header': 'Average Spending',
+            'url': 'https://haggle-test1.appspot.com/api/analytics/',
             'description': 'Placeholder description for Average Spending',
             'endpoint': 'aggregate_deals',
-            'params': { 'property': 'average_spending', 'lat': 40.745619, 'lon': -73.985296, 'radius': 3000 }
+            'params': {
+                'property': { 
+                    'value': 'average_spending',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude of the location.'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
             }
         }
 

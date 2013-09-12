@@ -33,7 +33,7 @@
 				<p>Token</p>
 			</div>
 			<div class="span11">
-				<input type="text" id="token" name="token" value="f377b77df0584f68a445080edda6a436" style="width:40% !important">
+				<input type="text" id="token" name="token" value="f377b77df0584f68a445080edda6a436" style="width:30% !important">
 			</div>
 		</div>
 	</div>
@@ -48,13 +48,16 @@
 		<form id="params">
 			<div class="row-fluid">
 				<div class="span12">
-					{% for key, value in params.items %}
+					{% for key, values in params.items %}
 							<div {% if key == "property" %} hidden {% endif %} class="row-fluid">
-								<div class="span3">
+								<div class="span6">
+									<p> {{ values.description }} </p>
+								</div>
+								<div class="span2">
 									<p> {{ key }} </p>
 								</div>
-								<div class="span9">
-									<input type="text" name={{ key }} value={{ value }} />
+								<div class="span4">
+									<input type="text" name={{ key }} value={{ values.value }} style="width:75% !important"/>
 								</div>
 							</div>
 					{% endfor %}
