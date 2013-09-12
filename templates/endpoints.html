@@ -156,451 +156,207 @@ h6{
 {% endblock %}
 {% block Content %}
     <div class="span12" style="overflow: hidden;">
-        <p>
-            <span>
-            </span>
-        </p>
-        <a href="#" name="dd879c77b73c63fb0033a0f4c45bbc5ccefc15d0">
-        </a>
-        <a href="#" name="0">
-        </a>
         <table cellpadding="0" cellspacing="0" class="table table-striped table-bordered table-hover" style="background-color: #f0f0f0">
             <tbody>
                 <tr>
                     <td>
+					</td>
+                    <td>
+                        <p>General</p>
+                    </td>
+                    <td>
+                        <p>Aspects</p>
+                    </td>
+                    <td>
+                        <p>Actions</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+						<p><a href="/api/users">Users</a></p>
+					</td>
+                    <td>
+						<p><a href="/api/users/search">Search</a></p>
+					</td>
+                    <td>
                         <p>
-                            <span>
-                            </span>
+							<a href="/api/users/history">History</a>
+						</p>
+                        <p>
+							<a href="/api/users/loyalty">Loyalty</a>
+                    	</p>
+                        <p>
+                        	<a href="/api/users/social_influence">Social Influence</a>
+                        </p>
+                        <p>
+							<a href="/api/users/purchasing_power">Purchasing Power</a>
+                        </p>
+                        <p>
+							<a href="/api/users/deals">Deals</a>
+                        </p>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+							<a href="/api/vendors">Vendors</a>
                         </p>
                     </td>
                     <td>
                         <p>
-                            <span>
-                                General
-                            </span>
+							<a href="/api/vendors/categories">Categories</a>
+						</p>
+                        <p>
+                        	<a href="/api/vendors/explore">Explore</a>
+                        </p>
+                        <p>
+							<a href="/api/vendors/search">Search</a>
+               			</p>
+                    </td>
+                    <td>
+                        <p>
+                        	<a href="/api/vendors/campaigns">Campaigns</a>
+                        </p>
+                        <p>
+                        	<a href="/api/vendors/hours">Hours</a>
+                        </p>
+                        <p>
+							<a href="/api/vendors/tips">Tips</a>
+                        </p>
+                        <p>
+							<a href="/api/vendors/user_trends">User Trends</a>
+                        </p>
+                        <p>
+                        	<a href="/api/vendors/time_trends">Time Trends</a>
+                        </p>
+                        <p>
+							<a href="/api/vendors/average_spending">Average Spending</a>
+                    	</p>
+                        <p>
+                        	<a href="/api/vendors/current_deals">Current Deals</a>
+                        </p>
+                        <p>
+							<a href="/api/vendors/links">Links</a>
                         </p>
                     </td>
                     <td>
                         <p>
-                            <span>
-                                Aspects
-                            </span>
+							<a href="/api/vendors/accept_deal">Accept Deal</a>
                         </p>
-                    </td>
-                    <td>
                         <p>
-                            <span>
-                                Actions
-                            </span>
+							<a href="/api/vendors/request_deal">Request Deal</a>
                         </p>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <p>
-                            <span>
-                                <a href="/api/users">
-                                    Users
-                                </a>
-                            </span>
+							<a href="/api/aggregate_campaigns" style="color:red">Aggregate Campaigns</a>
                         </p>
                     </td>
                     <td>
                         <p>
-                            <span>
-                                <a href="/api/users/search">
-                                    Search
-                                </a>
-                            </span>
+							<a href="/api/aggregate_campaigns/search">Search</a>
                         </p>
                     </td>
                     <td>
                         <p>
-                            <span>
-                                <a href="/api/users/history">
-                                    History
-                                </a>
-                            </span>
+							<a href="/endpoints/render?property=discount_trends" style="color:red">Discount Trends</a>
+            			</p>
+                        <p>
+							<a href="/endpoints/render?property=score_preference_trends" style="color:red">Score Preference Trends</a>
                         </p>
                         <p>
-                            <span>
-                                <a href="/api/users/loyalty">
-                                    Loyalty
-                                </a>
-                            </span>
+							<a href="/api/aggregate_campaigns/campaign_hours_trends">Campaign Hours Trends</a>
                         </p>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <p>
-                            <span>
-                                <a href="/api/users/social_influence">
-                                    Social Influence
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/api/users/purchasing_power">
-                                    Purchasing Power
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                *
-                            </span>
-                            <span>
-                                <a href="/api/users/deals">
-                                    Deals
-                                </a>
-                            </span>
-                            <span>
-                                *
-                            </span>
+							<a href="/api/individual_campaigns">Individual Campaigns</a>
                         </p>
                     </td>
                     <td>
                         <p>
-                            <span>
-                            </span>
+							<a href="/api/individual_campaigns/search">Search</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+							<a href="/api/individual_campaigns/hours">Hours</a>
+                        </p>
+                        <p>
+							<a href="/api/individual_campaigns/score_preferences">Score Preferences</a>
+                        </p>
+                        <p>
+							<a href="/api/individual_campaigns/max_discount">Max Discount</a>
+                        </p>
+                        <p>
+							<a href="/api/individual_campaigns/minimum_discount">Minimum Discount</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+							<a href="/api/individual_campaigns/delete">Delete</a>
+                        </p>
+                        <p>
+							<a href="/api/individual_campaigns/end">End</a>
+                        </p>
+                        <p>
+							<a href="/api/individual_campaigns/start">Start</a>
                         </p>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <p>
-                            <span>
-                                <a href="/api/vendors">
-                                    Vendors
-                                </a>
-                            </span>
+                            <a href="/api/aggregate_deals" style="color:red">Aggregate Deals</a>
                         </p>
                     </td>
                     <td>
                         <p>
-                            <span>
-                                <a href="/api/vendors/categories">
-                                    Categories
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                *
-                            </span>
-                            <span>
-                                <a href="/api/vendors/explore">
-                                    Explore
-                                </a>
-                            </span>
-                            <span>
-                                *
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/api/vendors/search">
-                                    Search
-                                </a>
-                            </span>
-                        </p>
+							<a href="/api/aggregate_deals/search">Search</a>
+						</p>
                     </td>
                     <td>
                         <p>
-                            <span>
-                                *
-                            </span>
-                            <span>
-                                <a href="/api/vendors/campaigns">
-                                    Campaigns
-                                </a>
-                            </span>
-                            <span>
-                                *
-                            </span>
+							<a href="/endpoints/render?property=bids_trends" style="color:red">Bids Trends</a>
                         </p>
                         <p>
-                            <span>
-                                <a href="/api/vendors/hours">
-                                    Hours
-                                </a>
-                            </span>
+							<a href="/endpoints/render?property=user_trends" style="color:red">User Trends</a>
                         </p>
                         <p>
-                            <span>
-                                <a href="/api/vendors/tips">
-                                    Tips
-                                </a>
-                            </span>
+							<a href="/endpoints/render?property=time_trends" style="color:red">Time Trends</a>
                         </p>
                         <p>
-                            <span>
-                                <a href="/api/vendors/user_trends">
-                                    User Trends
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/api/vendors/time_trends">
-                                    Time Trends
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/api/vendors/average_spending">
-                                    Average Spending
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/api/vendors/current_deals">
-                                    Current Deals
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/api/vendors/links">
-                                    Links
-                                </a>
-                            </span>
+							<a href="/endpoints/render?property=average_spending" style="color:red">Average Spending</a>
                         </p>
                     </td>
                     <td>
-                        <p>
-                            <span>
-                                *
-                            </span>
-                            <span>
-                                <a href="/api/vendors/accept_deal">
-                                    Accept Deal
-                                </a>
-                            </span>
-                            <span>
-                                *
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                *
-                            </span>
-                            <span>
-                                <a href="/api/vendors/request_deal">
-                                    Request Deal
-                                </a>
-                            </span>
-                            <span>
-                                *
-                            </span>
-                        </p>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <p>
-                            <span>
-                                <a href="/api/aggregate_campaigns" style="color:red">
-                                    Aggregate Campaigns
-                                </a>
-                            </span>
-                        </p>
+						<p><a href="/api/individual_deals">Individual Deals</a></p>
+					</td>
+                    <td>
+						<p><a href="/api/individual_deals/search">Search</a></p>
+					</td>
+                    <td>
+						<p><a href="/api/individual_deals/time">Time</a></p>
+						<p><a href="/api/individual_deals/user_id">User ID</a></p>
+						<p><a href="/api/individual_deals/bid">Bid</a></p>
+						<p><a href="/api/individual_deals/offer">Offer</a></p>
                     </td>
                     <td>
-                        <p>
-                            <span>
-                                <a href="/api/aggregate_campaigns/search">
-                                    Search
-                                </a>
-                            </span>
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-                            <span>
-                                <a href="/endpoints/render?property=discount_trends" style="color:red">
-                                    Discount Trends
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/endpoints/render?property=score_preference_trends" style="color:red">
-                                    Score Preference Trends
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/api/aggregate_campaigns/campaign_hours_trends">
-                                    Campaign Hours Trends
-                                </a>
-                            </span>
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-                            <span>
-                            </span>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>
-                            <span>
-                                <a href="/api/individual_campaigns">
-                                    Individual Campaigns
-                                </a>
-                            </span>
-                        </p>
-                    </td>
-
-                    <td>
-                        <p>
-                            <span>
-                                <a href="/api/individual_campaigns/search">
-                                    Search
-                                </a>
-                            </span>
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-                            <span>
-                                *
-                            </span>
-                            <span>
-                                <a href="/api/individual_campaigns/hours">
-                                    Hours
-                                </a>
-                            </span>
-                            <span>
-                                *
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                *
-                            </span>
-                            <span>
-                                <a href="/api/individual_campaigns/score_preferences">
-                                    Score Preferences
-                                </a>
-                            </span>
-                            <span>
-                                *
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                *
-                            </span>
-                            <span>
-                                <a href="/api/individual_campaigns/max_discount">
-                                    Max Discount
-                                </a>
-                            </span>
-                            <span>
-                                *
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                *
-                            </span>
-                            <span>
-                                <a href="/api/individual_campaigns/minimum_discount">
-                                    Minimum Discount
-                                </a>
-                            </span>
-                            <span>*</span>
-                        </p>
-                    </td>
-                    <td>
-                        <p>
-                            <span>*</span>
-                            <span><a href="/api/individual_campaigns/delete">Delete</a></span>
-                            <span>*</span>
-                        </p>
-                        <p>
-                            <span>*</span>
-                            <span>
-                                <a href="/api/individual_campaigns/end">End</a>
-                            </span>
-                            <span>*</span>
-                        </p>
-                        <p>
-                            <span>*</span>
-                            <span><a href="/api/individual_campaigns/start">Start</a></span>
-                            <span>*</span>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>
-                            <span><a href="/api/aggregate_deals" style="color:red">Aggregate Deals</a></span>
-                        </p>
-                    </td>
-                    <td>
-                        <p><span><a href="/api/aggregate_deals/search">Search</a></span></p>
-                    </td>
-                    <td>
-                        <p>
-                            <span>
-                                <a href="/endpoints/render?property=bids_trends" style="color:red">
-                                    Bids Trends
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/endpoints/render?property=user_trends" style="color:red">
-                                    User Trends
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/endpoints/render?property=time_trends" style="color:red">
-                                    Time Trends
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <a href="/endpoints/render?property=average_spending" style="color:red">
-                                    Average Spending
-                                </a>
-                            </span>
-                        </p>
-                    </td>
-                    <td>
-                        <p><span></span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><p><span><a href="/api/individual_deals">Individual Deals</a></span></p></td>
-                    <td><p><span><a href="/api/individual_deals/search">Search</a></span></p></td>
-                    <td>
-                        <p><span>*</span><span>*</span><span><a href="/api/individual_deals/time">Time</a></span></p>
-                        <p><span>*</span><span>*</span><span><a href="/api/individual_deals/user_id">User ID</a></span></p>
-                        <p><span>*</span><span>*</span><span><a href="/api/individual_deals/bid">Bid</a></span></p>
-                        <p><span>*</span><span>*</span><span><a href="/api/individual_deals/offer">Offer</a></span></p>
-                    </td>
-                    <td>
-                        <p><span>*</span><span><a href="/api/individual_deals/delete">Delete</a></span><span>*</span></p>
-                        <p>
-                            <span>*</span>
-                            <span><a href="/api/individual_deals/make_public">Make Public</a></span>
-                            <span>*</span>
-                        </p>
-                        <p>
-                            <span>*</span>
-                            <span><a href="/api/individual_deals/make_private">Make Private</a></span>
-                            <span>*</span>
-                        </p>
+                        <p><a href="/api/individual_deals/delete">Delete</a></p>
+						<p><a href="/api/individual_deals/make_public">Make Public</a></p>
+						<p><a href="/api/individual_deals/make_private">Make Private</a></p>
                     </td>
                 </tr>
             </tbody>
