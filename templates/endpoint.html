@@ -7,6 +7,11 @@
 </div>
 <div class="row-fluid">
 	<div class="span12">
+		<h5>{{ url|add:endpoint }}</h5>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="span12">
 		<p>{{ description }}</p>
 	</div>
 </div>
@@ -15,20 +20,22 @@
 	</div>
 </div>
 <div class="row-fluid">
-	<div class="span6">
-		<p>
-			OAuth token automatically added. <input type="button" value="Log In" id="fetch_token" name="fetch_token"/> to use your own access token.
-		</p>
+	<div class="span12">
 		<div class="row-fluid">
-			<div class="span3">
-				<p>Token</p>
-			</div>
-			<div class="span9">
-				<input type="text" id="token" name="token" value="f377b77df0584f68a445080edda6a436">
+			<div class="span12">
+				<p>
+					OAuth token automatically added. <input type="button" value="Log In" id="fetch_token" name="fetch_token"/> to use your own access token.
+				</p>
 			</div>
 		</div>
-	</div>
-	<div class="span6">
+		<div class="row-fluid">
+			<div class="span1">
+				<p>Token</p>
+			</div>
+			<div class="span11">
+				<input type="text" id="token" name="token" value="f377b77df0584f68a445080edda6a436" style="width:40% !important">
+			</div>
+		</div>
 	</div>
 </div>
 <div class="row-fluid">
@@ -41,23 +48,15 @@
 		<form id="params">
 			<div class="row-fluid">
 				<div class="span12">
-					<div hidden="hidden" class"row-fluid">
-						<div class="span3">
-							<p> endpoint </p>
-						</div>
-						<div class="span9">
-							<input type="text" id="endpoint" name="endpoint" value={{ endpoint }} />
-						</div>
-					</div>
 					{% for key, value in params.items %}
-					<div class="row-fluid">
-						<div class="span3">
-							<p> {{ key }} </p>
-						</div>
-						<div class="span9">
-							<input type="text" name={{ key }} value={{ value }} />
-						</div>
-					</div>
+							<div {% if key == "property" %} hidden {% endif %} class="row-fluid">
+								<div class="span3">
+									<p> {{ key }} </p>
+								</div>
+								<div class="span9">
+									<input type="text" name={{ key }} value={{ value }} />
+								</div>
+							</div>
 					{% endfor %}
 				</div>
 			</div>
@@ -96,6 +95,9 @@
 	<div class="span12">
 	</div>
 </div>
+<script type="text/javascript">
+	var endpoint = "{{endpoint}}";
+</script>
 <script src='/assets/js/endpoints/fetch-from-api-server.js' type='text/javascript'></script>
 <script src='/assets/js/endpoints/fetch-token.js' type='text/javascript'></script>
 {% endblock %}
