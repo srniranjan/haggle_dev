@@ -1,58 +1,40 @@
 {% extends "base.html" %}
 {% block Styles %}
 <style type="text/css">
-ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-}
 </style>
 {% endblock %}
 {% block Content %}
 <div class="row-fluid">
     <div id="documentation-sidebar" class="span3" style="display:inline;font-family: 'Open Sans', sans-serif;float:left;padding: 0px;">
-        <ul class="devSidebarMenu affix nav nav-list" style="overflow-y:scroll;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;background-color: #fff;margin: 30px 0 0;padding-left:30px;padding-right:30px;max-height:450px">
-            <li><a href="#getting-started">Getting Started</h3>
+        <ul class="devSidebarMenu affix nav nav-list" style="overflow-y:scroll;-webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;background-color: #fff;margin: 30px 0 0;padding-left:30px;padding-right:30px;min-height:325px">
+            <li><h3>Documentation</h3>
                 <ul class="devSidebarSubMenu nav nav-list">
                     <li><a href="#oauth">OAuth 2.0</a></li>
                     <li><a href="#connecting">Connecting to Haggle</a></li>
-                    <li><a href="#endpoints">OAuth Endpoints</a></li>
+                    <li><a href="#oauth-endpoints">OAuth Endpoints</a></li>
                     <li><a href="#ratelimits">Rate Limits</a></li>
-                    <li><a href="#policies">Policies</a></li>
-                    <li><a href="#general">General API</a></li>
                     <li><a href="#sdk">SDK Platform</a></li>
                     <li><a href="#iphone">iPhone Redirect</a></li>
-                </ul>
-            </li>
-            <li class="divider"></li>
-            <li><a href="#documentation">Documentation</a>
-                <ul class="devSidebarSubMenu nav nav-list">
-                    <li><a href="#endpoints">API Endpoints</a></li>
-                    <li><a href="/api/explorer">Explorer</a></li>
-                    <li><a href="#realtime">Real-Time API</a></li>
+                    <li><a href="#api-endpoints">API Endpoints</a></li>
                     <li><a href="#responses">Responses and Errors</a></li>
                     <li><a href="#changelog">Changelog</a></li>
                 </ul>
             </li>
-            <li class="divider"></li>
-            <li><a href="#" id="resources">Resources</a>
-                <ul class="devSidebarSubMenu nav nav-list">
-                    <li><a href="#logos">Buttons &amp; Logos</a></li>
-                    <li><a href="#libraries">Libraries</a></li>
-                    <li><a href="#client">Client Resources</a></li>
-                    <li><a href="#tutorial">Tutorials and Samples</a></li>
-                </ul>
-            </li>
-            <li class="divider"></li>
-            <li><a href="#">Support</a></li>
-            <li class="divider" style="border:none"></li>
-        </ul>
+		</ul>
     </div>
     <div class="documentation-body span9" style="margin-left:0px">
-        <div id="getting-started">
-            <h1>Getting Started</h1>
+        <div id="documentation">
+			<h1>Documentation</h1>
             <div id="oauth">
-                <h2>OAuth</h2>
+				<div class="row-fluid">
+					<div class="span12">
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+					</div>
+				</div>
+				<h2>OAuth</h2>
                 <div>
                     <p>Haggle API uses <a href='http://oauth.net/2/'>OAuth 2.0</a>. Here is some information about OAuth.</p>
                     <div style="width:600px;height:400px">
@@ -61,53 +43,53 @@ ul {
                     <p>
                         <b>OAuth 2.0 involves three main entities :</b>
                     </p>
-                    <ol>
+                    <ul>
                         <li>The client needs to access a protected resource.</li>
                         <li>The resource (server hosting the resource) and the resource owner who controls access to the resource.</li>
                         <li>The authorization entity.</li>
-                    </ol>
+                    </ul>
                     <br>
                    <p><b>The 'abstract protocol flow' as per the OAuth 2.0 spec suggests the following steps :</b></p>
-                    <ol>
+                    <ul>
                         <li>The client requests the resource owner to grant authorization to some resources that the owner controls.</li>
                         <li>The resource owner issues an authorization grant to the client.</li>
                         <li>The client authenticates with the authorization server and presents the authorization grant, requesting for an access token.</li>
                         <li>The authorization server verifies the client and the authorization grant and issues an access token.</li>
                         <li>The client then authenticates with the resource server by presenting the access token and requests for protected resources.</li>
                         <li>The resource server on validating the access token, provides the client with the requested protected resources.</li>
-                    </ol>
+                    </ul>
                 </div>
             </div>
-			<div class="row-fluid">
-				<div class="span12">
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12">
-				</div>
-			</div>
             <div id="connecting">
-                <h2>Connecting to Haggle</h2>
+				<div class="row-fluid">
+					<div class="span12">
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+					</div>
+				</div>
+				<h2>Connecting to Haggle</h2>
                 <p>Connecting to Haggle is simple and easy. Just <a href="http://haggle-dev.appspot.com/developers/my_apps">sign up</a> with our api to obtain a client ID and secret. Using this, you can connect using them as parameters. Here is an example:(this is where I'll put an example)</p>
                 <br>
-                <ol>
+                <ul>
                     <li>The client intending to access protected Haggle resources registers with Haggle.</li>
                     <li>Haggle issues a Client ID and Client Secret.</li>
                     <li>The client uses the client ID and Client Secret to send an authorization request.</li>
                     <li>Haggle authenticates the client, grants the authorization request and returns a authorization code.</li>
                     <li>The client sends the client ID and secret along with the authorization code to request for an access token from Haggle.</li>
                     <li>Haggle authenticates the client, validates the authorization code and returns an access token.</li>
-                </ol>
+                </ul>
             </div>
-			<div class="row-fluid">
-				<div class="span12">
+			<div id="oauth-endpoints">
+				<div class="row-fluid">
+					<div class="span12">
+					</div>
 				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12">
+				<div class="row-fluid">
+					<div class="span12">
+					</div>
 				</div>
-			</div>
-			<div id="endpoints">
 				<div class="row-fluid">
 					<div class="span12">
 						<h2>OAuth Endpoints</h2>
@@ -155,15 +137,15 @@ ul {
 					</div>
 				</div>
 			</div>
-			<div class="row-fluid">
-				<div class="span12">
-				</div>
-			</div>
-			<div class="row-fluid">
-				<div class="span12">
-				</div>
-			</div>
             <div id="ratelimits">
+				<div class="row-fluid">
+					<div class="span12">
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+					</div>
+				</div>
                 <h2>Rate Limits</h2>
 				<p>An application can make 500 requests per access token per 15 minutes rolling window to the Haggle API. For the current usage information, look at the following HTTP response headers:</p>
 				<ul>
@@ -171,21 +153,20 @@ ul {
 					<li>RateLimit-ResetTime - Once the limit is reached, this header gives the time (in minutes) to wait before making another call.</li>
 				</ul>
             </div>
-        </div>
-		<div class="row-fluid">
-			<div class="span12">
-			</div>
-		</div>
-		<div class="row-fluid">
-			<div class="span12">
-			</div>
-		</div>
-        <div id="documentation">
-            <h1>Documentation</h1>
-            <div id="endpoints">
-                <h1>API End Points</h1>
+        	<div id="api-endpoints">
+				<div class="row-fluid">
+					<div class="span12">
+					</div>
+				</div>
+				<div class="row-fluid">
+					<div class="span12">
+					</div>
+				</div>
+                <h2>API End Points</h2>
                 {% include 'endpoints.html' %}
             </div>
+		</div>
+        <div id="documentation">
         </div>
 	</div>
 </div>
