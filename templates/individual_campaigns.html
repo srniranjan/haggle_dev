@@ -1,4 +1,37 @@
 {% extends "base.html" %}
+{% block Styles %}
+<style type="text/css">
+table{
+    table-layout: fixed;
+    width: 180px;
+}
+th, td {
+    overflow: hidden;
+    width: 90px;
+}
+</style>
+{% endblock %}
 {% block Content %}
-something something individual_campaigns and links and content <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+<div id="ic">
+	<h1>Individual Campaigns</h1>
+		<div class="row">
+			<div class="span4">
+				<table class="table table-hover">
+					<tr class="info">
+						<th>HTTP Method</th>
+						<td>GET</td>
+					</tr>
+					<tr class="info">
+						<th>Log in Required?</th>
+						<td>Yes</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<p>Returns the profile information of a given campaign. The web profile of your campaign is available at ***INSERT VENDOR SUPPORT SITE HERE***</p>
+
+		<p>This data is available only to approved users. See who you've given permissions to at ***INSERT VENDOR SUPPORT SITE HERE***</p>
+
+
+			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
 {% endblock %})

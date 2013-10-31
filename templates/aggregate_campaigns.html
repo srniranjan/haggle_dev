@@ -1,4 +1,37 @@
 {% extends "base.html" %}
+{% block Styles %}
+<style type="text/css">
+table{
+    table-layout: fixed;
+    width: 180px;
+}
+th, td {
+    overflow: hidden;
+    width: 90px;
+}
+</style>
+{% endblock %}
 {% block Content %}
-something something aggregate_campaigns and links and content <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+<div id="ac">
+	<h1>Aggregate Campaigns</h1>
+		<div class="row">
+			<div class="span4">
+				<table class="table table-hover">
+					<tr class="info">
+						<th>HTTP Method</th>
+						<td>GET</td>
+					</tr>
+					<tr class="info">
+						<th>Log in Required?</th>
+						<td>Yes</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<p>The aggregate campaigns API gathers data on campaigns across the country to help businesses optimize their sales.</p>
+
+		<p>Filler filler stuff</p>
+
+
+			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
 {% endblock %})
