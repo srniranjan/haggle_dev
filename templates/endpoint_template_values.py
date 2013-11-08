@@ -690,7 +690,7 @@ TEMPLATE_VALUES = {
                 }
             },
             'individual_campaigns_start': {
-            'header': 'Stard Campaign',
+            'header': 'Start Campaign',
             'url': 'https://haggle-test1.appspot.com/api/analytics/',
             'description': 'POST method to start a campaign.',
             'endpoint': 'users_search',
@@ -706,7 +706,23 @@ TEMPLATE_VALUES = {
                 }
             },
             'individual_deals_search': {
-            'header': 'Stard Campaign',
+            'header': 'Search Deals',
+            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'description': 'Returns information about your deals.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
+            'individual_deals_time': {
+            'header': 'Times Deals?',
             'url': 'https://haggle-test1.appspot.com/api/analytics/',
             'description': 'Returns information about your deals.',
             'endpoint': 'users_search',
