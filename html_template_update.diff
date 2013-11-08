@@ -1,0 +1,280 @@
+From 6de1a283f3806f65c32157bb00452a5809111f37 Mon Sep 17 00:00:00 2001
+From: Kevin <kevin@b-eagles.com>
+Date: Thu, 31 Oct 2013 19:03:38 -0400
+Subject: [PATCH] Html Updates
+
+---
+ html_template_update.diff           |  0
+ templates/aggregate_campaigns.html  | 35 ++++++++++++++++++++++++++++++++++-
+ templates/aggregate_deals.html      | 35 ++++++++++++++++++++++++++++++++++-
+ templates/individual_campaigns.html | 35 ++++++++++++++++++++++++++++++++++-
+ templates/individual_deals.html     | 35 ++++++++++++++++++++++++++++++++++-
+ templates/users.html                | 32 +++++++++++++++++++++++++++++++-
+ templates/vendors.html              | 32 +++++++++++++++++++++++++++++++-
+ 7 files changed, 198 insertions(+), 6 deletions(-)
+ create mode 100644 html_template_update.diff
+
+diff --git a/html_template_update.diff b/html_template_update.diff
+new file mode 100644
+index 0000000..e69de29
+diff --git a/templates/aggregate_campaigns.html b/templates/aggregate_campaigns.html
+index f8ebe9a..4d84df1 100644
+--- a/templates/aggregate_campaigns.html
++++ b/templates/aggregate_campaigns.html
+@@ -1,4 +1,37 @@
+ {% extends "base.html" %}
++{% block Styles %}
++<style type="text/css">
++table{
++    table-layout: fixed;
++    width: 180px;
++}
++th, td {
++    overflow: hidden;
++    width: 90px;
++}
++</style>
++{% endblock %}
+ {% block Content %}
+-something something aggregate_campaigns and links and content <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
++<div id="ac">
++	<h1>Aggregate Campaigns</h1>
++		<div class="row">
++			<div class="span4">
++				<table class="table table-hover">
++					<tr class="info">
++						<th>HTTP Method</th>
++						<td>GET</td>
++					</tr>
++					<tr class="info">
++						<th>Log in Required?</th>
++						<td>Yes</td>
++					</tr>
++				</table>
++			</div>
++		</div>
++		<p>The aggregate campaigns API gathers data on campaigns across the country to help businesses optimize their sales.</p>
++
++		<p>Filler filler stuff</p>
++
++
++			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+ {% endblock %})
+\ No newline at end of file
+diff --git a/templates/aggregate_deals.html b/templates/aggregate_deals.html
+index 84aea9e..ddfe497 100644
+--- a/templates/aggregate_deals.html
++++ b/templates/aggregate_deals.html
+@@ -1,4 +1,37 @@
+ {% extends "base.html" %}
++{% block Styles %}
++<style type="text/css">
++table{
++    table-layout: fixed;
++    width: 180px;
++}
++th, td {
++    overflow: hidden;
++    width: 90px;
++}
++</style>
++{% endblock %}
+ {% block Content %}
+-something something aggregate_deals and links and content <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
++<div id="ad">
++	<h1>Aggregate Deals</h1>
++		<div class="row">
++			<div class="span4">
++				<table class="table table-hover">
++					<tr class="info">
++						<th>HTTP Method</th>
++						<td>GET</td>
++					</tr>
++					<tr class="info">
++						<th>Log in Required?</th>
++						<td>Yes</td>
++					</tr>
++				</table>
++			</div>
++		</div>
++		<p>Who's spending the most money in the neighborhood? Can a business find more customers by moving? What kind of competition is a vendor facing?</p>
++
++		<p>The aggregate deals API helps businesses answer all these questions.</p>
++
++
++			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+ {% endblock %})
+\ No newline at end of file
+diff --git a/templates/individual_campaigns.html b/templates/individual_campaigns.html
+index 055b1da..87e6c0d 100644
+--- a/templates/individual_campaigns.html
++++ b/templates/individual_campaigns.html
+@@ -1,4 +1,37 @@
+ {% extends "base.html" %}
++{% block Styles %}
++<style type="text/css">
++table{
++    table-layout: fixed;
++    width: 180px;
++}
++th, td {
++    overflow: hidden;
++    width: 90px;
++}
++</style>
++{% endblock %}
+ {% block Content %}
+-something something individual_campaigns and links and content <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
++<div id="ic">
++	<h1>Individual Campaigns</h1>
++		<div class="row">
++			<div class="span4">
++				<table class="table table-hover">
++					<tr class="info">
++						<th>HTTP Method</th>
++						<td>GET</td>
++					</tr>
++					<tr class="info">
++						<th>Log in Required?</th>
++						<td>Yes</td>
++					</tr>
++				</table>
++			</div>
++		</div>
++		<p>Returns the profile information of a given campaign. The web profile of your campaign is available at ***INSERT VENDOR SUPPORT SITE HERE***</p>
++
++		<p>This data is available only to approved users. See who you've given permissions to at ***INSERT VENDOR SUPPORT SITE HERE***</p>
++
++
++			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+ {% endblock %})
+\ No newline at end of file
+diff --git a/templates/individual_deals.html b/templates/individual_deals.html
+index dd34d36..14a9b4c 100644
+--- a/templates/individual_deals.html
++++ b/templates/individual_deals.html
+@@ -1,4 +1,37 @@
+ {% extends "base.html" %}
++{% block Styles %}
++<style type="text/css">
++table{
++    table-layout: fixed;
++    width: 180px;
++}
++th, td {
++    overflow: hidden;
++    width: 90px;
++}
++</style>
++{% endblock %}
+ {% block Content %}
+-something something individual_deals and links and content <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
++<div id="id">
++	<h1>Individual Deals</h1>
++		<div class="row">
++			<div class="span4">
++				<table class="table table-hover">
++					<tr class="info">
++						<th>HTTP Method</th>
++						<td>GET</td>
++					</tr>
++					<tr class="info">
++						<th>Log in Required?</th>
++						<td>Yes</td>
++					</tr>
++				</table>
++			</div>
++		</div>
++		<p>Keep track of your customers who find out who's coming back for more. The individual deals API lets businesses find out more about their customers.</p>
++
++		<p>Returns a list of deal IDs given the search parameters.</p>
++
++
++			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+ {% endblock %})
+\ No newline at end of file
+diff --git a/templates/users.html b/templates/users.html
+index ee94591..72bd9b7 100644
+--- a/templates/users.html
++++ b/templates/users.html
+@@ -1,4 +1,34 @@
+ {% extends "base.html" %}
++{% block Styles %}
++<style type="text/css">
++table{
++    table-layout: fixed;
++    width: 180px;
++}
++th, td {
++    overflow: hidden;
++    width: 90px;
++}
++</style>
++{% endblock %}
+ {% block Content %}
+-something something users and links and content <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
++<div id="users">
++	<h1>Users</h1>
++		<div class="row">
++			<div class="span4">
++				<table class="table table-hover">
++					<tr class="info">
++						<th>HTTP Method</th>
++						<td>GET</td>
++					</tr>
++					<tr class="info">
++						<th>Log in Required?</th>
++						<td>No</td>
++					</tr>
++				</table>
++			</div>
++		</div>
++
++
++			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+ {% endblock %})
+\ No newline at end of file
+diff --git a/templates/vendors.html b/templates/vendors.html
+index b89621c..d1113b4 100644
+--- a/templates/vendors.html
++++ b/templates/vendors.html
+@@ -1,4 +1,34 @@
+ {% extends "base.html" %}
++{% block Styles %}
++<style type="text/css">
++table{
++    table-layout: fixed;
++    width: 180px;
++}
++th, td {
++    overflow: hidden;
++    width: 90px;
++}
++</style>
++{% endblock %}
+ {% block Content %}
+-something something vendors and links and content <FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
++<div id="vendors">
++	<h1>Vendors</h1>
++		<div class="row">
++			<div class="span4">
++				<table class="table table-hover">
++					<tr class="info">
++						<th>HTTP Method</th>
++						<td>GET</td>
++					</tr>
++					<tr class="info">
++						<th>Log in Required?</th>
++						<td>No</td>
++					</tr>
++				</table>
++			</div>
++		</div>
++
++
++			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+ {% endblock %})
+\ No newline at end of file
+-- 
+1.8.3.msysgit.0
+

@@ -23,12 +23,49 @@ th, td {
 					</tr>
 					<tr class="info">
 						<th>Log in Required?</th>
-						<td>No</td>
+						<td>Yes</td>
 					</tr>
 				</table>
 			</div>
 		</div>
-
-
+		<p>The Users API gives you the power to analyze various customers and scores.<b>This is adapted from our REST API so businesses may better analyze their data.</b></p>
+		<p>You can view our own data analyzer of your business at the <a href="#">Vendors console</a>.
+		<h3>List of endpoints</h3>
+		<div class="span6">
+		<table class="table table-hover">
+            <tr>
+                <th>Endpoint</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="/endpoints/render?property=users_search">Search</a></td>
+                <td>Look up a single user's info</td>
+            </tr>
+            <tr>
+                <td><a href="/endpoints/render?property=users_history">History</a></td>
+                <td>Filters deals by the History of the customers</td>
+            </tr>
+            <tr>
+                <td><a href="/endpoints/render?property=users_loyalty">Loyalty</a></td>
+                <td>Filters deals by the Loyalty of the customers</td>
+            </tr>
+            <tr>
+                <td><a href="/endpoints/render?property=users_social_influence">Social Influence</a></td>
+                <td>Filters deals by the Social Influence of the customers</td>
+            </tr>
+            <tr>
+                <td><a href="/endpoints/render?property=users_purchasing_power">Purchasing Power</a></td>
+                <td>Filters deals by the Purchasing Power of the customers</td>
+            </tr>
+            <tr>
+                <td><a href="/endpoints/render?property=users_deals">Deals</a></td>
+                <td>Recieve trending info of your deals</td>
+            </tr>
+        </table>
+    </div>
+    <div class="span6">
+    </div>
+    <div class="span12">
 			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+		</div>
 {% endblock %})

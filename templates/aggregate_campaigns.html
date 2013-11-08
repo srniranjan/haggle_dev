@@ -12,7 +12,7 @@ th, td {
 </style>
 {% endblock %}
 {% block Content %}
-<div id="ac">
+<div id="users">
 	<h1>Aggregate Campaigns</h1>
 		<div class="row">
 			<div class="span4">
@@ -28,10 +28,36 @@ th, td {
 				</table>
 			</div>
 		</div>
-		<p>The aggregate campaigns API gathers data on campaigns across the country to help businesses optimize their sales.</p>
-
-		<p>Filler filler stuff</p>
-
-
+		<p>The aggregate campaigns API gathers data on campaigns across the country to help businesses optimize their sales.</b></p>
+		<p>You can view our own data analyzer of your business at the <a href="#">Vendors console</a>.
+		<h3>List of endpoints</h3>
+		<div class="span6">
+		<table class="table table-hover">
+            <tr>
+                <th>Endpoint</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="/endpoints/render?property=aggregate_campaigns_search">Search</a></td>
+                <td>Analyze your campaigns history</td>
+            </tr>
+            <tr>
+                <td><a href="/endpoints/render?property=discount_trends">Discount Trends</a></td>
+                <td>See what discounts are trending to stay competitive in your neighborhood</td>
+            </tr>
+            <tr>
+                <td><a href="/endpoints/render?property=score_preference_trends">Score Preference Trends</a></td>
+                <td>See the aspects businesses in your area want</td>
+            </tr>
+            <tr>
+                <td><a href="/endpoints/render?property=aggregate_campaigns_hours_trends">Campaign Hours Trends</a></td>
+                <td>See when businesses are trying to get customers</td>
+            </tr>
+        </table>
+    </div>
+    <div class="span6">
+    </div>
+    <div class="span12">
 			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
+		</div>
 {% endblock %})
