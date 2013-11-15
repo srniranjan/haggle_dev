@@ -1,36 +1,112 @@
 {% extends "base.html" %}
+{% block Styles %}
+<link href="/assets/css/overview.css" type="text/css" rel="stylesheet">
+{% endblock %}
 {% block Content %}
-<div id="users">
-	<h1>Vendor data permissions</h1>
-		<div class="row">
-			<div class="span6">
-				<table class="table table-hover">
-					<tr>
-						<td>App Name</td>
-						<td>App ID</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Kevin's Business Analyzer App</td>
-						<td>RSADLJWQK21JKLJK</td>
-						<td><a href="#">Edit</a></td>
-					<tr>
-						<td>Foursquare App</td>
-						<td>JLQJLQW2123SDADA</td>
-						<td><a href="#">Edit</a></td>
-					</tr>
-				</table>
-			</div>
-		</div>
-			<div class="row-fluid">
-				<div class="span12">
-					<input 	type="submit"
-							value="Add an app"
-							class="haggle-font-type"
-							style="height: 40px; width: 200px; border-radius: 5px; background-color: #45acbf; font-weight: 200;font-size: 15px; color:#ffffff"/>
-				</div>
-			</div>
-<br><br><br>
 
-			<FORM><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
-{% endblock %})
+<a href="#"><img src="/assets/img/logos/yelplogo1.jpg" onclick="myFunction(0)"></a>
+<a href="#"><img src="/assets/img/logos/jcrewlogo1.jpg" onclick="myFunction(1)"></a>
+<a href="#"><img src="/assets/img/logos/smorgasburglogo1.jpg" onclick="myFunction(2)"></a>
+<a href="#"><img src="/assets/img/logos/foodandwinelogo1.jpg" onclick="myFunction(3)"></a>
+<a href="#"><img src="/assets/img/logos/canniballogo1.png" onclick="myFunction(4)"></a>
+<br><br><br>
+<div class="span12">
+	<div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+          	<div align="center">
+            	<img src="/assets/img/logos/yelplogo2.jpg" alt="">
+        	</div>
+            <div style="position:relative;">
+              <p><h3>Yelp</h3></p>
+              <p class="haggle-overview-text2" style="text-align:left !important">
+					While Yelp helps people find businesses in their neighborhood and see user generated reviews, they are constantly searching for ways to add value for their business owners and need to provide more options for users to connect with businesses directly on Yelp’s website. Yelp’s user reviews add a human element to discovering neighborhood businesses, but this feeling could be extended to developing relationships with the businesses themselves.
+				</p>
+				<p class="haggle-overview-text2" style="text-align:left !important">
+					By adding a Haggle Button to their business pages, Yelp can help a user easily find where they want to go and negotiate a personalized price while remaining on the page. This adds value for businesses by connecting them directly with customers and allowing them to instantly gain information about the type of customer coming in, or provide enticing bargains for the specific customers most important to them. The Haggle Button also instantly initiates a one-on-one, and mutually beneficial relationship between the Yelp user and a business.
+				</p>
+            </div>
+          </div>
+          <div class="item">
+          	<div align="center">
+            	<img src="/assets/img/logos/jcrewlogo2.jpg" alt="">
+        	</div>
+            <div style="position:relative;">
+              <p><h3>JCrew</h3></p>
+              <p class="haggle-overview-text2" style="text-align:left !important">
+					The J. Crew ecommerce team is under constant pressure to meet sales goals in a highly competitive online retail marketplace. Offering generic sitewide discounts boost units sold while greatly reduce margins. Sales also attract deal hunters without increasing lifetime user value. 
+				</p>
+				<p class="haggle-overview-text2" style="text-align:left !important">
+					Instead of offering sitewide sales, J. Crew incorporates the Haggle Button on product pages and at checkout, allowing users to negotiate for a personalized price. J. Crew can focus on rewarding loyal shoppers, supporting and strengthening long lasting relationships while getting a better understanding of their customer base in the process.
+				</p>
+            </div>
+          </div>
+          <div class="item">
+          	<div align="center">
+            	<img src="/assets/img/logos/SmorgasburgLogo2.jpg" alt="">
+            </div>
+            <div style="position:relative;">
+              <p><h3>Smorgasburg</h3></p>
+				<p class="haggle-overview-text2" style="text-align:left !important">
+					Smorgasburg, a New York food market featuring local vendors, attracts thousands of visitors every weekend. While people are introduced to a number of new restaurants and given the opportunity to try new foods, the vendors, as well as Smorgasburg, have no way to track or understand their customers. 
+				</p>
+				<p class="haggle-overview-text2" style="text-align:left !important">
+					By introducing the Haggle button to Smorgasburg’s website and app, Smorgasburg can get a deeper understanding of the patrons they attract and relay that valuable information to their vendors. Vendors can also offer bargains for the specific types of customers most important to them. For example, Blue Marble wants to attract customers who have a high Dessert History Score but haven’t tried Blue Marble before. Using Haggle, they can entice these customers to try Blue Marble’s ice cream and start a new relationship with them. Haggle helps both Smorgasburg and its vendors get to know their patrons and rewards their patrons at the same time.
+				</p>
+            </div>
+          </div>
+          <div class="item">
+          	<div align="center">
+            	<img src="/assets/img/logos/foodandwinelogo2.png" alt="">
+            </div>
+            <div style="position:relative;">
+              <p><h3>Food and Wine Online</h3></p>
+				<p class="haggle-overview-text2" style="text-align:left !important">
+					Food and Wine Magazine leverages its online content to sell advertising space and develop branded partnerships. While they offer demographic measurement and targeting for their advertisers, they want to provide more relative value than competitor sites and establish an advertising experience that benefits the user in a unique way. 
+				</p>
+				<p class="haggle-overview-text2" style="text-align:left !important">
+					By utilizing the Haggle Button in their ads and branded partnerships, Food and Wine helps readers understand that they can negotiate for a personalized offer once they click on the advertisement. Both Food and Wine as well as their advertising partners gain a deeper understanding of their potential customers, and the users enjoy a personalized experienced even when they’re served an ad.
+				</p>
+            </div>
+          </div>
+          <div class="item">
+          	<div align="center">
+            	<img src="/assets/img/logos/canniballogo2.jpg" alt="">
+            </div>
+            <div style="position:relative;">
+              <p><h3>The Cannibal</h3></p>
+				<p class="haggle-overview-text2" style="text-align:left !important">
+					The Cannibal, a current Haggle partner, has an understanding of the types of Haggle users they prefer, but they want to learn about general trends in their neighborhood and find out more about potential customers who they’re not attracting. 
+				</p>
+				<p class="haggle-overview-text2" style="text-align:left !important">
+					By accessing Haggle’s API, they can see Gramercy neighborhood trends by time, date, and user type. They realize they’re missing a lunch crowd that is normally loyal during dinner hours, and update their Haggle weekday campaign to attract loyal customers for lunch when The Cannibal have empty tables
+				</p>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block Scripts %}
+<script>
+$('.carousel').carousel({
+  interval: false
+})
+
+function myFunction(x)
+{
+$('.carousel').carousel(x)
+}
+</script>
+{% endblock %}
