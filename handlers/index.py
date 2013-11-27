@@ -70,9 +70,9 @@ class ServerFetchHandler(webapp2.RequestHandler):
         response = urlfetch.fetch(url).content
         self.response.out.write(response)
 
-class AdminPageMockUp(WebRequestHandler):
+class CaseStudies(WebRequestHandler):
 	def get(self):
-		path = 'vendor_admin_permissions_edit.html'
+		path = 'case_studies.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
 app = webapp2.WSGIApplication([('/', HomepageHandler),
@@ -85,5 +85,5 @@ app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/iphone_app', AppRedirect),
 	('/fetch_from_api_server', ServerFetchHandler),
 	('/contact', Contact),
-	('/vendor_admin_permissions_edit', AdminPageMockUp)
+	('/case_studies', CaseStudies)
 	])
