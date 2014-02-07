@@ -70,6 +70,11 @@ class ServerFetchHandler(webapp2.RequestHandler):
         response = urlfetch.fetch(url).content
         self.response.out.write(response)
 
+class CaseStudies(WebRequestHandler):
+	def get(self):
+		path = 'case_studies.html'
+		self.response.out.write(self.get_rendered_html(path, dict()))
+
 app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/overview', Overview),
 	('/tutorial', Tutorial),
@@ -79,5 +84,6 @@ app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/sdk_android', SDKAndroid),
 	('/iphone_app', AppRedirect),
 	('/fetch_from_api_server', ServerFetchHandler),
-	('/contact', Contact)
+	('/contact', Contact),
+	('/case_studies', CaseStudies)
 	])
