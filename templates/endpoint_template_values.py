@@ -26,7 +26,7 @@ TEMPLATE_VALUES = {
             },
         'score_preference_trends': {
             'header': 'Score Preference Trends',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns the score preference trends in the given area.',
             'endpoint': 'aggregate_campaigns',
             'params': {
@@ -50,7 +50,7 @@ TEMPLATE_VALUES = {
             },
         'bids_trends': {
             'header': 'Bids Trends',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': "Returns Users' bidding trends in the given area.",
             'endpoint': 'aggregate_deals',
             'params': {
@@ -74,7 +74,7 @@ TEMPLATE_VALUES = {
             },
         'user_trends': {
             'header': 'User Trends',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Placeholder description for User Trends',
             'endpoint': 'aggregate_deals',
             'params': {
@@ -98,8 +98,8 @@ TEMPLATE_VALUES = {
             },
         'time_trends': {
             'header': 'Time Trends',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
-            'description': 'Placeholder description for Time Trends',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description':'Discover what times an area goes deal crazy. Time Trends helps you plan for all the Haggle Happy Hours in your area. Or, look up time trends in other areas to see how your neighborhood shores up against them.',
             'endpoint': 'aggregate_deals',
             'params': {
                 'property': { 
@@ -122,8 +122,8 @@ TEMPLATE_VALUES = {
             },
         'average_spending': {
             'header': 'Average Spending',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
-            'description': 'Placeholder description for Average Spending',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Are you attracting big spenders or mass selling those hot cakes? Whatever your strategy is, check out if you are above or below the competition in your area.',
             'endpoint': 'aggregate_deals',
             'params': {
                 'property': { 
@@ -146,7 +146,7 @@ TEMPLATE_VALUES = {
             },
             'users_search': {
             'header': 'Users Search',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns a list of users that match your query. If you are a restaurant, check out our <a href="/endpoints/render?property=vendors_deal_history">Vendor deals history</a> search function to analyze your previous customers.',
             'endpoint': 'users_search',
             'params': {
@@ -170,7 +170,7 @@ TEMPLATE_VALUES = {
             },
             'users_history': {
             'header': 'Users History',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': '(Vendors only) Returns a list of customers with the specified minimum/maximum history score. If no parameters are set, returns a sorted list of previous customers. <br>Check out our <a href="http://google.com">Vendor deals history</a> search function to analyze your previous customers.',
             'endpoint': 'users_search',
             'params': {
@@ -190,7 +190,7 @@ TEMPLATE_VALUES = {
             },
             'users_loyalty': {
             'header': 'Users Loyalty',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': '(Vendors only) Returns a list of customers with the specified minimum/maximum loyalty score. If no parameters are set, returns a sorted list of previous customers. <br>Check out our <a href="http://google.com">Vendor deals history</a> search function to analyze your previous customers.',
             'endpoint': 'users_search',
             'params': {
@@ -210,7 +210,7 @@ TEMPLATE_VALUES = {
             },
             'users_social_influence': {
             'header': 'Users Social Influence',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': '(Vendors only) Returns a list of customers with the specified minimum/maximum Social Influence score. If no parameters are set, returns a sorted list of previous customers. <br>Check out our <a href="http://google.com">Vendor deals history</a> search function to analyze your previous customers.',
             'endpoint': 'users_search',
             'params': {
@@ -230,7 +230,7 @@ TEMPLATE_VALUES = {
             },
             'users_purchasing_power': {
             'header': 'Users Purchasing Power',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': '(Vendors only) Returns a list of customers with the specified minimum/maximum purchasing power score. If no parameters are set, returns a sorted list of previous customers. <br>Check out our <a href="http://google.com">Vendor deals history</a> search function to analyze your previous customers.',
             'endpoint': 'users_search',
             'params': {
@@ -250,9 +250,9 @@ TEMPLATE_VALUES = {
             },
             'vendors_categories': {
             'header': 'Vendors Categories',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns either the entire tree or leaf of our categories tree.',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_searh',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -274,7 +274,7 @@ TEMPLATE_VALUES = {
             },
             'users_deals': {
             'header': 'Vendors Deal History',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Analyze your data. Grab your business by the horns. <br>Returns a list of deals based on your parameters.',
             'endpoint': 'users_search',
             'params': {
@@ -321,9 +321,9 @@ TEMPLATE_VALUES = {
             },
             'vendors_explore': {
             'header': 'Vendors Explore',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns our REST API output for finding nearby vendors.',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -345,9 +345,9 @@ TEMPLATE_VALUES = {
             },
             'vendors_search': {
             'header': 'Vendors Search',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns vendors that match your parameters. See our <a href="/endpoints/render?property=vendors_explore">Explore API</a> if you want our REST API vendor search.',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -368,10 +368,10 @@ TEMPLATE_VALUES = {
                 }
             },
             'vendors_campaigns': {
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'header': 'Vendors Campaigns',
             'description': 'Returns a list of active campaigns based on your search query. See also our VENDORS EXPLORE api call for finding nearby campaigns.',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -393,10 +393,10 @@ TEMPLATE_VALUES = {
             },
             'vendors_hours': {
             'header': 'Vendors Hours',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             #TOFIX
             'description': 'Returns analytic hours of campaigns? I do not remember why we thought this was a good api endpoint.',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -418,10 +418,10 @@ TEMPLATE_VALUES = {
             },
             'vendors_tips': {
             'header': 'Vendors Explore',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             #TOFIX
             'description': 'Returns tips about a given restaurant ID? Do we even have an implementation for tips?',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -443,9 +443,9 @@ TEMPLATE_VALUES = {
             },
             'vendors_user_trends': {
             'header': 'Vendors User Trends',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -467,9 +467,9 @@ TEMPLATE_VALUES = {
             },
             'vendors_time_trends': {
             'header': 'Vendors Time Trends',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -491,9 +491,9 @@ TEMPLATE_VALUES = {
             },
             'vendors_average_spending': {
             'header': 'Vendors Average Spending',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -515,9 +515,9 @@ TEMPLATE_VALUES = {
             },
             'vendors_current_deals': {
             'header': 'Vendors Current Deals',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -539,9 +539,9 @@ TEMPLATE_VALUES = {
             },
             'vendors_links': {
             'header': 'Vendors Links',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -563,9 +563,9 @@ TEMPLATE_VALUES = {
             },
             'vendors_accept_deal': {
             'header': 'Vendors Accept Deal',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to accept an offer made by a customer. You can give permissions to which apps can make this post for you at /vendor_admin_permissions_edit',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -587,9 +587,9 @@ TEMPLATE_VALUES = {
             },
             'vendors_request_deal': {
             'header': 'Vendors Request Deal',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to request a deal to a vendor. I think.',
-            'endpoint': 'users_search',
+            'endpoint': 'vendors_search',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
@@ -611,7 +611,7 @@ TEMPLATE_VALUES = {
             },
             'aggregate_campaigns_hours_trends': {
             'header': 'Campaign Hours Trends',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to request a deal to a vendor. I think.',
             'endpoint': 'users_search',
             'params': {
@@ -635,7 +635,7 @@ TEMPLATE_VALUES = {
             },
             'individual_campaigns_search': {
             'header': 'Vendors Request Deal',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to request a deal to a vendor. I think.',
             'endpoint': 'users_search',
             'params': {
@@ -659,7 +659,7 @@ TEMPLATE_VALUES = {
             },
             'individual_campaigns_hours': {
             'header': 'Individual Campaign Hours',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns individual campaign hours.',
             'endpoint': 'users_search',
             'params': {
@@ -683,7 +683,7 @@ TEMPLATE_VALUES = {
             },
             'individual_campaigns_score_preferences': {
             'header': 'Individual Campaign Score Preferences',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns individual campaign score preferences.',
             'endpoint': 'users_search',
             'params': {
@@ -707,7 +707,7 @@ TEMPLATE_VALUES = {
             },
             'individual_campaigns_max_discount': {
             'header': 'Individual Campaign Maximum Discount',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns individual campaign maximum discount.',
             'endpoint': 'users_search',
             'params': {
@@ -731,7 +731,7 @@ TEMPLATE_VALUES = {
             },
             'individual_campaigns_minimum_discount': {
             'header': 'Individual Campaign Minimum Discount',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns individual campaign minimum discount.',
             'endpoint': 'users_search',
             'params': {
@@ -755,7 +755,7 @@ TEMPLATE_VALUES = {
             },
             'individual_campaigns_delete': {
             'header': 'Delete Campaign',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to delete a campaign.',
             'endpoint': 'users_search',
             'params': {
@@ -771,7 +771,7 @@ TEMPLATE_VALUES = {
             },
             'individual_campaigns_end': {
             'header': 'End Campaign',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to delete a campaign.',
             'endpoint': 'users_search',
             'params': {
@@ -787,7 +787,7 @@ TEMPLATE_VALUES = {
             },
             'individual_campaigns_start': {
             'header': 'Start Campaign',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to start a campaign.',
             'endpoint': 'users_search',
             'params': {
@@ -803,23 +803,7 @@ TEMPLATE_VALUES = {
             },
             'individual_deals_search': {
             'header': 'Search Deals',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
-            'description': 'Returns information about your deals.',
-            'endpoint': 'users_search',
-            'params': {
-                'property': { 
-                    'value': 'discount_trends',
-                    'description': 'property_desc'
-                    },
-                'id': { 
-                    'value': 34523323,
-                    'description': 'Deal ID.'
-                    }
-                }
-            },
-            'individual_deals_time': {
-            'header': 'Times Deals?',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns information about your deals.',
             'endpoint': 'users_search',
             'params': {
@@ -835,7 +819,7 @@ TEMPLATE_VALUES = {
             },
             'individual_deals_delete': {
             'header': 'Start Campaign',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to delete a deal.',
             'endpoint': 'users_search',
             'params': {
@@ -851,7 +835,7 @@ TEMPLATE_VALUES = {
             },
             'individual_deals_user_id': {
             'header': 'UID of Deals',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns information about your deals.',
             'endpoint': 'users_search',
             'params': {
@@ -867,7 +851,7 @@ TEMPLATE_VALUES = {
             },
             'individual_deals_bid': {
             'header': 'Bids Deals?',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns information about your deals.',
             'endpoint': 'users_search',
             'params': {
@@ -883,7 +867,7 @@ TEMPLATE_VALUES = {
             },
             'individual_deals_offer': {
             'header': 'Offers Deals?',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns information about your deals.',
             'endpoint': 'users_search',
             'params': {
@@ -899,7 +883,7 @@ TEMPLATE_VALUES = {
             },
             'individual_deals_delete': {
             'header': 'Start Campaign',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to delete a deal.',
             'endpoint': 'users_search',
             'params': {
@@ -915,7 +899,7 @@ TEMPLATE_VALUES = {
             },
             'individual_deals_delete': {
             'header': 'Start Campaign',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to delete a deal.',
             'endpoint': 'users_search',
             'params': {
@@ -931,7 +915,7 @@ TEMPLATE_VALUES = {
             },
             'individual_deals_delete': {
             'header': 'Start Campaign',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to delete a deal.',
             'endpoint': 'users_search',
             'params': {
@@ -947,7 +931,7 @@ TEMPLATE_VALUES = {
             },
             'individual_deals_make_public': {
             'header': 'Make Public',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to make a deal public.',
             'endpoint': 'users_search',
             'params': {
@@ -963,7 +947,7 @@ TEMPLATE_VALUES = {
             },
             'individual_deals_make_private': {
             'header': 'Make Private',
-            'url': 'https://haggle-test1.appspot.com/api/analytics/',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'POST method to make a deal priate.',
             'endpoint': 'users_search',
             'params': {
