@@ -258,18 +258,10 @@ TEMPLATE_VALUES = {
                     'value': 'discount_trends',
                     'description': 'property_desc'
                     },
-                'lat': {
-                    'value': 40.745619,
-                    'description': 'WAIT WHAT VARIABLES DO I PUT IN.'
+                'leaf': {
+                    'value': 'American',
+                    'description': '(Optional) Node which you want to start with. Leave blank for the whole tree.'
                     },
-                'lon': {
-                    'value': -73.985296,
-                    'description': 'Longitude of the location.'
-                    },
-                'radius': { 
-                    'value': 3000,
-                    'description': 'Radius (in meters).'
-                    }
                 }
             },
             'users_deals': {
@@ -379,16 +371,24 @@ TEMPLATE_VALUES = {
                     },
                 'lat': {
                     'value': 40.745619,
-                    'description': 'WAIT WHAT VARIABLES DO I PUT IN.'
+                    'description': 'Latitude'
                     },
                 'lon': {
                     'value': -73.985296,
-                    'description': 'Longitude of the location.'
+                    'description': 'Longitude'
                     },
                 'radius': { 
                     'value': 3000,
-                    'description': 'Radius (in meters).'
-                    }
+                    'description': 'Radius (in meters)'
+                    },
+                'time_start': { 
+                    'value': 1230,
+                    'description': 'Time in HHMM format of campaign start time'
+                    },
+                'time_end': { 
+                    'value': 2359,
+                    'description': 'Time in HHMM format of campaign end time'
+                    },
                 }
             },
             'vendors_hours': {
