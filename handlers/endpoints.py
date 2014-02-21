@@ -34,6 +34,7 @@ class EndpointRenderHandler(WebRequestHandler):
     def get(self):
         property = self.request.get('property')
         template_values = values.TEMPLATE_VALUES[property]
+        template_values["token"]="asdsd"
         path = 'endpoint.html'
         self.response.out.write(self.get_rendered_html(path, template_values))
                 

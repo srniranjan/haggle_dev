@@ -445,79 +445,55 @@ TEMPLATE_VALUES = {
             'header': 'Vendors User Trends',
             'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
-            'endpoint': 'vendors_search',
+            'endpoint': 'vendors_deals',
             'params': {
                 'property': { 
-                    'value': 'discount_trends',
+                    'value': 'vendors_user_trends',
                     'description': 'property_desc'
                     },
-                'lat': {
-                    'value': 40.745619,
-                    'description': 'WAIT WHAT VARIABLES DO I PUT IN.'
+                'vendor_id': {
+                    'value': 166069,
+                    'description': 'Vendor ID'
                     },
-                'lon': {
-                    'value': -73.985296,
-                    'description': 'Longitude of the location.'
-                    },
-                'radius': { 
-                    'value': 3000,
-                    'description': 'Radius (in meters).'
-                    }
                 }
             },
             'vendors_time_trends': {
             'header': 'Vendors Time Trends',
             'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
-            'endpoint': 'vendors_search',
+            'endpoint': 'vendors_deals',
             'params': {
                 'property': { 
-                    'value': 'discount_trends',
+                    'value': 'vendors_time_trends',
                     'description': 'property_desc'
                     },
-                'lat': {
-                    'value': 40.745619,
-                    'description': 'WAIT WHAT VARIABLES DO I PUT IN.'
+                'vendor_id': {
+                    'value': 166069,
+                    'description': 'Vendor ID'
                     },
-                'lon': {
-                    'value': -73.985296,
-                    'description': 'Longitude of the location.'
-                    },
-                'radius': { 
-                    'value': 3000,
-                    'description': 'Radius (in meters).'
-                    }
                 }
             },
             'vendors_average_spending': {
             'header': 'Vendors Average Spending',
             'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
-            'endpoint': 'vendors_search',
+            'endpoint': 'vendors_deals',
             'params': {
                 'property': { 
-                    'value': 'discount_trends',
+                    'value': 'vendors_average_spending',
                     'description': 'property_desc'
                     },
-                'lat': {
-                    'value': 40.745619,
-                    'description': 'WAIT WHAT VARIABLES DO I PUT IN.'
+                'vendor_id': {
+                    'value': 166069,
+                    'description': 'Vendor ID'
                     },
-                'lon': {
-                    'value': -73.985296,
-                    'description': 'Longitude of the location.'
-                    },
-                'radius': { 
-                    'value': 3000,
-                    'description': 'Radius (in meters).'
-                    }
                 }
             },
             'vendors_current_deals': {
             'header': 'Vendors Current Deals',
             'url': 'https://'+ENV_NAME+'/api/analytics/',
             'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
-            'endpoint': 'vendors_search',
+            'endpoint': 'vendors_deals',
             'params': {
                 'property': { 
                     'value': 'discount_trends',
