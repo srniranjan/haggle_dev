@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="http://maps.google.com/maps/api/js?key=AIzaSyAnvLqTCbA5jqAEf060MUI6Ng0WHbsS91w&sensor=false">
+    </script>
+    <script type="text/javascript" src="/assets/js/lib/heatmap.js"></script>
+    <script type="text/javascript" src="/assets/js/lib/heatmap-gmaps.js"></script>
+    <script type="text/javascript" src="/assets/js/lib/jquery.min.js"></script>
+    <script type="text/javascript">
+      function initialize() {
+  var mapOptions = {
+    zoom: 8,
+    center: new google.maps.LatLng(-34.397, 150.644)
+  };
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+}
+
+function loadScript() {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+      'callback=initialize';
+  document.body.appendChild(script);
+}
+    </script>
+  </head>
+  <body>
+  <form id="params">
+                <input type="text" id="token" name="token" value="f377b77df0584f68a445080edda6a436" style="width:30% !important">
+                <input type="text" name="lat" value=40.745619 style="width:75% !important"/>
+                <input type="text" name="lon" value=-73.985296 style="width:75% !important"/>
+                <input type="text" name="radius" value=3000 style="width:75% !important"/>
+                <input  type="submit"
+                            value="Try it out!"
+                            class="haggle-font-type"
+                            onclick="loadScript()"
+                            style="height: 40px; width: 200px; border-radius: 5px; background-color: #45acbf; font-weight: 200;font-size: 15px; color:#ffffff"/>
+  </form>
+  <button onclick = "loadScript()">Click</button>
+    <div id="map-canvas"/>
+  </body>
+</html>
