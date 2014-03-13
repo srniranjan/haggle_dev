@@ -44,6 +44,11 @@ class APIExplorer(WebRequestHandler):
 		path = 'api_explorer.html'
 		self.response.out.write(self.get_rendered_html(path,dict()))
 
+class DiscountsMap(WebRequestHandler):
+	def get(self):
+		path = 'discounts_map.html'
+		self.response.out.write(self.get_rendered_html(path,dict()))
+
 
 
 app = webapp2.WSGIApplication([
@@ -54,4 +59,5 @@ app = webapp2.WSGIApplication([
 	('/api/aggregate_deals', APIAggregateDeals),
 	('/api/individual_deals', APIIndividualDeals),
 	('/api/explorer', APIExplorer),
+	('/api/discount_map', DiscountsMap),
 	])
