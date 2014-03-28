@@ -32,6 +32,7 @@ $(document).ready(function() {
 		var current_link = this.href.substring(this.href.lastIndexOf('/'));
 		if(accessed_page===current_link) {
 			this.style.color="#e58170";
+			this.style.borderBottom="solid #dcdcdc"
 			return false;
 		}
 	});
