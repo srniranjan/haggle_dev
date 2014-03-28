@@ -28,7 +28,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 	var url = document.URL;
 	var accessed_page = url.substring(url.lastIndexOf('/'));
-	$("#c820 a").each(function() {
+	$("#c820 .pull-right a").each(function() {
 		var current_link = this.href.substring(this.href.lastIndexOf('/'));
 		if(accessed_page===current_link) {
 			this.style.color="#e58170";
