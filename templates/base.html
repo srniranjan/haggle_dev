@@ -8,10 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/assets/css/normalize.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <!--<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">-->
     <link href="/assets/css/haggle_base.css" type="text/css" rel="stylesheet">
     {% block Styles %}{% endblock %}
-	<!--<script src="/assets/js/config.js"></script>-->
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -30,32 +28,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="/assets/js/haggle_base.js"></script>
     <div class="wrap" style="background-color: #e2e2e2;">
-        <!--<div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                 </a>
-             <div class="span2" style="text-align: center;">
-            <a id="vendor-header-link" href="/"><img src="/assets/img/developers/haggle-dev-logo.png"/></a>            
-        </div>
-              <div class="span10 nav-collapse" style="height: auto;">
-                <ul class="nav pull-right">
-                <li><a href="http://gethaggle.com/developers/my_apps" class="haggle-link hover-enabled">MY APPS</a></li>
-                <li><a href="/overview" class="haggle-link hover-enabled">OVERVIEW</a></li>
-                <li><a href="/documentation" class="haggle-link hover-enabled">DOCUMENTATION</a></li>
-                <li><a href="https://www.facebook.com/haggleapp" class="haggle-link hover-enabled">BLOG</a></li>
-                <li><a href="/contact" class="haggle-link hover-enabled">CONTACT</a></li>
-            </ul>
-              </div>
-         
-            </div>-->
         <div id="navbar-fluid" class="navbar navbar-fixed-top">
             <div class="navbar-inner">
-                    {% block NavLinks %}
-                    {% endblock %}
                     <div id="c820" class="container-fluid hidden-phone">
                         <div class="row-fluid">
                             <div class="span1">
@@ -78,54 +52,6 @@
                             </div>
                         </div>
                     </div>
-                    <div id="s820" class="container-fluid visible-phone" style="display:none">
-                        <div class="row-fluid">
-                            <div class="span12">
-                                <ul class="nav">
-                                    <li class="dropdown">
-                                        <a style="padding:0px" href="#" data-toggle="dropdown">
-                                            <img src="/assets/img/Haggle_Mobile_navbar_menu_icon.png" alt="Menu Icon" height="20"/>
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a href="/" class="haggle-link">
-                                                    <div style="text-align:center">HOME</div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="http://haggle-dev.appspot.com/developers/my_apps" class="haggle-link">
-                                                    <div style="text-align:center">MY APPS</div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/overview" class="haggle-link">
-                                                    <div style="text-align:center">OVERVIEW</div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/documentation" class="haggle-link">
-                                                    <div style="text-align:center">DOCUMENTATION</div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="http://facebook.com/haggleapp" class="haggle-link">
-                                                    <div style="text-align:center">BLOG</div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="/contact" class="haggle-link">
-                                                    <div style="text-align:center">CONTACT</div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="haggle-logo-small">
-                                        <a style="padding:0px;margin-left:75px" id="vendor-header-link" class="brand" href="/"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <br><br><br>
@@ -133,16 +59,12 @@
             {% block Content %}{% endblock %}
         </div>
     </div>
-</div>
-    
 	<footer style="background-color:#e58170; background-image:none; min-height: 5%">
 		<img class="bg" style="padding-top:14px" src="/assets/img/common/Haggle_Logo_footer.png" alt="Haggle Logo Footer"/>
 	</footer>
-    
     <script src="//ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.0.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="/assets/js/lib/bootstrap.min.js"></script>
-    <!--<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>-->
     {% block Scripts %}{% endblock %}
 </body>
 </html>
