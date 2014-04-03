@@ -44,6 +44,11 @@ $(document).ready(function() {
 	});
 });
 
+function toggleNavArrow() {
+    $('.mobile-nav-arrow').each(function(){
+        $(this).toggle();
+    });
+}
 
 
 function highlightNavbarLink(selectedLink) {
