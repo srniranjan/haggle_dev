@@ -36,16 +36,6 @@ class RestAPI(WebRequestHandler):
 		path = 'rest_api.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
-class SDK(WebRequestHandler):
-	def get(self):
-		path = 'sdk_iphone.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
-class SDKAndroid(WebRequestHandler):
-	def get(self):
-		path = 'sdk_android.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
 class AppRedirect(WebRequestHandler):
 	def get(self):
 		path = 'iphone_app.html'
@@ -80,8 +70,6 @@ app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/tutorial', Tutorial),
     ('/documentation', Documentation),
 	('/rest_api', RestAPI),
-	('/sdk_iphone', SDK),
-	('/sdk_android', SDKAndroid),
 	('/iphone_app', AppRedirect),
 	('/fetch_from_api_server', ServerFetchHandler),
 	('/contact', Contact),

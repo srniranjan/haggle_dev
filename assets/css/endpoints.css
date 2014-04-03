@@ -1,0 +1,152 @@
+ol{
+    margin:0;padding:0
+}
+.c1{
+    vertical-align:top;
+    width:117pt;
+    border-style:solid;
+    border-color:#000000;
+    border-width:1pt;
+    padding:
+    5pt 5pt 5pt 5pt
+}
+.c11{
+    max-width:468pt;
+    background-color:#ffffff;
+    padding:72pt 72pt 72pt 72pt
+}
+.c13{
+    color:#ff0000;
+    font-size:24pt
+}
+.c4{
+    color:#ff0000;
+    font-size:9pt
+}
+.c3{
+    color:#00ff00;
+    font-size:9pt
+}
+.c0{
+    line-height:1.0;
+    direction:ltr
+}
+.c14{
+    color:#00ff00;
+    font-size:24pt
+}
+.c8{
+    height:11pt
+}
+.c7{
+    border-collapse:collapse
+}
+.c15{
+    color:#ff0000
+}
+.c2{
+    height:0pt
+}
+.c9{
+    font-weight:bold
+}
+.c12{
+    direction:ltr
+}
+.c5{
+    font-size:9pt
+}
+.c6{
+    color:#0000ff
+}
+.c10{
+    height:43pt
+}
+.title{
+    padding-top:0pt;
+    line-height:1.15;
+    text-align:left;
+    color:#000000;
+    font-size:21pt;
+    font-family:"Trebuchet MS";
+    padding-bottom:0pt
+}
+.subtitle{
+    padding-top:0pt;
+    line-height:1.15;
+    text-align:left;
+    color:#666666;
+    font-style:italic;
+    font-size:13pt;
+    font-family:"Trebuchet MS";
+    padding-bottom:10pt
+}
+li{
+    color:#000000;
+    font-size:11pt;
+    font-family:"Arial"
+}
+p{
+    color:#000000;
+    font-size:11pt;
+    margin:0;
+    font-family:"Arial"
+}
+h1{
+    padding-top:10pt;
+    line-height:1.15;
+    text-align:left;
+    color:#000000;
+    font-size:16pt;
+    font-family:"Trebuchet MS";
+    padding-bottom:0pt
+}
+h2{
+    padding-top:10pt;
+    line-height:1.15;
+    text-align:left;
+    color:#000000;
+    font-size:13pt;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    padding-bottom:0pt
+}
+h3{
+    padding-top:8pt;
+    line-height:1.15;
+    text-align:left;
+    color:#666666;
+    font-size:12pt;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    padding-bottom:0pt
+}
+h4{
+    padding-top:8pt;
+    line-height:1.15;
+    text-align:left;
+    color:#666666;
+    font-size:11pt;
+    text-decoration:underline;
+    font-family:"Trebuchet MS";
+    padding-bottom:0pt
+}
+h5{
+    padding-top:8pt;
+    line-height:1.15;
+    text-align:left;
+    color:#666666;
+    font-size:11pt;
+    font-family:"Trebuchet MS";
+    padding-bottom:0pt
+}
+h6{
+    padding-top:8pt;
+    line-height:1.15;
+    text-align:left;
+    color:#666666;
+    font-style:italic;
+    font-size:11pt;
+    font-family:"Trebuchet MS";
+    padding-bottom:0pt
+}

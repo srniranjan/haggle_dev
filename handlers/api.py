@@ -9,41 +9,6 @@ class WebRequestHandler(webapp2.RequestHandler):
     def get_rendered_html(self, template_name, template_values = None):
         return loader.render_to_string(template_name, template_values)
 
-class APIUsers(WebRequestHandler):
-	def get(self):
-		path = 'users.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
-class APIVendors(WebRequestHandler):
-	def get(self):
-		path = 'vendors.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
-class APIAggregateCampaigns(WebRequestHandler):
-	def get(self):
-		path = 'aggregate_campaigns.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-		
-class APIIndividualCampaigns(WebRequestHandler):
-	def get(self):
-		path = 'individual_campaigns.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
-class APIAggregateDeals(WebRequestHandler):
-	def get(self):
-		path = 'aggregate_deals.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-		
-class APIIndividualDeals(WebRequestHandler):
-	def get(self):
-		path = 'individual_deals.html'
-		self.response.out.write(self.get_rendered_html(path, dict()))
-
-class APIExplorer(WebRequestHandler):
-	def get(self):
-		path = 'api_explorer.html'
-		self.response.out.write(self.get_rendered_html(path,dict()))
-
 class DiscountsMap(WebRequestHandler):
 	def get(self):
 		path = 'discounts_map.html'
@@ -52,12 +17,5 @@ class DiscountsMap(WebRequestHandler):
 
 
 app = webapp2.WSGIApplication([
-	('/api/users', APIUsers),
-	('/api/vendors', APIVendors),
-	('/api/aggregate_campaigns', APIAggregateCampaigns),
-	('/api/individual_campaigns', APIIndividualCampaigns),
-	('/api/aggregate_deals', APIAggregateDeals),
-	('/api/individual_deals', APIIndividualDeals),
-	('/api/explorer', APIExplorer),
 	('/api/discount_map', DiscountsMap),
 	])
