@@ -13,7 +13,6 @@ html *
 {% endblock %}
 {% block Content %}
 <div id="wrapper">
-	<h1>Documentation</h1>
 	<div id="main">
 <!-- start sidebar -->
 		<div id="sidebar">
@@ -64,7 +63,7 @@ html *
                         <li>The client then authenticates with the resource server by presenting the access token and requests for protected resources.</li>
                         <li>The resource server on validating the access token, provides the client with the requested protected resources.</li>
                     </ul>
-				<div class="pages">Next page</div>
+				<div class="pages"></div>
 			</div>
 			<div class="tab-pane fade" id="connecting">
 				<div class="breadcrumbs">Documentation / Connecting to Haggle</div>
@@ -351,12 +350,10 @@ html *
 	</div>
 <!-- end wrapper -->
 </div>
-<br><br>
 <!-- end wrapper -->
 
 <script>
 $('#navTab a').click(function (e) {
-  e.preventDefault();
   $(this).tab('show');
 })
 </script>
