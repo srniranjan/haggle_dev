@@ -1,4 +1,4 @@
-ol{
+.endpoints ol{
     margin:0;padding:0
 }
 .c1{
@@ -81,18 +81,18 @@ ol{
     font-family:"Trebuchet MS";
     padding-bottom:10pt
 }
-li{
+.endpoints li{
     color:#000000;
     font-size:11pt;
     font-family:"Arial"
 }
-p{
+.endpoints p{
     color:#000000;
     font-size:11pt;
     margin:0;
     font-family:"Arial"
 }
-h1{
+.endpoints h1{
     padding-top:10pt;
     line-height:1.15;
     text-align:left;
@@ -101,7 +101,7 @@ h1{
     font-family:"Trebuchet MS";
     padding-bottom:0pt
 }
-h2{
+.endpoints h2{
     padding-top:10pt;
     line-height:1.15;
     text-align:left;
@@ -111,7 +111,7 @@ h2{
     font-weight:bold;
     padding-bottom:0pt
 }
-h3{
+.endpoints h3{
     padding-top:8pt;
     line-height:1.15;
     text-align:left;
@@ -121,7 +121,7 @@ h3{
     font-weight:bold;
     padding-bottom:0pt
 }
-h4{
+.endpoints h4{
     padding-top:8pt;
     line-height:1.15;
     text-align:left;
@@ -131,7 +131,7 @@ h4{
     font-family:"Trebuchet MS";
     padding-bottom:0pt
 }
-h5{
+.endpoints h5{
     padding-top:8pt;
     line-height:1.15;
     text-align:left;
@@ -140,7 +140,7 @@ h5{
     font-family:"Trebuchet MS";
     padding-bottom:0pt
 }
-h6{
+.endpoints h6{
     padding-top:8pt;
     line-height:1.15;
     text-align:left;

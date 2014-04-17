@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="/assets/js/lib/bootstrap.min.js"></script>
+	<link href="/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+
+	<title>Haggle Platforms | Integrate / Code</title>
+</head>
+<body>
+
+<!-- Start wrapper -->
+<nav id="navbar"></nav>
+
+<div id="wrapper">
+
+	<div id="top-bar">
+		
+			<ul class="section-menu">
+				<li><a href="/overview">Get The Code</a></li>
+				<li><a href="/case_studies">Case Studies</a></li>
+				<li><a href="/documentation">Documentation</a></li>
+			</ul>
+		
+	</div>
+	<div id="main">
+		<div id="sidebar">
+			<ul id="navTab" class="sidebar-menu">
+				<ul class="sub-sidebar-menu-1">
+					<li class="active"><a href="#getstarted">Get Started</a></li>
+						<li><a href="#doityourself">Do it yourself</a></li>
+						<li><a href="#SDK">Use our SDK</a></li>
+						<li><a href="#app">Delegate to App</a></li>
+				</ul>
+			</ul>
+
+		</div>
+<!-- end sidebar -->
+<!-- start main content -->
+		<div class="tab-content content" id="mainpage">
+			<div class="tab-pane active fade in" id="getstarted">
+				<div class="breadcrumbs">Get Started</div>
+                    <p>
+                        Gain access to our vast network of API endpoints to improve your app.<br>
+						Apps connect to the Haggle API using Oauth2. <br>
+						You can connect to our endpoints using one of the following mechanisms:
+                    </p>
+				<div class="pages"></div>
+			</div>
+			<div class="tab-pane fade" id="doityourself">
+				<div class="breadcrumbs">Get Started / Do it yourself</div>
+				<p>
+					Apps connect to the Haggle API using Oauth2. 
+					You can connect by following these easy steps:
+				</p>
+				<br>
+				<h4>Register</h4>
+				<p>
+					<a href='/developers/my_apps'>Register</a> with us to obtain a Client ID and Secret. 
+					You will have to use this information to make any call to our platform.
+				</p>
+				<br>
+				<h4>Obtain Access Token</h4>
+				<p>
+					Some of our endpoints require explicit user approval. 
+					You will need an access token to use such endpoints. 
+					Here are the steps taken to obtain and use an access token.
+				</p>
+				<br>
+				<p>You can explore our API by checking out our 
+					<a href='/endpoints'>endpoints</a>. 
+					Check our <a href='/documentation'>documentation</a> to learn more about accessing our API</p>
+			</div>
+			<div class="tab-pane fade" id="SDK">
+				<div class="breadcrumbs">Get Started / Use our SDK</div>
+				<p>
+					Our SDK will take care of the hard stuff so your app can easily use our API.
+				</p>
+				<br>
+				<h4>iPhone and Android SDK</h4>
+				<p>Our SDK packages make obtaining and using access tokens a cinch</p>
+				<a href="http://github.com/linktoSDK">
+					<input type="button" 
+						   value="Download latest SDK" 
+						   class="haggle-font-type"
+						   style="height: 40px; width: 200px; border-radius: 5px; background-color: #45acbf; font-weight: 200;font-size: 15px; color:#ffffff"/>
+				</a>
+				<p>If you have specific endpoints in mind, we may have prepackaged what you're looking for in one of our Haggling screens built for third party use</p>
+			</div>
+			<div class="tab-pane fade" id="app">
+				<div class="breadcrumbs">Get Started / Delegate to Haggle App</div>
+				<p>See how your iPhone app can harness the power of Haggle without the need to talk to our API</p>
+				<br>
+				<p>By simply redirecting to our Haggle app, you can skip the line and get the info you need without authenticating or accessing our API.</p>
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+<!-- End wrapper -->
+
+<script>
+$('#navTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})
+</script>
+
+
+
+</body>
+</html>
+
+
+

@@ -22,7 +22,7 @@ class HomepageHandler(WebRequestHandler):
 
 class Overview(WebRequestHandler):
 	def get(self):
-		path = 'overview.html'
+		path = 'integrate_code.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
 
@@ -48,7 +48,7 @@ class Contact(WebRequestHandler):
 
 class Documentation(WebRequestHandler):
 	def get(self):
-		path = 'documentation.html'
+		path = 'integrate_docs.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
 class ServerFetchHandler(webapp2.RequestHandler):
@@ -62,7 +62,7 @@ class ServerFetchHandler(webapp2.RequestHandler):
 
 class CaseStudies(WebRequestHandler):
 	def get(self):
-		path = 'case_studies.html'
+		path = 'integrate_case-studies.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
 app = webapp2.WSGIApplication([('/', HomepageHandler),
