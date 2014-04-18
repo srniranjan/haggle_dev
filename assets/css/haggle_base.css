@@ -290,7 +290,7 @@ footer {
 }
 
 .navbar-inner {
-  background-color: rgba(255,255,255,0.95);
+  background-color: #e07c77;
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
@@ -374,7 +374,15 @@ a,a:hover {
 }
 
 .app-button-top {
-    padding:0px;margin:0px;background-color:transparent;width:344px;height:76px;border-radius:5px;box-shadow:none;border:2px solid #e07c77;color:#e07c77;font-size:21px;
+    padding:0px;
+    margin:0px;
+    background-color:transparent;
+    width:344px;
+    height:76px;
+    border-radius:5px;
+    box-shadow:none;border:2px solid #e07c77;
+    color: #ffffff;
+    font-size:21px;
     -webkit-transition: 0.5s ease color;
     -webkit-transition: 0.5s ease background-color;
     transition: 0.5s ease color;
@@ -382,8 +390,8 @@ a,a:hover {
 }
 
 .app-button-top:hover {
-    background-color: #e07c77;
-    color: #ffffff;
+    background-color: white !important;
+    color: #e07c77;
 }
 
 button:focus {outline:none;}

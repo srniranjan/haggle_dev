@@ -14,7 +14,18 @@
 <body>
 
 <!-- Start wrapper -->
-<nav id="navbar"></nav>
+<nav id="navbar">
+	<div class="span1">
+    </div>
+    <div class="span1" style="text-align: center;">
+        <a id="vendor-header-link" href="/">
+            <img src="/assets/img/developers/dev-logo.png" style="max-width:none; padding-top:6px;"/>
+        </a>
+    </div>
+    <div class="span9">
+    <!-- NavLinks here -->
+    </div>
+</nav>
 
 <div id="wrapper">
 
@@ -164,76 +175,6 @@
 				<div class="breadcrumbs">Documentation / Endpoints</div>
 				<p>Below is a list of our endpoints.</p>
                 <br>
-                <h3>API for Users:</h3>
-                <table cellpadding="0" cellspacing="0" class="table table-striped table-bordered table-hover" style="background-color: #f0f0f0">
-					<tbody>
-						<tr>
-							<td>
-							</td>
-							<td>
-								<p>General</p>
-							</td>
-							<td>
-								<p>Aspects</p>
-							</td>
-							<td>
-								<p>Actions</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>
-									<a href="/api/vendors">Vendors</a>
-								</p>
-							</td>
-							<td>
-								<p>
-									<a href="/endpoints/render?property=vendors_categories">Categories</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=vendors_explore">Explore</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=vendors_search">Search</a>
-								</p>
-							</td>
-							<td>
-								<p>
-									<a href="/endpoints/render?property=vendors_hours" style="color:red">Hours</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=vendors_tips" style="color:red">Tips</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=vendors_links" style="color:red">Links</a>
-								</p>
-							</td>
-							<td>
-								<p>
-									<a href="/endpoints/render?property=vendors_request_deal">Request Deal</a>
-								</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p><a href="/endpoints/render?property=individual_deals">Individual Deals</a></p>
-							</td>
-							<td>
-								<p><a href="/endpoints/render?property=individual_deals_search">Search</a></p>
-							</td>
-							<td>
-								<p><a href="/endpoints/render?property=individual_deals_user_id">User ID</a></p>
-								<p><a href="/endpoints/render?property=individual_deals_bid">Bid</a></p>
-								<p><a href="/endpoints/render?property=individual_deals_offer">Offer</a></p>	
-							</td>
-							<td>
-								<p><a href="/endpoints/render?property=individual_deals_delete">Delete</a></p>
-								<p><a href="/endpoints/render?property=individual_deals_make_public">Make Public</a></p>
-								<p><a href="/endpoints/render?property=individual_deals_make_private">Make Private</a></p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
 				<h3>API for Businesses:</h3>
 				<table cellpadding="0" cellspacing="0" class="table table-striped table-bordered table-hover" style="background-color: #f0f0f0">
 					<tbody>
@@ -253,7 +194,7 @@
 						<tr>
 							<td>
 								<p>
-									<a href="/api/vendors">Vendors</a>
+									Vendors
 								</p>
 							</td>
 							<td>
@@ -279,24 +220,15 @@
 								</p>
 							</td>
 							<td>
-								<p>
-									<a href="/endpoints/render?property=vendors_accept_deal" style="color:red">Accept Deal</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=vendors_request_deal" style="color:red">Request Deal</a>
-								</p>
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<p>
-									<a href="/api/aggregate_campaigns" >Aggregate Campaigns</a>
+									Aggregate Campaigns
 								</p>
 							</td>
 							<td>
-								<p>
-									<a href="/endpoints/render?property=aggregate_campaigns_search" style="color:red">Search</a>
-								</p>
 							</td>
 							<td>
 								<p>
@@ -318,13 +250,10 @@
 						<tr>
 							<td>
 								<p>
-									<a href="/api/aggregate_deals" >Aggregate Deals</a>
+									Aggregate Deals
 								</p>
 							</td>
 							<td>
-								<p>
-									<a href="/endpoints/render?property=aggregate_deals_search" style="color:red">Search</a>
-								</p>
 							</td>
 							<td>
 								<p>
