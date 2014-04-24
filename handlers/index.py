@@ -65,6 +65,11 @@ class CaseStudies(WebRequestHandler):
 		path = 'integrate_case-studies.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
+class Landing(WebRequestHandler):
+	def get(self):
+		path = 'landing.html'
+		self.response.out.write(self.get_rendered_html(path, dict()))
+
 app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/overview', Overview),
 	('/tutorial', Tutorial),
@@ -73,5 +78,6 @@ app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/iphone_app', AppRedirect),
 	('/fetch_from_api_server', ServerFetchHandler),
 	('/contact', Contact),
-	('/case_studies', CaseStudies)
+	('/case_studies', CaseStudies),
+	('/landing', Landing)
 	])

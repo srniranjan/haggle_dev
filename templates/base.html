@@ -6,7 +6,6 @@
 <head>
     <title>{% block Title %}Haggle for Developers{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/assets/css/normalize.css" type="text/css" rel="stylesheet">
 	<link href="/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="/assets/css/haggle_base.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
@@ -30,53 +29,23 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="/assets/js/haggle_base.js"></script>
     <div class="wrap" style="background-color: #e2e2e2;">
-        <div id="navbar-fluid" class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                    <div id="c820" class="container-fluid hidden-phone collapse-820">
-                        <div class="row-fluid">
-                            <div class="span1">
-                            </div>
-                            <div class="span1" style="text-align: center;">
-                                <a id="vendor-header-link" href="/">
-                                    <img src="/assets/img/developers/dev-logo.png" style="max-width:none; padding-top:6px;"/>
-                                </a>
-                            </div>
-                            <div class="span9">
-                                <ul class="nav pull-right">
-                                    <li><a href="/overview" class="haggle-link hover-enabled">Get Started</a></li>
-                                    <li><a href="/documentation" class="haggle-link hover-enabled">Documentation</a></li>
-                                    <li><a href="/case_studies" class="haggle-link hover-enabled">Case Studies</a></li>
-                                    <li><a href="https://www.gethaggle.com/contact" class="haggle-link hover-enabled">Support</a></li>
-                                    <a href="http://haggle-test1.appspot.com/developers/my_apps"><button class="app-button-top" style="width:100px;margin:7px;height:35px;font-size:13px;line-height:14px;font-family: 'proxima-nova-soft', sans-serif !important;">
-                                    <b>My Apps</b>
-                                </button></a>
-                                </ul>
-                            </div>
-                            <div class="span1">
-                            </div>
-                        </div>
-                    </div>
-                    <div id="s820" class="show-820 navbar-fixed-top">
-                        <div class="dropdown">
-                            <a href="/">
-                                <img class="nav-logo" src="/assets/img/developers/nav-logo.png">
-                            </a>
-                            <a data-toggle="dropdown" href="#" onclick="toggleNavArrow()">
-                                <div class="nav-arrow-holder">
-                                    <img class="mobile-nav-arrow" src="/assets/img/developers/nav-down-arrow.png">
-                                    <img class="mobile-nav-arrow" style="display:none;" src="/assets/img/developers/nav-up-arrow.png">
-                                </div>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/overview">Get Started</a></li>
-                                <li><a href="/documentation">Documentation</a></li>
-                                <li><a href="/case_studies">Case Studies</a></li>
-                                <li><a href="https://gethaggle.com/contact">Support</a></li>
-                            </ul>
-                        </div>
-                </div>
-                </div>
-            </div>
+    <nav id="navbar">
+        <div class="span1">
+        </div>
+        <div class="span1" style="text-align: center;">
+            <a id="vendor-header-link" href="/">
+                <img src="/assets/img/developers/dev-logo.png" style="max-width:none; padding-top:6px;"/>
+            </a>
+        </div>
+        <div class="span9">
+        <ul class="nav pull-right">
+            <li><a href="/overview" class="haggle-link hover-enabled">Integrate</a></li>
+            <li><a href="/documentation" class="haggle-link hover-enabled">Developers</a></li>
+            <li><a href="/case_studies" class="haggle-link hover-enabled">Marketers</a></li>
+            <li><a href="https://www.gethaggle.com/contact" class="haggle-link hover-enabled">Support</a></li>
+        </ul>
+        </div>
+    </nav>
             <br><br><br>
         <div class="container-fluid main clear-top" style="height:100%;">
         {% block Content %}{% endblock %}
