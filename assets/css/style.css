@@ -7,6 +7,19 @@
 
 }
 
+#navbar a{
+	color: white;
+}
+
+#navbar ul{
+	display: -webkit-inline-box;
+	margin-top: 17px;
+}
+
+#navbar li{
+	padding: 0 15px 0 0;
+}
+
 html {
 
 	background-color: white;
@@ -90,6 +103,10 @@ code {
 	float: none;
 	padding-bottom: 40px;
 
+}
+
+#mainpage {
+	overflow: hidden;
 }
 
 #top-bar {
