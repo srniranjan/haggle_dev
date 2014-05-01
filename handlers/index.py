@@ -17,7 +17,7 @@ class WebRequestHandler(webapp2.RequestHandler):
 
 class HomepageHandler(WebRequestHandler):
     def get(self):
-    	path = 'home.html'
+    	path = 'index.html'
         self.response.out.write(self.get_rendered_html(path, dict()))
 
 class Overview(WebRequestHandler):
