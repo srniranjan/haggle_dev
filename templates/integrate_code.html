@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-
+{% extends "base.html" %}
+{% block Styles %}
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="/assets/js/lib/bootstrap.min.js"></script>
 	<link href="/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
@@ -11,28 +9,10 @@
 
 
 	<title>Haggle Platforms | Integrate / Code</title>
-</head>
-<body>
+{% endblock %}
+{% block Content %}
 
 <!-- Start wrapper -->
-<nav id="navbar">
-	<div class="span1">
-    </div>
-    <div class="span1" style="text-align: center;">
-        <a id="vendor-header-link" href="/">
-            <img src="/assets/img/developers/dev-logo.png" style="max-width:none; padding-top:6px;"/>
-        </a>
-    </div>
-    <div class="span9">
-    <ul class="nav pull-right">
-        <li><a href="/overview" class="haggle-link hover-enabled">Integrate</a></li>
-        <li><a href="/documentation" class="haggle-link hover-enabled">Developers</a></li>
-        <li><a href="/case_studies" class="haggle-link hover-enabled">Marketers</a></li>
-        <li><a href="https://www.gethaggle.com/contact" class="haggle-link hover-enabled">Support</a></li>
-    </ul>
-    </div>
-</nav>
-
 <div id="wrapper">
 
 	<div id="top-bar">
@@ -125,11 +105,5 @@ $('#navTab a').click(function (e) {
   $(this).tab('show');
 })
 </script>
-
-
-
-</body>
-</html>
-
-
+{% endblock %}
 

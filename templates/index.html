@@ -1,31 +1,13 @@
-<!DOCTYPE html>
-<html>
-	<head>
+{% extends "base.html" %}
+{% block Styles %}
 	<link href="/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/assets/css/home-style.css">
 		<title>Haggle Platforms</title>
-	</head>
-<body>
-<nav id="navbar">
-	<div class="span1">
-    </div>
-    <div class="span1" style="text-align: center;">
-        <a id="vendor-header-link" href="/">
-            <img src="/assets/img/developers/dev-logo.png" style="max-width:none; padding-top:6px;"/>
-        </a>
-    </div>
-    <div class="span9">
-    <ul class="nav pull-right">
-        <li><a href="/overview" class="haggle-link hover-enabled">Integrate</a></li>
-        <li><a href="/documentation" class="haggle-link hover-enabled">Developers</a></li>
-        <li><a href="/case_studies" class="haggle-link hover-enabled">Marketers</a></li>
-        <li><a href="https://www.gethaggle.com/contact" class="haggle-link hover-enabled">Support</a></li>
-    </ul>
-    </div>
-</nav>
+{% endblock %}
+{% block Content %}
 <br><br><br><br>
 <div id="wrapper">
 	<h2>The Haggle Platform gives you access to all <br>of the data used by Haggle, & much more!</h1>
@@ -39,7 +21,7 @@
 
 
 <!-- end wrapper -->
-</body>	
+{% endblock %}
 <!-- end wrapper -->
 
 
