@@ -1,76 +1,63 @@
 {% extends "base.html" %}
 {% block Styles %}
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="/assets/js/lib/bootstrap.min.js"></script>
-	<link href="/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
-	<link href="/assets/css/endpoints.css" type="text/css" rel="stylesheet">
-	<title>Haggle Platforms | Integrate / Docs</title>
+<link href="/assets/css/endpoints.css" type="text/css" rel="stylesheet">
+<title>Haggle Platforms | Integrate / Docs</title>
 {% endblock %}
 {% block Content %}
-<div id="wrapper">
-
-	<div id="top-bar">
-		
-			<ul class="section-menu">
-				<li><a href="/overview">Get The Code</a></li>
-				<li><a href="/case_studies">Case Studies</a></li>
-				<li><a href="/documentation">Documentation</a></li>
-			</ul>
-		
-	</div>
-	<div id="main">
-
-		<div id="sidebar">
-			<ul id="navTab" class="sidebar-menu">
-				<li class="active"><a href="#oauth">OAuth 2.0</a></li>
-				<li><a href="#connecting">Connecting to Haggle</a></li>
-				<li><a href="#oauth_endpoints">OAuth Endpoints</a></li>
-				<li><a href="#rate_limits">Rate Limits</a></li>
-				<li><a href="#sdk">SDK Platform</a></li>
-				<li><a href="#iphone">iPhone Redirect</a></li>
-				<li><a href="#api_endpoints">Api Endpoints</a></li>
-					<ul class="sub-sidebar-menu-1">
-						<li><a href="#">Vendors</a></li>
-						<li><a href="#">Aggregate Campaigns</a></li>
-						<li><a href="#">Aggregate Deals</a></li>
-					</ul>
-				<li><a href="#errors">Responses & Errors</a></li>
-				<li><a href="#changelog">Changelog</a></li>
-			</ul>
-
-		</div>
-
-		<div class="tab-content content" id="mainpage">
-			<div class="tab-pane active fade in" id="oauth">
-				<p>Haggle API uses <a href='http://oauth.net/2/'>OAuth 2.0</a>. Here is some information about OAuth.</p>
-                    <div style="width:600px;height:400px">
-                        <img src="/assets/img/documentation/OAuth2.svg">
-                    </div>
-                    <p>
-                        <b>OAuth 2.0 involves three main entities :</b>
-                    </p>
-                    <ul>
-                        <li>The client needs to access a protected resource.</li>
-                        <li>The resource (server hosting the resource) and the resource owner who controls access to the resource.</li>
-                        <li>The authorization entity.</li>
-                    </ul>
-                    <br>
-                   <p><b>The 'abstract protocol flow' as per the OAuth 2.0 spec suggests the following steps :</b></p>
-                    <ul>
-                        <li>The client requests the resource owner to grant authorization to some resources that the owner controls.</li>
-                        <li>The resource owner issues an authorization grant to the client.</li>
-                        <li>The client authenticates with the authorization server and presents the authorization grant, requesting for an access token.</li>
-                        <li>The authorization server verifies the client and the authorization grant and issues an access token.</li>
-                        <li>The client then authenticates with the resource server by presenting the access token and requests for protected resources.</li>
-                        <li>The resource server on validating the access token, provides the client with the requested protected resources.</li>
-                    </ul>
-				<div class="pages"></div>
-			</div>
-			<div class="tab-pane fade" id="connecting">
-				<p>Connecting to Haggle is simple and easy. Just <a href="http://haggle-dev.appspot.com/developers/my_apps">sign up</a> with our api to obtain a client ID and secret. Using this, you can connect using them as parameters. Here is an example:(this is where I'll put an example)</p>
+    <div id="top-bar">
+        <ul class="section-menu">
+            <li><a href="/overview">Get The Code</a></li>
+            <li><a href="/case_studies">Case Studies</a></li>
+            <li><a href="/documentation">Documentation</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <div id="sidebar">
+            <ul id="navTab" class="sidebar-menu">
+                <li class="active"><a href="#oauth">OAuth 2.0</a></li>
+                <li><a href="#connecting">Connecting to Haggle</a></li>
+                <li><a href="#oauth_endpoints">OAuth Endpoints</a></li>
+                <li><a href="#rate_limits">Rate Limits</a></li>
+                <li><a href="#sdk">SDK Platform</a></li>
+                <li><a href="#iphone">iPhone Redirect</a></li>
+                <li><a href="#api_endpoints">Api Endpoints</a></li>
+                <ul class="sub-sidebar-menu-1">
+                    <li><a href="#">Vendors</a></li>
+                    <li><a href="#">Aggregate Campaigns</a></li>
+                    <li><a href="#">Aggregate Deals</a></li>
+                </ul>
+                <li><a href="#errors">Responses & Errors</a></li>
+                <li><a href="#changelog">Changelog</a></li>
+            </ul>
+        </div>
+        <div class="tab-content content" id="mainpage">
+            <div class="tab-pane active fade in" id="oauth">
+                <p>Haggle API uses <a href='http://oauth.net/2/'>OAuth 2.0</a>. Here is some information about OAuth.</p>
+                <div style="width:600px;height:400px">
+                    <img src="/assets/img/documentation/OAuth2.svg">
+                </div>
+                <p>
+                    <b>OAuth 2.0 involves three main entities :</b>
+                </p>
+                <ul>
+                    <li>The client needs to access a protected resource.</li>
+                    <li>The resource (server hosting the resource) and the resource owner who controls access to the resource.</li>
+                    <li>The authorization entity.</li>
+                </ul>
+                <br>
+                <p><b>The 'abstract protocol flow' as per the OAuth 2.0 spec suggests the following steps :</b></p>
+                <ul>
+                    <li>The client requests the resource owner to grant authorization to some resources that the owner controls.</li>
+                    <li>The resource owner issues an authorization grant to the client.</li>
+                    <li>The client authenticates with the authorization server and presents the authorization grant, requesting for an access token.</li>
+                    <li>The authorization server verifies the client and the authorization grant and issues an access token.</li>
+                    <li>The client then authenticates with the resource server by presenting the access token and requests for protected resources.</li>
+                    <li>The resource server on validating the access token, provides the client with the requested protected resources.</li>
+                </ul>
+                <div class="pages"></div>
+            </div>
+            <div class="tab-pane fade" id="connecting">
+                <p>Connecting to Haggle is simple and easy. Just <a href="http://haggle-dev.appspot.com/developers/my_apps">sign up</a> with our api to obtain a client ID and secret. Using this, you can connect using them as parameters. Here is an example:(this is where I'll put an example)</p>
                 <br>
                 <ul>
                     <li>The client intending to access protected Haggle resources registers with Haggle.</li>
@@ -80,191 +67,187 @@
                     <li>The client sends the client ID and secret along with the authorization code to request for an access token from Haggle.</li>
                     <li>Haggle authenticates the client, validates the authorization code and returns an access token.</li>
                 </ul>
-			</div>
-			<div class="tab-pane fade" id="oauth_endpoints">
-				<h2>OAuth Endpoints</h2>
-						<p>Third parties can connect to Haggle using these endpoints:</p>
-						<table cellpadding="0" cellspacing="0" class="table table-striped table-bordered" style="background-color: #f0f0f0">
-							<tr>
-								<td></td>
-								<td>Description</td>
-								<td>Parameters</td>
-								<td>Response</td>
-							</tr>
-							<tr>
-								<td><a href="https://haggle-test1.appspot.com/clients">/clients</a></td>
-								<td>To register an App with Haggle and obtain a Client ID and Secret.</td>
-								<td></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td><a href="https://haggle-test1.appspot.com/oauth2/authorize">/oauth2/authorize</a></td>
-								<td>To make an authorization request for a user.</td>
-								<td>
-									<ul>
-										<li>client_id</li>
-										<li>client_secret</li>
-										<li>response (code/token)</li>
-										<li>redirect_uri (optional)</li>
-									</ul>
-								</td>
-								<td>code</td>
-							</tr>
-							<tr>
-								<td><a href="https://haggle-test1.appspot.com/oauth2/token">/oauth2/token</a></td>
-								<td>To obtain an Access Token for the authorized user.</td>
-								<td>
-									<ul>
-										<li>client_id</li>
-										<li>client_secret</li>
-										<li>code</li>
-										<li>redirect_uri (optional)</li>
-									</ul>
-								</td>
-								<td>access_token</td>
-							</tr>
-						</table>
-			</div>
-			<div class="tab-pane fade" id="rate_limits">
-				<h2>Rate Limits</h2>
-				<p>An application can make 500 requests per access token per 15 minutes rolling window to the Haggle API. For the current usage information, look at the following HTTP response headers:</p>
-				<br>
-				<ul>
-					<li>RateLimit-Remaining - This header gives the number of calls remaining in the current time window.</li>
-					<li>RateLimit-ResetTime - Once the limit is reached, this header gives the time (in minutes) to wait before making another call.</li>
-				</ul>
-			</div>
-			<div class="tab-pane fade" id="sdk">
-				<h2>SDK Platform</h2>
-				<p>Our SDK is almost ready! Be sure to look out for our fast and easy way to connect your app to Haggle!</p>
-			</div>
-			<div class="tab-pane fade" id="iphone">
-				<h2>iPhone Redirect</h2>
-				<p>Our iPhone redirect process lets you quickly access a Haggler's information, so you don't need to do the dirty work.
-				Follow these easy steps:
-				<ul>
-					<li>Add a redirect link to your iPhone app, including your authorization credentials.</li>
-					<li>We handle the rest and return a JSON response to your app!</li>
-				</ul>
-				For more information on authorization, please read our redirect documentation <a href="#">here</a>.
-			</div>
-			<div class="tab-pane fade endpoints" id="api_endpoints">
-				<p>Below is a list of our endpoints.</p>
+            </div>
+            <div class="tab-pane fade" id="oauth_endpoints">
+                <h2>OAuth Endpoints</h2>
+                <p>Third parties can connect to Haggle using these endpoints:</p>
+                <table cellpadding="0" cellspacing="0" class="table table-striped table-bordered" style="background-color: #f0f0f0">
+                    <tr>
+                        <td></td>
+                        <td>Description</td>
+                        <td>Parameters</td>
+                        <td>Response</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://haggle-test1.appspot.com/clients">/clients</a></td>
+                        <td>To register an App with Haggle and obtain a Client ID and Secret.</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://haggle-test1.appspot.com/oauth2/authorize">/oauth2/authorize</a></td>
+                        <td>To make an authorization request for a user.</td>
+                        <td>
+                            <ul>
+                                <li>client_id</li>
+                                <li>client_secret</li>
+                                <li>response (code/token)</li>
+                                <li>redirect_uri (optional)</li>
+                            </ul>
+                        </td>
+                        <td>code</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://haggle-test1.appspot.com/oauth2/token">/oauth2/token</a></td>
+                        <td>To obtain an Access Token for the authorized user.</td>
+                        <td>
+                            <ul>
+                                <li>client_id</li>
+                                <li>client_secret</li>
+                                <li>code</li>
+                                <li>redirect_uri (optional)</li>
+                            </ul>
+                        </td>
+                        <td>access_token</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="rate_limits">
+                <h2>Rate Limits</h2>
+                <p>An application can make 500 requests per access token per 15 minutes rolling window to the Haggle API. For the current usage information, look at the following HTTP response headers:</p>
                 <br>
-				<h3>API for Businesses:</h3>
-				<table cellpadding="0" cellspacing="0" class="table table-striped table-bordered table-hover" style="background-color: #f0f0f0">
-					<tbody>
-						<tr>
-							<td>
-							</td>
-							<td>
-							General
-							</td>
-							<td>
-							Aspects
-							</td>
-							<td>
-							Actions
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>
-									Vendors
-								</p>
-							</td>
-							<td>
-								<p>
-									<a href="/endpoints/render?property=vendors_categories">Categories</a>
-								</p>
-							</td>
-							<td>
-								<p>
-									<a href="/endpoints/render?property=vendors_campaigns">Campaigns</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=vendors_user_trends">User Trends</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=vendors_time_trends">Time Trends</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=vendors_average_spending">Average Spending</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=vendors_current_deals">Current Deals</a>
-								</p>
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>
-									Aggregate Campaigns
-								</p>
-							</td>
-							<td>
-							</td>
-							<td>
-								<p>
-									<a href="/endpoints/render?property=discount_trends" >Discount Trends</a>
-								</p>
-								<p>
-									<a href="/api/discount_map" >Discount Trends Map</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=score_preference_trends" >Score Preference Trends</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=aggregate_campaigns_hours_trends">Campaign Hours Trends</a>
-								</p>
-							</td>
-							<td>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<p>
-									Aggregate Deals
-								</p>
-							</td>
-							<td>
-							</td>
-							<td>
-								<p>
-									<a href="/endpoints/render?property=bids_trends" >Bids Trends</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=user_trends" >User Trends</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=time_trends" >Time Trends</a>
-								</p>
-								<p>
-									<a href="/endpoints/render?property=average_spending" >Average Spending</a>
-								</p>
-							</td>
-							<td>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="tab-pane fade" id="errors">
-				<h2>Error Responses</h2>
-				<p>Below is a list of common booboos you might make using our API:</p>
-			</div>
-			<div class="tab-pane fade" id="changelog">
-				<h2>Changelog</h2>
-				<p>Below is a list of our changes:</p>
-			</div>
-		</div>
-<!-- end main content -->
-	</div>
-</div>
-<!-- end wrapper -->
-
+                <ul>
+                    <li>RateLimit-Remaining - This header gives the number of calls remaining in the current time window.</li>
+                    <li>RateLimit-ResetTime - Once the limit is reached, this header gives the time (in minutes) to wait before making another call.</li>
+                </ul>
+            </div>
+            <div class="tab-pane fade" id="sdk">
+                <h2>SDK Platform</h2>
+                <p>Our SDK is almost ready! Be sure to look out for our fast and easy way to connect your app to Haggle!</p>
+            </div>
+            <div class="tab-pane fade" id="iphone">
+                <h2>iPhone Redirect</h2>
+                <p>Our iPhone redirect process lets you quickly access a Haggler's information, so you don't need to do the dirty work.
+                    Follow these easy steps:
+                <ul>
+                    <li>Add a redirect link to your iPhone app, including your authorization credentials.</li>
+                    <li>We handle the rest and return a JSON response to your app!</li>
+                </ul>
+                For more information on authorization, please read our redirect documentation <a href="#">here</a>.
+            </div>
+            <div class="tab-pane fade endpoints" id="api_endpoints">
+                <p>Below is a list of our endpoints.</p>
+                <br>
+                <h3>API for Businesses:</h3>
+                <table cellpadding="0" cellspacing="0" class="table table-striped table-bordered table-hover" style="background-color: #f0f0f0">
+                    <tbody>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            General
+                        </td>
+                        <td>
+                            Aspects
+                        </td>
+                        <td>
+                            Actions
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Vendors
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/endpoints/render?property=vendors_categories">Categories</a>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/endpoints/render?property=vendors_campaigns">Campaigns</a>
+                            </p>
+                            <p>
+                                <a href="/endpoints/render?property=vendors_user_trends">User Trends</a>
+                            </p>
+                            <p>
+                                <a href="/endpoints/render?property=vendors_time_trends">Time Trends</a>
+                            </p>
+                            <p>
+                                <a href="/endpoints/render?property=vendors_average_spending">Average Spending</a>
+                            </p>
+                            <p>
+                                <a href="/endpoints/render?property=vendors_current_deals">Current Deals</a>
+                            </p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Aggregate Campaigns
+                            </p>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/endpoints/render?property=discount_trends" >Discount Trends</a>
+                            </p>
+                            <p>
+                                <a href="/api/discount_map" >Discount Trends Map</a>
+                            </p>
+                            <p>
+                                <a href="/endpoints/render?property=score_preference_trends" >Score Preference Trends</a>
+                            </p>
+                            <p>
+                                <a href="/endpoints/render?property=aggregate_campaigns_hours_trends">Campaign Hours Trends</a>
+                            </p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Aggregate Deals
+                            </p>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <p>
+                                <a href="/endpoints/render?property=bids_trends" >Bids Trends</a>
+                            </p>
+                            <p>
+                                <a href="/endpoints/render?property=user_trends" >User Trends</a>
+                            </p>
+                            <p>
+                                <a href="/endpoints/render?property=time_trends" >Time Trends</a>
+                            </p>
+                            <p>
+                                <a href="/endpoints/render?property=average_spending" >Average Spending</a>
+                            </p>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="errors">
+                <h2>Error Responses</h2>
+                <p>Below is a list of common booboos you might make using our API:</p>
+            </div>
+            <div class="tab-pane fade" id="changelog">
+                <h2>Changelog</h2>
+                <p>Below is a list of our changes:</p>
+            </div>
+        </div>
+    </div>
 <script>
 $('#navTab a').click(function (e) {
   $(this).tab('show');
