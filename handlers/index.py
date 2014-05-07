@@ -66,6 +66,11 @@ class Landing(WebRequestHandler):
         path = 'landing.html'
         self.response.out.write(self.get_rendered_html(path, dict()))
 
+class Marketers(WebRequestHandler):
+    def get(self):
+        path = 'marketers.html'
+        self.response.out.write(self.get_rendered_html(path, dict()))
+
 app = webapp2.WSGIApplication([('/', HomepageHandler),
                                ('/overview', Overview),
                                ('/tutorial', Tutorial),
@@ -75,5 +80,6 @@ app = webapp2.WSGIApplication([('/', HomepageHandler),
                                ('/fetch_from_api_server', ServerFetchHandler),
                                ('/contact', Contact),
                                ('/case_studies', CaseStudies),
-                               ('/landing', Landing)
+                               ('/landing', Landing),
+                               ('/marketers', Marketers)
 ])

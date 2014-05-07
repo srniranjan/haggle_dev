@@ -1,156 +1,134 @@
-{% extends "base.html" %}
+{% extends "integrate.html" %}
 {% block Styles %}
-<link href="/assets/css/haggle_base.css" type="text/css" rel="stylesheet">
-<title>Haggle Platforms | Integrate / Case Studies</title>
+    <link href="/assets/css/haggle_base.css" type="text/css" rel="stylesheet">
+    <title>Haggle Platforms | Integrate / Case Studies</title>
 {% endblock %}
-{% block Content %}
-<div id="top-bar">
-    <ul class="section-menu">
-        <li><a href="/overview">Get The Code</a></li>
-        <li><a href="/case_studies">Case Studies</a></li>
-        <li><a href="/documentation">Documentation</a></li>
-    </ul>
-</div>
-<div id="main">
-    <div id="sidebar">
-        <ul id="navTab" class="sidebar-menu">
-            <li class="active"><a href="#yelp">Yelp</a></li>
-            <li><a href="#jcrew">JCrew</a></li>
-            <li><a href="#smorgasburg">Smorgasburg</a></li>
-            <li><a href="#foodwine">Food & Wine Online</a></li>
-            <li><a href="#cannibal">The Cannibal</a></li>
-            <li><a href="#sweetgreen">Sweetgreen</a></li>
-            <li><a href="#beer">Beer Distribution</a></li>
-            <li><a href="#realestate">Real Estate Company</a></li>
-        </ul>
+{% block SidebarList %}
+    <li class="active"><a href="#yelp">Yelp</a></li>
+    <li><a href="#jcrew">JCrew</a></li>
+    <li><a href="#smorgasburg">Smorgasburg</a></li>
+    <li><a href="#foodwine">Food & Wine Online</a></li>
+    <li><a href="#cannibal">The Cannibal</a></li>
+    <li><a href="#sweetgreen">Sweetgreen</a></li>
+    <li><a href="#beer">Beer Distribution</a></li>
+    <li><a href="#realestate">Real Estate Company</a></li>
+{% endblock %}
+{% block IntegrateContent %}
+    <div class="tab-pane active fade in" id="yelp">
+        <h2>Yelp</h2>
+        <p>
+            While Yelp helps people find businesses in their neighborhood and see user generated reviews, they are constantly searching for ways to add value for their business owners and need to provide more options for users to connect with businesses directly on Yelp’s website. Yelp’s user reviews add a human element to discovering neighborhood businesses, but this feeling could be extended to developing relationships with the businesses themselves.
+        </p>
+        <br>
+        <p>
+            By adding a Haggle Button to their business pages, Yelp can help a user easily find where they want to go and negotiate a personalized price while remaining on the page. This adds value for businesses by connecting them directly with customers and allowing them to instantly gain information about the type of customer coming in, or provide enticing bargains for the specific customers most important to them. The Haggle Button also instantly initiates a one-on-one, and mutually beneficial relationship between the Yelp user and a business.
+        </p>
+        <iframe src="http://marvl.in/25ej7a?emb=1" width="384" height="834" allowTransparency="true" frameborder="0"></iframe>
+        <div class="pages"></div>
     </div>
-    <div class="tab-content content" id="mainpage">
-        <div class="tab-pane active fade in" id="yelp">
-            <div class="breadcrumbs">Case Studies / Yelp</div>
-            <div style="width:580px;height:200px" align="center">
-                <img src="/assets/img/logos/yelplogo2.png" alt="">
-            </div>
-            <h3>Yelp</h3>
-            <p>
-                While Yelp helps people find businesses in their neighborhood and see user generated reviews, they are constantly searching for ways to add value for their business owners and need to provide more options for users to connect with businesses directly on Yelp’s website. Yelp’s user reviews add a human element to discovering neighborhood businesses, but this feeling could be extended to developing relationships with the businesses themselves.
-            </p>
-            <br>
-            <p>
-                By adding a Haggle Button to their business pages, Yelp can help a user easily find where they want to go and negotiate a personalized price while remaining on the page. This adds value for businesses by connecting them directly with customers and allowing them to instantly gain information about the type of customer coming in, or provide enticing bargains for the specific customers most important to them. The Haggle Button also instantly initiates a one-on-one, and mutually beneficial relationship between the Yelp user and a business.
-            </p>
-            <div class="pages"></div>
+    <div class="tab-pane fade" id="jcrew">
+        <div class="breadcrumbs">Case Studies / JCrew</div>
+        <div style="width:580px;height:200px" align="center">
+            <img src="/assets/img/logos/jcrewlogo2.jpg" alt="">
         </div>
-        <div class="tab-pane fade" id="jcrew">
-            <div class="breadcrumbs">Case Studies / JCrew</div>
-            <div style="width:580px;height:200px" align="center">
-                <img src="/assets/img/logos/jcrewlogo2.jpg" alt="">
-            </div>
-            <h3>JCrew</h3>
-            <p>
-                The J. Crew ecommerce team is under constant pressure to meet sales goals in a highly competitive online retail marketplace. Offering generic sitewide discounts boost units sold while greatly reduce margins. Sales also attract deal hunters without increasing lifetime user value.
-            </p>
-            <br>
-            <p>
-                Instead of offering sitewide sales, J. Crew incorporates the Haggle Button on product pages and at checkout, allowing users to negotiate for a personalized price. J. Crew can focus on rewarding loyal shoppers, supporting and strengthening long lasting relationships while getting a better understanding of their customer base in the process.
-            </p>
-            <div class="pages"></div>
-        </div>
-        <div class="tab-pane fade" id="smorgasburg">
-            <div class="breadcrumbs">Case Studies / Smorgasburg</div>
-            <div style="width:580px;height:200px" align="center">
-                <img src="/assets/img/logos/SmorgasburgLogo2.jpg" alt="">
-            </div>
-            <h3>Smorgasburg</h3>
-            <p>
-                Smorgasburg, a New York food market featuring local vendors, attracts thousands of visitors every weekend. While people are introduced to a number of new restaurants and given the opportunity to try new foods, the vendors, as well as Smorgasburg, have no way to track or understand their customers.
-            </p>
-            <br>
-            <p>
-                By introducing the Haggle button to Smorgasburg’s website and app, Smorgasburg can get a deeper understanding of the patrons they attract and relay that valuable information to their vendors. Vendors can also offer bargains for the specific types of customers most important to them. For example, Blue Marble wants to attract customers who have a high Dessert History Score but haven’t tried Blue Marble before. Using Haggle, they can entice these customers to try Blue Marble’s ice cream and start a new relationship with them. Haggle helps both Smorgasburg and its vendors get to know their patrons and rewards their patrons at the same time.
-            </p>
-            <div class="pages"></div>
-        </div>
-        <div class="tab-pane fade" id="foodwine">
-            <div class="breadcrumbs">Case Studies / Food & Wine Online</div>
-            <div style="width:580px;height:200px" align="center">
-                <img src="/assets/img/logos/foodandwinelogo2.png" alt="">
-            </div>
-            <h3>Food & Wine Online</h3>
-            <p>
-                Food and Wine Magazine leverages its online content to sell advertising space and develop branded partnerships. While they offer demographic measurement and targeting for their advertisers, they want to provide more relative value than competitor sites and establish an advertising experience that benefits the user in a unique way.
-            </p>
-            <br>
-            <p>
-                By utilizing the Haggle Button in their ads and branded partnerships, Food and Wine helps readers understand that they can negotiate for a personalized offer once they click on the advertisement. Both Food and Wine as well as their advertising partners gain a deeper understanding of their potential customers, and the users enjoy a personalized experienced even when they’re served an ad.
-            </p>
-            <div class="pages"></div>
-        </div>
-        <div class="tab-pane fade" id="cannibal">
-            <div class="breadcrumbs">Case Studies / The Cannibal</div>
-            <div style="width:580px;height:200px" align="center">
-                <img src="/assets/img/logos/canniballogo2.jpg" alt="">
-            </div>
-            <h3>The Cannibal</h3>
-            <p>
-                The Cannibal, a current Haggle partner, has an understanding of the types of Haggle users they prefer, but they want to learn about general trends in their neighborhood and find out more about potential customers who they’re not attracting.
-            </p>
-            <br>
-            <p>
-                By accessing Haggle’s API, they can see Gramercy neighborhood trends by time, date, and user type. They realize they’re missing a lunch crowd that is normally loyal during dinner hours, and update their Haggle weekday campaign to attract loyal customers for lunch when The Cannibal have empty tables.
-            </p>
-            <div class="pages"></div>
-        </div>
-        <div class="tab-pane fade" id="sweetgreen">
-            <div class="breadcrumbs">Case Studies / Sweet Green</div>
-            <div style="width:580px;height:200px" align="center">
-                <img src="/assets/img/logos/sweetgreenlogo2.jpg" alt="">
-            </div>
-            <h3>Sweetgreen</h3>
-            <p>
-                Sweetgreen, a Washington, D.C. lunch staple, has decided to break into the New York market with a brand new Manhattan location. As they research potential locations, they’re having a hard time understanding location, customer and competition trends for different neighborhoods.
-            </p>
-            <br>
-            <p>
-                By connecting with Haggle’s API, they can search neighborhoods by cuisine frequency and get a thorough understanding of the types of potential customers near each location. They decide to open their first store in a neighborhood in desperate need of fast, delicious, and healthy lunch options and full of social influencers who Sweet Green knows will help spread the word once they open.
-            </p>
-            <div class="pages"></div>
-        </div>
-        <div class="tab-pane fade" id="beer">
-            <div class="breadcrumbs">Case Studies / Beer Distribution</div>
-            <div style="width:580px;height:200px" align="center">
-                <img src="/assets/img/logos/beerlogo2.jpg" alt="">
-            </div>
-            <h3>Beer Distribution</h3>
-            <p>
-                Mark, a distributor of Budweiser, wants to know more about his distribution chain. He is interested in targeting sports bars, since customers there usually drink more Budweiser.
-            </p>
-            <br>
-            <p>
-                By analyzing the purchasing trends of various neighborhoods in New York, Mark is able to see which areas have a potential for new hotness. He can then expand into the areas that our Haggle API show are expanding.
-            </p>
-            <div class="pages"></div>
-        </div>
-        <div class="tab-pane fade" id="realestate">
-            <div class="breadcrumbs">Case Studies / Real Estate Company</div>
-            <div style="width:580px;height:200px" align="center">
-                <img src="/assets/img/logos/realestatelogo2.png" alt="">
-            </div>
-            <h3>Real Estate Company</h3>
-            <p>
-                A NY Real Estate company invests in gentrifying neighborhoods, beautifying local buildings and expediting growth. They’re constantly looking for new ways to understand potential locations and believe big data may hold a solution.
-            </p>
-            <br>
-            <p>
-                When the NY Real Estate company accesses Haggle’s API, they can see general trends over time and find out more about what people do in a given neighborhood. When they see that there has been an increase in Social Influencers and Bankrollers in Crown Heights, it compliments their other research and motivates them to invest in the neighborhood.
-            </p>
-            <div class="pages"></div>
-        </div>
+        <h3>JCrew</h3>
+        <p>
+            The J. Crew ecommerce team is under constant pressure to meet sales goals in a highly competitive online retail marketplace. Offering generic sitewide discounts boost units sold while greatly reduce margins. Sales also attract deal hunters without increasing lifetime user value.
+        </p>
+        <br>
+        <p>
+            Instead of offering sitewide sales, J. Crew incorporates the Haggle Button on product pages and at checkout, allowing users to negotiate for a personalized price. J. Crew can focus on rewarding loyal shoppers, supporting and strengthening long lasting relationships while getting a better understanding of their customer base in the process.
+        </p>
+        <div class="pages"></div>
     </div>
-</div>
-<script>
-$('#navTab a').click(function (e) {
-  e.preventDefault();
-  $(this).tab('show');
-})
-</script>
+    <div class="tab-pane fade" id="smorgasburg">
+        <div class="breadcrumbs">Case Studies / Smorgasburg</div>
+        <div style="width:580px;height:200px" align="center">
+            <img src="/assets/img/logos/SmorgasburgLogo2.jpg" alt="">
+        </div>
+        <h3>Smorgasburg</h3>
+        <p>
+            Smorgasburg, a New York food market featuring local vendors, attracts thousands of visitors every weekend. While people are introduced to a number of new restaurants and given the opportunity to try new foods, the vendors, as well as Smorgasburg, have no way to track or understand their customers.
+        </p>
+        <br>
+        <p>
+            By introducing the Haggle button to Smorgasburg’s website and app, Smorgasburg can get a deeper understanding of the patrons they attract and relay that valuable information to their vendors. Vendors can also offer bargains for the specific types of customers most important to them. For example, Blue Marble wants to attract customers who have a high Dessert History Score but haven’t tried Blue Marble before. Using Haggle, they can entice these customers to try Blue Marble’s ice cream and start a new relationship with them. Haggle helps both Smorgasburg and its vendors get to know their patrons and rewards their patrons at the same time.
+        </p>
+        <div class="pages"></div>
+    </div>
+    <div class="tab-pane fade" id="foodwine">
+        <div class="breadcrumbs">Case Studies / Food & Wine Online</div>
+        <div style="width:580px;height:200px" align="center">
+            <img src="/assets/img/logos/foodandwinelogo2.png" alt="">
+        </div>
+        <h3>Food & Wine Online</h3>
+        <p>
+            Food and Wine Magazine leverages its online content to sell advertising space and develop branded partnerships. While they offer demographic measurement and targeting for their advertisers, they want to provide more relative value than competitor sites and establish an advertising experience that benefits the user in a unique way.
+        </p>
+        <br>
+        <p>
+            By utilizing the Haggle Button in their ads and branded partnerships, Food and Wine helps readers understand that they can negotiate for a personalized offer once they click on the advertisement. Both Food and Wine as well as their advertising partners gain a deeper understanding of their potential customers, and the users enjoy a personalized experienced even when they’re served an ad.
+        </p>
+        <div class="pages"></div>
+    </div>
+    <div class="tab-pane fade" id="cannibal">
+        <div class="breadcrumbs">Case Studies / The Cannibal</div>
+        <div style="width:580px;height:200px" align="center">
+            <img src="/assets/img/logos/canniballogo2.jpg" alt="">
+        </div>
+        <h3>The Cannibal</h3>
+        <p>
+            The Cannibal, a current Haggle partner, has an understanding of the types of Haggle users they prefer, but they want to learn about general trends in their neighborhood and find out more about potential customers who they’re not attracting.
+        </p>
+        <br>
+        <p>
+            By accessing Haggle’s API, they can see Gramercy neighborhood trends by time, date, and user type. They realize they’re missing a lunch crowd that is normally loyal during dinner hours, and update their Haggle weekday campaign to attract loyal customers for lunch when The Cannibal have empty tables.
+        </p>
+        <div class="pages"></div>
+    </div>
+    <div class="tab-pane fade" id="sweetgreen">
+        <div class="breadcrumbs">Case Studies / Sweet Green</div>
+        <div style="width:580px;height:200px" align="center">
+            <img src="/assets/img/logos/sweetgreenlogo2.jpg" alt="">
+        </div>
+        <h3>Sweetgreen</h3>
+        <p>
+            Sweetgreen, a Washington, D.C. lunch staple, has decided to break into the New York market with a brand new Manhattan location. As they research potential locations, they’re having a hard time understanding location, customer and competition trends for different neighborhoods.
+        </p>
+        <br>
+        <p>
+            By connecting with Haggle’s API, they can search neighborhoods by cuisine frequency and get a thorough understanding of the types of potential customers near each location. They decide to open their first store in a neighborhood in desperate need of fast, delicious, and healthy lunch options and full of social influencers who Sweet Green knows will help spread the word once they open.
+        </p>
+        <div class="pages"></div>
+    </div>
+    <div class="tab-pane fade" id="beer">
+        <div class="breadcrumbs">Case Studies / Beer Distribution</div>
+        <div style="width:580px;height:200px" align="center">
+            <img src="/assets/img/logos/beerlogo2.jpg" alt="">
+        </div>
+        <h3>Beer Distribution</h3>
+        <p>
+            Mark, a distributor of Budweiser, wants to know more about his distribution chain. He is interested in targeting sports bars, since customers there usually drink more Budweiser.
+        </p>
+        <br>
+        <p>
+            By analyzing the purchasing trends of various neighborhoods in New York, Mark is able to see which areas have a potential for new hotness. He can then expand into the areas that our Haggle API show are expanding.
+        </p>
+        <div class="pages"></div>
+    </div>
+    <div class="tab-pane fade" id="realestate">
+        <div class="breadcrumbs">Case Studies / Real Estate Company</div>
+        <div style="width:580px;height:200px" align="center">
+            <img src="/assets/img/logos/realestatelogo2.png" alt="">
+        </div>
+        <h3>Real Estate Company</h3>
+        <p>
+            A NY Real Estate company invests in gentrifying neighborhoods, beautifying local buildings and expediting growth. They’re constantly looking for new ways to understand potential locations and believe big data may hold a solution.
+        </p>
+        <br>
+        <p>
+            When the NY Real Estate company accesses Haggle’s API, they can see general trends over time and find out more about what people do in a given neighborhood. When they see that there has been an increase in Social Influencers and Bankrollers in Crown Heights, it compliments their other research and motivates them to invest in the neighborhood.
+        </p>
+        <div class="pages"></div>
+    </div>
 {% endblock %}

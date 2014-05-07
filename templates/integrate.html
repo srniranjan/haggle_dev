@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block Content %}
+<div class="top-bar">
+    <ul class="section-menu">
+        <li><a href="/overview">Get The Code</a></li>
+        <li><a href="/case_studies">Case Studies</a></li>
+        <li><a href="/documentation">Documentation</a></li>
+    </ul>
+</div>
+<div id="main">
+    <div id="sidebar">
+        <ul id="navTab" class="sidebar-menu">
+            {% block SidebarList %}{% endblock %}
+        </ul>
+    </div>
+    <div class="tab-content content" id="mainpage">
+        {% block IntegrateContent %}{% endblock %}
+    </div>
+</div>
+<script>
+$('#navTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})
+</script>
+{% endblock %}

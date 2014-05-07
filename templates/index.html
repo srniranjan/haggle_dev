@@ -1,14 +1,13 @@
 {% extends "base.html" %}
 {% block Styles %}
-<link rel="stylesheet" type="text/css" href="/assets/css/home-style.css">
 <title>Haggle Platforms</title>
 {% endblock %}
 {% block Content %}
-
-    <h2 style="padding-top:100px;">The Haggle Platform gives you access to all <br>of the data used by Haggle, & much more!</h2>
-    <button class="bttn" onclick="window.location='/landing'">Get Started</button>
-    <img src="/assets/img/machine.png">
-
+    <div class="landing">
+        <h1>The Haggle Platform gives you access to all <br>of the data used by Haggle, & much more!</h1>
+        <a href="/landing"><button class="btn-hollow">Get Started</button></a>
+        <img src="/assets/img/machine.png">
+    </div>
 {% endblock %}
 
 
