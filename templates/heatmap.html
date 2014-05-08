@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block Styles %}
+	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+
+	<title>Haggle Platforms | Endpoints | Discount Heat Map</title>
+
+{% endblock %}
+{% block Content %}
+<br><br><br><br>
+<!-- Start wrapper -->
+<div id="wrapper">
+	<div id="sidebar">	
+		<ul class="sidebar-menu">
+			<li><a href="#">OAuth 2.0</a></li>
+			<li><a href="#">Connecting to Haggle</a></li>
+			<li><a href="#">OAuth Endpoints</a></li>
+			<li><a href="#">Rate Limits</a></li>
+				<!-- <ul class="sub-sidebar-menu-1">
+					<li><a href="#">Submenu Item 1</a></li>
+						<ul class="sub-sidebar-menu-2">
+							<li><a href="#">Submenu Item 2</a></li>
+							<li><a href="#">Submenu Item 2</a></li>
+							<li><a href="#">Submenu Item 2</a></li>
+						</ul>
+					<li><a href="#">Submenu Item 1</a></li>
+					<li><a href="#">Submenu Item 1</a></li>
+				</ul> -->
+			<li><a href="#">SDK Platform</a></li>
+			<li><a href="#">iPhone Redirect</a></li>
+			<li><a href="#">API Endpoints</a></li>
+			<li><a href="#">Responses & Errors</a></li>
+			<li><a href="#">Changelog</a></li>
+		</ul>
+	</div>
+
+	<div class="content">
+		<h2>Discount Heat Map</h2>
+		<p>A quick example of how powerful visualizing our Haggle data is. <br>
+		OAuth token is automatically added. <a href="#">Login</a> to use your own token.</p>
+
+		<div class="well-title">TOKEN</div>
+		<div class="well">
+			f377b77df0584f68a445080edda6a436
+		</div>
+
+		<h4>Try it out</h4>
+
+		<div class="endpoints-parameters">
+			<div class="grid-2">
+				<h5>Latitude</h5>
+					<form>
+						<input class="endpoints-input">
+					</form>		
+				<h5>Longitude</h5>
+					<form>
+						<input class="endpoints-input">
+					</form>
+				<h5>Radius (in meters)</h5>
+					<form>
+						<input class="endpoints-input">
+					</form>
+				<button class="btn">Submit</button>
+			</div>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12089.64740425929!2d-73.9801278100161!3d40.75296552087613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY!5e0!3m2!1sen!2sus!4v1398981229560" width="460" height="266" frameborder="0" style="border:0"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- End wrapper -->
+
+
+
+
+
+{% endblock %}

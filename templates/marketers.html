@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+{% block Styles %}
+<!-- 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css"> -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+
+	<title>Haggle Platforms | Marketers</title>
+{% endblock %}
+{% block Content %}
+<div id="wrapper">
+	<div class="top-bar">
+		<ul class="section-menu">
+			<li><a href="integrate_code.html">Reports</a></li>
+			<li><a href="integrate_case-studies.html">Case Studies</a></li>
+		</ul>	
+	</div>
+</div>	
+
+<div id="wrapper">
+	<div class="reports-nav">
+		<select class="reports-list">
+		  <option value="neighborhood-report">Neighborhoods Overview</option>
+		  <option value="cuisine-report">Cuisine Report</option>
+		  <option value="mercedes">Spending Report</option>
+		  <option value="audi">Comparison Report</option>
+		</select>
+	</div>			
+</div>	
+
+<div class="full-width-line">
+
+	<div class="grid-wrap">
+		<div class="grid-4">
+			<h5>Neighborhood</h5>
+			<select class="options-list">
+			  <option>Flatiron District</option>
+			  <option>SoHo</option>
+			  <option>West Village</option>
+			  <option>Hell's Kitchen</option>
+			</select>
+		</div>
+		<div class="grid-4">
+			<h5>Meal Type</h5>
+			<select class="options-list">
+			  <option>Brunch</option>
+			  <option>Lunch</option>
+			  <option>Happy Hour</option>
+			  <option>Dinner</option>
+			  <option>All</option>
+			</select>
+		</div>
+		<div class="grid-4">
+			<h5>Date Range</h5>
+			<select class="options-list">
+			  <option value="neighborhood-report">Neighborhoods Overview</option>
+			  <option value="cuisine-report">Cuisine Report</option>
+			  <option value="mercedes">Spending Report</option>
+			  <option value="audi">Comparison Report</option>
+			</select>
+		</div>
+		<div class="grid-4">
+			<button class="btn-rpt">Run Report</button>
+		</div>
+
+	</div>
+
+	<div id="wrapper">
+		<div class="overview-results">
+			<div class="gender-dist">
+				<h5>Gender Distribution</h5>
+				<div class="small-chart">
+				Gender donut chart
+					<div class="chart-bottom"></div>
+				</div>
+			</div>
+			<div class="age-dist">
+				<h5>Age Distribution</h5>
+				<div class="med-chart">Age distribution line chart
+					<div class="chart-bottom"></div>
+				</div>
+			</div>
+			<div class="summary">
+				<table class="summary-table">
+					<tr class="row">
+						<td class="tb-left">Average Spent</td>
+						<td class="tb-right">$24.94</td>
+					</tr>
+					<tr class="row">
+						<td class="tb-left">Average Discount</td>
+						<td class="tb-right">18.43%</td>
+					</tr>
+					<tr class="row">
+						<td class="tb-left">Most popular score</td>
+						<td class="tb-right">Loyalty</td>
+					</tr>
+					<tr class="row">
+						<td class="tb-left">Most popular cuisine</td>
+						<td class="tb-right">American</td>
+					</tr>
+					<tr class="row">
+						<td class="tb-left">Average Party size</td>
+						<td class="tb-right">2.4</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div class="full-width-line">
+	<div id="wrapper">
+		<div class="big-chart"></div>
+	</div>
+</div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
+{% endblock %}
+
+

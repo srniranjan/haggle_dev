@@ -31,9 +31,9 @@ class Tutorial(WebRequestHandler):
 		path = 'tutorial.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
-class RestAPI(WebRequestHandler):
+class Heatmap(WebRequestHandler):
 	def get(self):
-		path = 'rest_api.html'
+		path = 'heatmap.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
 class AppRedirect(WebRequestHandler):
@@ -70,14 +70,20 @@ class Landing(WebRequestHandler):
 		path = 'landing.html'
 		self.response.out.write(self.get_rendered_html(path, dict()))
 
+class Marketers(WebRequestHandler):
+	def get(self):
+		path = 'marketers.html'
+		self.response.out.write(self.get_rendered_html(path, dict()))
+
 app = webapp2.WSGIApplication([('/', HomepageHandler),
 	('/overview', Overview),
 	('/tutorial', Tutorial),
     ('/documentation', Documentation),
-	('/rest_api', RestAPI),
+	('/heatmap', Heatmap),
 	('/iphone_app', AppRedirect),
 	('/fetch_from_api_server', ServerFetchHandler),
 	('/contact', Contact),
 	('/case_studies', CaseStudies),
-	('/landing', Landing)
+	('/landing', Landing),
+	('/marketers', Marketers)
 	])
