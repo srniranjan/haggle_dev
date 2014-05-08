@@ -517,7 +517,8 @@ select {
 	-webkit-border-radius: 4px;
 	border: 1px solid rgba(0,0,0,.2);
 	overflow: hidden;
-
+    width: 460px;
+    height: 266px;
 }
 
 .landing {
