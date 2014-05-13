@@ -1,12 +1,38 @@
 {% extends "base.html" %}
 {% block Styles %}
 <title>Haggle Platforms | Marketers</title>
+<style>
+.big-chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+</style>
 {% endblock %}
 {% block Content %}
 <div class="top-bar">
     <ul class="section-menu">
-        <li><a href="integrate_code.html">Reports</a></li>
-        <li><a href="integrate_case-studies.html">Case Studies</a></li>
+        <li><a href="/marketers">Reports</a></li>
+        <li><a href="/marketers">Case Studies</a></li>
     </ul>
 </div>
 <div class="reports-nav">
@@ -87,6 +113,59 @@
     </div>
 </div>
 <div class="full-width-line">
-	<div class="big-chart"></div>
+    <div id="checkins-options">
+        <div>
+            Neighbourhood
+            <select id="checkins-neighbourhood" class="options-list" onchange="updateCheckinsChart()">
+                <option value="chelsea">Chelsea</option>
+                <option value="soho">SoHo</option>
+                <option value="westvillage">West Village</option>
+            </select>
+        </div>
+        <div>
+            Time Horizon
+            <select id="checkins-horizon" class="options-list" onchange="updateCheckinsChart()">
+                <option value="day">Last Day</option>
+                <option value="week">Last Week</option>
+                <option value="month">Last Month</option>
+                <option value="year">Last Year</option>
+            </select>
+        </div>
+        <div>
+            Time of Day
+            <select id="checkins-time" class="options-list" onchange="updateCheckinsChart()">
+                <option value="brunch">Brunch</option>
+                <option value="happyhour">Happy Hour</option>
+                <option value="dinner">Dinner</option>
+            </select>
+        </div>
+    </div>
+	<div class="big-chart" id="checkins"></div>
 </div>
+<div class="full-width-line">
+    <div id="spending-options">
+        <div>
+            Neighbourhood
+            <select id="spending-neighbourhood" class="options-list" onchange="updateSpendingChart()">
+                <option value="chelsea">Chelsea</option>
+                <option value="soho">SoHo</option>
+                <option value="westvillage">West Village</option>
+            </select>
+        </div>
+        <div>
+            Meal Time
+            <select id="spending-time" class="options-list" onchange="updateSpendingChart()">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="snack">Snack</option>
+                <option value="dinner">Dinner</option>
+            </select>
+        </div>
+    </div>
+	<div class="big-chart" id="spending"></div>
+</div>
+{% endblock %}
+{% block Scripts %}
+    <script src="/assets/js/lib/d3.v3.min.js"></script>
+    <script src="/assets/js/web/marketers.js"></script>
 {% endblock %}

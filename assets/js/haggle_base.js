@@ -61,3 +61,12 @@ function highlightNavbarLink(selectedLink) {
 $('navbar').on('touchstart', function(e) {
   e.stopPropagation();
 });
+
+$(document).ready(function(){
+    $('.tab-content .active').show();
+    $("#sidebar li a").on("click", function(event){
+        event.preventDefault();
+        $('.tab-pane').hide();
+        $($(event.currentTarget).attr('href')).show();
+    });
+});
