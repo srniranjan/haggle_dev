@@ -226,7 +226,7 @@ body {
 .main {
     overflow: auto;
     padding-bottom: 0px;
-    padding-top: 30px;
+    margin-top: 20px;
 }
 
 @media (min-width: 770px) {
@@ -310,8 +310,8 @@ footer {
   color:black;
 }
 
-a,a:hover {
-	color:#45acbf;
+a:hover {
+	color:#666;
 }
 
 .affix {
