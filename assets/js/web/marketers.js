@@ -33,7 +33,7 @@ function drawCheckinsChart(dt, yTitle) {
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var color = d3.scale.ordinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+    .range(["#ff3912", "#35ab45", "#35ab45", "#25de33", "#12dc54", "#ab21ef", "#ff3912"]);
 
     color.domain(d3.keys(dat[0]).filter(function(key) { return key !== "Cuisine"; }));
 
@@ -114,108 +114,10 @@ function updateCheckinsChart() {
     var dat;
     $.post("/api/marketers", params)
     .done(function(data){
-        console.log('Checkins: '+data);
         var chart_data = JSON.parse(data)
         dat = chart_data.chart_data;
-        drawCheckinsChart(dat, "No. of Checkins");
+        drawStackedBarChart('checkins',dat,'No. of Checkins');
     });
-}
-
-function drawSpendingChart(dt) {
-
-    var dat = dt.slice(0);
-    var margin = {top: 20, right: 80, bottom: 30, left: 50},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-    var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], 0.1);
-
-    var y = d3.scale.linear()
-    .range([height, 0]);
-
-    var color = d3.scale.category10();
-
-    var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-    var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left");
-
-    var line = d3.svg.line()
-    .interpolate("basis")
-    .x(function(d) { return x(d.weekday); })
-    .y(function(d) { return y(d.spent); });
-
-    var svg = d3.select("#spending").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    color.domain(d3.keys(dat[0]).filter(function(key) { return key !== "weekday"; }));
-
-    var cuisines = color.domain().map(function(name) {
-    return {
-    name: name,
-    values: dat.map(function(d) {
-    return {weekday: d.weekday, spent: +d[name]};
-    })
-    };
-    });
-
-    x.domain(dat.map(function(d) { return d.weekday; }));
-
-    y.domain([
-    d3.min(cuisines, function(c) { return d3.min(c.values, function(v) { return v.spent; }); }),
-    d3.max(cuisines, function(c) { return d3.max(c.values, function(v) { return v.spent; }); })
-    ]);
-
-    svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
-    .call(xAxis);
-
-    svg.append("g")
-    .attr("class", "y axis")
-    .call(yAxis)
-    .append("text")
-    .attr("transform", "rotate(-90)")
-    .attr("y", 6)
-    .attr("dy", ".71em")
-    .style("text-anchor", "end")
-    .text("Spent ($)");
-
-    var cuisine = svg.selectAll(".cuisine")
-    .data(cuisines)
-    .enter().append("g")
-    .attr("class", "cuisine");
-
-    path = cuisine.append("path")
-    .attr("class", "line")
-    .attr("d", function(d) { console.log(d.values); return line(d.values); })
-    .style("stroke", function(d) { return color(d.name); })
-    .attr("stroke-width", "2")
-    .attr("fill", "none");
-
-    var totalLength = path.node().getTotalLength();
-
-    path
-    .attr("stroke-dasharray", totalLength)
-    .attr("stroke-dashoffset", totalLength)
-    .transition()
-    .duration(2000)
-    .ease("linear")
-    .attr("stroke-dashoffset", 0);
-
-    cuisine.append("text")
-    .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
-    .attr("transform", function(d) { return "translate(" + x(d.value.weekday) + "," + y(d.value.spent) + ")"; })
-    .attr("x", 3)
-    .attr("dy", ".35em")
-    .text(function(d) { return d.name; });
 }
 
 function updateSpendingChart() {
@@ -229,10 +131,9 @@ function updateSpendingChart() {
     var dat;
     $.post("/api/marketers", params)
     .done(function(data){
-        console.log('Spending: '+data);
         var chart_data = JSON.parse(data);
         dat = chart_data.chart_data;
-        drawSpendingChart(dat);
+        drawLineChart('spending',dat,'Spent ($)');
     });
 }
 
