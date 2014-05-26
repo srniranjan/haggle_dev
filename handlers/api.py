@@ -3,6 +3,10 @@ import webapp2
 import logging
 from handlers import RequestHandler
 from django.template import loader
+from platforms_graphs.model import Deal
+from platforms_graphs.graph_model import LineGraphModelBuilder
+from platforms_graphs.graph_view import LineGraphView
+from platforms_graphs.populate import get_graph_view
 
 
 checkins = {}
@@ -314,7 +318,6 @@ spending['westvillage']['dinner'] = [{'dimension1':'Mon','Japanese':80,'Indian':
 
 
 
-
 class WebRequestHandler(webapp2.RequestHandler):
     def render_template(self, template_name, template_values = None):
         self.response.out.write(self.get_rendered_html(template_name, template_values))
@@ -329,21 +332,24 @@ class DiscountsMap(WebRequestHandler):
 
 class ChartDataHandler(RequestHandler):
     def post(self):
-        chart = self['name']
-        options = json.loads(self['options'])
+        chart_name = self['name']
+        dimension = self['dimension']
+        filter_ids = self['filter_ids'].strip('[]').split(',')
+        options_array = []
+        for id in filter_ids:
+            if self[id.strip()]:
+                options_array.append((int(id.strip()), str(self[id.strip()])))
 
-        chart_data_json = {}
-        if chart == 'checkins':
-            neighbourhood = options['neighbourhood'] if options['neighbourhood'] else 'chelsea'
-            horizon = options['horizon'] if options['horizon'] else 'day'
-            time = options['time'] if options['time'] else 'brunch'
-            chart_data_json['chart_data'] = checkins[neighbourhood][horizon][time]
-        else:
-            neighbourhood = options['neighbourhood'] if options['neighbourhood'] else 'chelsea'
-            time = options['time'] if options['time'] else 'breakfast'
-            chart_data_json['chart_data'] = spending[neighbourhood][time]
+        #logging.info(chart_name)
+        #logging.info(dimension)
+        #logging.info(options_array)
+        deal_amt_spent_graph = get_graph_view(chart_name, dimension, options_array)
+        data = deal_amt_spent_graph.get_values_for(options_array)
+
+        #logging.info(data)
+        chart_data_json = deal_amt_spent_graph.translate_to_json(data)
+        chart_data_json['dimension'] = dimension
         self.write(json.dumps(chart_data_json))
-
 
 app = webapp2.WSGIApplication([
     ('/api/discount_map', DiscountsMap),

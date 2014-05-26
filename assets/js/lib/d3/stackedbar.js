@@ -1,7 +1,7 @@
 function drawStackedBarChart(id, data, metricTitle) {
 
     var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
+    width = 710 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
     var x = d3.scale.ordinal()
@@ -37,6 +37,8 @@ function drawStackedBarChart(id, data, metricTitle) {
     });
 
     data.sort(function(a, b) { return b.total - a.total; });
+
+    data = data.slice(0,5);
 
     x.domain(data.map(function(d) { return d.dimension1; }));
     y.domain([0, d3.max(data, function(d) { return d.total; })]);

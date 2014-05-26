@@ -711,8 +711,55 @@ td {
 	border: 1px solid rgba(0,0,0,.2);
 }
 
+.active-filter-set {
 
+}
 
+.inactive-filter-set {
+    display: none;
+}
 
+.dimensions-area {
+    height: 100px;
+    border-bottom: 1px lightgray solid;
+}
 
+.filters-graph {
+    min-height: 600px;
+    border-bottom: 1px lightgray solid;
+}
 
+.inline {
+    display: inline-block;
+    float: left;
+}
+
+.filters-area {
+    width: 229px;
+    height: 100%;
+    padding-top: 50px;
+    border-right: 1px lightgray solid;
+    overflow: scroll;
+}
+
+.filters-area .options-list {
+    width: 90%;
+}
+
+.graph-area {
+    width: 710px;
+    padding-top: 50px;
+    height: 100%;
+}
+
+.bold-font {
+    font-weight: 600;
+}
+
+.filter-container  {
+    border-bottom: 1px lightgray solid;
+}
+
+.graph-container {
+    margin-top: 50px;
+}

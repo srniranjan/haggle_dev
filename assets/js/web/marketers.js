@@ -1,105 +1,9 @@
 $(document).ready(function(){
-    updateCheckinsChart();
-    updateSpendingChart();
+    //updateCheckinsChart();
+    var graph_id_list = ['dollars-spent'];
+    console.log(graph_id_list);
+    loadCharts(graph_id_list);
 });
-
-function drawCheckinsChart(dt, yTitle) {
-
-    var dat = dt.slice(0);
-
-    var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-    var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
-
-    var y = d3.scale.linear()
-    .rangeRound([height, 0]);
-
-    var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-    var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left")
-    .tickFormat(d3.format(".2s"));
-
-    var svg = d3.select("#checkins").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    var color = d3.scale.ordinal()
-    .range(["#ff3912", "#35ab45", "#35ab45", "#25de33", "#12dc54", "#ab21ef", "#ff3912"]);
-
-    color.domain(d3.keys(dat[0]).filter(function(key) { return key !== "Cuisine"; }));
-
-    dat.forEach(function(d) {
-    var y0 = 0;
-    d.genders = color.domain().map(function(name) { return {name: name, y0: y0, y1: y0 += +d[name]}; });
-    d.total = d.genders[d.genders.length - 1].y1;
-    });
-
-    dat.sort(function(a, b) { return b.total - a.total; });
-
-    x.domain(dat.map(function(d) { return d.Cuisine; }));
-    y.domain([0, d3.max(dat, function(d) { return d.total; })]);
-
-    svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
-    .call(xAxis);
-
-    svg.append("g")
-    .attr("class", "y axis")
-    .call(yAxis)
-    .append("text")
-    .attr("transform", "rotate(-90)")
-    .attr("y", 6)
-    .attr("dy", ".71em")
-    .style("text-anchor", "end")
-    .text(yTitle);
-
-    var cuisine = svg.selectAll(".cuisine")
-    .data(dat)
-    .enter().append("g")
-    .attr("class", "g")
-    .attr("transform", function(d) { return "translate(" + x(d.Cuisine) + ",0)"; });
-
-    cuisine.selectAll("rect")
-    .data(function(d) { return d.genders; })
-    .enter().append("rect")
-    .attr("width", x.rangeBand())
-    .attr("y", function(d) { return y(d.y1); })
-    .attr("height", 0)
-    .transition()
-    .duration(2000)
-    .ease("linear")
-    .attr("height", function(d) { return y(d.y0) - y(d.y1); })
-    .style("fill", function(d) { return color(d.name); });
-
-    var legend = svg.selectAll(".legend")
-    .data(color.domain().slice().reverse())
-    .enter().append("g")
-    .attr("class", "legend")
-    .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-    legend.append("rect")
-    .attr("x", width - 18)
-    .attr("width", 18)
-    .attr("height", 18)
-    .style("fill", color);
-
-    legend.append("text")
-    .attr("x", width - 24)
-    .attr("y", 9)
-    .attr("dy", ".35em")
-    .style("text-anchor", "end")
-    .text(function(d) { return d; });
-}
 
 function updateCheckinsChart() {
     d3.select("#checkins").select("svg")
@@ -120,24 +24,99 @@ function updateCheckinsChart() {
     });
 }
 
-function updateSpendingChart() {
-    d3.select("#spending").select("svg").remove();
-    var neighbourhood = $('#spending-neighbourhood').val();
-    var time = $('#spending-time').val();
+function loadCharts(graph_id_list) {
+    console.log(graph_id_list);
+    for(var i=0; i < graph_id_list.length; i++) {
+        graph_id = graph_id_list[i];
+        console.log(graph_id);
+        var option_params = {
+            'graph_id':graph_id
+        }
+        $.post('/marketers/options', option_params)
+        .done(function(data){
+            var dimensions = data.dimensions;
+            var filters = data.filters;
+            $('#'+graph_id+' .dimensions-area').append( dimensions );
+            $('#'+graph_id+' .filters-area').append( filters );
+            updateChart(graph_id);
+        });
+    }
+}
+
+function updateChart(graph_id) {
+    d3.select("#"+graph_id+" .graph-area").select("svg").remove();
+
     var params = {
-                    'name':'spending',
-                    'options':JSON.stringify({'neighbourhood':neighbourhood,'time':time})
+                    'name':graph_id,
+                    'dimension':$("input:radio[name=dimension]:checked").val()
                  }
-    var dat;
+
+    $('#'+graph_id+' .active-filter-set .options-list').each(function(){
+        if($(this).val() != ''){
+            params[$(this).attr('name')] = $(this).val();
+        }
+    });
+
+    var filter_ids = $('#'+graph_id+' .active-filter-id-set').val();
+
+    params['filter_ids'] = filter_ids;
+
     $.post("/api/marketers", params)
     .done(function(data){
         var chart_data = JSON.parse(data);
-        dat = chart_data.chart_data;
-        drawLineChart('spending',dat,'Spent ($)');
+        var dat = chart_data.chart_data;
+        if(chart_data.dimension == 'Day of week') {
+            drawLineChart(graph_id+' .graph-area',dat,'Spent ($)');
+        } else if(chart_data.dimension == 'Cuisine') {
+            drawStackedBarChart(graph_id+' .graph-area',dat,'Spent ($)');
+        }
     });
 }
 
+function updateSalesPerHeadChart() {
+    d3.select("#sales-per-head .graph-area").select("svg").remove();
 
+    var params = {
+                    'name':'sales per head',
+                    'dimension':$("input:radio[name=dimension]:checked").val()
+                 }
+
+    $('.active-filter-set .options-list').each(function(){
+        if($(this).val() != ''){
+            params[$(this).attr('name')] = $(this).val();
+        }
+    });
+
+    var filter_ids = $($('.active-filter-id-set')[0]).val();
+
+    params['filter_ids'] = filter_ids;
+
+    $.post("/api/marketers", params)
+    .done(function(data){
+        var chart_data = JSON.parse(data);
+        var dat = chart_data.chart_data;
+        console.log(dat);
+        if(chart_data.dimension == 'Day of week') {
+            drawLineChart('sales-per-head .graph-area',dat,'Spent ($)');
+        } else if(chart_data.dimension == 'Cuisine') {
+            drawStackedBarChart('sales-per-head .graph-area',dat,'Spent ($)');
+        }
+    });
+}
+
+function enableFilters(graph_id, index) {
+    $('#'+graph_id+' .filter-set').each(function(){
+        $(this).removeClass('active-filter-set');
+        $(this).addClass('inactive-filter-set');
+    });
+    $('#'+graph_id+' #filter-set-'+index).removeClass('inactive-filter-set');
+    $('#'+graph_id+' #filter-set-'+index).addClass('active-filter-set');
+    $('#'+graph_id+' .filter-id-set').each(function(){
+        $(this).removeClass('active-filter-id-set');
+    });
+    $('#'+graph_id+' #filter-id-set-'+index).addClass('active-filter-id-set');
+    updateChart(graph_id);
+}
 
 
 

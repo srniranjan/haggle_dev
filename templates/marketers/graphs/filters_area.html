@@ -1,0 +1,18 @@
+<p>FILTERS</p>
+{% for filters in filters_set %}
+    <div id="filter-set-{{forloop.counter}}" class="filter-set {% if forloop.counter == 1 %} active-filter-set {% else %} inactive-filter-set {% endif %}">
+        {% for filter in filters %}
+            <div class="filter-container">
+                <p>{{ filter.name }}</p>
+                <select name="{{ filter.id }}" class="options-list" onchange="updateChart('{{graph_id}}')">
+                    {% for option in filter.options %}
+                        <option value="{{ option.value }}">{{ option.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}
+{% for filters_ids in filters_id_set %}
+     <input id="filter-id-set-{{forloop.counter}}" type="hidden" value="{{filters_ids}}" class="filter-id-set {% if forloop.counter == 1 %} active-filter-id-set {% endif %}">
+{% endfor %}

@@ -45,46 +45,45 @@
 </div>
 <div class="reports-nav">
     <select class="reports-list">
-      <option value="neighborhood-report">Neighborhoods Overview</option>
-      <option value="cuisine-report">Cuisine Report</option>
-      <option value="mercedes">Spending Report</option>
-      <option value="audi">Comparison Report</option>
+      <option value="spending-report">Spending Report</option>
+      <option value="social-report">Social Report</option>
+      <option value="restaurant-report">Restaurant Report</option>
     </select>
 </div>
 <div class="full-width-line">
-	<div class="grid-wrap">
-		<div class="grid-4">
-			<h5>Neighborhood</h5>
-			<select class="options-list">
-			  <option>Flatiron District</option>
-			  <option>SoHo</option>
-			  <option>West Village</option>
-			  <option>Hell's Kitchen</option>
-			</select>
-		</div>
-		<div class="grid-4">
-			<h5>Meal Type</h5>
-			<select class="options-list">
-			  <option>Brunch</option>
-			  <option>Lunch</option>
-			  <option>Happy Hour</option>
-			  <option>Dinner</option>
-			  <option>All</option>
-			</select>
-		</div>
-		<div class="grid-4">
-			<h5>Date Range</h5>
-			<select class="options-list">
-			  <option value="neighborhood-report">Neighborhoods Overview</option>
-			  <option value="cuisine-report">Cuisine Report</option>
-			  <option value="mercedes">Spending Report</option>
-			  <option value="audi">Comparison Report</option>
-			</select>
-		</div>
-		<div class="grid-4">
-			<button class="btn-rpt">Run Report</button>
-		</div>
-	</div>
+	<!--<div class="grid-wrap">-->
+		<!--<div class="grid-4">-->
+			<!--<h5>Neighborhood</h5>-->
+			<!--<select class="options-list">-->
+			  <!--<option>Flatiron District</option>-->
+			  <!--<option>SoHo</option>-->
+			  <!--<option>West Village</option>-->
+			  <!--<option>Hell's Kitchen</option>-->
+			<!--</select>-->
+		<!--</div>-->
+		<!--<div class="grid-4">-->
+			<!--<h5>Meal Type</h5>-->
+			<!--<select class="options-list">-->
+			  <!--<option>Brunch</option>-->
+			  <!--<option>Lunch</option>-->
+			  <!--<option>Happy Hour</option>-->
+			  <!--<option>Dinner</option>-->
+			  <!--<option>All</option>-->
+			<!--</select>-->
+		<!--</div>-->
+		<!--<div class="grid-4">-->
+			<!--<h5>Date Range</h5>-->
+			<!--<select class="options-list">-->
+			  <!--<option value="neighborhood-report">Neighborhoods Overview</option>-->
+			  <!--<option value="cuisine-report">Cuisine Report</option>-->
+			  <!--<option value="mercedes">Spending Report</option>-->
+			  <!--<option value="audi">Comparison Report</option>-->
+			<!--</select>-->
+		<!--</div>-->
+		<!--<div class="grid-4">-->
+			<!--<button class="btn-rpt">Run Report</button>-->
+		<!--</div>-->
+	<!--</div>-->
     <div class="overview-results">
         <div class="gender-dist">
             <h5>Gender Distribution</h5>
@@ -120,57 +119,67 @@
         </div>
     </div>
 </div>
-<div class="full-width-line">
-    <div id="checkins-options">
-        <div>
-            Neighbourhood
-            <select id="checkins-neighbourhood" class="options-list" onchange="updateCheckinsChart()">
-                <option value="chelsea">Chelsea</option>
-                <option value="soho">SoHo</option>
-                <option value="westvillage">West Village</option>
-            </select>
-        </div>
-        <div>
-            Time Horizon
-            <select id="checkins-horizon" class="options-list" onchange="updateCheckinsChart()">
-                <option value="day">Last Day</option>
-                <option value="week">Last Week</option>
-                <option value="month">Last Month</option>
-                <option value="year">Last Year</option>
-            </select>
-        </div>
-        <div>
-            Time of Day
-            <select id="checkins-time" class="options-list" onchange="updateCheckinsChart()">
-                <option value="brunch">Brunch</option>
-                <option value="happyhour">Happy Hour</option>
-                <option value="dinner">Dinner</option>
-            </select>
-        </div>
+<!--<div class="full-width-line">-->
+    <!--<div id="checkins-options">-->
+        <!--<div>-->
+            <!--Neighbourhood-->
+            <!--<select id="checkins-neighbourhood" class="options-list" onchange="updateCheckinsChart()">-->
+                <!--<option value="chelsea">Chelsea</option>-->
+                <!--<option value="soho">SoHo</option>-->
+                <!--<option value="westvillage">West Village</option>-->
+            <!--</select>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--Time Horizon-->
+            <!--<select id="checkins-horizon" class="options-list" onchange="updateCheckinsChart()">-->
+                <!--<option value="day">Last Day</option>-->
+                <!--<option value="week">Last Week</option>-->
+                <!--<option value="month">Last Month</option>-->
+                <!--<option value="year">Last Year</option>-->
+            <!--</select>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--Time of Day-->
+            <!--<select id="checkins-time" class="options-list" onchange="updateCheckinsChart()">-->
+                <!--<option value="brunch">Brunch</option>-->
+                <!--<option value="happyhour">Happy Hour</option>-->
+                <!--<option value="dinner">Dinner</option>-->
+            <!--</select>-->
+        <!--</div>-->
+    <!--</div>-->
+	<!--<div class="big-chart" id="checkins"></div>-->
+<!--</div>-->
+<div id="spending" class="full-width-line">
+    <p class="bold-font">SPENDING</p>
+    <hr>
+    <div id="dollars-spent" class="graph-container">
+        <p>$ SPENT</p>
+        {% include 'marketers/graphs/generic_template.html' %}
     </div>
-	<div class="big-chart" id="checkins"></div>
-</div>
-<div class="full-width-line">
-    <div id="spending-options">
-        <div>
-            Neighbourhood
-            <select id="spending-neighbourhood" class="options-list" onchange="updateSpendingChart()">
-                <option value="chelsea">Chelsea</option>
-                <option value="soho">SoHo</option>
-                <option value="westvillage">West Village</option>
-            </select>
-        </div>
-        <div>
-            Meal Time
-            <select id="spending-time" class="options-list" onchange="updateSpendingChart()">
-                <option value="breakfast">Breakfast</option>
-                <option value="lunch">Lunch</option>
-                <option value="snack">Snack</option>
-                <option value="dinner">Dinner</option>
-            </select>
-        </div>
+    <div id="sales-per-head" class="graph-container">
+        <p>TOTAL SALES PER HEAD</p>
+        {% include 'marketers/graphs/generic_template.html' %}
     </div>
-	<div class="big-chart" id="spending"></div>
+    <!--<div id="spending-options">-->
+        <!--<div>-->
+            <!--Neighbourhood-->
+            <!--<select id="spending-neighbourhood" class="options-list" onchange="updateSpendingChart()">-->
+                <!--<option value="chelsea">Chelsea</option>-->
+                <!--<option value="soho">SoHo</option>-->
+                <!--<option value="westvillage">West Village</option>-->
+            <!--</select>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--Meal Time-->
+            <!--<select id="spending-time" class="options-list" onchange="updateSpendingChart()">-->
+                <!--<option value="breakfast">Breakfast</option>-->
+                <!--<option value="lunch">Lunch</option>-->
+                <!--<option value="snack">Snack</option>-->
+                <!--<option value="dinner">Dinner</option>-->
+            <!--</select>-->
+        <!--</div>-->
+    <!--</div>-->
+	<!--<div class="big-chart" id="spending"></div>-->
 </div>
 {% endblock %}
 {% block Scripts %}
