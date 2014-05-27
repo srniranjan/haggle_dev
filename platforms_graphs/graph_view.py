@@ -31,6 +31,10 @@ class GraphView():
                 matches.append(co_ord)
         return matches
 
+    def translate_to_json(self, filters):
+        pass
+
+
 class LineGraphView(GraphView):
     def get_dimension(self):
         dimension_title = self.graph_model.property_titles[self.graph_model.xaxis_id] + ' - ' + \
@@ -47,27 +51,13 @@ class LineGraphView(GraphView):
                 ret_val[additional_xaxis] = matches
         return ret_val
 
-    def translate_to_json(self, data):
-        data_dict = {}
-        for (k, v) in data.iteritems():
-            dimension2 = k
-            for t in v:
-                if not t[0] in data_dict:
-                    data_dict[t[0]] = []
-                data_dict[t[0]].append((k,t[1]))
-
+    def translate_to_json(self, filters):
         chart_data = []
-        weekdays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-
-        for (k, v) in sorted(data_dict.iteritems()):
-            dimension1 = weekdays[int(k)-1]
-            data_row = {'dimension1':dimension1}
-            for t in v:
-                dimension2 = t[0]
-                value = t[1]
-                data_row[dimension2] = int(float(value))
+        for curr_dimension, plot_vals in self.graph_model.lines_map.iteritems():
+            data_row = {'dimension1':curr_dimension}
+            for plot_val in plot_vals:
+                data_row[plot_val.co_ord[0]] = plot_val.co_ord[1]
             chart_data.append(data_row)
-
         return chart_data
 
 class BarGraphView(GraphView):

@@ -1,35 +1,3 @@
-function updateChart(graph_id) {
-    d3.select("#"+graph_id+" .graph-area").select("svg").remove();
-
-    var params = {
-                    'name':graph_id,
-                    'dimension':$("#"+graph_id+" input:radio[name=dimension]:checked").val()
-                 }
-
-    $('#'+graph_id+' .active-filter-set .options-list').each(function(){
-        if($(this).val() != ''){
-            params[$(this).attr('name')] = $(this).val();
-        }
-    });
-
-    var filter_ids = $('#'+graph_id+' .active-filter-id-set').val();
-
-    params['filter_ids'] = filter_ids;
-    $.post("/api/marketers", params)
-    .done(function(data){
-        var chart_data = JSON.parse(data);
-        var dat = chart_data.chart_data;
-        var curr_graph_id = chart_data.graph_id;
-        if (dat) {
-            if(chart_data.dimension == 'Day of week') {
-                drawLineChart(curr_graph_id+' .graph-area',dat,'Spent ($)');
-            } else if(chart_data.dimension == 'Cuisine') {
-                drawStackedBarChart(curr_graph_id+' .graph-area',dat,'Spent ($)');
-        }
-        }
-    });
-}
-
 function enableFilters(graph_id, index) {
     $('#'+graph_id+' .filter-set').each(function(){
         $(this).removeClass('active-filter-set');

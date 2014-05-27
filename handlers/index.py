@@ -4,6 +4,7 @@ from django.template import loader
 from handlers import RequestHandler
 from google.appengine.api import urlfetch
 from platforms_graphs.populate import get_graph_view
+from platforms_graphs.graph_mappings import graphs
 import logging
 import datetime
 from pytz import timezone
@@ -74,14 +75,7 @@ class Landing(WebRequestHandler):
 class Marketers(WebRequestHandler):
     def get(self):
         path = 'marketers.html'
-        template_values = {'graphs':[
-            {'id':'dollars-spent',
-             'dimension_ids':'1, 3, 4',
-             'model':'Deal',
-             'title':'Dollars Spent',
-             'graph_model':'LineGraphModelBuilder',
-             'graph_view':'LineGraphView'}
-        ]}
+        template_values = {'graphs':[graphs['dollars-spent']]}
         self.response.out.write(self.get_rendered_html(path, template_values))
 
 

@@ -46,15 +46,16 @@ class LineGraphModelBuilder(GraphModelBuilder):
         self.lines_map = dict()
         for model_obj in model_objs:
             curr_additional_dimension = model_obj.properties[self.additional_xaxis_id].value
-            if curr_additional_dimension not in self.lines_map:
-                self.lines_map[curr_additional_dimension] = []
-            curr_x = model_obj.properties[self.xaxis_id].value
+            curr_dimension = model_obj.properties[self.xaxis_id].value
+            if curr_dimension not in self.lines_map:
+                self.lines_map[curr_dimension] = []
+            curr_x = curr_additional_dimension
             curr_y = model_obj.properties[self.yaxis_id].value
             plot_val = PlotValue()
             plot_val.co_ord = (curr_x, curr_y)
             plot_val.model = model_obj
             self.add_to_filter_vals(model_obj)
-            self.lines_map[curr_additional_dimension].append(plot_val)
+            self.lines_map[curr_dimension].append(plot_val)
 
 class BarGraphModelBuilder(GraphModelBuilder):
     def __init__(self):

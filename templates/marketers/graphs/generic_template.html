@@ -20,7 +20,21 @@
             var curr_graph_id = data.graph_id;
             $('#'+curr_graph_id+' .dimensions-area').append( dimensions );
             $('#'+curr_graph_id+' .filters-area').append( filters );
-            //updateChart(curr_graph_id);
+            updateChart(curr_graph_id, null);
+        });
+    }
+
+    function updateChart(graph_id, filters) {
+        d3.select("#"+graph_id+" .graph-area").select("svg").remove();
+        var params = {
+                        'id':graph_id
+                     }
+        $.post("/api/marketers", params)
+            .done(function(data){
+                var chart_data = JSON.parse(data);
+                var dat = chart_data.chart_data;
+                var curr_graph_id = chart_data.graph_id;
+
         });
     }
 </script>
