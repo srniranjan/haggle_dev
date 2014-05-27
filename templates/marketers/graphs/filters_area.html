@@ -4,6 +4,7 @@
         <div class="filter-container">
             <p>{{k.1}}</p>
             <select name="{{ k.0}}" class="options-list" onchange="updateChart('{{graph_id}}')">
+                <option value="">--SELECT--</option>
                 {% for option in v %}
                     <option value="{{ option }}">{{ option }}</option>
                 {% endfor %}

@@ -20,12 +20,21 @@ class DiscountsMap(WebRequestHandler):
         self.response.out.write(self.get_rendered_html(path,dict()))
 
 class ChartDataHandler(RequestHandler):
+    def get_filters(self, filters_str):
+        params_sep = ',,,,'
+        val_sep = '::::'
+        filter_params = filters_str.strip().split(params_sep)
+        return [(param.split(val_sep)[0], param.split(val_sep)[1]) for param in filter_params if len(param) > 0]
+
     def post(self):
         chart_name = self['id']
+        filters = []
+        if len(self['filters']) > 0:
+            filters = self.get_filters(self['filters'])
         curr_graph = graphs[chart_name]
         graph_view = get_graph_view(curr_graph)
         chart_data_json = {'graph_id':chart_name,
-                           'chart_data':graph_view.translate_to_json(None),
+                           'chart_data':graph_view.translate_to_json(filters),
                            'chart_type':curr_graph['graph_view']}
         self.write(json.dumps(chart_data_json))
 

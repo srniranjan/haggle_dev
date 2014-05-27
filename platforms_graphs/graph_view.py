@@ -15,18 +15,19 @@ class GraphView():
     def get_values_for(self, filter_vals):
         pass
 
-    def find_matches_in(self, values, filter_vals):
+    def find_matches_in(self, plot_vals, filter_vals):
         matches = []
-        for plot_val in values:
+        for plot_val in plot_vals:
             add_co_ord = True
             co_ord = plot_val.co_ord
             model = plot_val.model
-            for filter_val in filter_vals:
-                idx = filter_val[0]
-                val = filter_val[1]
-                if model.properties[idx].value.lower() != val.lower():
-                    add_co_ord = False
-                    break
+            if len(filter_vals) > 0:
+                for filter_val in filter_vals:
+                    idx = filter_val[0]
+                    val = filter_val[1]
+                    if model.properties[int(idx)].value.lower() != val.lower():
+                        add_co_ord = False
+                        break
             if add_co_ord:
                 matches.append(co_ord)
         return matches
@@ -52,11 +53,13 @@ class LineGraphView(GraphView):
         return ret_val
 
     def translate_to_json(self, filters):
+        self.get_values_for(filters)
         chart_data = []
         for curr_dimension, plot_vals in self.graph_model.lines_map.iteritems():
+            matches = self.find_matches_in(plot_vals, filters)
             data_row = {'dimension1':curr_dimension}
-            for plot_val in plot_vals:
-                data_row[plot_val.co_ord[0]] = plot_val.co_ord[1]
+            for co_ord in matches:
+                data_row[co_ord[0]] = co_ord[1]
             chart_data.append(data_row)
         return chart_data
 

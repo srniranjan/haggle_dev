@@ -1,6 +1,5 @@
 <script type="text/javascript">
     $(document).ready(function(){
-        console.log('Here...');
         loadChart();
     });
 
@@ -20,14 +19,25 @@
             var curr_graph_id = data.graph_id;
             $('#'+curr_graph_id+' .dimensions-area').append( dimensions );
             $('#'+curr_graph_id+' .filters-area').append( filters );
-            updateChart(curr_graph_id, null);
+            updateChart(curr_graph_id);
         });
     }
 
-    function updateChart(graph_id, filters) {
+    function getAllFilterValues(graph_id){
+        var retVal = "";
+        $('#'+graph_id+' .filter-set .options-list').each(function(){
+            if($(this).val() != '')
+                retVal += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
+        });
+        return retVal;
+    }
+
+    function updateChart(graph_id) {
         d3.select("#"+graph_id+" .graph-area").select("svg").remove();
+        var filters = getAllFilterValues(graph_id);
         var params = {
-                        'id':graph_id
+                        'id':graph_id,
+                        'filters':filters
                      }
         $.post("/api/marketers", params)
             .done(function(data){
