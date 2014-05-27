@@ -118,25 +118,25 @@ def get_filters_set(filters):
 class MarketersOptions(WebRequestHandler):
     def post(self):
         graph_id = self['graph_id']
-        model = self['model']
-        dimension_ids = self['dimensions']
-        graph_model = self['graph_model']
-        graph_view = self['graph_view']
-
-        content = self.get_content(model, dimension_ids, graph_model, graph_view)
+        graph_view = get_graph_view(self['dimensions'],
+                                    self['model'],
+                                    self['graph_model'],
+                                    self['graph_view'])
+        dimension = graph_view.get_dimension()
+        dimension_title = dimension.keys()[0]
+        dimensions_html = self.get_rendered_html('marketers/graphs/dimensions_area.html',
+                                {'dimension' : dimension_title,
+                                 'graph_id' : graph_id})
+        filters_html = self.get_rendered_html('marketers/graphs/filters_area.html',
+                                              {'filters' : dimension[dimension_title],
+                                               'graph_id' : graph_id})
         self.response.headers['Content-Type'] = 'application/json'
         self.write(
             json.dumps(
-                {'dimensions':self.get_rendered_html('marketers/graphs/dimensions_area.html',
-                                {'dimensions' : content['dimensions'], 'graph_id' : graph_id}),
-                 'filters':self.get_rendered_html('marketers/graphs/filters_area.html',
-                                                 {'filters_set' : content['filters_set'], 'filters_id_set' : content['filters_id_set'], 'graph_id' : graph_id}),
+                {'dimensions':dimensions_html,
+                 'filters':filters_html,
                  'graph_id':graph_id
                 }))
-
-    def get_content(self, model, dimension_ids, graph_model, graph_view):
-        graph_view = get_graph_view(dimension_ids, model, graph_model, graph_view)
-        return graph_view.get_dimension()
 
 app = webapp2.WSGIApplication([('/', HomepageHandler),
                                ('/overview', Overview),

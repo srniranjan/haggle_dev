@@ -1,4 +1,7 @@
 <p>DIMENSION</p>
-{% for dimension in dimensions %}
-    <input type="radio" onchange="enableFilters('{{graph_id}}', {{forloop.counter}})" class="dimension-checkbox" name="dimension" value="{{ dimension.name }}" {% if forloop.counter == 1 %}checked{% endif %}>{{ dimension.name }}
-{% endfor %}
+    <input type="radio"
+           onchange="enableFilters('{{graph_id}}', {{forloop.counter}})"
+           class="dimension-checkbox"
+           name="dimension"
+           value="{{ dimension }}"
+           checked>{{ dimension }}
