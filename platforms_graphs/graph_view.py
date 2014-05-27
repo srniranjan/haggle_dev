@@ -51,8 +51,7 @@ class LineGraphView(GraphView):
                     data_dict[t[0]] = []
                 data_dict[t[0]].append((k,t[1]))
 
-        chart_data_json = {}
-        chart_data_json['chart_data'] = []
+        chart_data = []
         weekdays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
         for (k, v) in sorted(data_dict.iteritems()):
@@ -62,9 +61,9 @@ class LineGraphView(GraphView):
                 dimension2 = t[0]
                 value = t[1]
                 data_row[dimension2] = int(float(value))
-            chart_data_json['chart_data'].append(data_row)
+            chart_data.append(data_row)
 
-        return chart_data_json
+        return chart_data
 
 class BarGraphView(GraphView):
     def get_dimension(self):
@@ -84,8 +83,7 @@ class BarGraphView(GraphView):
                 data_dict[t[0]] = []
             data_dict[t[0]].append((dimension2,t[1]))
 
-        chart_data_json = {}
-        chart_data_json['chart_data'] = []
+        chart_data = []
 
         for (k, v) in data_dict.iteritems():
             dimension1 = k
@@ -94,13 +92,18 @@ class BarGraphView(GraphView):
                 dimension2 = t[0]
                 value = t[1]
                 data_row[dimension2] = int(float(value)) + (data_row[dimension2] if dimension2 in data_row else 0)
-            chart_data_json['chart_data'].append(data_row)
+            chart_data.append(data_row)
 
-        return chart_data_json
+        return chart_data
 
 class AggregatedBarView(GraphView):
+    def get_dimension(self):
+        dimension_title = self.graph_model.property_titles[self.graph_model.xaxis_id]
+        ret_val = {}
+        ret_val[dimension_title] = self.graph_model.filter_unique_vals
+        return ret_val
+
     def get_values_for(self, filter_vals):
-        logging.info(self.graph_model.plots)
         return [plot_val.co_ord for plot_val in self.graph_model.plots]
 
     def translate_to_json(self, data):
@@ -111,8 +114,7 @@ class AggregatedBarView(GraphView):
                 data_dict[t[0]] = []
             data_dict[t[0]].append((dimension2,t[1]))
 
-        chart_data_json = {}
-        chart_data_json['chart_data'] = []
+        chart_data = []
 
         for (k, v) in data_dict.iteritems():
             dimension1 = k
@@ -121,6 +123,6 @@ class AggregatedBarView(GraphView):
                 dimension2 = t[0]
                 value = t[1]
                 data_row[dimension2] = int(float(value)) + (data_row[dimension2] if dimension2 in data_row else 0)
-            chart_data_json['chart_data'].append(data_row)
+            chart_data.append(data_row)
 
-        return chart_data_json
+        return chart_data

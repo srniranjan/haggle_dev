@@ -340,15 +340,13 @@ class ChartDataHandler(RequestHandler):
             if self[id.strip()]:
                 options_array.append((int(id.strip()), str(self[id.strip()])))
 
-        #logging.info(chart_name)
-        #logging.info(dimension)
-        #logging.info(options_array)
+        chart_data_json = {}
         deal_amt_spent_graph = get_graph_view(chart_name, dimension, options_array)
-        data = deal_amt_spent_graph.get_values_for(options_array)
-
-        #logging.info(data)
-        chart_data_json = deal_amt_spent_graph.translate_to_json(data)
+        if deal_amt_spent_graph != None:
+            data = deal_amt_spent_graph.get_values_for(options_array)
+            chart_data_json['chart_data'] = deal_amt_spent_graph.translate_to_json(data)
         chart_data_json['dimension'] = dimension
+        chart_data_json['graph_id'] = chart_name
         self.write(json.dumps(chart_data_json))
 
 app = webapp2.WSGIApplication([

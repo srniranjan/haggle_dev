@@ -44,12 +44,10 @@ def get_graph_view(chart_name, dimension='Day of week', filters=None):
             graph_model.populate(deal_objs, [3, 4], Deal.property_titles)
     elif chart_name == 'sales-per-head':
         if dimension == 'Cuisine':
-            logging.info('filters: '+str(filters))
             graph_model = SalesPerHeadByCuisineGraphModelBuilder(filters)
-            logging.info('filters again: '+str(graph_model.filters))
             graph_model.populate(deal_objs, [3, 4, 6], Deal.property_titles)
 
-    deal_amt_spent_graph = GraphView()
+    deal_amt_spent_graph = None
     if chart_name == 'dollars-spent':
         if dimension == 'Day of week':
             deal_amt_spent_graph = LineGraphView()
@@ -59,6 +57,7 @@ def get_graph_view(chart_name, dimension='Day of week', filters=None):
         if dimension == 'Cuisine':
             deal_amt_spent_graph = AggregatedBarView()
 
-    deal_amt_spent_graph.graph_model = graph_model
+    if deal_amt_spent_graph != None:
+        deal_amt_spent_graph.graph_model = graph_model
 
     return deal_amt_spent_graph

@@ -111,7 +111,6 @@ class MarketersOptions(WebRequestHandler):
 
     def post(self):
         graph_id = self['graph_id']
-        #logging.info('graph_id '+graph_id)
         content = self.get_content(graph_id)
         self.response.headers['Content-Type'] = 'application/json'
         self.write(
@@ -119,42 +118,44 @@ class MarketersOptions(WebRequestHandler):
                 {'dimensions':self.get_rendered_html('marketers/graphs/dimensions_area.html',
                                 {'dimensions' : content['dimensions'], 'graph_id' : graph_id}),
                  'filters':self.get_rendered_html('marketers/graphs/filters_area.html',
-                                                 {'filters_set' : content['filters_set'], 'filters_id_set' : content['filters_id_set'], 'graph_id' : graph_id})
+                                                 {'filters_set' : content['filters_set'], 'filters_id_set' : content['filters_id_set'], 'graph_id' : graph_id}),
+                 'graph_id':graph_id
                 }))
 
     def get_content(self, graph_id):
         filters_set = []
         filters_id_set = []
+        content = {}
+        content['dimensions'] = []
 
         graph_view = get_graph_view(graph_id, 'Day of week')
-
-        dimension_filters = graph_view.get_dimension()
-
-        dimension_1 = dimension_filters.keys()[0].split('-')[0].strip()
-        dimension_2 = dimension_filters.keys()[0].split('-')[1].strip()
-
-        filters_0 = dimension_filters.values()[0]
-        filters_set_0, filters_id_set_0 = get_filters_set(filters_0)
-        filters_set.append(filters_set_0)
-        filters_id_set.append(filters_id_set_0)
+        if graph_view != None:
+            dimension_filters = graph_view.get_dimension()
+            if dimension_filters:
+                if '-' in dimension_filters.keys()[0]:
+                    content['dimensions'].append({'name':dimension_filters.keys()[0].split('-')[0].strip()})
+                else:
+                    content['dimensions'].append({'name':dimension_filters.keys()[0]})
+                filters_0 = dimension_filters.values()[0]
+                filters_set_0, filters_id_set_0 = get_filters_set(filters_0)
+                filters_set.append(filters_set_0)
+                filters_id_set.append(filters_id_set_0)
 
         graph_view = get_graph_view(graph_id, 'Cuisine')
-        dimension_filters = graph_view.get_dimension()
-        filters_1 = dimension_filters.values()[0]
-        filters_set_1, filters_id_set_1 = get_filters_set(filters_1)
-        filters_set.append(filters_set_1)
-        filters_id_set.append(filters_id_set_1)
+        if graph_view != None:
+            dimension_filters = graph_view.get_dimension()
+            if dimension_filters:
+                if '-' in dimension_filters.keys()[0]:
+                    content['dimensions'].append({'name':dimension_filters.keys()[0].split('-')[0].strip()})
+                else:
+                    content['dimensions'].append({'name':dimension_filters.keys()[0]})
+                filters_1 = dimension_filters.values()[0]
+                filters_set_1, filters_id_set_1 = get_filters_set(filters_1)
+                filters_set.append(filters_set_1)
+                filters_id_set.append(filters_id_set_1)
 
-        content = \
-            {
-                'dimensions':
-                    [
-                        {'name':dimension_1},
-                        {'name':dimension_2}
-                    ],
-                'filters_set': filters_set,
-                'filters_id_set': filters_id_set
-            }
+        content['filters_set'] = filters_set
+        content['filters_id_set'] = filters_id_set
         return content
 
 app = webapp2.WSGIApplication([('/', HomepageHandler),

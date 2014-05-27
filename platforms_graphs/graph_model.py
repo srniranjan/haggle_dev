@@ -98,6 +98,7 @@ class SalesPerHeadByCuisineGraphModelBuilder(GraphModelBuilder):
             if not aggregator in aggregated_data[dimension]['aggregators']:
                 aggregated_data[dimension]['aggregators'][aggregator] = True
             aggregated_data[dimension]['total'] += float(model_obj.properties[self.yaxis_id].value)
+            self.add_to_filter_vals(model_obj)
 
         for (k,v) in aggregated_data.iteritems():
             curr_x = k
@@ -110,12 +111,13 @@ class SalesPerHeadByCuisineGraphModelBuilder(GraphModelBuilder):
         matches = []
         for model_obj in model_objs:
             add_model_obj = True
-            for filter_val in filter_vals:
-                idx = filter_val[0]
-                val = filter_val[1]
-                if model_obj.properties[idx].value.lower() != val.lower():
-                    add_model_obj = False
-                    break
+            if filter_vals:
+                for filter_val in filter_vals:
+                    idx = filter_val[0]
+                    val = filter_val[1]
+                    if model_obj.properties[idx].value.lower() != val.lower():
+                        add_model_obj = False
+                        break
             if add_model_obj:
                 matches.append(model_obj)
         return matches

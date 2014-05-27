@@ -1,44 +1,23 @@
 $(document).ready(function(){
-    //updateCheckinsChart();
-    var graph_id_list = ['dollars-spent'];
-    console.log(graph_id_list);
+    var graph_id_list = ['dollars-spent','sales-per-head'];
     loadCharts(graph_id_list);
 });
 
-function updateCheckinsChart() {
-    d3.select("#checkins").select("svg")
-       .remove();
-    var neighbourhood = $('#checkins-neighbourhood').val();
-    var horizon = $('#checkins-horizon').val();
-    var time = $('#checkins-time').val();
-    var params = {
-                    'name':'checkins',
-                    'options':JSON.stringify({'neighbourhood':neighbourhood,'horizon':horizon,'time':time})
-                 }
-    var dat;
-    $.post("/api/marketers", params)
-    .done(function(data){
-        var chart_data = JSON.parse(data)
-        dat = chart_data.chart_data;
-        drawStackedBarChart('checkins',dat,'No. of Checkins');
-    });
-}
-
 function loadCharts(graph_id_list) {
-    console.log(graph_id_list);
     for(var i=0; i < graph_id_list.length; i++) {
         graph_id = graph_id_list[i];
-        console.log(graph_id);
         var option_params = {
             'graph_id':graph_id
         }
+
         $.post('/marketers/options', option_params)
         .done(function(data){
             var dimensions = data.dimensions;
             var filters = data.filters;
-            $('#'+graph_id+' .dimensions-area').append( dimensions );
-            $('#'+graph_id+' .filters-area').append( filters );
-            updateChart(graph_id);
+            var curr_graph_id = data.graph_id;
+            $('#'+curr_graph_id+' .dimensions-area').append( dimensions );
+            $('#'+curr_graph_id+' .filters-area').append( filters );
+            updateChart(curr_graph_id);
         });
     }
 }
@@ -48,7 +27,7 @@ function updateChart(graph_id) {
 
     var params = {
                     'name':graph_id,
-                    'dimension':$("input:radio[name=dimension]:checked").val()
+                    'dimension':$("#"+graph_id+" input:radio[name=dimension]:checked").val()
                  }
 
     $('#'+graph_id+' .active-filter-set .options-list').each(function(){
@@ -60,46 +39,17 @@ function updateChart(graph_id) {
     var filter_ids = $('#'+graph_id+' .active-filter-id-set').val();
 
     params['filter_ids'] = filter_ids;
-
     $.post("/api/marketers", params)
     .done(function(data){
         var chart_data = JSON.parse(data);
         var dat = chart_data.chart_data;
-        if(chart_data.dimension == 'Day of week') {
-            drawLineChart(graph_id+' .graph-area',dat,'Spent ($)');
-        } else if(chart_data.dimension == 'Cuisine') {
-            drawStackedBarChart(graph_id+' .graph-area',dat,'Spent ($)');
+        var curr_graph_id = chart_data.graph_id;
+        if (dat) {
+            if(chart_data.dimension == 'Day of week') {
+                drawLineChart(curr_graph_id+' .graph-area',dat,'Spent ($)');
+            } else if(chart_data.dimension == 'Cuisine') {
+                drawStackedBarChart(curr_graph_id+' .graph-area',dat,'Spent ($)');
         }
-    });
-}
-
-function updateSalesPerHeadChart() {
-    d3.select("#sales-per-head .graph-area").select("svg").remove();
-
-    var params = {
-                    'name':'sales per head',
-                    'dimension':$("input:radio[name=dimension]:checked").val()
-                 }
-
-    $('.active-filter-set .options-list').each(function(){
-        if($(this).val() != ''){
-            params[$(this).attr('name')] = $(this).val();
-        }
-    });
-
-    var filter_ids = $($('.active-filter-id-set')[0]).val();
-
-    params['filter_ids'] = filter_ids;
-
-    $.post("/api/marketers", params)
-    .done(function(data){
-        var chart_data = JSON.parse(data);
-        var dat = chart_data.chart_data;
-        console.log(dat);
-        if(chart_data.dimension == 'Day of week') {
-            drawLineChart('sales-per-head .graph-area',dat,'Spent ($)');
-        } else if(chart_data.dimension == 'Cuisine') {
-            drawStackedBarChart('sales-per-head .graph-area',dat,'Spent ($)');
         }
     });
 }
