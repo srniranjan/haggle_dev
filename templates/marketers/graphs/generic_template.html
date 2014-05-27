@@ -32,10 +32,14 @@
         $.post("/api/marketers", params)
             .done(function(data){
                 var chart_data = JSON.parse(data);
-                var dat = chart_data.chart_data;
-                var curr_graph_id = chart_data.graph_id;
-
+                render_graph(chart_data.graph_id, chart_data.chart_type, chart_data.chart_data);
         });
+    }
+
+    function render_graph(graph_id, chart_type, chart_data){
+        if(chart_type == 'LineGraphView'){
+            drawLineChart(graph_id + ' .graph-area', chart_data);
+        }
     }
 </script>
 
