@@ -1,27 +1,3 @@
-$(document).ready(function(){
-    var graph_id_list = ['dollars-spent','sales-per-head'];
-    loadCharts(graph_id_list);
-});
-
-function loadCharts(graph_id_list) {
-    for(var i=0; i < graph_id_list.length; i++) {
-        graph_id = graph_id_list[i];
-        var option_params = {
-            'graph_id':graph_id
-        }
-
-        $.post('/marketers/options', option_params)
-        .done(function(data){
-            var dimensions = data.dimensions;
-            var filters = data.filters;
-            var curr_graph_id = data.graph_id;
-            $('#'+curr_graph_id+' .dimensions-area').append( dimensions );
-            $('#'+curr_graph_id+' .filters-area').append( filters );
-            updateChart(curr_graph_id);
-        });
-    }
-}
-
 function updateChart(graph_id) {
     d3.select("#"+graph_id+" .graph-area").select("svg").remove();
 

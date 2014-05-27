@@ -1,3 +1,26 @@
+<script>
+    $(document).ready(function(){
+    console.log('Here...')
+    loadChart('{{graph.id}}');
+});
+
+function loadChart(graph_id) {
+    var option_params = {
+        'graph_id':graph_id
+    }
+
+    $.post('/marketers/options', option_params)
+    .done(function(data){
+        var dimensions = data.dimensions;
+        var filters = data.filters;
+        var curr_graph_id = data.graph_id;
+        $('#'+curr_graph_id+' .dimensions-area').append( dimensions );
+        $('#'+curr_graph_id+' .filters-area').append( filters );
+        //updateChart(curr_graph_id);
+    });
+}
+
+</script>
 <form>
     <div id="dimensions-area" class="dimensions-area"></div>
     <div class="filters-graph">
