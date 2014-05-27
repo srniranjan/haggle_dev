@@ -74,7 +74,17 @@ class Landing(WebRequestHandler):
 class Marketers(WebRequestHandler):
     def get(self):
         path = 'marketers.html'
-        self.response.out.write(self.get_rendered_html(path, dict()))
+        template_values = {'graphs':[
+            {'id':'dollars-spent',
+             'dimension-id':'1',
+             'model':'Deal',
+             'title':'Dollars Spent'},
+            {'id':'sales-per-head',
+             'dimension-id':'3',
+             'model':'Deal',
+             'title':'Sales per head'}
+        ]}
+        self.response.out.write(self.get_rendered_html(path, template_values))
 
 
 def get_filters_set(filters):
@@ -108,7 +118,6 @@ def get_filters_set(filters):
     return filters_set, filters_id_set
 
 class MarketersOptions(WebRequestHandler):
-
     def post(self):
         graph_id = self['graph_id']
         content = self.get_content(graph_id)
@@ -125,8 +134,7 @@ class MarketersOptions(WebRequestHandler):
     def get_content(self, graph_id):
         filters_set = []
         filters_id_set = []
-        content = {}
-        content['dimensions'] = []
+        content = {'dimensions' : []}
 
         graph_view = get_graph_view(graph_id, 'Day of week')
         if graph_view != None:

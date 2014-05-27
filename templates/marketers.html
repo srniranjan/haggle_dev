@@ -152,14 +152,14 @@
 <div id="spending" class="full-width-line">
     <p class="bold-font">SPENDING</p>
     <hr>
-    <div id="dollars-spent" class="graph-container">
-        <p>$ SPENT</p>
-        {% include 'marketers/graphs/generic_template.html' %}
+
+    {% for graph in graphs %}
+        <div id="{{graph.id}}" class="graph-container">
+        <p>{{graph.title}}</p>
+        {% include 'marketers/graphs/generic_template.html' with graph=graph%}
     </div>
-    <div id="sales-per-head" class="graph-container">
-        <p>TOTAL SALES PER HEAD</p>
-        {% include 'marketers/graphs/generic_template.html' %}
-    </div>
+    {% endfor %}
+    
     <!--<div id="spending-options">-->
         <!--<div>-->
             <!--Neighbourhood-->
