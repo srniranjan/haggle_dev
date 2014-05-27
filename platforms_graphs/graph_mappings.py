@@ -13,5 +13,13 @@ graphs = {'dollars-spent':
                'model':'Deal',
                'title':'Dollars Spent Per Cuisine',
                'graph_model':'BarGraphModelBuilder',
-               'graph_view':'BarGraphView'}
+               'graph_view':'BarGraphView'},
+          'sales-per-head':
+              {'id':'sales-per-head',
+               'dimension_ids':'3, 4, 6',
+               'filter_ids':'0, 1, 2',
+               'model':'Deal',
+               'title':'Sales Per Head',
+               'graph_model':'AggregateBarGraphModelBuilder',
+               'graph_view':'AggregateBarGraphView'}
         }

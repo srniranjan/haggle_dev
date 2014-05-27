@@ -5,6 +5,8 @@ def get_graph_view_for(graph_name):
         return LineGraphView()
     elif graph_name == 'BarGraphView':
         return BarGraphView()
+    elif graph_name == 'AggregateBarGraphView':
+        return AggregateBarGraphView()
     return None
 
 class GraphView():
@@ -12,7 +14,10 @@ class GraphView():
         self.graph_model = None
 
     def get_dimension(self):
-        pass
+        dimension_title = self.graph_model.property_titles[self.graph_model.xaxis_id]
+        ret_val = {}
+        ret_val[dimension_title] = self.graph_model.filter_unique_vals
+        return ret_val
 
     def get_values_for(self, filter_vals):
         pass
@@ -65,12 +70,6 @@ class LineGraphView(GraphView):
         return chart_data
 
 class BarGraphView(GraphView):
-    def get_dimension(self):
-        dimension_title = self.graph_model.property_titles[self.graph_model.xaxis_id]
-        ret_val = {}
-        ret_val[dimension_title] = self.graph_model.filter_unique_vals
-        return ret_val
-
     def get_values_for(self, filter_vals):
         return self.find_matches_in(self.graph_model.plots, filter_vals)
 
@@ -89,33 +88,20 @@ class BarGraphView(GraphView):
         return chart_data
 
 
-class AggregatedBarView(GraphView):
-    def get_dimension(self):
-        dimension_title = self.graph_model.property_titles[self.graph_model.xaxis_id]
-        ret_val = {}
-        ret_val[dimension_title] = self.graph_model.filter_unique_vals
-        return ret_val
-
-    def get_values_for(self, filter_vals):
-        return [plot_val.co_ord for plot_val in self.graph_model.plots]
-
-    def translate_to_json(self, data):
-        data_dict = {}
-        dimension2 = 'All'
-        for t in data:
-            if not t[0] in data_dict:
-                data_dict[t[0]] = []
-            data_dict[t[0]].append((dimension2,t[1]))
-
+class AggregateBarGraphView(GraphView):
+    def translate_to_json(self, filters):
         chart_data = []
-
-        for (k, v) in data_dict.iteritems():
-            dimension1 = k
-            data_row = {'dimension1':dimension1}
-            for t in v:
-                dimension2 = t[0]
-                value = t[1]
-                data_row[dimension2] = int(float(value)) + (data_row[dimension2] if dimension2 in data_row else 0)
-            chart_data.append(data_row)
-
+        agg_data = self.graph_model.aggregated_data
+        agg_dim_sum = {}
+        for dimension1, agg_dim_dict in agg_data.iteritems():
+            curr_agg_dim_sum = 0.0
+            for agg_dim, plot_vals in agg_dim_dict.iteritems():
+                matches = self.find_matches_in(plot_vals, filters)
+                for (x, y) in matches:
+                    curr_agg_dim_sum += float(y)
+            agg_dim_sum[dimension1] = curr_agg_dim_sum / len(agg_dim_dict)
+        for dimension1, avg_value in agg_dim_sum.iteritems():
+            curr_dict = {'dimension1' : dimension1,
+                         'All' : avg_value}
+            chart_data.append(curr_dict)
         return chart_data

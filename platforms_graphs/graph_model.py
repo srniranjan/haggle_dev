@@ -5,6 +5,8 @@ def get_graph_model_for(model_name):
         return LineGraphModelBuilder()
     elif model_name == 'BarGraphModelBuilder':
         return BarGraphModelBuilder()
+    elif model_name == 'AggregateBarGraphModelBuilder':
+        return AggregateBarGraphModelBuilder()
     return None
 
 class PlotValue():
@@ -80,52 +82,36 @@ class BarGraphModelBuilder(GraphModelBuilder):
             self.add_to_filter_vals(model_obj)
             self.plots.append(plot_val)
 
-class SalesPerHeadByCuisineGraphModelBuilder(GraphModelBuilder):
-    def __init__(self, filters=None):
+class AggregateBarGraphModelBuilder(GraphModelBuilder):
+    def __init__(self):
         GraphModelBuilder.__init__(self)
         self.xaxis_id = 0
         self.yaxis_id = 0
         self.aggregator_id = 0
+        self.aggregated_data = None
         self.plots = []
-        self.selected_filters = filters
 
-    def populate(self, model_objs, ids, property_titles):
-        GraphModelBuilder.populate(self, model_objs, ids, property_titles)
-        self.xaxis_id = ids[0]
-        self.yaxis_id = ids[1]
-        self.aggregator_id = ids[2]
-
-        model_objs = self.find_matches_in(model_objs, self.selected_filters)
+    def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
+        GraphModelBuilder.populate(self, model_objs, dimension_ids, filter_ids, property_titles)
+        self.xaxis_id = dimension_ids[0]
+        self.yaxis_id = dimension_ids[1]
+        self.aggregator_id = dimension_ids[2]
 
         aggregated_data = {}
         for model_obj in model_objs:
             dimension = model_obj.properties[self.xaxis_id].value
             aggregator = model_obj.properties[self.aggregator_id].value
-            if not dimension in aggregated_data:
-                aggregated_data[dimension] = {'aggregators':{},'total':0.0}
-            if not aggregator in aggregated_data[dimension]['aggregators']:
-                aggregated_data[dimension]['aggregators'][aggregator] = True
-            aggregated_data[dimension]['total'] += float(model_obj.properties[self.yaxis_id].value)
-            self.add_to_filter_vals(model_obj)
+            if dimension not in aggregated_data:
+                aggregated_data[dimension] = {}
+            aggregator_dict = aggregated_data[dimension]
+            if aggregator not in aggregator_dict:
+                aggregator_dict[aggregator] = []
 
-        for (k,v) in aggregated_data.iteritems():
-            curr_x = k
-            curr_y = v['total']/len(v['aggregators'])
+            curr_x = model_obj.properties[self.xaxis_id].value
+            curr_y = model_obj.properties[self.yaxis_id].value
             plot_val = PlotValue()
             plot_val.co_ord = (curr_x, curr_y)
-            self.plots.append(plot_val)
-
-    def find_matches_in(self, model_objs, filter_vals):
-        matches = []
-        for model_obj in model_objs:
-            add_model_obj = True
-            if filter_vals:
-                for filter_val in filter_vals:
-                    idx = filter_val[0]
-                    val = filter_val[1]
-                    if model_obj.properties[idx].value.lower() != val.lower():
-                        add_model_obj = False
-                        break
-            if add_model_obj:
-                matches.append(model_obj)
-        return matches
+            plot_val.model = model_obj
+            self.add_to_filter_vals(model_obj)
+            aggregator_dict[aggregator].append(plot_val)
+        self.aggregated_data = aggregated_data
