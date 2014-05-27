@@ -1,5 +1,3 @@
-import logging
-
 def get_graph_model_for(model_name):
     if model_name == 'LineGraphModelBuilder':
         return LineGraphModelBuilder()
@@ -31,7 +29,11 @@ class GraphModelBuilder():
         for filter in self.filters:
                 if filter not in self.filter_unique_vals:
                     self.filter_unique_vals[filter] = set()
-                self.filter_unique_vals[filter].add(model_obj.properties[filter[0]].value)
+                if isinstance(model_obj.properties[filter[0]].value, basestring):
+                    self.filter_unique_vals[filter].add(model_obj.properties[filter[0]].value)
+                else:
+                    for val in model_obj.properties[filter[0]].value:
+                        self.filter_unique_vals[filter].add(val)
 
 class LineGraphModelBuilder(GraphModelBuilder):
     def __init__(self):

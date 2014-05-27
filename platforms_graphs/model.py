@@ -1,9 +1,23 @@
 from pytz import timezone
 import datetime
+from datetime import timedelta
 
 def time_value_strategy(timestamp):
+    time_array = []
     eastern = timezone('US/Eastern')
-    return datetime.datetime.fromtimestamp(float(timestamp), eastern)
+    dt = datetime.datetime.fromtimestamp(float(timestamp), eastern)
+    today = datetime.datetime.now().date()
+    timedelta = today - dt.date()
+    days = timedelta.days
+    if days <= 1:
+        time_array.append('Last Day')
+    if days <= 7:
+        time_array.append('Last Week')
+    if days <= 30:
+        time_array.append('Last Month')
+    if days <= 365:
+        time_array.append('Last Year')
+    return time_array
 
 def day_value_strategy(day_of_week):
     days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
@@ -62,7 +76,7 @@ class Deal(Model):
             idx += 1
 
 class UserScore(Model):
-    property_titles = ["Restaurant", "User Email", "User Name", "Misc1", "Score Type", "Misc2", "Score"]
+    property_titles = ["Restaurant", "User Email", "User Name", "Misc1", "Score Type", "Misc2", "Score", "Cuisine", "Neighborhood"]
 
     def populate(self, line):
         comps = line.strip().split('####')

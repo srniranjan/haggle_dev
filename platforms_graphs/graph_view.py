@@ -32,7 +32,7 @@ class GraphView():
                 for filter_val in filter_vals:
                     idx = filter_val[0]
                     val = filter_val[1]
-                    if model.properties[int(idx)].value.lower() != val.lower():
+                    if val not in model.properties[int(idx)].value:
                         add_co_ord = False
                         break
             if add_co_ord:
@@ -84,7 +84,6 @@ class BarGraphView(GraphView):
         for k, v in plot_dict.iteritems():
             curr_dict = {'dimension1' : k, 'All' : v}
             chart_data.append(curr_dict)
-        logging.info(chart_data)
         return chart_data
 
 
