@@ -45,7 +45,9 @@ function drawStackedBarChart(id, data, metricTitle) {
     svg.append("g")
     .attr("class", "x axis")
     .attr("transform", "translate(0," + height + ")")
-    .call(xAxis);
+    .call(xAxis)
+    .attr("font-family", "sans-serif")
+    .attr("font-size", "12px");
 
     svg.append("g")
     .attr("class", "y axis")
@@ -70,12 +72,12 @@ function drawStackedBarChart(id, data, metricTitle) {
     .attr("y", function(d) { return y(d.y1); })
     .attr("height", 0)
     .transition()
-    .duration(2000)
+    .duration(1000)
     .ease("linear")
     .attr("height", function(d) { return y(d.y0) - y(d.y1); })
     .style("fill", function(d) { return color(d.name); });
 
-    var legend = svg.selectAll(".legend")
+    /*var legend = svg.selectAll(".legend")
     .data(color.domain().slice().reverse())
     .enter().append("g")
     .attr("class", "legend")
@@ -92,5 +94,5 @@ function drawStackedBarChart(id, data, metricTitle) {
     .attr("y", 9)
     .attr("dy", ".35em")
     .style("text-anchor", "end")
-    .text(function(d) { return d; });
+    .text(function(d) { return d; });*/
 }

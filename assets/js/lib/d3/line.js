@@ -105,7 +105,7 @@ function drawLineChart(id, data, metricTitle) {
     .ease("linear")
     .attr("stroke-dashoffset", 0);
 
-    dimension2.append("text")
+    /*dimension2.append("text")
     .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
     .attr("transform", function(d) { return "translate(" + x(d.value.dimension1) + "," + y(d.value.metric) + ")"; })
     .attr("x", 20)
@@ -113,5 +113,25 @@ function drawLineChart(id, data, metricTitle) {
     .text(function(d) { return d.name; })
     .attr("font-family", "sans-serif")
     .attr("font-size", "12px")
-    .attr("fill", function(d) { return color(d.name); });
+    .attr("fill", function(d) { return color(d.name); });*/
+
+    var legend = svg.selectAll(".legend")
+    .data(color.domain().slice().reverse())
+    .enter().append("g")
+    .attr("class", "legend")
+    .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+    legend.append("rect")
+    .attr("x", width + 55)
+    .attr("width", 18)
+    .attr("height", 18)
+    .style("fill", color);
+
+    legend.append("text")
+    .attr("x", width + 50)
+    .attr("y", 9)
+    .attr("dy", ".35em")
+    .style("text-anchor", "end")
+    .text(function(d) { return d; })
+    .attr("fill", color);
 }
