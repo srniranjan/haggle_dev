@@ -76,7 +76,7 @@ class Marketers(WebRequestHandler):
     def get(self):
         path = 'marketers.html'
         #template_values = {'graphs':[graphs['dollars-spent'], graphs['dollars-cuisine'], graphs['sales-per-head']]}
-        template_values = {'graphs':[graphs['sales-per-head']]}
+        template_values = {'graphs':[graphs['dollars-spent'], graphs['dollars-cuisine'], graphs['sales-per-head'], graphs['aggregate-user-score']]}
         self.response.out.write(self.get_rendered_html(path, template_values))
 
 class MarketersOptions(WebRequestHandler):

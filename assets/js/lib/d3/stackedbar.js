@@ -16,8 +16,7 @@ function drawStackedBarChart(id, data, metricTitle) {
 
     var yAxis = d3.svg.axis()
     .scale(y)
-    .orient("left")
-    .tickFormat(d3.format(".2s"));
+    .orient("left");
 
     var svg = d3.select("#"+id).append("svg")
     .attr("width", width + margin.left + margin.right)

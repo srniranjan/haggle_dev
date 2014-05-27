@@ -1,8 +1,10 @@
-from model import Deal
+from model import Deal, UserScore
 
 def get_data_file_for(model_name):
     if model_name == 'Deal':
         return 'platforms_graphs/data/availed_deals_with_price'
+    elif model_name == 'UserScore':
+        return 'platforms_graphs/data/user_scores'
     return ''
 
 def get_model_records_for(model_name):
@@ -14,6 +16,8 @@ def get_model_records_for(model_name):
 def get_model_obj_for(model_name):
     if model_name == 'Deal':
         return Deal()
+    elif model_name == 'UserScore':
+        return UserScore()
     return None
 
 def get_model_objs_for(model_name):

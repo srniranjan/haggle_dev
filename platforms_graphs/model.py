@@ -9,6 +9,13 @@ def day_value_strategy(day_of_week):
     days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     return days[int(day_of_week)]
 
+def user_score_value_strategy(score):
+    return round(float(score), 2)
+
+def user_score_type_strategy(type_id):
+    types = {'H':'History','L':'Loyalty','I':'Influence'}
+    return types[type_id]
+
 class Property():
     def __init__(self):
         self.raw_value = ''
@@ -28,11 +35,15 @@ class Model():
     def __init__(self):
         self.properties = []
 
+    def getTitleFor(self, index):
+        return self.property_titles[index]
+
+    def pretty_print(self):
+        for prop in self.properties:
+            print prop.title, prop.value
+
 class Deal(Model):
     property_titles = ["Time", "Day of week", "Neighborhood", "Cuisine", "$ Spent", "Status", "User ID"]
-
-    def getTitleFor(self, index):
-        return Deal.property_titles[index]
 
     def populate(self, line):
         comps = line.strip().split('::::')
@@ -50,6 +61,21 @@ class Deal(Model):
             self.properties.append(prop)
             idx += 1
 
-    def pretty_print(self):
-        for prop in self.properties:
-            print prop.title, prop.value
+class UserScore(Model):
+    property_titles = ["Restaurant", "User Email", "User Name", "Misc1", "Score Type", "Misc2", "Score"]
+
+    def populate(self, line):
+        comps = line.strip().split('####')
+        self.property_size = len(comps)
+        idx = 0
+        for comp in comps:
+            prop = Property()
+            prop.raw_value = comp.strip()
+            prop.unique_id = idx
+            prop.title = self.getTitleFor(idx)
+            if idx == 4:
+                prop.value_strategy = user_score_type_strategy
+            elif idx == 6:
+                prop.value_strategy = user_score_value_strategy
+            self.properties.append(prop)
+            idx += 1

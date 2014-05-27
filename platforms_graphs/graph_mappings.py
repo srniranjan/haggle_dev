@@ -21,5 +21,13 @@ graphs = {'dollars-spent':
                'model':'Deal',
                'title':'Sales Per Head',
                'graph_model':'AggregateBarGraphModelBuilder',
+               'graph_view':'AggregateBarGraphView'},
+          'aggregate-user-score':
+              {'id':'aggregate-user-score',
+               'dimension_ids':'0, 6, 1',
+               'filter_ids':'4',
+               'model':'UserScore',
+               'title':'Aggregated User Score',
+               'graph_model':'AggregateBarGraphModelBuilder',
                'graph_view':'AggregateBarGraphView'}
         }

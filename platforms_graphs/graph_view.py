@@ -99,7 +99,7 @@ class AggregateBarGraphView(GraphView):
                 matches = self.find_matches_in(plot_vals, filters)
                 for (x, y) in matches:
                     curr_agg_dim_sum += float(y)
-            agg_dim_sum[dimension1] = curr_agg_dim_sum / len(agg_dim_dict)
+            agg_dim_sum[dimension1] = round((curr_agg_dim_sum / len(agg_dim_dict)), 2)
         for dimension1, avg_value in agg_dim_sum.iteritems():
             curr_dict = {'dimension1' : dimension1,
                          'All' : avg_value}
