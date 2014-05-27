@@ -76,13 +76,11 @@ class Marketers(WebRequestHandler):
         path = 'marketers.html'
         template_values = {'graphs':[
             {'id':'dollars-spent',
-             'dimension-id':'1',
+             'dimension_ids':'1, 3, 4',
              'model':'Deal',
-             'title':'Dollars Spent'},
-            {'id':'sales-per-head',
-             'dimension-id':'3',
-             'model':'Deal',
-             'title':'Sales per head'}
+             'title':'Dollars Spent',
+             'graph_model':'LineGraphModelBuilder',
+             'graph_view':'LineGraphView'}
         ]}
         self.response.out.write(self.get_rendered_html(path, template_values))
 
@@ -120,7 +118,12 @@ def get_filters_set(filters):
 class MarketersOptions(WebRequestHandler):
     def post(self):
         graph_id = self['graph_id']
-        content = self.get_content(graph_id)
+        model = self['model']
+        dimension_ids = self['dimensions']
+        graph_model = self['graph_model']
+        graph_view = self['graph_view']
+
+        content = self.get_content(model, dimension_ids, graph_model, graph_view)
         self.response.headers['Content-Type'] = 'application/json'
         self.write(
             json.dumps(
@@ -131,40 +134,9 @@ class MarketersOptions(WebRequestHandler):
                  'graph_id':graph_id
                 }))
 
-    def get_content(self, graph_id):
-        filters_set = []
-        filters_id_set = []
-        content = {'dimensions' : []}
-
-        graph_view = get_graph_view(graph_id, 'Day of week')
-        if graph_view != None:
-            dimension_filters = graph_view.get_dimension()
-            if dimension_filters:
-                if '-' in dimension_filters.keys()[0]:
-                    content['dimensions'].append({'name':dimension_filters.keys()[0].split('-')[0].strip()})
-                else:
-                    content['dimensions'].append({'name':dimension_filters.keys()[0]})
-                filters_0 = dimension_filters.values()[0]
-                filters_set_0, filters_id_set_0 = get_filters_set(filters_0)
-                filters_set.append(filters_set_0)
-                filters_id_set.append(filters_id_set_0)
-
-        graph_view = get_graph_view(graph_id, 'Cuisine')
-        if graph_view != None:
-            dimension_filters = graph_view.get_dimension()
-            if dimension_filters:
-                if '-' in dimension_filters.keys()[0]:
-                    content['dimensions'].append({'name':dimension_filters.keys()[0].split('-')[0].strip()})
-                else:
-                    content['dimensions'].append({'name':dimension_filters.keys()[0]})
-                filters_1 = dimension_filters.values()[0]
-                filters_set_1, filters_id_set_1 = get_filters_set(filters_1)
-                filters_set.append(filters_set_1)
-                filters_id_set.append(filters_id_set_1)
-
-        content['filters_set'] = filters_set
-        content['filters_id_set'] = filters_id_set
-        return content
+    def get_content(self, model, dimension_ids, graph_model, graph_view):
+        graph_view = get_graph_view(dimension_ids, model, graph_model, graph_view)
+        return graph_view.get_dimension()
 
 app = webapp2.WSGIApplication([('/', HomepageHandler),
                                ('/overview', Overview),

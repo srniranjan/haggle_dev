@@ -1,8 +1,11 @@
+from graph_model import LineGraphModelBuilder, BarGraphModelBuilder
+
 class Property():
     def __init__(self):
         self.value = ''
         self.unique_id = 0
         self.title = ''
+        self.graph_type = None
 
 class Model():
     property_titles = []

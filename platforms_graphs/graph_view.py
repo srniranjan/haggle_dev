@@ -1,5 +1,10 @@
 import logging
 
+def get_graph_view_for(graph_name):
+    if graph_name == 'LineGraphView':
+        return LineGraphView()
+    return None
+
 class GraphView():
     def __init__(self):
         self.graph_model = None

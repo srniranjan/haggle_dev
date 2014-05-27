@@ -1,5 +1,10 @@
 import logging
 
+def get_graph_model_for(model_name):
+    if model_name == 'LineGraphModelBuilder':
+        return LineGraphModelBuilder()
+    return None
+
 class PlotValue():
     def __init__(self):
         self.co_ord = None
