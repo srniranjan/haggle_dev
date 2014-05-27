@@ -112,10 +112,7 @@ def get_filters_set(filters):
 class MarketersOptions(WebRequestHandler):
     def post(self):
         graph_id = self['graph_id']
-        graph_view = get_graph_view(self['dimensions'],
-                                    self['model'],
-                                    self['graph_model'],
-                                    self['graph_view'])
+        graph_view = get_graph_view(graphs[graph_id])
         dimension = graph_view.get_dimension()
         dimension_title = dimension.keys()[0]
         dimensions_html = self.get_rendered_html('marketers/graphs/dimensions_area.html',

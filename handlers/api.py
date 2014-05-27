@@ -23,10 +23,7 @@ class ChartDataHandler(RequestHandler):
     def post(self):
         chart_name = self['id']
         curr_graph = graphs[chart_name]
-        graph_view = get_graph_view(curr_graph['dimension_ids'],
-                       curr_graph['model'],
-                       curr_graph['graph_model'],
-                       curr_graph['graph_view'])
+        graph_view = get_graph_view(curr_graph)
         chart_data_json = {'graph_id':chart_name,
                            'chart_data':graph_view.translate_to_json(None),
                            'chart_type':curr_graph['graph_view']}

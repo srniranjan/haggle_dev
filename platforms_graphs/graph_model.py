@@ -13,15 +13,15 @@ class PlotValue():
 class GraphModelBuilder():
     def __init__(self):
         self.property_titles = None
+        self.filter_ids = None
         self.filters = None
         self.filter_unique_vals = {}
 
-    def populate(self, model_objs, ids, property_titles):
+    def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
         self.property_titles = property_titles
         self.filters = []
-        for i in range(0, len(property_titles)):
-            if i not in ids:
-                self.filters.append((i, property_titles[i]))
+        for i in filter_ids:
+            self.filters.append((i, property_titles[i]))
 
     def add_to_filter_vals(self, model_obj):
         for filter in self.filters:
@@ -37,11 +37,11 @@ class LineGraphModelBuilder(GraphModelBuilder):
         self.yaxis_id = 0
         self.lines_map = None
 
-    def populate(self, model_objs, ids, property_titles):
-        GraphModelBuilder.populate(self, model_objs, ids, property_titles)
-        self.xaxis_id = ids[0]
-        self.additional_xaxis_id = ids[1]
-        self.yaxis_id = ids[2]
+    def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
+        GraphModelBuilder.populate(self, model_objs, dimension_ids, filter_ids, property_titles)
+        self.xaxis_id = dimension_ids[0]
+        self.additional_xaxis_id = dimension_ids[1]
+        self.yaxis_id = dimension_ids[2]
 
         self.lines_map = dict()
         for model_obj in model_objs:
