@@ -3,6 +3,8 @@ import logging
 def get_graph_view_for(graph_name):
     if graph_name == 'LineGraphView':
         return LineGraphView()
+    elif graph_name == 'BarGraphView':
+        return BarGraphView()
     return None
 
 class GraphView():
@@ -53,7 +55,6 @@ class LineGraphView(GraphView):
         return ret_val
 
     def translate_to_json(self, filters):
-        self.get_values_for(filters)
         chart_data = []
         for curr_dimension, plot_vals in self.graph_model.lines_map.iteritems():
             matches = self.find_matches_in(plot_vals, filters)
@@ -73,26 +74,20 @@ class BarGraphView(GraphView):
     def get_values_for(self, filter_vals):
         return self.find_matches_in(self.graph_model.plots, filter_vals)
 
-    def translate_to_json(self, data):
-        data_dict = {}
-        dimension2 = 'All'
-        for t in data:
-            if not t[0] in data_dict:
-                data_dict[t[0]] = []
-            data_dict[t[0]].append((dimension2,t[1]))
-
+    def translate_to_json(self, filters):
         chart_data = []
-
-        for (k, v) in data_dict.iteritems():
-            dimension1 = k
-            data_row = {'dimension1':dimension1}
-            for t in v:
-                dimension2 = t[0]
-                value = t[1]
-                data_row[dimension2] = int(float(value)) + (data_row[dimension2] if dimension2 in data_row else 0)
-            chart_data.append(data_row)
-
+        matches = self.find_matches_in(self.graph_model.plots, filters)
+        plot_dict = {}
+        for (x, y) in matches:
+            if x not in plot_dict:
+                plot_dict[x] = 0.0
+            plot_dict[x] += float(y)
+        for k, v in plot_dict.iteritems():
+            curr_dict = {'dimension1' : k, 'All' : v}
+            chart_data.append(curr_dict)
+        logging.info(chart_data)
         return chart_data
+
 
 class AggregatedBarView(GraphView):
     def get_dimension(self):

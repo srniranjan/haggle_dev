@@ -3,6 +3,8 @@ import logging
 def get_graph_model_for(model_name):
     if model_name == 'LineGraphModelBuilder':
         return LineGraphModelBuilder()
+    elif model_name == 'BarGraphModelBuilder':
+        return BarGraphModelBuilder()
     return None
 
 class PlotValue():
@@ -64,10 +66,10 @@ class BarGraphModelBuilder(GraphModelBuilder):
         self.yaxis_id = 0
         self.plots = []
 
-    def populate(self, model_objs, ids, property_titles):
-        GraphModelBuilder.populate(self, model_objs, ids, property_titles)
-        self.xaxis_id = ids[0]
-        self.yaxis_id = ids[1]
+    def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
+        GraphModelBuilder.populate(self, model_objs, dimension_ids, filter_ids, property_titles)
+        self.xaxis_id = dimension_ids[0]
+        self.yaxis_id = dimension_ids[1]
 
         for model_obj in model_objs:
             curr_x = model_obj.properties[self.xaxis_id].value

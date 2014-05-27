@@ -75,39 +75,8 @@ class Landing(WebRequestHandler):
 class Marketers(WebRequestHandler):
     def get(self):
         path = 'marketers.html'
-        template_values = {'graphs':[graphs['dollars-spent']]}
+        template_values = {'graphs':[graphs['dollars-spent'], graphs['dollars-cuisine']]}
         self.response.out.write(self.get_rendered_html(path, template_values))
-
-
-def get_filters_set(filters):
-    filters_set = []
-    filters_id_set = []
-
-    for (k, v) in filters.iteritems():
-        id = k[0]
-        name = k[1]
-        values = [value for value in v ]
-        filter = {}
-        filter['id'] = id
-        filter['name'] = name
-        filter['options'] = []
-        option = {}
-        option['name'] = '--SELECT--'
-        option['value'] = ''
-        filter['options'].append(option)
-        for value in values:
-            option = {}
-            if id == 0:
-                eastern = timezone('US/Eastern')
-                option['name'] = datetime.datetime.fromtimestamp(float(value), eastern)
-            else:
-                option['name'] = value
-            option['value'] = value
-            filter['options'].append(option)
-        filters_id_set.append(id)
-        filters_set.append(filter)
-
-    return filters_set, filters_id_set
 
 class MarketersOptions(WebRequestHandler):
     def post(self):
