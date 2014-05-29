@@ -1,1 +1,42 @@
-<p>Hello World Line!</p>
+<script>
+    function convertToTextField(drop_down_id){
+        var all_values = $.map($('#' + drop_down_id + ' select option') ,function(option) {return option.value;});
+        var sel_value = $('#' + drop_down_id + ' select :selected').val();
+        $('#' + drop_down_id + ' select').remove();
+        $('#' + drop_down_id).append('<label>' + sel_value + '</label>');
+        var sel_idx = all_values.indexOf(sel_value);
+        all_values.splice(sel_idx, 1);
+        return all_values;
+    }
+
+    function loadSecondaryDimension(){
+        var all_values = convertToTextField('primary_dimensions');
+        for(var val in all_values){
+            var curr_val = all_values[val];
+            var curr_text = curr_val;
+            if(curr_val.length == 0)
+                curr_text = '--SELECT--';
+            $('#secondary_dimensions select').append("<option value='" + curr_val + "'>" + curr_text + "</option>");
+        }
+    }
+
+    function loadSecondaryDimensionValues(){
+        convertToTextField('secondary_dimensions');
+    }
+</script>
+<div>
+    <p>Choose primary X value</p>
+    <div id="primary_dimensions">
+        <select class="options-list" onchange="loadSecondaryDimension()">
+            <option value="">--SELECT--</option>
+            {% for x_candidate in  x_candidates %}
+                <option value="{{x_candidate}}">{{x_candidate}}</option>
+            {%endfor%}
+        </select>
+    </div>
+    <p>Choose secondary X value</p>
+    <div id="secondary_dimensions">
+        <select class="options-list" onchange="loadSecondaryDimensionValues()">
+        </select>
+    </div>
+</div>
