@@ -4,6 +4,7 @@
     <script src="/assets/js/lib/d3/line.js"></script>
     <script src="/assets/js/lib/d3/stackedbar.js"></script>
     <script src="/assets/js/web/generic_template.js"></script>
+    <script src="/assets/js/web/graph_builder.js"></script>
     <script src="/assets/js/web/marketers.js"></script>
 {% endblock %}
 {% block Styles %}
@@ -129,14 +130,6 @@
     </div>
 </div>
 
-<div id="spending" class="full-width-line">
-    <p class="bold-font">SPENDING</p>
+{% include 'marketers/graph_builder.html'%}
 
-    {% for graph in graphs %}
-        <div id="{{graph.id}}" class="graph-container">
-        {% include 'marketers/graphs/generic_template.html' with graph=graph%}
-    </div>
-    {% endfor %}
-
-</div>
 {% endblock %}

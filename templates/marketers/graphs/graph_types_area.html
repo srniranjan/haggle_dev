@@ -1,0 +1,10 @@
+<div>
+    <select id="graph-types-container"
+            name="{{type}}"
+            class="options-list"
+            onchange="loadDimensions()">
+        {% for type in  types %}
+            <option value="{{type}}">{{type}}</option>
+        {%endfor%}
+    </select>
+</div>

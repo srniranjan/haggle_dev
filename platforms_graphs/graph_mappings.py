@@ -1,3 +1,9 @@
+view_to_model_mapping = {'LineGraphView':'LineGraphModelBuilder',
+                         'BarGraphView':'BarGraphModelBuilder',
+                         'AggregateBarGraphView':'AggregateBarGraphModelBuilder'}
+
+model_list = ['Deal', 'UserScore']
+
 graphs = {'dollars-spent':
               {'id':'dollars-spent',
                 'dimension_ids':'1, 3, 4',

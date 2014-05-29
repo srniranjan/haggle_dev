@@ -4,10 +4,7 @@ from django.template import loader
 from handlers import RequestHandler
 from google.appengine.api import urlfetch
 from platforms_graphs.populate import get_graph_view
-from platforms_graphs.graph_mappings import graphs
-import logging
-import datetime
-from pytz import timezone
+from platforms_graphs.graph_mappings import view_to_model_mapping
 
 URL = 'https://haggle-test1.appspot.com/api/analytics/'
 
@@ -75,12 +72,12 @@ class Landing(WebRequestHandler):
 class Marketers(WebRequestHandler):
     def get(self):
         path = 'marketers.html'
-        #template_values = {'graphs':[graphs['dollars-spent'], graphs['dollars-cuisine'], graphs['sales-per-head']]}
-        template_values = {'graphs':[graphs['dollars-spent'], graphs['dollars-cuisine'], graphs['sales-per-head'], graphs['aggregate-user-score']]}
-        self.response.out.write(self.get_rendered_html(path, template_values))
+        self.response.out.write(self.get_rendered_html(path, None))
 
 class MarketersOptions(WebRequestHandler):
     def post(self):
+        pass
+        '''
         graph_id = self['graph_id']
         graph_view = get_graph_view(graphs[graph_id])
         dimension = graph_view.get_dimension()
@@ -98,6 +95,20 @@ class MarketersOptions(WebRequestHandler):
                  'filters':filters_html,
                  'graph_id':graph_id
                 }))
+        '''
+
+class GraphOptions(WebRequestHandler):
+    def get(self):
+        req_type = self['req_type']
+        options = self.get_options_for(req_type)
+        self.write(json.dumps(options))
+
+    def get_options_for(self, req_type):
+        options = None
+        if req_type == 'graph_types':
+            options = [graph_type for graph_type in view_to_model_mapping]
+            html = self.get_rendered_html('marketers/graphs/graph_types_area.html', {'types' : options})
+        return {req_type : html}
 
 app = webapp2.WSGIApplication([('/', HomepageHandler),
                                ('/overview', Overview),
@@ -110,5 +121,6 @@ app = webapp2.WSGIApplication([('/', HomepageHandler),
                                ('/case_studies', CaseStudies),
                                ('/landing', Landing),
                                ('/marketers', Marketers),
-                               ('/marketers/options', MarketersOptions)
+                               ('/marketers/options', MarketersOptions),
+                               ('/marketers/graph_options',GraphOptions)
 ])
