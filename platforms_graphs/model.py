@@ -46,28 +46,42 @@ class Property():
 
 class Model():
     property_titles = []
+    separator = None
+    x_candidates = None
+    y_candidates = None
+    file_name = None
+
     def __init__(self):
         self.properties = []
 
-    def getTitleFor(self, index):
-        return self.property_titles[index]
+    @classmethod
+    def get_x_candidates(cls):
+        return cls.make_candidate_maps_with(cls.x_candidates)
+
+    @classmethod
+    def get_y_candidates(cls):
+        return cls.make_candidate_maps_with(cls.y_candidates)
+
+    @classmethod
+    def make_candidate_maps_with(cls, candidates):
+        retVal = {}
+        for idx in candidates:
+            retVal[idx] = cls.property_titles[idx]
+        return retVal
 
     def pretty_print(self):
         for prop in self.properties:
             print prop.title, prop.value
 
-class Deal(Model):
-    property_titles = ["Time", "Day of week", "Neighborhood", "Cuisine", "$ Spent", "Status", "User ID"]
-
     def populate(self, line):
-        comps = line.strip().split('::::')
+        comps = line.strip().split(self.separator)
         self.property_size = len(comps)
         idx = 0
         for comp in comps:
             prop = Property()
             prop.raw_value = comp
             prop.unique_id = idx
-            prop.title = self.getTitleFor(idx)
+            prop.title = self.property_titles[idx]
             if idx == 0:
                 prop.value_strategy = time_value_strategy
             elif idx == 1:
@@ -75,21 +89,16 @@ class Deal(Model):
             self.properties.append(prop)
             idx += 1
 
+class AvailedDeal(Model):
+    property_titles = ["Time", "Day of week", "Neighborhood", "Cuisine", "$ Spent", "Status", "User ID"]
+    separator = '::::'
+    x_candidates = [1, 2, 3]
+    y_candidates = [0, 4]
+    file_name = 'platforms_graphs/data/availed_deals_with_price'
+
 class UserScore(Model):
     property_titles = ["Restaurant", "User Email", "User Name", "Misc1", "Score Type", "Misc2", "Score", "Cuisine", "Neighborhood"]
-
-    def populate(self, line):
-        comps = line.strip().split('####')
-        self.property_size = len(comps)
-        idx = 0
-        for comp in comps:
-            prop = Property()
-            prop.raw_value = comp.strip()
-            prop.unique_id = idx
-            prop.title = self.getTitleFor(idx)
-            if idx == 4:
-                prop.value_strategy = user_score_type_strategy
-            elif idx == 6:
-                prop.value_strategy = user_score_value_strategy
-            self.properties.append(prop)
-            idx += 1
+    separator = '####'
+    x_candidates = [1, 2, 3]
+    y_candidates = [0, 4]
+    file_name = 'platforms_graphs/data/user_scores'

@@ -19,6 +19,9 @@ class GraphModelBuilder():
         self.filters = None
         self.filter_unique_vals = {}
 
+    def get_dimensions_html_for(self, model_cls):
+        pass
+
     def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
         self.property_titles = property_titles
         self.filters = []
@@ -42,6 +45,11 @@ class LineGraphModelBuilder(GraphModelBuilder):
         self.additional_xaxis_id = 0
         self.yaxis_id = 0
         self.lines_map = None
+
+    def get_dimensions_html_for(self, model_cls):
+        template_vals = {'x_candidates' : model_cls.get_x_candidates(),
+                         'y_candidates' : model_cls.get_y_candidates()}
+        return 'marketers/graphs/dimension_area_templates/line_graph_dimension_area.html', template_vals
 
     def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
         GraphModelBuilder.populate(self, model_objs, dimension_ids, filter_ids, property_titles)
@@ -70,6 +78,11 @@ class BarGraphModelBuilder(GraphModelBuilder):
         self.yaxis_id = 0
         self.plots = []
 
+    def get_dimensions_html_for(self, model_cls):
+        template_vals = {'x_candidates' : model_cls.get_x_candidates(),
+                         'y_candidates' : model_cls.get_y_candidates()}
+        return 'marketers/graphs/dimension_area_templates/bar_graph_dimension_area.html', template_vals
+
     def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
         GraphModelBuilder.populate(self, model_objs, dimension_ids, filter_ids, property_titles)
         self.xaxis_id = dimension_ids[0]
@@ -92,6 +105,11 @@ class AggregateBarGraphModelBuilder(GraphModelBuilder):
         self.aggregator_id = 0
         self.aggregated_data = None
         self.plots = []
+
+    def get_dimensions_html_for(self, model_cls):
+        template_vals = {'x_candidates' : model_cls.get_x_candidates(),
+                         'y_candidates' : model_cls.get_y_candidates()}
+        return 'marketers/graphs/dimension_area_templates/agg_bar_graph_dimension_area.html', template_vals
 
     def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
         GraphModelBuilder.populate(self, model_objs, dimension_ids, filter_ids, property_titles)

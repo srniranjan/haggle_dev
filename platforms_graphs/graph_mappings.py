@@ -1,8 +1,9 @@
-view_to_graphmodel_mapping = {'LineGraphView':'LineGraphModelBuilder',
-                         'BarGraphView':'BarGraphModelBuilder',
-                         'AggregateBarGraphView':'AggregateBarGraphModelBuilder'}
+view_to_graphmodel_mapping = {'LineGraphView':'platforms_graphs.graph_model.LineGraphModelBuilder',
+                         'BarGraphView':'platforms_graphs.graph_model.BarGraphModelBuilder',
+                         'AggregateBarGraphView':'platforms_graphs.graph_model.AggregateBarGraphModelBuilder'}
 
-model_list = ['Deal', 'UserScore']
+model_list = {'AvailedDeal' : 'platforms_graphs.model.AvailedDeal',
+              'UserScore' : 'platforms_graphs.model.UserScore'}
 
 graphs = {'dollars-spent':
               {'id':'dollars-spent',
