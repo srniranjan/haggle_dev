@@ -1,4 +1,4 @@
-view_to_model_mapping = {'LineGraphView':'LineGraphModelBuilder',
+view_to_graphmodel_mapping = {'LineGraphView':'LineGraphModelBuilder',
                          'BarGraphView':'BarGraphModelBuilder',
                          'AggregateBarGraphView':'AggregateBarGraphModelBuilder'}
 

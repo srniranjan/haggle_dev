@@ -1,7 +1,7 @@
 <div>
-    <select id="graph-types-container"
+    <select id="model-types-container"
             class="options-list"
-            onchange="loadModels()">
+            onchange="loadDimensions()">
         <option value="">--SELECT--</option>
         {% for type in  types %}
             <option value="{{type}}">{{type}}</option>
