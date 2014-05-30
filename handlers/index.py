@@ -5,6 +5,7 @@ from handlers import RequestHandler
 from google.appengine.api import urlfetch
 from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list
 from platforms_graphs.util import get_class
+from platforms_graphs.model_factory import get_model_objs_for
 
 URL = 'https://haggle-test1.appspot.com/api/analytics/'
 
@@ -113,10 +114,11 @@ class GraphOptions(WebRequestHandler):
             html = self.get_rendered_html('marketers/graphs/models_area.html', {'types' : options})
         elif req_type == 'dimensions':
             model = model_list[self['model']]
+            model_objs = get_model_objs_for(model)
             graph_type = self['graph_type']
             graph_model_name = view_to_graphmodel_mapping[graph_type]
             graph_model_obj = get_class(graph_model_name)()
-            name, params = graph_model_obj.get_dimensions_html_for(get_class(model))
+            name, params = graph_model_obj.get_dimensions_html_for(get_class(model), model_objs)
             html = self.get_rendered_html(name, params)
         return {req_type : html}
 

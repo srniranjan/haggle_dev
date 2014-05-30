@@ -19,8 +19,20 @@ class GraphModelBuilder():
         self.filters = None
         self.filter_unique_vals = {}
 
-    def get_dimensions_html_for(self, model_cls):
+    def get_dimensions_html_for(self, model_cls, model_objs):
         pass
+
+    def get_unique_dimension_vals(self, model_cls, model_objs):
+        retVal = {}
+        for model_obj in model_objs:
+            for dimension in model_cls.get_x_candidates():
+                title = model_cls.property_titles[dimension]
+                key = (dimension, title)
+                if key not in retVal:
+                    retVal[key] = set()
+                retVal[key].add(model_obj.properties[dimension].value)
+        return retVal
+
 
     def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
         self.property_titles = property_titles
@@ -30,13 +42,9 @@ class GraphModelBuilder():
 
     def add_to_filter_vals(self, model_obj):
         for filter in self.filters:
-                if filter not in self.filter_unique_vals:
-                    self.filter_unique_vals[filter] = set()
-                if isinstance(model_obj.properties[filter[0]].value, basestring):
-                    self.filter_unique_vals[filter].add(model_obj.properties[filter[0]].value)
-                else:
-                    for val in model_obj.properties[filter[0]].value:
-                        self.filter_unique_vals[filter].add(val)
+            if filter not in self.filter_unique_vals:
+                self.filter_unique_vals[filter] = set()
+            self.filter_unique_vals[filter].add(model_obj.properties[filter[0]].value)
 
 class LineGraphModelBuilder(GraphModelBuilder):
     def __init__(self):
@@ -46,9 +54,10 @@ class LineGraphModelBuilder(GraphModelBuilder):
         self.yaxis_id = 0
         self.lines_map = None
 
-    def get_dimensions_html_for(self, model_cls):
-        template_vals = {'x_candidates' : [model_cls.property_titles[x] for x in model_cls.get_x_candidates()],
-                         'y_candidates' : [model_cls.property_titles[y] for y in model_cls.get_y_candidates()]}
+    def get_dimensions_html_for(self, model_cls, model_objs):
+        template_vals = {'x_candidates' : [(x, model_cls.property_titles[x]) for x in model_cls.get_x_candidates()],
+                         'y_candidates' : [(y, model_cls.property_titles[y]) for y in model_cls.get_y_candidates()]}
+        template_vals['dimension_vals'] = self.get_unique_dimension_vals(model_cls, model_objs)
         return 'marketers/graphs/dimension_area_templates/line_graph_dimension_area.html', template_vals
 
     def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
@@ -78,7 +87,7 @@ class BarGraphModelBuilder(GraphModelBuilder):
         self.yaxis_id = 0
         self.plots = []
 
-    def get_dimensions_html_for(self, model_cls):
+    def get_dimensions_html_for(self, model_cls, model_objs):
         template_vals = {'x_candidates' : model_cls.get_x_candidates(),
                          'y_candidates' : model_cls.get_y_candidates()}
         return 'marketers/graphs/dimension_area_templates/bar_graph_dimension_area.html', template_vals
@@ -106,7 +115,7 @@ class AggregateBarGraphModelBuilder(GraphModelBuilder):
         self.aggregated_data = None
         self.plots = []
 
-    def get_dimensions_html_for(self, model_cls):
+    def get_dimensions_html_for(self, model_cls, model_objs):
         template_vals = {'x_candidates' : model_cls.get_x_candidates(),
                          'y_candidates' : model_cls.get_y_candidates()}
         return 'marketers/graphs/dimension_area_templates/agg_bar_graph_dimension_area.html', template_vals
