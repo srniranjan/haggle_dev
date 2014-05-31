@@ -11,6 +11,8 @@
     }
 
     function loadSecondaryDimension(){
+        var sel_value = $('#primary_dimensions select :selected').val();
+        $('#dimension_vals_' + sel_value).remove();
         var all_values = convertToTextField('primary_dimensions');
         for(var val in all_values){
             var curr_val = all_values[val].value;
@@ -21,10 +23,22 @@
         }
     }
 
-    function loadSecondaryDimensionValues(){
+    function loadFilterValues(){
         var sel_value = $('#secondary_dimensions select :selected').val();
+        $('#filters_container div').each(function(idx, div){
+            var retDiv = $('#' + div.id).remove();
+            if(div.id == 'dimension_vals_' + sel_value){
+                $('#secondary_dimension_values').show();
+                $('#secondary_dimension_values #secondary_dimension_values_container').append(retDiv[0]);
+                $('#secondary_dimension_values #secondary_dimension_values_container #' + retDiv[0].id).show();
+            }
+            else{
+                $('#filter_values').show();
+                $('#filter_values #filter_values_container').append(retDiv[0]);
+                $('#filter_values #filter_values_container #' + retDiv[0].id).show();
+            }
+        });
         convertToTextField('secondary_dimensions');
-        $('#dimension_vals_' + sel_value).show();
     }
 </script>
 <div>
@@ -39,16 +53,29 @@
     </div>
     <p>Choose secondary X parameter</p>
     <div id="secondary_dimensions">
-        <select class="options-list" onchange="loadSecondaryDimensionValues()">
+        <select class="options-list" onchange="loadFilterValues()">
         </select>
     </div>
-    {% for dimension, values in dimension_vals.items %}
-        <div id="dimension_vals_{{dimension.0}}" style="display:none">
-            <p>Pick a value for {{ dimension.1 }}</p>
-            {% for val in values %}
-                <input type="checkbox" name="{{val}}" value="{{val}}" checked>{{val}}<br>
-            {% endfor %}
+    <div id="secondary_dimension_values" style="display:none">
+        <p>Pick a value for chosen secondary dimension</p>
+        <div id="secondary_dimension_values_container">
+
         </div>
-    {% endfor %}
-    <div></div>
+    </div>
+    <div id="filter_values" style="display:none">
+        <p>Choose filters:</p>
+        <div id="filter_values_container">
+
+        </div>
+    </div>
+    <div id="filters_container">
+        {% for dimension, values in dimension_vals.items %}
+            <div id="dimension_vals_{{dimension.0}}" style="display:none">
+                <p>{{ dimension.1 }}</p>
+                {% for val in values %}
+                    <input type="checkbox" name="{{val}}" value="{{val}}" checked>{{val}}<br>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
 </div>
