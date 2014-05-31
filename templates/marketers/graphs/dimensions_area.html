@@ -1,7 +1,1 @@
-<p>DIMENSION</p>
-    <input type="radio"
-           onchange="enableFilters('{{graph_id}}', {{forloop.counter}})"
-           class="dimension-checkbox"
-           name="dimension"
-           value="{{ dimension }}"
-           checked>{{ dimension }}
+<a onclick="loadChart('{{graph_id}}')" class="cursor-pointer">By {{ dimension }}</a>

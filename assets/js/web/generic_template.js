@@ -8,6 +8,8 @@ function loadChart(graph_id) {
         var dimensions = data.dimensions;
         var filters = data.filters;
         var curr_graph_id = data.graph_id;
+        $('#'+curr_graph_id+' .dimensions-area').empty();
+        $('#'+curr_graph_id+' .filters-area').empty();
         $('#'+curr_graph_id+' .dimensions-area').append( dimensions );
         $('#'+curr_graph_id+' .filters-area').append( filters );
         updateChart(curr_graph_id);
@@ -39,10 +41,10 @@ function updateChart(graph_id) {
 
 function render_graph(graph_id, chart_type, chart_data){
     if(chart_type == 'LineGraphView'){
-        drawLineChart(graph_id + ' .graph-area', chart_data);
+        drawLineChart(graph_id + ' .graph-area', chart_data, graph_id);
     }
     else if(chart_type == 'BarGraphView' ||
             chart_type == 'AggregateBarGraphView'){
-        drawStackedBarChart(graph_id + ' .graph-area', chart_data);
+        drawStackedBarChart(graph_id + ' .graph-area', chart_data, graph_id);
     }
 }

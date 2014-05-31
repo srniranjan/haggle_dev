@@ -1,10 +1,8 @@
-<p>FILTERS</p>
 <div class="filter-set">
     {% for k, v in filters.items %}
-        <div class="filter-container">
-            <p>{{k.1}}</p>
+        <div class="filter-container inline">
             <select name="{{ k.0}}" class="options-list" onchange="updateChart('{{graph_id}}')">
-                <option value="">--SELECT--</option>
+                <option class="filter-name" value="">{{k.1}}</option>
                 {% for option in v %}
                     <option value="{{ option }}">{{ option }}</option>
                 {% endfor %}

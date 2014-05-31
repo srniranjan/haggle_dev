@@ -722,8 +722,8 @@ td {
 }
 
 .dimensions-area {
-    height: 100px;
-    border-bottom: 1px lightgray solid;
+    text-align: right;
+    height: 100%;
 }
 
 .filters-graph {
@@ -736,22 +736,30 @@ td {
     float: left;
 }
 
+.inline-left {
+    display: inline-block;
+    float: left;
+}
+
+.inline-right {
+    display: inline-block;
+    float: right;
+}
+
 .filters-area {
-    width: 229px;
     height: 100%;
-    padding-top: 50px;
-    border-right: 1px lightgray solid;
+    padding-top: 12px;
     overflow: scroll;
 }
 
 .filters-area .options-list {
-    width: 90%;
 }
 
 .graph-area {
-    width: 710px;
-    padding-top: 50px;
+    width: 940px;
     height: 100%;
+    border: 1px lightgray solid;
+    border-radius: 5px;
 }
 
 .bold-font {
@@ -759,9 +767,40 @@ td {
 }
 
 .filter-container  {
-    border-bottom: 1px lightgray solid;
+    margin-right: 5px;
 }
 
 .graph-container {
-    margin-top: 50px;
+    border-top: 2px gray solid;
+}
+
+.graph-header {
+    height: 70px;
+    border-bottom: 1px lightgray solid;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.graph-title {
+    height: 100%;
+}
+
+.graph-title p{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.filter-name {
+    font-weight: 700;
+}
+
+.data-point {
+	stroke: #ffffff;
+	stroke-width: 5;
+}
+
+.stacked-bar {
+    stroke-width: 2;
 }

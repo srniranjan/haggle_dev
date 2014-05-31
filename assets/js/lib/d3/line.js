@@ -1,29 +1,42 @@
-function drawLineChart(id, data, metricTitle) {
+function drawLineChart(id, data, metricTitle, dimensionTitle) {
 
+    var dataCirclesGroup = null;
+    var pointRadius = 10;
+    var interpolation_mode = "linear";
     var margin = {top: 20, right: 80, bottom: 30, left: 50},
-    width = 710 - margin.left - margin.right,
+    width = 940 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
     var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], 1, 0);
+    .rangeRoundBands([0, width], 1, 0.25);
 
     var y = d3.scale.linear()
     .range([height, 0]);
 
+    function make_x_axis() {
+        return d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+    }
+
+    function make_y_axis() {
+        return d3.svg.axis()
+        .scale(y)
+        .orient("left");
+    }
+
     var color = d3.scale.category10();
 
-    var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-    var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left");
-
     var line = d3.svg.line()
-    .interpolate("basis")
+    .interpolate(interpolation_mode)
     .x(function(d) { return x(d.dimension1); })
     .y(function(d) { return y(d.metric); });
+
+    var area = d3.svg.area()
+    .interpolate(interpolation_mode)
+    .x(function(d) { return x(d.dimension1); })
+    .y0(y(0))
+    .y1(function(d) { return y(d.metric); });
 
     var svg = d3.select("#"+id).append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -61,6 +74,8 @@ function drawLineChart(id, data, metricTitle) {
         };
     });
 
+    //dimension2s = dimension2s.slice(0,3);
+
     x.domain(data.map(function(d) { return d.dimension1; }));
 
     y.domain([
@@ -69,16 +84,21 @@ function drawLineChart(id, data, metricTitle) {
     ]);
 
     svg.append("g")
-    .attr("class", "x axis")
+    .attr("class", "grid")
     .attr("transform", "translate(0," + height + ")")
-    .call(xAxis);
+    .call(make_x_axis()
+        .tickSize(-height, 0, 0)
+    )
+    .selectAll("text")
+    .attr("y", 15);
 
     svg.append("g")
-    .attr("class", "y axis")
-    .call(yAxis)
-    .append("text")
+    .attr("class", "grid")
+    .call(make_y_axis()
+        .tickSize(-width, 0, 0)
+    ).append("text")
     .attr("transform", "rotate(-90)")
-    .attr("y", 6)
+    .attr("y", -(margin.left))
     .attr("dy", ".71em")
     .style("text-anchor", "end")
     .text(metricTitle);
@@ -95,25 +115,10 @@ function drawLineChart(id, data, metricTitle) {
     .attr("stroke-width", "2")
     .attr("fill", "none");
 
-    var totalLength = path.node().getTotalLength();
-
-    path
-    .attr("stroke-dasharray", totalLength)
-    .attr("stroke-dashoffset", totalLength)
-    .transition()
-    .duration(2000)
-    .ease("linear")
-    .attr("stroke-dashoffset", 0);
-
-    /*dimension2.append("text")
-    .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
-    .attr("transform", function(d) { return "translate(" + x(d.value.dimension1) + "," + y(d.value.metric) + ")"; })
-    .attr("x", 20)
-    .attr("dy", ".35em")
-    .text(function(d) { return d.name; })
-    .attr("font-family", "sans-serif")
-    .attr("font-size", "12px")
-    .attr("fill", function(d) { return color(d.name); });*/
+    var path1 = dimension2.append("path")
+    .attr("class", "area")
+    .attr("d", function(d) { return area(d.values); })
+    .style("fill", function(d) { return color(d.name); });
 
     var legend = svg.selectAll(".legend")
     .data(color.domain().slice().reverse())
@@ -134,4 +139,38 @@ function drawLineChart(id, data, metricTitle) {
     .style("text-anchor", "end")
     .text(function(d) { return d; })
     .attr("fill", color);
+
+    for (var i=0; i<dimension2s.length; i++) {
+        dimension2 = dimension2s[i];
+        dataCirclesGroup = svg.append('svg:g').attr("class", "point-set");
+
+        var circles = dataCirclesGroup.selectAll('.data-point')
+            .data(dimension2.values);
+
+        circles
+            .enter()
+                .append('svg:circle')
+                    .attr('class', 'data-point')
+                    .style('opacity', 1e-6)
+                    .attr('cx', function(d) { return x(d.dimension1) })
+                    .attr('cy', function() { return y(0); })
+                    .attr('r', 0)
+                .transition()
+                .duration(2000)
+                    .style('opacity', 1)
+                    .attr('cx', function(d) { return x(d.dimension1) })
+                    .attr('cy', function(d) { if(d.metric){return y(+(d.metric))} else {return y(0)} })
+                    .attr('r', pointRadius)
+                    .style("fill", function(d){ return color(dimension2.name) });
+    }
+
+    $('.area').mouseover(function(){
+        $(this).css('opacity','0.8');
+        $($(this).parent().children('.line')[0]).css('stroke-width',8);
+    });
+
+    $('.area').mouseout(function(){
+        $(this).css('opacity','0.15');
+        $($(this).parent().children('.line')[0]).css('stroke-width',6);
+    });
 }
