@@ -1,1 +1,92 @@
-<p>Hello World Agg Bar!</p>
+<script>
+    function convertToTextField(drop_down_id){
+        var all_values = $.map($('#' + drop_down_id + ' select option') ,function(option) {return option;});
+        var sel_value = $('#' + drop_down_id + ' select :selected');
+        $($('#' + drop_down_id + ' select')[0]).prop('disabled', true);
+        return $.map(all_values, function(option){
+                if(sel_value.val() != option.value)
+                    return option;
+              });
+    }
+
+    function loadSecondaryDimension(){
+        var sel_value = $('#primary_dimensions select :selected').val();
+        $('#dimension_vals_' + sel_value).remove();
+        var all_values = convertToTextField('primary_dimensions');
+        for(var val in all_values){
+            var curr_val = all_values[val].value;
+            var curr_text = all_values[val].text;
+            if(curr_text == '--PRIMARY DIMENSION--')
+                curr_text = '--AGGREGATOR DIMENSION--';
+            $('#secondary_dimensions select').append("<option value='" + curr_val + "'>" + curr_text + "</option>");
+        }
+        $('#secondary_dimensions').show();
+    }
+
+    function loadFilterValues(){
+        var sel_value = $('#secondary_dimensions select :selected').val();
+        $('#filters_container div').each(function(idx, div){
+            var retDiv = $('#' + div.id).remove();
+            if(div.id != 'dimension_vals_' + sel_value){
+                $('#filter_values').show();
+                $('#filter_values #filter_values_container').append(retDiv[0]);
+                $('#filter_values #filter_values_container #' + retDiv[0].id).show();
+            }
+        });
+        convertToTextField('secondary_dimensions');
+        $('#graph-submit').show();
+    }
+
+    function getDimensionsList(){
+        var retVal = "";
+        var primary_dimension = $('#primary_dimensions select :selected').val();
+        var secondary_dimension = $('#secondary_dimensions select :selected').val();
+        var metric_dimension = $('#metric_dimensions select :selected').val();
+        retVal = primary_dimension + ',' + metric_dimension + ',' + secondary_dimension;
+        return retVal;
+    }
+</script>
+<div class="metrics-menu">
+    <div class="inline graph-menu"><p>METRIC:</p></div>
+    <div id="metric_dimensions" class="inline graph-menu">
+        <select class="options-list">
+            <option value="">--METRIC--</option>
+            {% for y_candidate in  y_candidates %}
+            {{y_candidate}}
+                <option value="{{y_candidate.0}}">{{y_candidate.1}}</option>
+            {%endfor%}
+        </select>
+    </div>
+</div>
+<div class="dimensions-filters-menu">
+    <div class="inline graph-menu"><p>DIMENSIONS:</p></div>
+    <div id="primary_dimensions" class="inline graph-menu">
+        <select class="options-list" onchange="loadSecondaryDimension()">
+            <option value="">--PRIMARY DIMENSION--</option>
+            {% for x_candidate in  x_candidates %}
+                <option value="{{x_candidate.0}}">{{x_candidate.1}}</option>
+            {%endfor%}
+        </select>
+    </div>
+    <div id="secondary_dimensions" style="display:none" class="inline graph-menu">
+        <select class="options-list" onchange="loadFilterValues()">
+        </select>
+    </div>
+    <div id="filter_values" style="display:none" class="inline">
+        <div class="inline graph-menu"><p>FILTERS:</p></div>
+        <div id="filter_values_container" class="inline">
+        </div>
+    </div>
+    <div id="filters_container">
+        {% for dimension, values in dimension_vals.items %}
+            <div id="dimension_vals_{{dimension.0}}" style="display:none" class="inline graph-menu">
+                <select name="{{ dimension.0 }}" class="options-list" multiple>
+                <option value="">--{{ dimension.1 }}--</option>
+                {% for val in values %}
+                    <option value="{{val}}" selected>{{val}}</option>
+                {% endfor %}
+                </select>
+            </div>
+        {% endfor %}
+    </div>
+</div>

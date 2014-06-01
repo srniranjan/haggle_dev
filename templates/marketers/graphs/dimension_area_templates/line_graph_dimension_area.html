@@ -41,6 +41,15 @@
         convertToTextField('secondary_dimensions');
         $('#graph-submit').show();
     }
+
+    function getDimensionsList(){
+        var retVal = "";
+        var primary_dimension = $('#primary_dimensions select :selected').val();
+        var secondary_dimension = $('#secondary_dimensions select :selected').val();
+        var metric_dimension = $('#metric_dimensions select :selected').val();
+        retVal = primary_dimension + ',' + secondary_dimension + ',' + metric_dimension;
+        return retVal;
+    }
 </script>
 <div class="metrics-menu">
     <div class="inline graph-menu"><p>METRIC:</p></div>

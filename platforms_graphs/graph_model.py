@@ -88,8 +88,9 @@ class BarGraphModelBuilder(GraphModelBuilder):
         self.plots = []
 
     def get_dimensions_html_for(self, model_cls, model_objs):
-        template_vals = {'x_candidates' : model_cls.get_x_candidates(),
-                         'y_candidates' : model_cls.get_y_candidates()}
+        template_vals = {'x_candidates' : [(x, model_cls.property_titles[x]) for x in model_cls.get_x_candidates()],
+                         'y_candidates' : [(y, model_cls.property_titles[y]) for y in model_cls.get_y_candidates()]}
+        template_vals['dimension_vals'] = self.get_unique_dimension_vals(model_cls, model_objs)
         return 'marketers/graphs/dimension_area_templates/bar_graph_dimension_area.html', template_vals
 
     def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
@@ -116,8 +117,9 @@ class AggregateBarGraphModelBuilder(GraphModelBuilder):
         self.plots = []
 
     def get_dimensions_html_for(self, model_cls, model_objs):
-        template_vals = {'x_candidates' : model_cls.get_x_candidates(),
-                         'y_candidates' : model_cls.get_y_candidates()}
+        template_vals = {'x_candidates' : [(x, model_cls.property_titles[x]) for x in model_cls.get_x_candidates()],
+                         'y_candidates' : [(y, model_cls.property_titles[y]) for y in model_cls.get_y_candidates()]}
+        template_vals['dimension_vals'] = self.get_unique_dimension_vals(model_cls, model_objs)
         return 'marketers/graphs/dimension_area_templates/agg_bar_graph_dimension_area.html', template_vals
 
     def populate(self, model_objs, dimension_ids, filter_ids, property_titles):

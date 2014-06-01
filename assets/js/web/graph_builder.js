@@ -48,15 +48,6 @@ function getAllFilterValues(){
     return retVal;
 }
 
-function getDimensionsList(){
-    var retVal = "";
-    var primary_dimension = $('#primary_dimensions select :selected').val();
-    var secondary_dimension = $('#secondary_dimensions select :selected').val();
-    var metric_dimension = $('#metric_dimensions select :selected').val();
-    retVal = primary_dimension + ',' + secondary_dimension + ',' + metric_dimension;
-    return retVal;
-}
-
 function updateChart() {
     d3.select("#plot_area").select("svg").remove();
     var dimensions = getDimensionsList();
