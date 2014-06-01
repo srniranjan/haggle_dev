@@ -74,6 +74,16 @@ class Model():
             print prop.title, prop.value
 
     def populate(self, line):
+        pass
+
+class AvailedDeal(Model):
+    property_titles = ["Time", "Day of week", "Neighborhood", "Cuisine", "$ Spent", "Status", "User ID"]
+    separator = '::::'
+    x_candidates = [0, 1, 2, 3]
+    y_candidates = [4]
+    file_name = 'platforms_graphs/data/availed_deals_with_price'
+
+    def populate(self, line):
         comps = line.strip().split(self.separator)
         self.property_size = len(comps)
         idx = 0
@@ -87,16 +97,21 @@ class Model():
             self.properties.append(prop)
             idx += 1
 
-class AvailedDeal(Model):
-    property_titles = ["Time", "Day of week", "Neighborhood", "Cuisine", "$ Spent", "Status", "User ID"]
-    separator = '::::'
-    x_candidates = [0, 1, 2, 3]
-    y_candidates = [4]
-    file_name = 'platforms_graphs/data/availed_deals_with_price'
-
 class UserScore(Model):
     property_titles = ["Restaurant", "User Email", "User Name", "Misc1", "Score Type", "Misc2", "Score", "Cuisine", "Neighborhood"]
     separator = '####'
-    x_candidates = [1, 2, 3]
-    y_candidates = [0, 4]
+    x_candidates = [4, 7, 8]
+    y_candidates = [6]
     file_name = 'platforms_graphs/data/user_scores'
+
+    def populate(self, line):
+        comps = line.strip().split(self.separator)
+        self.property_size = len(comps)
+        idx = 0
+        for comp in comps:
+            prop = Property()
+            prop.raw_value = comp
+            prop.unique_id = idx
+            prop.title = self.property_titles[idx]
+            self.properties.append(prop)
+            idx += 1
