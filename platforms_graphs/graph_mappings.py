@@ -3,6 +3,7 @@ view_to_graphmodel_mapping = {'LineGraphView':'platforms_graphs.graph_model.Line
                          'AggregateBarGraphView':'platforms_graphs.graph_model.AggregateBarGraphModelBuilder'}
 
 model_list = {'AvailedDeal' : 'platforms_graphs.model.AvailedDeal',
+              'Deal' : 'platforms_graphs.model.Deal',
               'UserScore' : 'platforms_graphs.model.UserScore'}
 
 graphs = {'dollars-spent':

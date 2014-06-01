@@ -6,18 +6,19 @@ def time_value_strategy(timestamp):
     time_array = []
     eastern = timezone('US/Eastern')
     dt = datetime.datetime.fromtimestamp(float(timestamp), eastern)
-    today = datetime.datetime.now().date()
-    timedelta = today - dt.date()
-    days = timedelta.days
-    if days <= 1:
-        time_array.append('Last Day')
-    if days <= 7:
-        time_array.append('Last Week')
-    if days <= 30:
-        time_array.append('Last Month')
-    if days <= 365:
-        time_array.append('Last Year')
-    return time_array
+    return dt.__str__()
+    #today = datetime.datetime.now().date()
+    #timedelta = today - dt.date()
+    #days = timedelta.days
+    #if days <= 1:
+    #    time_array.append('Last Day')
+    #if days <= 7:
+    #    time_array.append('Last Week')
+    #if days <= 30:
+    #    time_array.append('Last Month')
+    #if days <= 365:
+    #    time_array.append('Last Year')
+    #return time_array
 
 def day_value_strategy(day_of_week):
     days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
@@ -92,7 +93,32 @@ class AvailedDeal(Model):
             prop.raw_value = comp
             prop.unique_id = idx
             prop.title = self.property_titles[idx]
-            if idx == 1:
+            if idx == 0:
+                prop.value_strategy = time_value_strategy
+            elif idx == 1:
+                prop.value_strategy = day_value_strategy
+            self.properties.append(prop)
+            idx += 1
+
+class Deal(Model):
+    property_titles = ["Time", "Day of week", "Neighborhood", "Cuisine", "Bid Discount(%)", "Offered Discount(%)", "$ Spent", "Status", "User ID"]
+    separator = '::::'
+    x_candidates = [0, 1, 2, 3, 7]
+    y_candidates = [4, 5, 6]
+    file_name = 'platforms_graphs/data/deals'
+
+    def populate(self, line):
+        comps = line.strip().split(self.separator)
+        self.property_size = len(comps)
+        idx = 0
+        for comp in comps:
+            prop = Property()
+            prop.raw_value = comp
+            prop.unique_id = idx
+            prop.title = self.property_titles[idx]
+            if idx == 0:
+                prop.value_strategy = time_value_strategy
+            elif idx == 1:
                 prop.value_strategy = day_value_strategy
             self.properties.append(prop)
             idx += 1

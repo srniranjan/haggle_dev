@@ -1,890 +1,941 @@
-1371226380::::4::::Midtown East::::Bar::::20.0::::DealStatus.AVAILED::::rsalimath@gmail.com
-1371231300::::4::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
-1371256680::::5::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
-1371692880::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
-1371921540::::5::::lower manhattan::::Taco Place::::0::::DealStatus.REJECTED::::b_dyett@yahoo.com
-1372266000::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
-1372267380::::2::::Flatiron::::Salads::::14.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
-1373911380::::0::::Flatiron::::Salads::::9.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
-1374773400::::3::::Flatiron::::Salads::::0::::DealStatus.AVAILED::::jdrooz@mac.com
-1387159200::::0::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1387652400::::5::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1388091600::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1389132000::::1::::Midtown East::::Ethiopian::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391439600::::0::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392006600::::0::::Midtown::::Bar::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392006600::::0::::lower manhattan::::Burger Joint::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392051600::::0::::::::Italian Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392177600::::2::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::paulmiard@hotmail.com
-1392224400::::2::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392255000::::3::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392255000::::3::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392309000::::3::::lower manhattan::::Seafood Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392309000::::3::::midtown::::Bagel Shop::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392316200::::3::::Midtown::::Bar::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392316200::::3::::lower manhattan::::Italian Restaurant::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392323400::::3::::midtown::::Bagel Shop::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392332400::::3::::lower manhattan::::Mexican Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392345000::::4::::Greenwich Village::::Thai::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392604200::::0::::lower manhattan::::Mexican Restaurant::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393036200::::5::::lower manhattan::::Italian Restaurant::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393128000::::6::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393461000::::3::::Midtown::::Cafe::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1393531200::::3::::lower manhattan::::Middle Eastern Restaurant::::585.7::::DealStatus.AVAILED::::aiyappa@b-eagles.com
-1393725600::::6::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1393731000::::6::::Midtown::::Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1394116200::::3::::midtown::::Bagel Shop::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
-1395099000::::0::::Kips Bay::::Indian::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
-1395939600::::3::::Kips Bay::::Indian::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1398396600::::4::::Kingsbridge::::Bar::::0::::DealStatus.REJECTED::::ashleyspamm@gmail.com
-1399059000::::4::::Greenwich Village::::Mexican::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
-1399069800::::4::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::aschwartzburg1@mac.com
-1399073400::::4::::Greenwich Village::::Indian::::0::::DealStatus.EXPIRED::::tejaswini_ravindra@yahoo.com
-1399399200::::1::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::jg@jeremygoldman.com
-1399413600::::1::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::mjross58@comcast.net
-1399761000::::5::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::amairahasan@hotmail.com
-1400691600::::2::::Midtown::::Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1371683100::::2::::Midtown East::::Bar::::0::::DealStatus.AVAILED::::felamir@edisto.cofc.edu
-1371835260::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1371847080::::4::::lower manhattan::::Taco Place::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
-1372110360::::0::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
-1372181280::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
-1372267800::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
-1373478660::::2::::lower manhattan::::Taco Place::::3779.0::::DealStatus.AVAILED::::nate9289@gmail.com
-1374600060::::1::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1375912800::::2::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1379370600::::0::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1386878400::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1387564200::::4::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1387575000::::4::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1389153600::::2::::lower manhattan::::Italian Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1389411000::::5::::::::Italian Restaurant::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1390921200::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1391486400::::1::::West Village::::Wine Bar, Desserts, Mediterranean::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1391509800::::1::::::::Chinese Restaurant::::0::::DealStatus.REJECTED::::ashray.velapanur@gmail.com
-1391911200::::6::::lower manhattan::::French Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1391918400::::6::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1392004800::::0::::lower manhattan::::Swiss Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1392006600::::0::::midtown::::Bagel Shop::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392048000::::0::::lower manhattan::::French Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392053400::::0::::::::Sandwich Place::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392062400::::0::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1392147000::::1::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392161400::::1::::midtown::::Seafood Restaurant::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392235200::::2::::midtown::::Seafood Restaurant::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392256800::::3::::Midtown::::Bar::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392256800::::3::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392312600::::3::::lower manhattan::::Italian Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1392314400::::3::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392345000::::4::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1392399000::::4::::Midtown::::Bar::::0::::DealStatus.REJECTED::::erika.eskenazi@gmail.com
-1392400800::::4::::midtown::::Pizza Place::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392580800::::6::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392715800::::1::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392733800::::1::::lower manhattan::::Coffee Shop::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392762600::::1::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393455600::::2::::midtown::::New American::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1393542000::::3::::midtown::::Seafood Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1393727400::::6::::midtown::::Wine Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1393731000::::6::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1394137800::::3::::midtown::::New American::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1395102600::::1::::Midtown East::::Mexican::::0::::DealStatus.EXPIRED::::brookewm@gmail.com
-1395151200::::1::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
-1395273600::::3::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::xwing101@gmail.com
-1395874800::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::jomelta@aol.com
-1396499400::::3::::Midtown::::Bar::::0::::DealStatus.REJECTED::::louisau0@gmail.com
-1396675800::::5::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::jesskap@cox.net
-1397169000::::3::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::amairahasan@hotmail.com
-1397871000::::5::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::samanthao@bellsouth.net
-1398121200::::0::::Midtown::::Bar::::0::::DealStatus.REJECTED::::felamir@edisto.cofc.edu
-1398267000::::2::::East Village::::Diner::::0::::DealStatus.EXPIRED::::furiousjezz@gmail.com
-1398461400::::4::::Midtown East::::Ethiopian::::0::::DealStatus.EXPIRED::::davidalbiero@hotmail.com
-1399059000::::4::::West Village::::Asian::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1399145400::::5::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1399362089::::1::::::::Indian::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1370969820::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1370982780::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1370984400::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::joshua.r.weaver@gmail.com
-1371750000::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
-1372269600::::2::::Flatiron::::Salads::::1862.0::::DealStatus.AVAILED::::amsottile84@yahoo.com
-1372699320::::0::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
-1372700520::::0::::Flatiron::::Salads::::2700.0::::DealStatus.AVAILED::::nate9289@gmail.com
-1374080400::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::christinenicole87@gmail.com
-1374791400::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
-1377014400::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1377270000::::4::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1377270000::::4::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1383674400::::1::::::::BBQ Joint::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1385611200::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1386793800::::2::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1388971800::::0::::lower manhattan::::Taco Place::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1389119400::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1390012200::::5::::::::Chinese Restaurant::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1390858200::::0::::lower manhattan::::Coffee Shop::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1390928400::::1::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1391396400::::0::::lower manhattan::::American Restaurant::::0::::DealStatus.AVAILED::::rsalimath@gmail.com
-1391608800::::2::::lower manhattan::::Diner::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1392006600::::0::::lower manhattan::::Swiss Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392031800::::0::::Midtown::::Bar::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392066000::::0::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392138000::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1392346800::::4::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392375600::::4::::Flatiron::::Salads::::0::::DealStatus.AVAILED::::aiyappa@b-eagles.com
-1392397200::::4::::Midtown::::Cafe::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1392433200::::5::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392433200::::5::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392627600::::0::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1393261200::::0::::Kips Bay::::Indian::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393434000::::2::::midtown::::Restaurant/cafe::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1393457400::::2::::lower manhattan::::Vegetarian / Vegan Restaurant::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393493400::::3::::lower manhattan::::Diner::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1393520400::::3::::Midtown East::::Burgers::::54.08::::DealStatus.AVAILED::::aiyappa@b-eagles.com
-1393731000::::6::::midtown::::Bagel Shop::::0::::DealStatus.REJECTED::::derek@neongoldrecords.com
-1394064000::::3::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1394215200::::4::::Midtown East::::Mediterranean::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
-1394334000::::6::::West Village::::Wine Bar, Desserts, Mediterranean::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1394566200::::1::::Midtown::::Cafe::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1395162000::::1::::Midtown East::::Mediterranean::::0::::DealStatus.REJECTED::::msb508@nyu.edu
-1395261000::::2::::Midtown East::::Mediterranean::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1395264600::::2::::Midtown East::::Mexican::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1396026000::::4::::Midtown::::Bar::::0::::DealStatus.REJECTED::::venesaur@gmail.com
-1396627200::::4::::East Village::::Diner::::80.0::::DealStatus.AVAILED::::thebenlevine@gmail.com
-1397001600::::2::::West Village::::Asian::::0::::DealStatus.REJECTED::::rolf.arni@gmx.net
-1397257200::::4::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::rao.deepak1@gmail.com
-1397676600::::2::::Gramercy::::French African::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
-1398270600::::2::::Gramercy::::French African::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
-1399046400::::4::::East Village::::Turkish::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399059000::::4::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399077000::::5::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1399095000::::5::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1399357800::::1::::Kingsbridge::::Bar::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
-1399381200::::1::::Greenwich Village::::Cafe::::0::::DealStatus.EXPIRED::::gregrmay@gmail.com
-1400384550::::6::::::::New American Restaurant::::0::::DealStatus.REJECTED::::shwayiu@yahoo.com
-1400470689::::0::::::::Vietnamese Restaurant::::0::::DealStatus.REJECTED::::gnageswaran@gmail.com
-1400663159::::2::::::::Bar & Lounge::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
-1370970000::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::sumant.yerramilly@gmail.com
-1370991360::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::joseph.m.gullo@gmail.com
-1370992620::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::joseph.m.gullo@gmail.com
-1371145200::::3::::lower manhattan::::Taco Place::::18.0::::DealStatus.AVAILED::::resnick.matthew@gmail.com
-1371665100::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
-1371837600::::4::::Midtown East::::Bar::::32.0::::DealStatus.AVAILED::::resnick.matthew@gmail.com
-1371847080::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::shanewolf777@yahoo.com
-1372035600::::0::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
-1372350240::::3::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
-1372443360::::4::::Flatiron::::Salads::::10.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
-1373478540::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::ajbellarosa@gmail.com
-1373652000::::4::::Flatiron::::Salads::::26.0::::DealStatus.AVAILED::::resnick.matthew@gmail.com
-1376600400::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1379010780::::3::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1387414800::::3::::Midtown East::::Bar::::0::::DealStatus.AVAILED::::svallima@gmail.com
-1387551600::::4::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1388169000::::4::::midtown::::Middle Eastern Restaurant::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1389119400::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1389119400::::1::::lower manhattan::::Coffee Shop::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1389119400::::1::::lower manhattan::::Lounge::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1390244400::::0::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391439600::::0::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1391571000::::2::::lower manhattan::::French Restaurant::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391785200::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
-1391799600::::4::::midtown::::Restaurant/cafe::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1392006600::::0::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392006600::::0::::lower manhattan::::Sushi Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392006600::::0::::midtown::::Pizza Place::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392147000::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1392249600::::3::::Point Loma::::Brewery::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392258600::::3::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392328800::::3::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1392400800::::4::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392570000::::6::::midtown::::Tapas Restaurant::::0::::DealStatus.EXPIRED::::paulmiard@hotmail.com
-1392751800::::1::::Midtown East::::Burgers::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1393362000::::1::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1393439400::::2::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393453800::::2::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1393453800::::2::::lower manhattan::::Italian Restaurant::::25.0::::DealStatus.AVAILED::::fahmsikder@gmail.com
-1393619400::::4::::midtown::::New American::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1393731000::::6::::lower manhattan::::Sushi Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1394811000::::4::::midtown::::New American::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1395091800::::0::::Midtown East::::Ethiopian::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
-1395113400::::1::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::xwing101@gmail.com
-1395239400::::2::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::casey+y@datacoup.com
-1395334800::::3::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1395340200::::3::::Midtown East::::Mediterranean::::0::::DealStatus.EXPIRED::::xwing101@gmail.com
-1395340200::::3::::Midtown::::Bar::::0::::DealStatus.REJECTED::::xwing101@gmail.com
-1395415800::::4::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::wellingtonbenario@hotmail.com.br
-1395675000::::0::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::acharness@gmail.com
-1396384200::::1::::East Village::::Diner::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1396722600::::5::::Kips Bay::::Indian::::0::::DealStatus.EXPIRED::::bshwang@gmail.com
-1397070000::::2::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::daniel@canadaveiculos.com.br
-1397574000::::1::::East Village::::Diner::::0::::DealStatus.EXPIRED::::aanderson@rewardsnetwork.com
-1397698200::::3::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::keldornfirecam@gmail.com
-1398270600::::2::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
-1399075200::::5::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
-1399127400::::5::::Gramercy::::French African::::0::::DealStatus.REJECTED::::amit.shettyk@gmail.com
-1399332600::::0::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::mollyeboyle@gmail.com
-1399854600::::0::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1400686200::::2::::Kingsbridge::::Bar::::0::::DealStatus.EXPIRED::::jomelta@aol.com
-1400691600::::2::::Midtown::::Bar::::66.68::::DealStatus.AVAILED::::svallima@gmail.com
-1371141000::::3::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
-1372212000::::2::::Midtown East::::Bar::::263.0::::DealStatus.AVAILED::::shanewolf777@yahoo.com
-1372270080::::2::::Midtown East::::Bar::::12.0::::DealStatus.AVAILED::::svallima@gmail.com
-1373568300::::3::::Flatiron::::Salads::::9.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
-1373657820::::4::::Midtown East::::Bar::::0::::DealStatus.AVAILED::::bkwarshaw@gmail.com
-1374511740::::0::::Flatiron::::Salads::::0::::DealStatus.AVAILED::::resnick.matthew@gmail.com
-1375214760::::1::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::amsottile84@yahoo.com
-1376067600::::4::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1376425800::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1389277800::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1390755600::::6::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391128200::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1392006600::::0::::lower manhattan::::Seafood Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392048000::::0::::::::American Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392066000::::0::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392129000::::1::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392141600::::1::::Midtown::::Cafe::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392147000::::1::::Midtown::::Cafe::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392197400::::2::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392255000::::3::::Midtown::::Bar::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392255000::::3::::midtown::::Tapas Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392309000::::3::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392390000::::4::::lower manhattan::::Coffee Shop::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392397200::::4::::midtown::::Seafood Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1392627600::::0::::lower manhattan::::Seafood Restaurant::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392791400::::2::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392793200::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1392829200::::2::::lower manhattan::::Vegetarian / Vegan Restaurant::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393369200::::1::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1393444800::::2::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1393468200::::3::::lower manhattan::::Seafood Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1393543800::::3::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1393693200::::5::::Greenwich Village::::Thai::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
-1393729200::::6::::midtown::::Pizza Place::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1394233200::::4::::lower manhattan::::Italian Restaurant::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1394562600::::1::::Midtown East::::Mexican::::25.0::::DealStatus.AVAILED::::rsalimath@gmail.com
-1395163800::::1::::Kips Bay::::Indian::::0::::DealStatus.EXPIRED::::keldornfirecam@gmail.com
-1395430200::::4::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
-1395687600::::0::::Kips Bay::::Indian::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1395936000::::3::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::ando_b@hotmail.com
-1396143000::::6::::Kips Bay::::Indian::::0::::DealStatus.EXPIRED::::webster.merry@gmail.com
-1396317600::::1::::Gramercy::::French African::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
-1396627200::::4::::West Village::::Asian::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1396629000::::4::::West Village::::Asian::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1396715400::::5::::Greenwich Village::::Chinese::::0::::DealStatus.REJECTED::::venesaur@gmail.com
-1396918800::::1::::Greenwich Village::::Indian::::0::::DealStatus.EXPIRED::::bshwang@gmail.com
-1397349000::::6::::Midtown East::::Bar::::51.0::::DealStatus.AVAILED::::camden.gaultney@gmail.com
-1399253400::::0::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
-1399318200::::0::::Midtown East::::Mexican::::0::::DealStatus.EXPIRED::::rmannanice@gmail.com
-1399358651::::1::::::::Indian::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1400071786::::2::::Financial District::::Mediterranean::::0::::DealStatus.EXPIRED::::friend.mayank@gmail.com
-1370983020::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1371057240::::2::::Midtown East::::Bar::::15.0::::DealStatus.AVAILED::::markmansfield@hotmail.com
-1371144600::::3::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::jdrooz@mac.com
-1371160500::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
-1372116600::::0::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::pecchi17@gmail.com
-1374083880::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::alissa.jagarnath@gmail.com
-1376782200::::5::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1387051200::::5::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1388710800::::4::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1389897000::::3::::::::BBQ Joint::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1390314600::::1::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1390532400::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1391522400::::1::::Point Loma::::Brewery::::0::::DealStatus.REJECTED::::ashray.velapanur@gmail.com
-1391554800::::1::::midtown::::Restaurant/cafe::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1391632200::::2::::Midtown::::Bar::::0::::DealStatus.AVAILED::::svallima@gmail.com
-1391634000::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1391707800::::3::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::mikebstephens@gmail.com
-1391720400::::3::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391896800::::5::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392015600::::0::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392046200::::0::::lower manhattan::::Middle Eastern Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392049800::::0::::lower manhattan::::Vegetarian / Vegan Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392053400::::0::::midtown::::Tapas Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392057000::::0::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392154200::::1::::Midtown::::Bar::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392165000::::2::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::venesaur@gmail.com
-1392255000::::3::::lower manhattan::::New American Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392314400::::3::::lower manhattan::::Lounge::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1392330600::::3::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1392332400::::3::::lower manhattan::::New American Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392402600::::4::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392415200::::4::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392426000::::5::::midtown::::Wine Bar::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392431400::::5::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::paulmiard@hotmail.com
-1392591600::::6::::lower manhattan::::Seafood Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1393034400::::5::::West Village::::Wine Bar, Desserts, Mediterranean::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1393275600::::0::::lower manhattan::::American Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393286400::::1::::Midtown East::::Indian::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393293600::::1::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393297200::::1::::midtown::::New American::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393444800::::2::::Midtown::::Cafe::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1393727400::::6::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1394388000::::6::::lower manhattan::::Italian Restaurant::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
-1395185400::::1::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::praded@bu.edu
-1395190800::::2::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::keldornfirecam@gmail.com
-1395277200::::3::::Greenwich Village::::Thai::::0::::DealStatus.REJECTED::::dja8@georgetown.edu
-1395682200::::0::::Gramercy::::French African::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1396476000::::2::::Greenwich Village::::Indian::::0::::DealStatus.EXPIRED::::alexandesigner@gmail.com
-1397613600::::2::::Midtown East::::Mexican::::0::::DealStatus.EXPIRED::::mahesh.santhana@gmail.com
-1398376800::::3::::East Village::::Diner::::0::::DealStatus.EXPIRED::::casey+y@datacoup.com
-1399041000::::4::::East Village::::Diner::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399050000::::4::::Flatiron::::Mexican::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1399062600::::4::::Kips Bay::::Indian::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
-1399127400::::5::::East Village::::Diner::::0::::DealStatus.REJECTED::::amit.shettyk@gmail.com
-1399161600::::6::::East Village::::Diner::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1399226400::::6::::Greenwich Village::::Cafe::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1399309200::::0::::Flatiron::::Mexican::::0::::DealStatus.REJECTED::::xwing101@gmail.com
-1399338000::::1::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::mollyeboyle@gmail.com
-1400272200::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1400522400::::0::::West Village::::Asian::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
-1370973180::::1::::Midtown East::::Bar::::24.0::::DealStatus.AVAILED::::sumant.yerramilly@gmail.com
-1370996580::::2::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1371164400::::3::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
-1371488400::::0::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
-1371504600::::0::::Midtown East::::Bar::::0::::DealStatus.AVAILED::::bkwarshaw@gmail.com
-1371664680::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1372350300::::3::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::shanewolf777@yahoo.com
-1374273120::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
-1389153600::::2::::lower manhattan::::Lounge::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1389886200::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391727600::::3::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
-1391896800::::5::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1392046200::::0::::::::Italian Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392161400::::1::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392165000::::2::::lower manhattan::::American Restaurant::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
-1392210000::::2::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392235200::::2::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392255000::::3::::::::Wine Bar::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392345000::::4::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392375600::::4::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392390000::::4::::lower manhattan::::Middle Eastern Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1392397200::::4::::lower manhattan::::Swiss Restaurant::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1393281000::::0::::midtown::::Pizza Place::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1393360200::::1::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393549200::::4::::lower manhattan::::Italian Restaurant::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1393556400::::4::::midtown::::Tapas Restaurant::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
-1393698600::::5::::lower manhattan::::American Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393810200::::0::::midtown::::Restaurant/cafe::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
-1394127000::::3::::midtown::::New American::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1394393400::::6::::lower manhattan::::Mexican Restaurant::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1394852400::::5::::lower manhattan::::Sushi Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1395091800::::0::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::dhelf17@gmail.com
-1395874800::::2::::Midtown East::::Mexican::::0::::DealStatus.EXPIRED::::dja8@georgetown.edu
-1396575000::::4::::Kips Bay::::Indian::::0::::DealStatus.REJECTED::::dja8@georgetown.edu
-1396652400::::4::::Greenwich Village::::Indian::::0::::DealStatus.REJECTED::::ruther44@yahoo.com
-1397435400::::0::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::acharness@gmail.com
-1398979800::::3::::Greenwich Village::::Mexican::::0::::DealStatus.EXPIRED::::celina009@gmail.com
-1398987000::::3::::West Village::::Asian::::0::::DealStatus.EXPIRED::::mdwarrenjr@gmail.com
-1399044600::::4::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1399046400::::4::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399132800::::5::::Greenwich Village::::Chinese::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1399620600::::4::::Greenwich Village::::Mexican::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
-1400094093::::2::::::::American::::0::::DealStatus.EXPIRED::::orr.rick@gmail.com
-1400455800::::6::::::::Indian::::0::::DealStatus.REJECTED::::sharimatluck@gmail.com
-1400500570::::0::::::::Bar & Lounge::::0::::DealStatus.EXPIRED::::niranjan.salimath@gmail.com
-1400742027::::3::::::::Asian::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
-1370966400::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1371144780::::3::::Flatiron::::Salads::::829.0::::DealStatus.AVAILED::::nate9289@gmail.com
-1371159600::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1372099680::::0::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
-1372211040::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
-1374262860::::4::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1374690540::::2::::Flatiron::::Salads::::10.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
-1376077620::::4::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1376344800::::0::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1379533560::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1382990400::::0::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1383845400::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1387215000::::0::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1387816200::::0::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1388091600::::3::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1389103200::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1392006600::::0::::lower manhattan::::Diner::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392049800::::0::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392161400::::1::::Midtown::::Cafe::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392165000::::2::::Midtown::::Bar::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392309000::::3::::Midtown::::Cafe::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392327000::::3::::Kips Bay::::Indian::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392328800::::3::::lower manhattan::::American Restaurant::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
-1392343200::::4::::Nolita::::Cafe::::20.69::::DealStatus.AVAILED::::svallima@gmail.com
-1392402600::::4::::Midtown::::Cafe::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392424200::::5::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
-1392595200::::0::::West Village::::Wine Bar, Desserts, Mediterranean::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1392634800::::0::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392647400::::0::::Midtown::::Bar::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392942600::::4::::lower manhattan::::Bakery::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1393036200::::5::::lower manhattan::::Italian Restaurant::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1393261200::::0::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393264800::::0::::Midtown East::::Bar::::23.0::::DealStatus.AVAILED::::rsalimath@gmail.com
-1393610400::::4::::midtown::::New American::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1396105200::::5::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::samanthao@bellsouth.net
-1396310400::::1::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::meeriekim@yahoo.com
-1397755800::::3::::East Village::::Turkish::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
-1398567600::::6::::Kingsbridge::::Bar::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
-1399057200::::4::::East Village::::Diner::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1399059000::::4::::Greenwich Village::::Mexican::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399059000::::4::::Midtown::::Bar::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399118400::::5::::Gramercy::::French African::::0::::DealStatus.REJECTED::::aschwartzburg1@mac.com
-1399149000::::5::::Greenwich Village::::Cafe::::0::::DealStatus.EXPIRED::::mf214111@hotmail.com
-1399338000::::1::::Midtown::::Bar::::0::::DealStatus.REJECTED::::mollyeboyle@gmail.com
-1399735762::::5::::::::Greek::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1400698800::::2::::lower manhattan::::Caf=E9::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1371057180::::2::::Midtown East::::Bar::::23.0::::DealStatus.AVAILED::::mpribor@gmail.com
-1371060000::::2::::Flatiron::::Salads::::879.0::::DealStatus.AVAILED::::amsottile84@yahoo.com
-1371164400::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
-1371231540::::4::::lower manhattan::::Taco Place::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
-1371834540::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1372102200::::0::::Flatiron::::Salads::::682.0::::DealStatus.AVAILED::::amsottile84@yahoo.com
-1372266000::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
-1372269000::::2::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
-1373481000::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
-1373914080::::0::::Midtown East::::Bar::::2744.0::::DealStatus.AVAILED::::amsottile84@yahoo.com
-1374276660::::4::::Midtown East::::Bar::::1400.0::::DealStatus.AVAILED::::bkwarshaw@gmail.com
-1386869400::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1387303200::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1387405800::::2::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1389119400::::1::::lower manhattan::::Coffee Shop::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391191200::::4::::lower manhattan::::Bakery::::0::::DealStatus.REJECTED::::adamjaxon@gmail.com
-1391808600::::4::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1391828400::::5::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1391992200::::0::::::::Wine Bar::::0::::DealStatus.AVAILED::::fahmsikder@gmail.com
-1392006600::::0::::Gramercy::::French African::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392006600::::0::::lower manhattan::::Bakery::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392006600::::0::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392015600::::0::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392129000::::1::::lower manhattan::::Seafood Restaurant::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392139800::::1::::lower manhattan::::Italian Restaurant::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392159600::::1::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392197400::::2::::lower manhattan::::Seafood Restaurant::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392206400::::2::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1392345000::::4::::::::Sandwich Place::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392402600::::4::::midtown::::New American::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392791400::::2::::::::American Restaurant::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392832800::::2::::lower manhattan::::Italian Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393036200::::5::::lower manhattan::::American Restaurant::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
-1393698600::::5::::lower manhattan::::Bakery::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1393729200::::6::::midtown::::New American::::0::::DealStatus.EXPIRED::::puru.polaris@gmail.com
-1395106200::::1::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
-1395711000::::1::::Midtown East::::Mexican::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
-1396220400::::6::::Greenwich Village::::Indian::::0::::DealStatus.REJECTED::::louisau0@gmail.com
-1396407600::::2::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::alexandesigner@gmail.com
-1396652400::::4::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::ruther44@yahoo.com
-1397257200::::4::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::rao.deepak1@gmail.com
-1397953800::::6::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
-1398355200::::3::::Midtown East::::Mediterranean::::0::::DealStatus.EXPIRED::::aanderson@rewardsnetwork.com
-1398396600::::4::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::ashleyspamm@gmail.com
-1398979800::::3::::Kingsbridge::::Bar::::0::::DealStatus.REJECTED::::celina009@gmail.com
-1399343400::::1::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::cfowl21@hotmail.com
-1400216400::::4::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
-1400540539::::0::::Davis Square::::Barbecue Restaurant::::0::::DealStatus.REJECTED::::u2alexis@hotmail.com
-1400697000::::2::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::philip.m.hogan@gmail.com
-1370968500::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::joshua.r.weaver@gmail.com
-1370972400::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1371146400::::3::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
-1371231300::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::shanewolf777@yahoo.com
-1371492000::::0::::Flatiron::::Salads::::857.0::::DealStatus.AVAILED::::amsottile84@yahoo.com
-1371916080::::5::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::lmm9210@gmail.com
-1371924900::::5::::Midtown East::::Bar::::64.0::::DealStatus.AVAILED::::mpribor@gmail.com
-1374873000::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1375979400::::3::::lower manhattan::::Taco Place::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1386964800::::4::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1386975600::::4::::midtown::::Vegetarian / Vegan Restaurant::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1387551600::::4::::Midtown East::::Mexican::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1387652400::::5::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1389204000::::2::::lower manhattan::::Coffee Shop::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1390017600::::5::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1391187600::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
-1391439600::::0::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1391722200::::3::::midtown::::Seafood Restaurant::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
-1391792400::::4::::lower manhattan::::Swiss Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392006600::::0::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392006600::::0::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392006600::::0::::lower manhattan::::Italian Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392044400::::0::::lower manhattan::::Coffee Shop::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392048000::::0::::midtown::::Restaurant/cafe::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392066000::::0::::midtown::::Bagel Shop::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392143400::::1::::Midtown::::Bar::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392161400::::1::::midtown::::Bagel Shop::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392172200::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1392287400::::3::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392708600::::1::::midtown::::Burger Joint::::2.085::::DealStatus.AVAILED::::aiyappa@b-eagles.com
-1392937200::::3::::lower manhattan::::Lounge::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1393381800::::2::::lower manhattan::::New American Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1393443000::::2::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1393628400::::4::::midtown::::New American::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
-1393783200::::6::::lower manhattan::::French Restaurant::::0::::DealStatus.EXPIRED::::puru.polaris@gmail.com
-1394217000::::4::::midtown::::Seafood Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1395010800::::6::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1395189000::::2::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::meeriekim@yahoo.com
-1396384200::::1::::Greenwich Village::::Indian::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1396747800::::6::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
-1398790800::::1::::Kips Bay::::Indian::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
-1398798000::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::ssunseri08@stac.edu
-1399046400::::4::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1399062600::::4::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399127400::::5::::Greenwich Village::::Cafe::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399161600::::6::::East Village::::Turkish::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1399161600::::6::::West Village::::Asian::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1399307400::::0::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::xwing101@gmail.com
-1399428000::::2::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::akrause150@yahoo.com
-1399440600::::2::::Kingsbridge::::Bar::::0::::DealStatus.EXPIRED::::sjdoherty4@gmail.com
-1400211000::::4::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
-1400535000::::0::::East Village::::Turkish::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1370976240::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1371061560::::2::::Flatiron::::Salads::::19.0::::DealStatus.AVAILED::::resnick.matthew@gmail.com
-1371581400::::1::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::tevanna@yahoo.de
-1371663000::::2::::Flatiron::::Salads::::9.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
-1371767400::::3::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::wendyr7@gmail.com
-1372096680::::0::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
-1372203360::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
-1372269360::::2::::lower manhattan::::Taco Place::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
-1372351200::::3::::Flatiron::::Salads::::739.0::::DealStatus.AVAILED::::bkwarshaw@gmail.com
-1373477580::::2::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
-1374081180::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::alissa.jagarnath@gmail.com
-1383580800::::0::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1386104400::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1388817000::::5::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1388935800::::6::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1389832200::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1389913200::::3::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1391364000::::6::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::adamjaxon@gmail.com
-1391961600::::6::::Nolita::::Cafe::::0::::DealStatus.AVAILED::::fahmsikder@gmail.com
-1392006600::::0::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392046200::::0::::Point Loma::::Brewery::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392053400::::0::::Midtown::::Cafe::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392141600::::1::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392165000::::2::::Midtown::::Bar::::0::::DealStatus.REJECTED::::venesaur@gmail.com
-1392318000::::3::::lower manhattan::::Bakery::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1392647400::::0::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392856200::::3::::Greenwich Village::::Thai::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
-1393527600::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1394074800::::3::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1394731800::::3::::Gramercy::::French African::::28.0::::DealStatus.AVAILED::::rsalimath@gmail.com
-1395171000::::1::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1395277200::::3::::Gramercy::::French African::::0::::DealStatus.REJECTED::::dja8@georgetown.edu
-1395604800::::6::::Midtown East::::Bar::::48.28::::DealStatus.AVAILED::::felamir@edisto.cofc.edu
-1395851400::::2::::Midtown East::::Mediterranean::::44.62::::DealStatus.AVAILED::::svallima@gmail.com
-1396137600::::6::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
-1396499400::::3::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
-1396551600::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1397343600::::5::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::samanthao@bellsouth.net
-1397347200::::6::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
-1397602800::::1::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::aanderson@rewardsnetwork.com
-1397691000::::2::::Midtown East::::Bar::::72.0::::DealStatus.AVAILED::::aramharack@gmail.com
-1397946600::::5::::West Village::::Asian::::0::::DealStatus.REJECTED::::venesaur@gmail.com
-1398432600::::4::::East Village::::Diner::::0::::DealStatus.EXPIRED::::an_gelita_93@hotmail.com
-1398466800::::4::::Flatiron::::Mexican::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
-1398816000::::2::::Greenwich Village::::Indian::::0::::DealStatus.EXPIRED::::gnageswaran@gmail.com
-1398979800::::3::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::celina009@gmail.com
-1399046400::::4::::Kingsbridge::::Bar::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399051800::::4::::Midtown::::Bar::::27.22::::DealStatus.AVAILED::::rsalimath@gmail.com
-1399140000::::5::::Greenwich Village::::Chinese::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1399302000::::0::::Flatiron::::Mexican::::0::::DealStatus.REJECTED::::xwing101@gmail.com
-1399338000::::1::::Kingsbridge::::Bar::::0::::DealStatus.EXPIRED::::mollyeboyle@gmail.com
-1400194800::::3::::Greenwich Village::::Chinese::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
-1400702400::::2::::Midtown::::Cafe::::0::::DealStatus.EXPIRED::::tarafougner@gmail.com
-1370968200::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::gavindunaway@gmail.com
-1371054720::::2::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::markmansfield@hotmail.com
-1371067260::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
-1371488340::::0::::Flatiron::::Salads::::8.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
-1371834000::::4::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::alissa.jagarnath@gmail.com
-1371921480::::5::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::b_dyett@yahoo.com
-1372030320::::6::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
-1372181400::::1::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::jdrooz@mac.com
-1372783860::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1374084000::::2::::Flatiron::::Salads::::0::::DealStatus.AVAILED::::christinenicole87@gmail.com
-1375912800::::2::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1375999200::::3::::lower manhattan::::Taco Place::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1379533620::::2::::::::BBQ Joint::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1386799200::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1387215000::::0::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1390195800::::0::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1390438800::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1390496400::::3::::lower manhattan::::Coffee Shop::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1390602600::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1391238000::::5::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::adamjaxon@gmail.com
-1391396400::::0::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1391698800::::3::::Midtown::::Cafe::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1391754600::::4::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1391796000::::4::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391961600::::6::::midtown::::Bagel Shop::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1391976000::::6::::midtown::::Seafood Restaurant::::0::::DealStatus.AVAILED::::fahmsikder@gmail.com
-1392006600::::0::::midtown::::Wine Bar::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392017400::::0::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392053400::::0::::::::Cocktail Bar::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392055200::::0::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392060600::::0::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392066000::::0::::Midtown::::Bar::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392071400::::0::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1392157800::::1::::midtown::::New American::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1392161400::::1::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392235200::::2::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392255000::::3::::lower manhattan::::Seafood Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392296400::::3::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392345000::::4::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392375600::::4::::lower manhattan::::Coffee Shop::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392386400::::4::::midtown::::Burger Joint::::25.8::::DealStatus.AVAILED::::aiyappa@b-eagles.com
-1392715800::::1::::::::Sandwich Place::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392926400::::3::::lower manhattan::::Diner::::0::::DealStatus.EXPIRED::::adamjaxon@gmail.com
-1393468200::::3::::midtown::::Wine Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1393560000::::4::::midtown::::New American::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1394641800::::2::::Kips Bay::::Indian::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
-1395091800::::0::::Gramercy::::French African::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
-1395163800::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
-1395340200::::3::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::xwing101@gmail.com
-1396317600::::1::::Greenwich Village::::Thai::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
-1396393200::::1::::Kips Bay::::Indian::::0::::DealStatus.REJECTED::::laura.rubio@yahoo.com
-1396472400::::2::::Midtown::::Cafe::::0::::DealStatus.EXPIRED::::neeldhwajp55@gmail.com
-1397057400::::2::::Kingsbridge::::Bar::::0::::DealStatus.EXPIRED::::carrieq9@aol.com
-1397070000::::2::::Midtown::::Cafe::::0::::DealStatus.EXPIRED::::daniel@canadaveiculos.com.br
-1397107800::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::mdwarrenjr@gmail.com
-1398814200::::1::::Greenwich Village::::Chinese::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1399046400::::4::::Flatiron::::Mexican::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399046400::::4::::Greenwich Village::::Mexican::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1399069800::::4::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::aschwartzburg1@mac.com
-1399127400::::5::::Greenwich Village::::Cafe::::0::::DealStatus.EXPIRED::::amit.shettyk@gmail.com
-1399172400::::6::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::candace@thepeppercat.com
-1370980080::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1370994780::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::joshua.r.weaver@gmail.com
-1371052260::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
-1371055140::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::markmansfield@hotmail.com
-1371160800::::3::::lower manhattan::::Taco Place::::0::::DealStatus.REJECTED::::joseph.m.gullo@gmail.com
-1371504600::::0::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
-1371666840::::2::::Midtown East::::Bar::::0::::DealStatus.AVAILED::::felamir@edisto.cofc.edu
-1371774600::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1371851460::::4::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
-1372129800::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::pecchi17@gmail.com
-1372178940::::1::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::jdrooz@mac.com
-1372179180::::1::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::ajbellarosa@gmail.com
-1372266240::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
-1372267320::::2::::Flatiron::::Salads::::2400.0::::DealStatus.AVAILED::::bkwarshaw@gmail.com
-1372267800::::2::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::cmcboland@gmail.com
-1372616760::::6::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1372794540::::1::::Flatiron::::Salads::::3.0::::DealStatus.AVAILED::::venesaur@gmail.com
-1373655780::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
-1374262860::::4::::lower manhattan::::Taco Place::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1375759200::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1375979400::::3::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1375990200::::3::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1377010800::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1380650400::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1387411200::::3::::lower manhattan::::Italian Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1389153600::::2::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1391450400::::0::::Midtown East::::Bar::::0::::DealStatus.AVAILED::::fahmsikder@gmail.com
-1391509800::::1::::lower manhattan::::Lounge::::0::::DealStatus.REJECTED::::ashray.velapanur@gmail.com
-1391792400::::4::::midtown::::Pizza Place::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1391803200::::4::::midtown::::Pizza Place::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391821200::::5::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
-1391965200::::6::::lower manhattan::::French Restaurant::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1392006600::::0::::West Village::::Wine Bar, Desserts, Mediterranean::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392042600::::0::::lower manhattan::::Lounge::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392048000::::0::::::::Sandwich Place::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392053400::::0::::::::Chinese Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392057000::::0::::midtown::::Seafood Restaurant::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392147000::::1::::midtown::::New American::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392161400::::1::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392165000::::2::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1392258600::::3::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392330600::::3::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392332400::::3::::West Village::::Asian Fusion Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392375600::::4::::midtown::::Bagel Shop::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392397200::::4::::lower manhattan::::American Restaurant::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
-1393295400::::1::::::::Wine Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1393549200::::4::::midtown::::New American::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393558200::::4::::midtown::::Burger Joint::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1393628400::::4::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1393727400::::6::::midtown::::Seafood Restaurant::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
-1393891200::::1::::Midtown::::Bar::::200.0::::DealStatus.AVAILED::::cdampf@me.com
-1394582400::::2::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1395160200::::1::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::xwing101@gmail.com
-1395162000::::1::::Midtown East::::Mediterranean::::0::::DealStatus.EXPIRED::::msb508@nyu.edu
-1395199800::::2::::Gramercy::::French African::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1395540000::::6::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
-1396134000::::5::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
-1396321200::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
-1397179800::::4::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
-1397365200::::6::::Kingsbridge::::Bar::::0::::DealStatus.REJECTED::::goh.sharmaine@gmail.com
-1397862000::::4::::East Village::::Diner::::0::::DealStatus.EXPIRED::::zsilver1@babson.edu
-1398472200::::5::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::samanthao@bellsouth.net
-1398790800::::1::::East Village::::Turkish::::0::::DealStatus.EXPIRED::::gnageswaran@gmail.com
-1398798000::::1::::Kingsbridge::::Bar::::0::::DealStatus.REJECTED::::ssunseri08@stac.edu
-1399145400::::5::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::noah.litvin@gmail.com
-1399363529::::1::::::::Indian::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1399395600::::1::::Greenwich Village::::Mexican::::0::::DealStatus.EXPIRED::::gregrmay@gmail.com
-1399579200::::3::::Flatiron::::Mexican::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1373480700::::2::::Midtown East::::Bar::::20.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
-1375221600::::1::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1376085600::::4::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1377909000::::5::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1386975600::::4::::midtown::::Middle Eastern Restaurant::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1386982800::::5::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1387897200::::1::::midtown::::Vegetarian / Vegan Restaurant::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1388070000::::3::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1391130000::::4::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1391236200::::5::::lower manhattan::::Burger Joint::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1391263200::::5::::lower manhattan::::Bakery::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
-1391313600::::6::::lower manhattan::::Mexican Restaurant::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1391486400::::1::::lower manhattan::::Bakery::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1391814000::::4::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
-1391914800::::6::::lower manhattan::::Mexican Restaurant::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1392006600::::0::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392049800::::0::::Greenwich Village::::Thai::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392051600::::0::::::::Chinese Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392055200::::0::::::::BBQ Joint::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392161400::::1::::Midtown::::Bar::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392161400::::1::::midtown::::New American::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392165000::::2::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392199200::::2::::::::Sandwich Place::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392210000::::2::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392255000::::3::::midtown::::Pizza Place::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392255000::::3::::midtown::::Seafood Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392258600::::3::::lower manhattan::::Vegetarian / Vegan Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392318000::::3::::lower manhattan::::Mexican Restaurant::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1392330600::::3::::West Village::::Asian Fusion Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392345000::::4::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1393263000::::0::::Midtown East::::Bar::::333.0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393363800::::1::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1393439400::::2::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1393453800::::2::::midtown::::New American::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1393628400::::4::::midtown::::New American::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
-1393639200::::5::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
-1393693200::::5::::Greenwich Village::::Thai::::0::::DealStatus.REJECTED::::venesaur@gmail.com
-1393725600::::6::::midtown::::Wine Bar::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1393731000::::6::::midtown::::Bagel Shop::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1394555400::::1::::Kips Bay::::Indian::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1394661600::::2::::midtown::::New American::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1394737200::::3::::lower manhattan::::American Restaurant::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1394748000::::3::::Kips Bay::::Indian::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
-1395453600::::5::::Kips Bay::::Indian::::0::::DealStatus.EXPIRED::::allyfrey@gmail.com
-1395599400::::6::::Kips Bay::::Indian::::0::::DealStatus.EXPIRED::::imschiffer@gmail.com
-1395700200::::0::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::dja8@georgetown.edu
-1395939600::::3::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1396407600::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::alexandesigner@gmail.com
-1397599200::::1::::Midtown East::::Ethiopian::::0::::DealStatus.EXPIRED::::neeldhwajp55@gmail.com
-1397754000::::3::::Midtown East::::Mediterranean::::0::::DealStatus.EXPIRED::::rashida.bobb@aya.yale.edu
-1398277800::::2::::East Village::::Turkish::::0::::DealStatus.EXPIRED::::puru.polaris@gmail.com
-1399059000::::4::::West Village::::Asian::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1399266000::::0::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
-1399582800::::3::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::mahesh.santhana@gmail.com
-1400571000::::1::::::::Indian::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
-1370980740::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1371160860::::3::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::shanewolf777@yahoo.com
-1371577140::::1::::Flatiron::::Salads::::1800.0::::DealStatus.AVAILED::::nate9289@gmail.com
-1371751920::::3::::Midtown East::::Bar::::0::::DealStatus.AVAILED::::rsalimath@gmail.com
-1371857400::::4::::lower manhattan::::Taco Place::::9.0::::DealStatus.AVAILED::::anthonynmarinos@gmail.com
-1372776780::::1::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1372971960::::3::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::aiyappa.cg@rediffmail.com
-1374088200::::2::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
-1375999200::::3::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1377043200::::2::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1386694800::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1387827000::::0::::midtown::::Vegetarian / Vegan Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1390062600::::5::::Midtown East::::Ethiopian::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1391200200::::4::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391486400::::1::::West Village::::Wine Bar, Desserts, Mediterranean::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1391509800::::1::::Point Loma::::Brewery::::0::::DealStatus.REJECTED::::ashray.velapanur@gmail.com
-1392006600::::0::::lower manhattan::::Mediterranean Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392042600::::0::::Midtown::::Bar::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392051600::::0::::lower manhattan::::Mexican Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392080400::::1::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
-1392130800::::1::::lower manhattan::::American Restaurant::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1392161400::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392206400::::2::::lower manhattan::::Seafood Restaurant::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1392240600::::2::::midtown::::Pizza Place::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392255000::::3::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392265800::::3::::Midtown East::::Mexican::::25.0::::DealStatus.AVAILED::::fahmsikder@gmail.com
-1392330600::::3::::::::Cocktail Bar::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392345000::::4::::::::Wine Bar::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392375600::::4::::lower manhattan::::American Restaurant::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392647400::::0::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392732000::::1::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1392858000::::3::::midtown::::Bagel Shop::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1392937200::::3::::midtown::::Restaurant/cafe::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1393543800::::3::::Midtown East::::Indian::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
-1394046000::::2::::Midtown::::Bar::::25.0::::DealStatus.AVAILED::::cdampf@me.com
-1394049600::::2::::midtown::::New American::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1395090000::::0::::Kips Bay::::Indian::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
-1395097200::::0::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::michelle.krogmeier@gmail.com
-1395862200::::2::::Kips Bay::::Indian::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
-1395973800::::4::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::phantana@gmail.com
-1396027800::::4::::Midtown::::Bar::::45.94::::DealStatus.AVAILED::::venesaur@gmail.com
-1396386000::::1::::Midtown::::Bar::::0::::DealStatus.REJECTED::::christopherc901@yahoo.com
-1396546200::::3::::East Village::::Diner::::45.0::::DealStatus.AVAILED::::thebenlevine@gmail.com
-1396639800::::4::::Nolita::::Cafe::::0::::DealStatus.REJECTED::::ruther44@yahoo.com
-1397057400::::2::::Kingsbridge::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1398182400::::1::::East Village::::Diner::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
-1398270600::::2::::East Village::::Diner::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
-1398785400::::1::::Flatiron::::Mexican::::0::::DealStatus.REJECTED::::rmannanice@gmail.com
-1398816000::::2::::Greenwich Village::::Indian::::0::::DealStatus.REJECTED::::gnageswaran@gmail.com
-1399077000::::5::::Midtown East::::Burgers::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1400275800::::4::::West Village::::Asian::::0::::DealStatus.EXPIRED::::arti.sharma14@gmail.com
-1370962200::::1::::Midtown East::::Bar::::25.0::::DealStatus.AVAILED::::svallima@gmail.com
-1370966700::::1::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1370968200::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1371852000::::4::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
-1371857820::::4::::lower manhattan::::Taco Place::::9.0::::DealStatus.AVAILED::::rsalimath@gmail.com
-1372352400::::3::::Flatiron::::Salads::::6.0::::DealStatus.AVAILED::::shanewolf777@yahoo.com
-1373314080::::0::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1373929200::::0::::Flatiron::::Salads::::0::::DealStatus.EXPIRED::::christinenicole87@gmail.com
-1375912920::::2::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
-1376931600::::0::::lower manhattan::::Taco Place::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1386964800::::4::::Midtown East::::Mexican::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1387407600::::2::::Midtown East::::Bar::::0::::DealStatus.AVAILED::::rsalimath@gmail.com
-1387573200::::4::::Midtown East::::Greek::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1389479400::::5::::::::Italian Restaurant::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1390062600::::5::::::::BBQ Joint::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
-1391115600::::3::::::::Italian Restaurant::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391457600::::0::::lower manhattan::::American Restaurant::::0::::DealStatus.EXPIRED::::adamjaxon@gmail.com
-1391558400::::2::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1391562000::::2::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
-1391754600::::4::::lower manhattan::::American Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1391808600::::4::::Midtown::::Bar::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
-1391896800::::5::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
-1392044400::::0::::lower manhattan::::Middle Eastern Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392066000::::0::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392084000::::1::::midtown::::Seafood Restaurant::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
-1392224400::::2::::midtown::::New American::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1392255000::::3::::Midtown East::::Indian::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392298200::::3::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392309000::::3::::Midtown East::::Greek::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392309000::::3::::lower manhattan::::Vegetarian / Vegan Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392319800::::3::::lower manhattan::::Italian Restaurant::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
-1392330600::::3::::lower manhattan::::Swiss Restaurant::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392334200::::3::::::::Wine Bar::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
-1392375600::::4::::Flatiron::::Salads::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1392399000::::4::::lower manhattan::::Vegetarian / Vegan Restaurant::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
-1392764400::::1::::::::BBQ Joint::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
-1393263000::::0::::Midtown East::::Bar::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393264800::::0::::Midtown East::::Bar::::22.0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393387200::::2::::lower manhattan::::Mediterranean Restaurant::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
-1393718400::::6::::Midtown East::::Burgers::::0::::DealStatus.EXPIRED::::paulmiard@hotmail.com
-1393718400::::6::::midtown::::Burger Joint::::0::::DealStatus.REJECTED::::paulmiard@hotmail.com
-1393729200::::6::::midtown::::New American::::0::::DealStatus.EXPIRED::::mikebstephens@gmail.com
-1394656200::::2::::Midtown East::::Ethiopian::::0::::DealStatus.AVAILED::::rsalimath@gmail.com
-1395090000::::0::::Nolita::::Cafe::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
-1395091800::::0::::Midtown East::::Ethiopian::::0::::DealStatus.REJECTED::::felamir@edisto.cofc.edu
-1395160200::::1::::Midtown East::::Mediterranean::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1395171000::::1::::Midtown::::Bar::::0::::DealStatus.REJECTED::::robert.strojan@gmail.com
-1395277200::::3::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::dja8@georgetown.edu
-1395284400::::3::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
-1395331200::::3::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::xwing101@gmail.com
-1395444600::::4::::Gramercy::::French African::::96.9::::DealStatus.AVAILED::::anna.tevini@gmail.com
-1395891000::::3::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
-1396317600::::1::::Gramercy::::French African::::0::::DealStatus.REJECTED::::kmkennedy20@yahoo.com
-1396382400::::1::::Greenwich Village::::Indian::::0::::DealStatus.REJECTED::::svallima@gmail.com
-1396639800::::4::::Midtown East::::Mexican::::0::::DealStatus.REJECTED::::ruther44@yahoo.com
-1396659600::::5::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::ruther44@yahoo.com
-1396665000::::5::::Midtown East::::Ethiopian::::0::::DealStatus.EXPIRED::::ecforster@gmail.com
-1397158200::::3::::West Village::::Asian::::0::::DealStatus.AVAILED::::mdwarrenjr@gmail.com
-1397255400::::4::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::amairahasan@hotmail.com
-1397365200::::6::::Midtown East::::Ethiopian::::0::::DealStatus.EXPIRED::::goh.sharmaine@gmail.com
-1397593800::::1::::Gramercy::::French African::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
-1397608200::::2::::Midtown::::Bar::::0::::DealStatus.EXPIRED::::aramharack@gmail.com
-1398279600::::2::::Greenwich Village::::Indian::::0::::DealStatus.REJECTED::::ando_b@hotmail.com
-1398391200::::4::::East Village::::Turkish::::0::::DealStatus.EXPIRED::::tejaswini_ravindra@yahoo.com
-1398616200::::6::::Flatiron::::Mexican::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
-1399096800::::5::::Midtown::::Bar::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
-1399307400::::0::::Flatiron::::Mexican::::0::::DealStatus.REJECTED::::xwing101@gmail.com
-1399550400::::3::::East Village::::Diner::::0::::DealStatus.EXPIRED::::niranjan.salimath@gmail.com
-1399563000::::3::::West Village::::Asian::::0::::DealStatus.EXPIRED::::svallima@gmail.com
-1399933800::::0::::Greenwich Village::::Chinese::::0::::DealStatus.REJECTED::::sharimatluck@gmail.com
-1400193000::::3::::Greenwich Village::::Mexican::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
-1400603400::::1::::Midtown East::::Bar::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1370980080::::1::::Midtown East::::Bar::::32.0::::32.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1371160800::::3::::lower manhattan::::Taco Place::::20.0::::19.0::::0::::DealStatus.REJECTED::::joseph.m.gullo@gmail.com
+1371164400::::3::::lower manhattan::::Taco Place::::16.0::::13.0::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
+1371666840::::2::::Midtown East::::Bar::::40.0::::35.0::::0::::DealStatus.AVAILED::::felamir@edisto.cofc.edu
+1371835260::::4::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1372181280::::1::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
+1372267800::::2::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
+1373478660::::2::::lower manhattan::::Taco Place::::15.0::::15.0::::3779.0::::DealStatus.AVAILED::::nate9289@gmail.com
+1375759200::::1::::Midtown East::::Bar::::31.0::::31.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1376067600::::4::::Flatiron::::Salads::::10.0::::10.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1379370600::::0::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1386878400::::3::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1387564200::::4::::Midtown East::::Greek::::20.0::::20.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1387575000::::4::::Midtown East::::Greek::::23.0::::23.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1389119400::::1::::lower manhattan::::Coffee Shop::::2.0::::2.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1389411000::::5::::::::Italian Restaurant::::24.0::::24.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1390921200::::1::::Midtown East::::Bar::::27.0::::27.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1391486400::::1::::West Village::::Wine Bar, Desserts, Mediterranean::::20.0::::20.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1391727600::::3::::Midtown East::::Indian::::25.0::::24.0::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
+1392004800::::0::::lower manhattan::::Swiss Restaurant::::21.0::::21.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392006600::::0::::lower manhattan::::Seafood Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392006600::::0::::lower manhattan::::Seafood Restaurant::::5.0::::5.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392048000::::0::::::::American Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392066000::::0::::lower manhattan::::American Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392129000::::1::::Midtown East::::Greek::::30.0::::27.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392147000::::1::::Midtown::::Cafe::::10.0::::10.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1392147000::::1::::Nolita::::Cafe::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392199200::::2::::::::Sandwich Place::::30.0::::27.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392255000::::3::::Midtown::::Bar::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392255000::::3::::midtown::::Tapas Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392258600::::3::::Nolita::::Cafe::::17.0::::17.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392312600::::3::::lower manhattan::::Italian Restaurant::::20.0::::20.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392345000::::4::::Nolita::::Cafe::::9.0::::9.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1392399000::::4::::Midtown::::Bar::::20.0::::20.0::::0::::DealStatus.REJECTED::::erika.eskenazi@gmail.com
+1392400800::::4::::Nolita::::Cafe::::20.0::::16.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392580800::::6::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1393369200::::1::::lower manhattan::::American Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393468200::::3::::lower manhattan::::Seafood Restaurant::::5.0::::5.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1393543800::::3::::Midtown East::::Indian::::15.0::::15.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1393628400::::4::::midtown::::New American::::13.0::::13.0::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
+1393729200::::6::::midtown::::Pizza Place::::30.0::::30.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393731000::::6::::Midtown East::::Greek::::20.0::::20.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393891200::::1::::Midtown::::Bar::::12.0::::12.0::::200.0::::DealStatus.AVAILED::::cdampf@me.com
+1394137800::::3::::midtown::::New American::::37.0::::37.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1394562600::::1::::Midtown East::::Mexican::::15.0::::15.0::::25.0::::DealStatus.AVAILED::::rsalimath@gmail.com
+1395163800::::1::::Kips Bay::::Indian::::18.0::::18.0::::0::::DealStatus.EXPIRED::::keldornfirecam@gmail.com
+1395190800::::2::::Gramercy::::French African::::19.0::::17.5::::0::::DealStatus.EXPIRED::::keldornfirecam@gmail.com
+1395199800::::2::::Gramercy::::French African::::13.0::::13.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1395453600::::5::::Kips Bay::::Indian::::17.0::::17.0::::0::::DealStatus.EXPIRED::::allyfrey@gmail.com
+1395874800::::2::::Midtown East::::Bar::::24.0::::24.0::::0::::DealStatus.EXPIRED::::jomelta@aol.com
+1395939600::::3::::Midtown East::::Mexican::::17.0::::17.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1396143000::::6::::Kips Bay::::Indian::::15.0::::15.0::::0::::DealStatus.EXPIRED::::webster.merry@gmail.com
+1396310400::::1::::Midtown East::::Mexican::::20.0::::17.5::::0::::DealStatus.REJECTED::::meeriekim@yahoo.com
+1396317600::::1::::Gramercy::::French African::::18.0::::18.0::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1396675800::::5::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::jesskap@cox.net
+1396747800::::6::::Midtown East::::Mexican::::19.0::::17.5::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1397871000::::5::::Midtown East::::Bar::::22.0::::22.0::::0::::DealStatus.EXPIRED::::samanthao@bellsouth.net
+1398277800::::2::::East Village::::Turkish::::13.0::::13.0::::0::::DealStatus.EXPIRED::::puru.polaris@gmail.com
+1399059000::::4::::Greenwich Village::::Mexican::::20.0::::16.6666666667::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399161600::::6::::West Village::::Asian::::10.0::::5.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1399318200::::0::::Midtown East::::Mexican::::10.0::::10.0::::0::::DealStatus.EXPIRED::::rmannanice@gmail.com
+1400071786::::2::::Financial District::::Mediterranean::::10.0::::10.0::::0::::DealStatus.EXPIRED::::friend.mayank@gmail.com
+1370980740::::1::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1371057180::::2::::Midtown East::::Bar::::20.0::::20.0::::23.0::::DealStatus.AVAILED::::mpribor@gmail.com
+1371060000::::2::::Flatiron::::Salads::::20.0::::20.0::::879.0::::DealStatus.AVAILED::::amsottile84@yahoo.com
+1371160860::::3::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::shanewolf777@yahoo.com
+1371164400::::3::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
+1371577140::::1::::Flatiron::::Salads::::15.0::::15.0::::1800.0::::DealStatus.AVAILED::::nate9289@gmail.com
+1371857400::::4::::lower manhattan::::Taco Place::::15.0::::15.0::::9.0::::DealStatus.AVAILED::::anthonynmarinos@gmail.com
+1371921480::::5::::Flatiron::::Salads::::20.0::::12.0::::0::::DealStatus.EXPIRED::::b_dyett@yahoo.com
+1372102200::::0::::Flatiron::::Salads::::20.0::::20.0::::682.0::::DealStatus.AVAILED::::amsottile84@yahoo.com
+1372266000::::2::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
+1372971960::::3::::lower manhattan::::Taco Place::::25.0::::25.0::::0::::DealStatus.EXPIRED::::aiyappa.cg@rediffmail.com
+1373914080::::0::::Midtown East::::Bar::::40.0::::40.0::::2744.0::::DealStatus.AVAILED::::amsottile84@yahoo.com
+1374276660::::4::::Midtown East::::Bar::::40.0::::40.0::::1400.0::::DealStatus.AVAILED::::bkwarshaw@gmail.com
+1377014400::::1::::Midtown East::::Bar::::36.0::::36.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1386694800::::1::::Midtown East::::Bar::::38.0::::38.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1386869400::::3::::Midtown East::::Bar::::19.0::::19.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1389913200::::3::::Midtown East::::Greek::::16.0::::16.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1391200200::::4::::Nolita::::Cafe::::15.0::::15.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391396400::::0::::lower manhattan::::American Restaurant::::5.0::::5.0::::0::::DealStatus.AVAILED::::rsalimath@gmail.com
+1391509800::::1::::Point Loma::::Brewery::::10.0::::10.0::::0::::DealStatus.REJECTED::::ashray.velapanur@gmail.com
+1391896800::::5::::Nolita::::Cafe::::20.0::::16.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1392006600::::0::::lower manhattan::::Mediterranean Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392015600::::0::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392051600::::0::::lower manhattan::::Mexican Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392129000::::1::::lower manhattan::::Seafood Restaurant::::19.0::::19.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392129000::::1::::lower manhattan::::Seafood Restaurant::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392130800::::1::::lower manhattan::::American Restaurant::::10.0::::10.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1392143400::::1::::Midtown::::Bar::::25.0::::22.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392206400::::2::::lower manhattan::::Seafood Restaurant::::5.0::::5.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1392255000::::3::::Midtown East::::Mexican::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392330600::::3::::::::Cocktail Bar::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392345000::::4::::::::Wine Bar::::10.0::::10.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392832800::::2::::lower manhattan::::Italian Restaurant::::20.0::::20.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392937200::::3::::midtown::::Restaurant/cafe::::30.0::::30.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1393034400::::5::::West Village::::Wine Bar, Desserts, Mediterranean::::19.0::::18.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1393036200::::5::::lower manhattan::::American Restaurant::::20.0::::20.0::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
+1393542000::::3::::midtown::::Seafood Restaurant::::15.0::::13.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393729200::::6::::midtown::::New American::::28.0::::28.0::::0::::DealStatus.EXPIRED::::puru.polaris@gmail.com
+1394049600::::2::::midtown::::New American::::10.0::::10.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1394064000::::3::::Flatiron::::Salads::::13.0::::13.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1394811000::::4::::midtown::::New American::::50.0::::40.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1395171000::::1::::Nolita::::Cafe::::16.0::::16.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1395261000::::2::::Midtown East::::Mediterranean::::17.0::::17.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1395264600::::2::::Midtown East::::Mexican::::16.0::::16.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1395862200::::2::::Kips Bay::::Indian::::18.0::::18.0::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
+1395973800::::4::::Midtown::::Bar::::10.0::::10.0::::0::::DealStatus.EXPIRED::::phantana@gmail.com
+1396918800::::1::::Greenwich Village::::Indian::::10.0::::7.5::::0::::DealStatus.EXPIRED::::bshwang@gmail.com
+1397057400::::2::::Kingsbridge::::Bar::::18.0::::18.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1397343600::::5::::Midtown::::Bar::::20.0::::15.0::::0::::DealStatus.EXPIRED::::samanthao@bellsouth.net
+1398270600::::2::::East Village::::Diner::::10.0::::10.0::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
+1398785400::::1::::Flatiron::::Mexican::::10.0::::10.0::::0::::DealStatus.REJECTED::::rmannanice@gmail.com
+1398979800::::3::::Kingsbridge::::Bar::::20.0::::15.0::::0::::DealStatus.REJECTED::::celina009@gmail.com
+1399059000::::4::::West Village::::Asian::::9.0::::8.33333333333::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1399140000::::5::::Greenwich Village::::Chinese::::5.0::::5.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1399302000::::0::::Flatiron::::Mexican::::16.0::::16.0::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1399343400::::1::::Midtown::::Bar::::15.0::::15.0::::0::::DealStatus.EXPIRED::::cfowl21@hotmail.com
+1371226380::::4::::Midtown East::::Bar::::25.0::::25.0::::20.0::::DealStatus.AVAILED::::rsalimath@gmail.com
+1371256680::::5::::lower manhattan::::Taco Place::::20.0::::20.0::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
+1371664680::::2::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1371847080::::4::::Midtown East::::Bar::::31.0::::31.0::::0::::DealStatus.EXPIRED::::shanewolf777@yahoo.com
+1372267380::::2::::Flatiron::::Salads::::20.0::::20.0::::14.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
+1373652000::::4::::Flatiron::::Salads::::16.0::::16.0::::26.0::::DealStatus.AVAILED::::resnick.matthew@gmail.com
+1373911380::::0::::Flatiron::::Salads::::20.0::::20.0::::9.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
+1375979400::::3::::lower manhattan::::Taco Place::::16.0::::16.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1386975600::::4::::midtown::::Vegetarian / Vegan Restaurant::::17.0::::17.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1387652400::::5::::Flatiron::::Salads::::13.0::::13.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1389119400::::1::::lower manhattan::::Lounge::::5.0::::5.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1389132000::::1::::Midtown East::::Ethiopian::::15.0::::15.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391918400::::6::::Midtown::::Bar::::21.0::::20.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1392031800::::0::::Midtown::::Bar::::25.0::::22.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392084000::::1::::midtown::::Seafood Restaurant::::20.0::::13.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392147000::::1::::Midtown East::::Bar::::35.0::::35.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1392161400::::1::::Midtown East::::Indian::::30.0::::30.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392172200::::2::::Midtown East::::Bar::::32.0::::32.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1392255000::::3::::::::Wine Bar::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392258600::::3::::midtown::::Burger Joint::::5.0::::5.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1392318000::::3::::lower manhattan::::Bakery::::40.0::::34.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1392390000::::4::::lower manhattan::::Middle Eastern Restaurant::::30.0::::30.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392397200::::4::::lower manhattan::::Swiss Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1393281000::::0::::midtown::::Pizza Place::::21.0::::21.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1393531200::::3::::lower manhattan::::Middle Eastern Restaurant::::40.0::::40.0::::585.7::::DealStatus.AVAILED::::aiyappa@b-eagles.com
+1393628400::::4::::midtown::::New American::::47.0::::47.0::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
+1393810200::::0::::midtown::::Restaurant/cafe::::30.0::::30.0::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
+1394127000::::3::::midtown::::New American::::42.0::::42.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1394582400::::2::::midtown::::Burger Joint::::20.0::::17.5::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1395010800::::6::::Midtown::::Bar::::12.0::::12.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1395091800::::0::::Gramercy::::French African::::10.0::::10.0::::0::::DealStatus.EXPIRED::::dhelf17@gmail.com
+1395277200::::3::::Greenwich Village::::Thai::::20.0::::18.3333333333::::0::::DealStatus.REJECTED::::dja8@georgetown.edu
+1395277200::::3::::Midtown East::::Mexican::::20.0::::18.3333333333::::0::::DealStatus.REJECTED::::dja8@georgetown.edu
+1395540000::::6::::Midtown East::::Bar::::30.0::::26.25::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
+1395874800::::2::::Midtown East::::Mexican::::10.0::::10.0::::0::::DealStatus.EXPIRED::::dja8@georgetown.edu
+1396476000::::2::::Greenwich Village::::Indian::::0.0::::0.0::::0::::DealStatus.EXPIRED::::alexandesigner@gmail.com
+1396575000::::4::::Kips Bay::::Indian::::15.0::::15.0::::0::::DealStatus.REJECTED::::dja8@georgetown.edu
+1397435400::::0::::Midtown::::Bar::::10.0::::10.0::::0::::DealStatus.EXPIRED::::acharness@gmail.com
+1399044600::::4::::Nolita::::Cafe::::10.0::::10.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1399046400::::4::::Flatiron::::Mexican::::18.0::::16.6666666667::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399046400::::4::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399059000::::4::::Midtown East::::Burgers::::15.0::::13.75::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399062600::::4::::Midtown East::::Mexican::::16.0::::16.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399127400::::5::::East Village::::Diner::::25.0::::21.25::::0::::DealStatus.REJECTED::::amit.shettyk@gmail.com
+1399358651::::1::::::::Indian::::20.0::::16.6666666667::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1400522400::::0::::West Village::::Asian::::0.0::::0.0::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
+1400571000::::1::::::::Indian::::20.0::::16.6666666667::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
+1400663159::::2::::::::Bar & Lounge::::20.0::::17.5::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
+1400691600::::2::::Midtown::::Bar::::20.0::::13.8888888889::::66.68::::DealStatus.AVAILED::::svallima@gmail.com
+1370969820::::1::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1370982780::::1::::Midtown East::::Bar::::28.0::::28.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1370984400::::1::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::joshua.r.weaver@gmail.com
+1371061560::::2::::Flatiron::::Salads::::10.0::::10.0::::19.0::::DealStatus.AVAILED::::resnick.matthew@gmail.com
+1371488400::::0::::Flatiron::::Salads::::20.0::::18.0::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
+1371663000::::2::::Flatiron::::Salads::::15.0::::15.0::::9.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
+1371750000::::3::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
+1371767400::::3::::Flatiron::::Salads::::15.0::::15.0::::0::::DealStatus.EXPIRED::::wendyr7@gmail.com
+1372269360::::2::::lower manhattan::::Taco Place::::25.0::::25.0::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
+1374773400::::3::::Flatiron::::Salads::::20.0::::12.0::::0::::DealStatus.AVAILED::::jdrooz@mac.com
+1374791400::::3::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
+1383674400::::1::::::::BBQ Joint::::21.0::::21.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1388817000::::5::::Midtown East::::Bar::::37.0::::37.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1389832200::::3::::Midtown East::::Bar::::29.0::::29.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1390012200::::5::::::::Chinese Restaurant::::20.0::::20.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1390062600::::5::::Midtown East::::Ethiopian::::17.0::::17.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1391187600::::4::::Midtown East::::Bar::::40.0::::36.0::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
+1391608800::::2::::lower manhattan::::Diner::::15.0::::15.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1391792400::::4::::lower manhattan::::Swiss Restaurant::::25.0::::24.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1391911200::::6::::lower manhattan::::French Restaurant::::20.0::::17.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392006600::::0::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392046200::::0::::Point Loma::::Brewery::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392053400::::0::::Midtown::::Cafe::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392057000::::0::::Midtown East::::Burgers::::25.0::::24.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392057000::::0::::midtown::::Seafood Restaurant::::19.0::::17.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392060600::::0::::Midtown East::::Burgers::::30.0::::26.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392346800::::4::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392397200::::4::::Midtown::::Cafe::::23.0::::23.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1392433200::::5::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392856200::::3::::Greenwich Village::::Thai::::25.0::::25.0::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
+1393261200::::0::::Kips Bay::::Indian::::28.0::::28.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393731000::::6::::midtown::::Bagel Shop::::15.0::::15.0::::0::::DealStatus.REJECTED::::derek@neongoldrecords.com
+1394074800::::3::::Nolita::::Cafe::::15.0::::15.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1394215200::::4::::Midtown East::::Mediterranean::::15.0::::15.0::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
+1394731800::::3::::Gramercy::::French African::::10.0::::10.0::::28.0::::DealStatus.AVAILED::::rsalimath@gmail.com
+1395171000::::1::::Midtown::::Bar::::20.0::::17.5::::0::::DealStatus.REJECTED::::robert.strojan@gmail.com
+1396137600::::6::::Midtown::::Bar::::20.0::::15.0::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
+1396321200::::1::::Midtown East::::Bar::::30.0::::25.0::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
+1396386000::::1::::Midtown::::Bar::::17.0::::17.0::::0::::DealStatus.REJECTED::::christopherc901@yahoo.com
+1396551600::::3::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1396715400::::5::::Greenwich Village::::Chinese::::10.0::::7.5::::0::::DealStatus.REJECTED::::venesaur@gmail.com
+1398182400::::1::::East Village::::Diner::::23.0::::17.5::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1398432600::::4::::East Village::::Diner::::10.0::::10.0::::0::::DealStatus.EXPIRED::::an_gelita_93@hotmail.com
+1398466800::::4::::Flatiron::::Mexican::::10.0::::10.0::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
+1399132800::::5::::Greenwich Village::::Chinese::::10.0::::8.33333333333::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1399302000::::0::::Flatiron::::Mexican::::14.0::::14.0::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1400194800::::3::::Greenwich Village::::Chinese::::10.0::::7.5::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
+1400384550::::6::::::::New American Restaurant::::20.0::::20.0::::0::::DealStatus.REJECTED::::shwayiu@yahoo.com
+1370991360::::1::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::joseph.m.gullo@gmail.com
+1371231300::::4::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::shanewolf777@yahoo.com
+1371683100::::2::::Midtown East::::Bar::::40.0::::36.0::::0::::DealStatus.AVAILED::::felamir@edisto.cofc.edu
+1371837600::::4::::Midtown East::::Bar::::40.0::::40.0::::32.0::::DealStatus.AVAILED::::resnick.matthew@gmail.com
+1371847080::::4::::lower manhattan::::Taco Place::::25.0::::22.0::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
+1371924900::::5::::Midtown East::::Bar::::30.0::::30.0::::64.0::::DealStatus.AVAILED::::mpribor@gmail.com
+1372035600::::0::::lower manhattan::::Taco Place::::25.0::::25.0::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
+1372266000::::2::::Flatiron::::Salads::::16.0::::16.0::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
+1372350240::::3::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
+1372443360::::4::::Flatiron::::Salads::::20.0::::20.0::::10.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
+1373478540::::2::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::ajbellarosa@gmail.com
+1373481000::::2::::Flatiron::::Salads::::20.0::::18.0::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
+1376600400::::3::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1387551600::::4::::Midtown East::::Greek::::11.0::::11.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1388091600::::3::::Midtown East::::Bar::::12.0::::12.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1389119400::::1::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1390244400::::0::::Gramercy::::French African::::19.0::::19.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391439600::::0::::lower manhattan::::American Restaurant::::14.0::::14.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1391785200::::4::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
+1391799600::::4::::midtown::::Restaurant/cafe::::20.0::::20.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392006600::::0::::Flatiron::::Salads::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392006600::::0::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392006600::::0::::lower manhattan::::Italian Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392006600::::0::::lower manhattan::::Sushi Restaurant::::11.0::::11.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392015600::::0::::midtown::::Burger Joint::::20.0::::17.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392044400::::0::::lower manhattan::::Coffee Shop::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392048000::::0::::midtown::::Restaurant/cafe::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392060600::::0::::Midtown East::::Burgers::::27.0::::25.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392161400::::1::::midtown::::Seafood Restaurant::::20.0::::18.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1393362000::::1::::lower manhattan::::American Restaurant::::19.0::::19.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393381800::::2::::lower manhattan::::New American Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393619400::::4::::midtown::::New American::::33.0::::33.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1393725600::::6::::lower manhattan::::American Restaurant::::16.0::::16.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1394217000::::4::::midtown::::Seafood Restaurant::::15.0::::15.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1394393400::::6::::lower manhattan::::Mexican Restaurant::::17.0::::17.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1395163800::::1::::Midtown East::::Bar::::28.0::::26.25::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1395189000::::2::::Midtown East::::Mexican::::10.0::::10.0::::0::::DealStatus.REJECTED::::meeriekim@yahoo.com
+1395334800::::3::::Gramercy::::French African::::15.0::::15.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1395340200::::3::::Midtown::::Bar::::15.0::::8.5::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1395430200::::4::::Midtown::::Bar::::20.0::::17.5::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
+1396220400::::6::::Greenwich Village::::Indian::::10.0::::8.33333333333::::0::::DealStatus.REJECTED::::louisau0@gmail.com
+1396317600::::1::::Gramercy::::French African::::19.0::::17.5::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1396384200::::1::::East Village::::Diner::::21.0::::21.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1396472400::::2::::Midtown::::Cafe::::15.0::::12.5::::0::::DealStatus.EXPIRED::::neeldhwajp55@gmail.com
+1397574000::::1::::East Village::::Diner::::20.0::::20.0::::0::::DealStatus.EXPIRED::::aanderson@rewardsnetwork.com
+1399046400::::4::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1399051800::::4::::Midtown::::Bar::::18.0::::15.0::::27.22::::DealStatus.AVAILED::::rsalimath@gmail.com
+1399307400::::0::::Flatiron::::Mexican::::18.0::::16.6666666667::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1399428000::::2::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.EXPIRED::::akrause150@yahoo.com
+1399440600::::2::::Kingsbridge::::Bar::::15.0::::15.0::::0::::DealStatus.EXPIRED::::sjdoherty4@gmail.com
+1399550400::::3::::East Village::::Diner::::25.0::::21.25::::0::::DealStatus.EXPIRED::::niranjan.salimath@gmail.com
+1399563000::::3::::West Village::::Asian::::2.0::::2.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1399933800::::0::::Greenwich Village::::Chinese::::10.0::::7.5::::0::::DealStatus.REJECTED::::sharimatluck@gmail.com
+1400697000::::2::::Nolita::::Cafe::::10.0::::7.77777777778::::0::::DealStatus.REJECTED::::philip.m.hogan@gmail.com
+1370968200::::1::::Midtown East::::Bar::::33.0::::33.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1371054720::::2::::Midtown East::::Bar::::31.0::::31.0::::0::::DealStatus.REJECTED::::markmansfield@hotmail.com
+1371852000::::4::::lower manhattan::::Taco Place::::15.0::::15.0::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
+1371857820::::4::::lower manhattan::::Taco Place::::15.0::::15.0::::9.0::::DealStatus.AVAILED::::rsalimath@gmail.com
+1373929200::::0::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.EXPIRED::::christinenicole87@gmail.com
+1374084000::::2::::Flatiron::::Salads::::16.0::::16.0::::0::::DealStatus.AVAILED::::christinenicole87@gmail.com
+1374262860::::4::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1374600060::::1::::Flatiron::::Salads::::15.0::::14.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1375912800::::2::::lower manhattan::::Taco Place::::5.0::::5.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1375912920::::2::::Flatiron::::Salads::::15.0::::15.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1376344800::::0::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1376931600::::0::::lower manhattan::::Taco Place::::15.0::::15.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1386964800::::4::::Midtown East::::Mexican::::1.0::::1.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1387551600::::4::::Midtown East::::Mexican::::8.0::::8.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1388091600::::3::::Flatiron::::Salads::::7.0::::7.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1390062600::::5::::::::BBQ Joint::::20.0::::20.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1391115600::::3::::::::Italian Restaurant::::14.0::::14.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391558400::::2::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391562000::::2::::Nolita::::Cafe::::11.0::::11.0::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
+1392006600::::0::::lower manhattan::::Diner::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392044400::::0::::lower manhattan::::Middle Eastern Restaurant::::20.0::::20.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392049800::::0::::Midtown East::::Burgers::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392066000::::0::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392154200::::1::::Midtown::::Bar::::25.0::::21.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392161400::::1::::Midtown::::Cafe::::30.0::::30.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392224400::::2::::midtown::::New American::::20.0::::20.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392298200::::3::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392309000::::3::::Midtown::::Cafe::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392327000::::3::::Kips Bay::::Indian::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392328800::::3::::lower manhattan::::American Restaurant::::10.0::::10.0::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
+1392330600::::3::::lower manhattan::::Swiss Restaurant::::22.0::::22.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392334200::::3::::::::Wine Bar::::25.0::::25.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392591600::::6::::lower manhattan::::Seafood Restaurant::::17.0::::17.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392715800::::1::::Flatiron::::Salads::::30.0::::26.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392791400::::2::::::::American Restaurant::::18.0::::17.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392793200::::2::::Midtown East::::Bar::::40.0::::36.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1392942600::::4::::lower manhattan::::Bakery::::15.0::::15.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1393261200::::0::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393263000::::0::::Midtown East::::Bar::::24.0::::24.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393263000::::0::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393263000::::0::::Midtown East::::Bar::::26.0::::26.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393263000::::0::::Midtown East::::Bar::::28.0::::28.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393263000::::0::::Midtown East::::Bar::::29.0::::29.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393610400::::4::::midtown::::New American::::30.0::::30.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393693200::::5::::Greenwich Village::::Thai::::25.0::::24.0::::0::::DealStatus.REJECTED::::venesaur@gmail.com
+1393718400::::6::::Midtown East::::Burgers::::28.0::::28.0::::0::::DealStatus.EXPIRED::::paulmiard@hotmail.com
+1393718400::::6::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::paulmiard@hotmail.com
+1393729200::::6::::midtown::::New American::::20.0::::20.0::::0::::DealStatus.EXPIRED::::mikebstephens@gmail.com
+1395162000::::1::::Midtown East::::Mediterranean::::20.0::::17.5::::0::::DealStatus.REJECTED::::msb508@nyu.edu
+1395340200::::3::::Midtown::::Bar::::10.0::::5.66666666667::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1395939600::::3::::Kips Bay::::Indian::::20.0::::18.3333333333::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1396317600::::1::::Gramercy::::French African::::15.0::::15.0::::0::::DealStatus.REJECTED::::kmkennedy20@yahoo.com
+1396407600::::2::::Midtown East::::Bar::::29.0::::26.25::::0::::DealStatus.REJECTED::::alexandesigner@gmail.com
+1396499400::::3::::Midtown::::Bar::::20.0::::16.6666666667::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
+1397070000::::2::::Midtown::::Cafe::::5.0::::5.0::::0::::DealStatus.EXPIRED::::daniel@canadaveiculos.com.br
+1397158200::::3::::West Village::::Asian::::1.0::::1.0::::0::::DealStatus.AVAILED::::mdwarrenjr@gmail.com
+1397365200::::6::::Kingsbridge::::Bar::::20.0::::17.5::::0::::DealStatus.REJECTED::::goh.sharmaine@gmail.com
+1397676600::::2::::Gramercy::::French African::::19.0::::17.5::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1398567600::::6::::Kingsbridge::::Bar::::14.0::::14.0::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
+1398790800::::1::::Kips Bay::::Indian::::19.0::::18.3333333333::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
+1399046400::::4::::Kingsbridge::::Bar::::20.0::::16.6666666667::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399057200::::4::::East Village::::Diner::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1399059000::::4::::Midtown::::Bar::::18.0::::18.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399302000::::0::::Flatiron::::Mexican::::20.0::::16.6666666667::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1399309200::::0::::Flatiron::::Mexican::::17.0::::17.0::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1399735762::::5::::::::Greek::::25.0::::25.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1400275800::::4::::West Village::::Asian::::9.0::::7.5::::0::::DealStatus.EXPIRED::::arti.sharma14@gmail.com
+1400535000::::0::::East Village::::Turkish::::15.0::::12.5::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1400603400::::1::::Midtown East::::Bar::::15.0::::15.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1400698800::::2::::lower manhattan::::Caf=E9::::10.0::::10.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1370962200::::1::::Midtown East::::Bar::::34.0::::33.0::::25.0::::DealStatus.AVAILED::::svallima@gmail.com
+1371581400::::1::::Flatiron::::Salads::::20.0::::11.0::::0::::DealStatus.EXPIRED::::tevanna@yahoo.de
+1371751920::::3::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.AVAILED::::rsalimath@gmail.com
+1371834540::::4::::Midtown East::::Bar::::29.0::::29.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1372352400::::3::::Flatiron::::Salads::::20.0::::18.0::::6.0::::DealStatus.AVAILED::::shanewolf777@yahoo.com
+1374088200::::2::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
+1375999200::::3::::Flatiron::::Salads::::15.0::::15.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1387303200::::1::::Midtown East::::Bar::::29.0::::29.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1387405800::::2::::Midtown East::::Greek::::9.0::::9.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1387827000::::0::::midtown::::Vegetarian / Vegan Restaurant::::15.0::::15.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1389119400::::1::::Midtown East::::Bar::::36.0::::36.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391191200::::4::::lower manhattan::::Bakery::::10.0::::10.0::::0::::DealStatus.REJECTED::::adamjaxon@gmail.com
+1391486400::::1::::West Village::::Wine Bar, Desserts, Mediterranean::::20.0::::20.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1391808600::::4::::lower manhattan::::American Restaurant::::5.0::::5.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1391828400::::5::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1391992200::::0::::::::Wine Bar::::10.0::::10.0::::0::::DealStatus.AVAILED::::fahmsikder@gmail.com
+1392006600::::0::::Gramercy::::French African::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392006600::::0::::lower manhattan::::Bakery::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392080400::::1::::Midtown East::::Indian::::20.0::::20.0::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
+1392138000::::1::::Midtown East::::Bar::::31.0::::31.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1392139800::::1::::lower manhattan::::Italian Restaurant::::30.0::::30.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392141600::::1::::Midtown::::Cafe::::30.0::::25.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392159600::::1::::Midtown East::::Burgers::::30.0::::30.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392161400::::1::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392240600::::2::::midtown::::Pizza Place::::30.0::::27.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392345000::::4::::::::Sandwich Place::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392402600::::4::::midtown::::New American::::50.0::::50.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392627600::::0::::lower manhattan::::Seafood Restaurant::::20.0::::17.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392647400::::0::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392858000::::3::::midtown::::Bagel Shop::::14.0::::14.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1393698600::::5::::lower manhattan::::Bakery::::10.0::::10.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1394116200::::3::::midtown::::Bagel Shop::::20.0::::16.6666666667::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
+1395090000::::0::::Kips Bay::::Indian::::20.0::::18.3333333333::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
+1395091800::::0::::Gramercy::::French African::::20.0::::17.5::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
+1395091800::::0::::Midtown East::::Ethiopian::::20.0::::16.6666666667::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
+1395097200::::0::::Midtown East::::Ethiopian::::15.0::::15.0::::0::::DealStatus.REJECTED::::michelle.krogmeier@gmail.com
+1395106200::::1::::Midtown East::::Mexican::::18.0::::18.0::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1395340200::::3::::Midtown East::::Mexican::::20.0::::17.5::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1395851400::::2::::Midtown East::::Mediterranean::::17.0::::17.0::::44.62::::DealStatus.AVAILED::::svallima@gmail.com
+1396026000::::4::::Midtown::::Bar::::20.0::::15.0::::0::::DealStatus.REJECTED::::venesaur@gmail.com
+1396629000::::4::::West Village::::Asian::::4.0::::4.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1396652400::::4::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.REJECTED::::ruther44@yahoo.com
+1397257200::::4::::Midtown East::::Mexican::::15.0::::15.0::::0::::DealStatus.REJECTED::::rao.deepak1@gmail.com
+1397349000::::6::::Midtown East::::Bar::::30.0::::25.0::::51.0::::DealStatus.AVAILED::::camden.gaultney@gmail.com
+1397755800::::3::::East Village::::Turkish::::15.0::::13.3333333333::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
+1397953800::::6::::Midtown East::::Mexican::::15.0::::15.0::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
+1398182400::::1::::East Village::::Diner::::20.0::::20.0::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1398355200::::3::::Midtown East::::Mediterranean::::15.0::::15.0::::0::::DealStatus.EXPIRED::::aanderson@rewardsnetwork.com
+1398472200::::5::::Midtown East::::Bar::::30.0::::25.0::::0::::DealStatus.EXPIRED::::samanthao@bellsouth.net
+1399041000::::4::::East Village::::Diner::::14.0::::11.6666666667::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399302000::::0::::Flatiron::::Mexican::::17.0::::17.0::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1399338000::::1::::Kingsbridge::::Bar::::13.0::::13.0::::0::::DealStatus.EXPIRED::::mollyeboyle@gmail.com
+1399357800::::1::::Kingsbridge::::Bar::::17.0::::17.0::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
+1399381200::::1::::Greenwich Village::::Cafe::::12.0::::12.0::::0::::DealStatus.EXPIRED::::gregrmay@gmail.com
+1400540539::::0::::Davis Square::::Barbecue Restaurant::::34.0::::28.3333333333::::0::::DealStatus.REJECTED::::u2alexis@hotmail.com
+1400691600::::2::::Midtown::::Bar::::18.0::::12.5::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1370983020::::1::::Midtown East::::Bar::::33.0::::33.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1371052260::::2::::Flatiron::::Salads::::20.0::::18.0::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
+1371488340::::0::::Flatiron::::Salads::::15.0::::15.0::::8.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
+1372116600::::0::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::pecchi17@gmail.com
+1372269600::::2::::Flatiron::::Salads::::20.0::::18.0::::1862.0::::DealStatus.AVAILED::::amsottile84@yahoo.com
+1374083880::::2::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.EXPIRED::::alissa.jagarnath@gmail.com
+1377043200::::2::::Flatiron::::Salads::::20.0::::18.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1379533620::::2::::::::BBQ Joint::::34.0::::34.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1387051200::::5::::Midtown East::::Greek::::15.0::::15.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1387215000::::0::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1387573200::::4::::Midtown East::::Greek::::13.0::::13.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1387816200::::0::::Midtown East::::Bar::::17.0::::17.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1389103200::::1::::Midtown East::::Bar::::17.0::::17.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1390195800::::0::::midtown::::Burger Joint::::10.0::::10.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1390438800::::3::::Midtown East::::Bar::::10.0::::10.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1390602600::::4::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1391396400::::0::::lower manhattan::::American Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1391632200::::2::::Midtown::::Bar::::20.0::::20.0::::0::::DealStatus.AVAILED::::svallima@gmail.com
+1391698800::::3::::Midtown::::Cafe::::15.0::::15.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1391707800::::3::::midtown::::Burger Joint::::16.0::::8.0::::0::::DealStatus.EXPIRED::::mikebstephens@gmail.com
+1391720400::::3::::Midtown::::Bar::::21.0::::21.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391754600::::4::::lower manhattan::::American Restaurant::::5.0::::5.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1391796000::::4::::Midtown::::Bar::::10.0::::10.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391803200::::4::::midtown::::Pizza Place::::29.0::::26.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391961600::::6::::midtown::::Bagel Shop::::15.0::::15.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1391976000::::6::::midtown::::Seafood Restaurant::::10.0::::10.0::::0::::DealStatus.AVAILED::::fahmsikder@gmail.com
+1392006600::::0::::midtown::::Wine Bar::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392015600::::0::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392017400::::0::::midtown::::Burger Joint::::18.0::::18.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392046200::::0::::lower manhattan::::Middle Eastern Restaurant::::20.0::::20.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392055200::::0::::Midtown East::::Burgers::::30.0::::30.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392066000::::0::::Midtown::::Bar::::18.0::::18.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392129000::::1::::Midtown East::::Greek::::30.0::::26.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392141600::::1::::Midtown::::Cafe::::30.0::::26.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392165000::::2::::Midtown::::Bar::::17.0::::17.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392197400::::2::::Midtown East::::Greek::::30.0::::26.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392235200::::2::::midtown::::Seafood Restaurant::::19.0::::18.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392255000::::3::::lower manhattan::::Seafood Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392415200::::4::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392424200::::5::::Midtown::::Bar::::16.0::::16.0::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
+1392715800::::1::::::::Sandwich Place::::30.0::::30.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1392926400::::3::::lower manhattan::::Diner::::15.0::::15.0::::0::::DealStatus.EXPIRED::::adamjaxon@gmail.com
+1393275600::::0::::lower manhattan::::American Restaurant::::19.0::::19.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393286400::::1::::Midtown East::::Indian::::26.0::::26.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1393293600::::1::::midtown::::Burger Joint::::19.0::::19.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1393727400::::6::::lower manhattan::::American Restaurant::::20.0::::20.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393731000::::6::::midtown::::Bagel Shop::::20.0::::18.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1394388000::::6::::lower manhattan::::Italian Restaurant::::20.0::::20.0::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
+1394641800::::2::::Kips Bay::::Indian::::10.0::::10.0::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
+1395090000::::0::::Nolita::::Cafe::::13.0::::13.0::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
+1395106200::::1::::Midtown East::::Mexican::::20.0::::17.5::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1395444600::::4::::Gramercy::::French African::::17.0::::17.0::::96.9::::DealStatus.AVAILED::::anna.tevini@gmail.com
+1396393200::::1::::Kips Bay::::Indian::::15.0::::15.0::::0::::DealStatus.REJECTED::::laura.rubio@yahoo.com
+1397057400::::2::::Kingsbridge::::Bar::::15.0::::15.0::::0::::DealStatus.EXPIRED::::carrieq9@aol.com
+1398121200::::0::::Midtown::::Bar::::20.0::::17.5::::0::::DealStatus.REJECTED::::felamir@edisto.cofc.edu
+1399149000::::5::::Greenwich Village::::Cafe::::12.0::::12.0::::0::::DealStatus.EXPIRED::::mf214111@hotmail.com
+1399161600::::6::::East Village::::Diner::::19.0::::19.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1400272200::::4::::Midtown East::::Bar::::28.0::::28.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1371055140::::2::::Midtown East::::Bar::::31.0::::31.0::::0::::DealStatus.EXPIRED::::markmansfield@hotmail.com
+1371141000::::3::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
+1371692880::::3::::Midtown East::::Bar::::40.0::::36.0::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
+1372212000::::2::::Midtown East::::Bar::::40.0::::40.0::::263.0::::DealStatus.AVAILED::::shanewolf777@yahoo.com
+1372269000::::2::::Flatiron::::Salads::::20.0::::17.0::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
+1372270080::::2::::Midtown East::::Bar::::40.0::::40.0::::12.0::::DealStatus.AVAILED::::svallima@gmail.com
+1372699320::::0::::Flatiron::::Salads::::20.0::::17.0::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
+1373568300::::3::::Flatiron::::Salads::::20.0::::20.0::::9.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
+1373657820::::4::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.AVAILED::::bkwarshaw@gmail.com
+1374511740::::0::::Flatiron::::Salads::::14.0::::14.0::::0::::DealStatus.AVAILED::::resnick.matthew@gmail.com
+1375214760::::1::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.REJECTED::::amsottile84@yahoo.com
+1376425800::::1::::Midtown East::::Bar::::22.0::::22.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1389153600::::2::::lower manhattan::::Italian Restaurant::::15.0::::15.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1389277800::::3::::Midtown East::::Bar::::11.0::::11.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1390755600::::6::::Midtown East::::Greek::::24.0::::24.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391128200::::4::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391509800::::1::::::::Chinese Restaurant::::30.0::::30.0::::0::::DealStatus.REJECTED::::ashray.velapanur@gmail.com
+1391814000::::4::::Midtown::::Bar::::16.0::::16.0::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
+1391914800::::6::::lower manhattan::::Mexican Restaurant::::16.0::::16.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1392006600::::0::::midtown::::Bagel Shop::::15.0::::15.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392048000::::0::::lower manhattan::::French Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392053400::::0::::::::Sandwich Place::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392062400::::0::::Midtown::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1392084000::::1::::midtown::::Seafood Restaurant::::16.0::::15.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392256800::::3::::Midtown::::Bar::::25.0::::25.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392309000::::3::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392316200::::3::::lower manhattan::::Italian Restaurant::::30.0::::26.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1392330600::::3::::midtown::::Burger Joint::::5.0::::5.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1392375600::::4::::lower manhattan::::Coffee Shop::::20.0::::18.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392390000::::4::::lower manhattan::::Coffee Shop::::20.0::::19.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1392397200::::4::::midtown::::Seafood Restaurant::::15.0::::15.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392402600::::4::::Midtown East::::Indian::::30.0::::26.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392732000::::1::::Nolita::::Cafe::::0.0::::0.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1392762600::::1::::Flatiron::::Salads::::25.0::::25.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1392791400::::2::::Nolita::::Cafe::::20.0::::20.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1393363800::::1::::lower manhattan::::American Restaurant::::13.0::::13.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393444800::::2::::Midtown East::::Bar::::15.0::::15.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393628400::::4::::lower manhattan::::American Restaurant::::13.0::::13.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1393693200::::5::::Greenwich Village::::Thai::::25.0::::25.0::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
+1393727400::::6::::midtown::::Wine Bar::::30.0::::30.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1395151200::::1::::Gramercy::::French African::::14.0::::14.0::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
+1395273600::::3::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1395340200::::3::::Midtown::::Bar::::20.0::::9.91666666667::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1395687600::::0::::Kips Bay::::Indian::::15.0::::15.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1395700200::::0::::Nolita::::Cafe::::20.0::::18.3333333333::::0::::DealStatus.REJECTED::::dja8@georgetown.edu
+1396134000::::5::::Midtown::::Bar::::20.0::::15.0::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
+1396317600::::1::::Gramercy::::French African::::11.0::::11.0::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1396382400::::1::::Greenwich Village::::Indian::::10.0::::8.33333333333::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1396546200::::3::::East Village::::Diner::::21.0::::15.75::::45.0::::DealStatus.AVAILED::::thebenlevine@gmail.com
+1396627200::::4::::East Village::::Diner::::25.0::::17.5::::80.0::::DealStatus.AVAILED::::thebenlevine@gmail.com
+1396652400::::4::::Greenwich Village::::Indian::::10.0::::8.33333333333::::0::::DealStatus.REJECTED::::ruther44@yahoo.com
+1397169000::::3::::Midtown::::Bar::::15.0::::15.0::::0::::DealStatus.EXPIRED::::amairahasan@hotmail.com
+1397365200::::6::::Kingsbridge::::Bar::::20.0::::15.0::::0::::DealStatus.REJECTED::::goh.sharmaine@gmail.com
+1398267000::::2::::East Village::::Diner::::10.0::::10.0::::0::::DealStatus.EXPIRED::::furiousjezz@gmail.com
+1398461400::::4::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.EXPIRED::::davidalbiero@hotmail.com
+1398798000::::1::::Kingsbridge::::Bar::::20.0::::15.0::::0::::DealStatus.REJECTED::::ssunseri08@stac.edu
+1399046400::::4::::East Village::::Turkish::::15.0::::12.5::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399059000::::4::::Greenwich Village::::Mexican::::20.0::::16.6666666667::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
+1399145400::::5::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1399253400::::0::::Midtown::::Bar::::20.0::::18.3333333333::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
+1400193000::::3::::Greenwich Village::::Mexican::::20.0::::16.6666666667::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
+1400455800::::6::::::::Indian::::20.0::::17.5::::0::::DealStatus.REJECTED::::sharimatluck@gmail.com
+1400470689::::0::::::::Vietnamese Restaurant::::23.0::::21.25::::0::::DealStatus.REJECTED::::gnageswaran@gmail.com
+1400500570::::0::::::::Bar & Lounge::::20.0::::17.5::::0::::DealStatus.EXPIRED::::niranjan.salimath@gmail.com
+1370972400::::1::::Midtown East::::Bar::::31.0::::31.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1370973180::::1::::Midtown East::::Bar::::33.0::::33.0::::24.0::::DealStatus.AVAILED::::sumant.yerramilly@gmail.com
+1371144780::::3::::Flatiron::::Salads::::15.0::::13.0::::829.0::::DealStatus.AVAILED::::nate9289@gmail.com
+1371231540::::4::::lower manhattan::::Taco Place::::20.0::::10.0::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
+1371504600::::0::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.AVAILED::::bkwarshaw@gmail.com
+1372211040::::2::::Midtown East::::Bar::::40.0::::37.0::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
+1372350300::::3::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.EXPIRED::::shanewolf777@yahoo.com
+1372700520::::0::::Flatiron::::Salads::::20.0::::18.0::::2700.0::::DealStatus.AVAILED::::nate9289@gmail.com
+1374273120::::4::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
+1375979400::::3::::Flatiron::::Salads::::20.0::::18.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1387159200::::0::::Midtown East::::Greek::::18.0::::18.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1387652400::::5::::Midtown East::::Ethiopian::::18.0::::18.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1389886200::::3::::Midtown East::::Bar::::33.0::::33.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1391313600::::6::::lower manhattan::::Mexican Restaurant::::27.0::::24.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1391722200::::3::::midtown::::Seafood Restaurant::::20.0::::19.0::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
+1391896800::::5::::Nolita::::Cafe::::2.0::::2.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392006600::::0::::Midtown::::Bar::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392006600::::0::::lower manhattan::::Burger Joint::::15.0::::15.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392046200::::0::::::::Italian Restaurant::::5.0::::5.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392051600::::0::::::::Italian Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392084000::::1::::midtown::::Seafood Restaurant::::18.0::::12.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392141600::::1::::Midtown East::::Indian::::30.0::::26.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392143400::::1::::Midtown::::Bar::::25.0::::21.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392165000::::2::::lower manhattan::::American Restaurant::::20.0::::20.0::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
+1392210000::::2::::Flatiron::::Salads::::29.0::::29.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392224400::::2::::Midtown East::::Burgers::::10.0::::10.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392235200::::2::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392255000::::3::::Midtown East::::Burgers::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392309000::::3::::lower manhattan::::Seafood Restaurant::::5.0::::5.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392309000::::3::::midtown::::Bagel Shop::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392323400::::3::::midtown::::Bagel Shop::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392330600::::3::::Nolita::::Cafe::::4.0::::4.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392332400::::3::::lower manhattan::::Mexican Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392345000::::4::::Greenwich Village::::Thai::::10.0::::10.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392345000::::4::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392375600::::4::::lower manhattan::::American Restaurant::::20.0::::18.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392604200::::0::::lower manhattan::::Mexican Restaurant::::10.0::::10.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1393036200::::5::::lower manhattan::::Italian Restaurant::::30.0::::30.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1393360200::::1::::Midtown::::Bar::::22.0::::22.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1393461000::::3::::Midtown::::Cafe::::10.0::::10.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1393549200::::4::::lower manhattan::::Italian Restaurant::::23.0::::23.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1393556400::::4::::midtown::::Tapas Restaurant::::20.0::::20.0::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
+1393698600::::5::::lower manhattan::::American Restaurant::::20.0::::20.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393729200::::6::::midtown::::Pizza Place::::30.0::::26.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1394852400::::5::::lower manhattan::::Sushi Restaurant::::20.0::::20.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1395277200::::3::::Gramercy::::French African::::20.0::::17.5::::0::::DealStatus.REJECTED::::dja8@georgetown.edu
+1395284400::::3::::Midtown East::::Bar::::28.0::::26.25::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1395340200::::3::::Midtown East::::Mediterranean::::12.0::::12.0::::0::::DealStatus.EXPIRED::::xwing101@gmail.com
+1395604800::::6::::Midtown East::::Bar::::30.0::::26.25::::48.28::::DealStatus.AVAILED::::felamir@edisto.cofc.edu
+1395936000::::3::::Midtown East::::Mexican::::20.0::::17.5::::0::::DealStatus.REJECTED::::ando_b@hotmail.com
+1396499400::::3::::Midtown::::Bar::::20.0::::17.5::::0::::DealStatus.REJECTED::::louisau0@gmail.com
+1396659600::::5::::Gramercy::::French African::::20.0::::18.3333333333::::0::::DealStatus.EXPIRED::::ruther44@yahoo.com
+1397691000::::2::::Midtown East::::Bar::::30.0::::27.5::::72.0::::DealStatus.AVAILED::::aramharack@gmail.com
+1397698200::::3::::Gramercy::::French African::::17.0::::17.0::::0::::DealStatus.EXPIRED::::keldornfirecam@gmail.com
+1398182400::::1::::East Village::::Diner::::22.0::::17.5::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1398979800::::3::::Nolita::::Cafe::::20.0::::17.5::::0::::DealStatus.REJECTED::::celina009@gmail.com
+1399069800::::4::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.EXPIRED::::aschwartzburg1@mac.com
+1399127400::::5::::Greenwich Village::::Cafe::::12.0::::12.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399309200::::0::::Flatiron::::Mexican::::18.0::::16.6666666667::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1399362089::::1::::::::Indian::::20.0::::16.6666666667::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1399399200::::1::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.REJECTED::::jg@jeremygoldman.com
+1399413600::::1::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.EXPIRED::::mjross58@comcast.net
+1399761000::::5::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.EXPIRED::::amairahasan@hotmail.com
+1400094093::::2::::::::American::::15.0::::15.0::::0::::DealStatus.EXPIRED::::orr.rick@gmail.com
+1400686200::::2::::Kingsbridge::::Bar::::16.0::::16.0::::0::::DealStatus.EXPIRED::::jomelta@aol.com
+1371231300::::4::::Flatiron::::Salads::::20.0::::12.0::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
+1371665100::::2::::Midtown East::::Bar::::40.0::::36.0::::0::::DealStatus.EXPIRED::::felamir@edisto.cofc.edu
+1372129800::::1::::Midtown East::::Bar::::14.0::::14.0::::0::::DealStatus.EXPIRED::::pecchi17@gmail.com
+1372178940::::1::::Flatiron::::Salads::::20.0::::11.0::::0::::DealStatus.EXPIRED::::jdrooz@mac.com
+1372267800::::2::::Flatiron::::Salads::::17.0::::13.0::::0::::DealStatus.REJECTED::::cmcboland@gmail.com
+1373480700::::2::::Midtown East::::Bar::::40.0::::40.0::::20.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
+1375912800::::2::::Midtown East::::Bar::::13.0::::13.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1376085600::::4::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1377010800::::1::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1377909000::::5::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1379010780::::3::::lower manhattan::::Taco Place::::25.0::::11.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1386982800::::5::::Midtown East::::Bar::::28.0::::28.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1387897200::::1::::midtown::::Vegetarian / Vegan Restaurant::::14.0::::14.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1388070000::::3::::Midtown East::::Mexican::::15.0::::15.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1389153600::::2::::Midtown East::::Ethiopian::::9.0::::9.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1391130000::::4::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1391263200::::5::::lower manhattan::::Bakery::::40.0::::40.0::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
+1391486400::::1::::lower manhattan::::Bakery::::20.0::::20.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1391509800::::1::::lower manhattan::::Lounge::::10.0::::10.0::::0::::DealStatus.REJECTED::::ashray.velapanur@gmail.com
+1391571000::::2::::lower manhattan::::French Restaurant::::30.0::::26.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1392006600::::0::::West Village::::Wine Bar, Desserts, Mediterranean::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392042600::::0::::lower manhattan::::Lounge::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392048000::::0::::::::Sandwich Place::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392053400::::0::::::::Chinese Restaurant::::30.0::::30.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392129000::::1::::lower manhattan::::Seafood Restaurant::::20.0::::17.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392147000::::1::::midtown::::New American::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392161400::::1::::Flatiron::::Salads::::30.0::::30.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392161400::::1::::Midtown::::Bar::::25.0::::25.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392165000::::2::::Midtown::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1392197400::::2::::lower manhattan::::Seafood Restaurant::::20.0::::17.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392210000::::2::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392318000::::3::::lower manhattan::::Mexican Restaurant::::15.0::::15.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1392332400::::3::::West Village::::Asian Fusion Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392375600::::4::::Midtown East::::Bar::::40.0::::36.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392397200::::4::::lower manhattan::::American Restaurant::::15.0::::15.0::::0::::DealStatus.EXPIRED::::clairejhuang@gmail.com
+1392426000::::5::::midtown::::Wine Bar::::30.0::::26.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392634800::::0::::Midtown::::Bar::::25.0::::22.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1392829200::::2::::lower manhattan::::Vegetarian / Vegan Restaurant::::17.0::::17.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1393263000::::0::::Midtown East::::Bar::::29.0::::29.0::::333.0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393295400::::1::::::::Wine Bar::::10.0::::10.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1393439400::::2::::Midtown East::::Bar::::15.0::::15.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393453800::::2::::midtown::::New American::::25.0::::25.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1393455600::::2::::midtown::::New American::::16.0::::16.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1393725600::::6::::midtown::::Wine Bar::::20.0::::20.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1394046000::::2::::Midtown::::Bar::::20.0::::17.0::::25.0::::DealStatus.AVAILED::::cdampf@me.com
+1394233200::::4::::lower manhattan::::Italian Restaurant::::16.0::::16.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1395102600::::1::::Midtown East::::Mexican::::19.0::::15.0::::0::::DealStatus.EXPIRED::::brookewm@gmail.com
+1395162000::::1::::Midtown East::::Mediterranean::::18.0::::18.0::::0::::DealStatus.EXPIRED::::msb508@nyu.edu
+1397754000::::3::::Midtown East::::Mediterranean::::15.0::::15.0::::0::::DealStatus.EXPIRED::::rashida.bobb@aya.yale.edu
+1397946600::::5::::West Village::::Asian::::10.0::::7.5::::0::::DealStatus.REJECTED::::venesaur@gmail.com
+1398790800::::1::::East Village::::Turkish::::10.0::::10.0::::0::::DealStatus.EXPIRED::::gnageswaran@gmail.com
+1398798000::::1::::Midtown East::::Bar::::30.0::::26.25::::0::::DealStatus.REJECTED::::ssunseri08@stac.edu
+1399266000::::0::::Midtown::::Bar::::20.0::::18.3333333333::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
+1399579200::::3::::Flatiron::::Mexican::::15.0::::15.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1370970000::::1::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::sumant.yerramilly@gmail.com
+1370996580::::2::::Midtown East::::Bar::::32.0::::32.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1371145200::::3::::lower manhattan::::Taco Place::::25.0::::25.0::::18.0::::DealStatus.AVAILED::::resnick.matthew@gmail.com
+1371146400::::3::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.EXPIRED::::amsottile84@yahoo.com
+1371492000::::0::::Flatiron::::Salads::::20.0::::20.0::::857.0::::DealStatus.AVAILED::::amsottile84@yahoo.com
+1371916080::::5::::lower manhattan::::Taco Place::::15.0::::15.0::::0::::DealStatus.EXPIRED::::lmm9210@gmail.com
+1371921540::::5::::lower manhattan::::Taco Place::::20.0::::11.0::::0::::DealStatus.REJECTED::::b_dyett@yahoo.com
+1372110360::::0::::Midtown East::::Bar::::36.0::::35.0::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
+1372181400::::1::::Flatiron::::Salads::::20.0::::13.0::::0::::DealStatus.EXPIRED::::jdrooz@mac.com
+1372266240::::2::::Flatiron::::Salads::::20.0::::12.0::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
+1374873000::::4::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1386964800::::4::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1387414800::::3::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.AVAILED::::svallima@gmail.com
+1389119400::::1::::Midtown East::::Bar::::38.0::::38.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1389119400::::1::::lower manhattan::::Coffee Shop::::10.0::::10.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1389204000::::2::::lower manhattan::::Coffee Shop::::19.0::::19.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1390017600::::5::::Gramercy::::French African::::15.0::::15.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1392006600::::0::::Midtown East::::Mexican::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392006600::::0::::Midtown::::Bar::::17.0::::17.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392006600::::0::::midtown::::Pizza Place::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392015600::::0::::Midtown East::::Bar::::40.0::::36.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392017400::::0::::midtown::::Burger Joint::::20.0::::17.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392042600::::0::::Midtown::::Bar::::25.0::::22.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392161400::::1::::midtown::::Bagel Shop::::20.0::::20.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392177600::::2::::midtown::::Burger Joint::::5.0::::5.0::::0::::DealStatus.EXPIRED::::paulmiard@hotmail.com
+1392249600::::3::::Point Loma::::Brewery::::30.0::::30.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392256800::::3::::lower manhattan::::American Restaurant::::18.0::::17.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392287400::::3::::midtown::::Burger Joint::::5.0::::5.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392316200::::3::::Midtown::::Bar::::25.0::::21.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392328800::::3::::Nolita::::Cafe::::7.0::::7.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1392402600::::4::::Midtown::::Cafe::::30.0::::25.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392570000::::6::::midtown::::Tapas Restaurant::::15.0::::15.0::::0::::DealStatus.EXPIRED::::paulmiard@hotmail.com
+1392708600::::1::::midtown::::Burger Joint::::20.0::::20.0::::2.085::::DealStatus.AVAILED::::aiyappa@b-eagles.com
+1392751800::::1::::Midtown East::::Burgers::::30.0::::30.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1393128000::::6::::Nolita::::Cafe::::12.0::::12.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1393439400::::2::::Midtown::::Bar::::10.0::::10.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1393443000::::2::::Midtown East::::Bar::::15.0::::15.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393453800::::2::::Midtown East::::Indian::::10.0::::10.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1393453800::::2::::lower manhattan::::Italian Restaurant::::15.0::::15.0::::25.0::::DealStatus.AVAILED::::fahmsikder@gmail.com
+1393543800::::3::::Midtown East::::Indian::::30.0::::26.0::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
+1393731000::::6::::lower manhattan::::Sushi Restaurant::::30.0::::30.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393783200::::6::::lower manhattan::::French Restaurant::::23.0::::23.0::::0::::DealStatus.EXPIRED::::puru.polaris@gmail.com
+1394748000::::3::::Kips Bay::::Indian::::20.0::::17.5::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
+1395113400::::1::::Midtown East::::Mexican::::10.0::::10.0::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1395239400::::2::::Nolita::::Cafe::::10.0::::10.0::::0::::DealStatus.EXPIRED::::casey+y@datacoup.com
+1395415800::::4::::Flatiron::::Salads::::10.0::::10.0::::0::::DealStatus.EXPIRED::::wellingtonbenario@hotmail.com.br
+1395675000::::0::::Flatiron::::Salads::::10.0::::10.0::::0::::DealStatus.EXPIRED::::acharness@gmail.com
+1396722600::::5::::Kips Bay::::Indian::::10.0::::10.0::::0::::DealStatus.EXPIRED::::bshwang@gmail.com
+1397001600::::2::::West Village::::Asian::::10.0::::5.0::::0::::DealStatus.REJECTED::::rolf.arni@gmx.net
+1398270600::::2::::Gramercy::::French African::::20.0::::17.5::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
+1398270600::::2::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
+1398279600::::2::::Greenwich Village::::Indian::::0.0::::0.0::::0::::DealStatus.REJECTED::::ando_b@hotmail.com
+1398391200::::4::::East Village::::Turkish::::6.0::::6.0::::0::::DealStatus.EXPIRED::::tejaswini_ravindra@yahoo.com
+1398396600::::4::::Midtown East::::Bar::::30.0::::26.25::::0::::DealStatus.REJECTED::::ashleyspamm@gmail.com
+1399161600::::6::::East Village::::Turkish::::11.0::::11.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1399332600::::0::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.EXPIRED::::mollyeboyle@gmail.com
+1399582800::::3::::Midtown East::::Burgers::::15.0::::13.75::::0::::DealStatus.REJECTED::::mahesh.santhana@gmail.com
+1399620600::::4::::Greenwich Village::::Mexican::::12.0::::12.0::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
+1399854600::::0::::Gramercy::::French African::::18.0::::18.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1400216400::::4::::Midtown::::Bar::::20.0::::17.5::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
+1370966700::::1::::Midtown East::::Bar::::38.0::::35.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1370976240::::1::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1370992620::::1::::Midtown East::::Bar::::40.0::::36.0::::0::::DealStatus.EXPIRED::::joseph.m.gullo@gmail.com
+1372203360::::1::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
+1372267320::::2::::Flatiron::::Salads::::20.0::::13.0::::2400.0::::DealStatus.AVAILED::::bkwarshaw@gmail.com
+1372351200::::3::::Flatiron::::Salads::::20.0::::20.0::::739.0::::DealStatus.AVAILED::::bkwarshaw@gmail.com
+1372776780::::1::::Flatiron::::Salads::::13.0::::13.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1373477580::::2::::lower manhattan::::Taco Place::::15.0::::15.0::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
+1377270000::::4::::Flatiron::::Salads::::10.0::::10.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1377270000::::4::::Flatiron::::Salads::::15.0::::15.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1383580800::::0::::Flatiron::::Salads::::11.0::::11.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1385611200::::3::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1386104400::::1::::Midtown East::::Bar::::28.0::::28.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1386793800::::2::::lower manhattan::::Taco Place::::15.0::::15.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1388935800::::6::::lower manhattan::::Taco Place::::19.0::::19.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1388971800::::0::::lower manhattan::::Taco Place::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1390858200::::0::::lower manhattan::::Coffee Shop::::10.0::::10.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1390928400::::1::::midtown::::Burger Joint::::5.0::::5.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1391364000::::6::::midtown::::Burger Joint::::9.0::::9.0::::0::::DealStatus.EXPIRED::::adamjaxon@gmail.com
+1392006600::::0::::lower manhattan::::Swiss Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392006600::::0::::midtown::::Burger Joint::::5.0::::5.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392066000::::0::::Midtown East::::Indian::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392161400::::1::::midtown::::Seafood Restaurant::::20.0::::17.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392165000::::2::::Midtown::::Bar::::24.0::::24.0::::0::::DealStatus.REJECTED::::venesaur@gmail.com
+1392265800::::3::::Midtown East::::Mexican::::16.0::::16.0::::25.0::::DealStatus.AVAILED::::fahmsikder@gmail.com
+1392314400::::3::::midtown::::Burger Joint::::20.0::::17.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392345000::::4::::Nolita::::Cafe::::0.0::::0.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392375600::::4::::Flatiron::::Salads::::30.0::::30.0::::0::::DealStatus.AVAILED::::aiyappa@b-eagles.com
+1392375600::::4::::midtown::::Bagel Shop::::20.0::::17.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392433200::::5::::Midtown East::::Burgers::::30.0::::30.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392627600::::0::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392647400::::0::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1393434000::::2::::midtown::::Restaurant/cafe::::10.0::::10.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1393457400::::2::::lower manhattan::::Vegetarian / Vegan Restaurant::::23.0::::23.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1393493400::::3::::lower manhattan::::Diner::::30.0::::30.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1393520400::::3::::Midtown East::::Burgers::::30.0::::30.0::::54.08::::DealStatus.AVAILED::::aiyappa@b-eagles.com
+1393527600::::3::::Midtown East::::Bar::::15.0::::15.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1394334000::::6::::West Village::::Wine Bar, Desserts, Mediterranean::::18.0::::18.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1394566200::::1::::Midtown::::Cafe::::10.0::::10.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1395091800::::0::::Midtown East::::Ethiopian::::20.0::::16.6666666667::::0::::DealStatus.REJECTED::::felamir@edisto.cofc.edu
+1395185400::::1::::Nolita::::Cafe::::20.0::::17.5::::0::::DealStatus.EXPIRED::::praded@bu.edu
+1396027800::::4::::Midtown::::Bar::::20.0::::15.0::::45.94::::DealStatus.AVAILED::::venesaur@gmail.com
+1396627200::::4::::West Village::::Asian::::10.0::::7.5::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1396639800::::4::::Midtown East::::Mexican::::20.0::::17.5::::0::::DealStatus.REJECTED::::ruther44@yahoo.com
+1397257200::::4::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.REJECTED::::rao.deepak1@gmail.com
+1397347200::::6::::Midtown East::::Mexican::::14.0::::14.0::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
+1398396600::::4::::Kingsbridge::::Bar::::20.0::::17.5::::0::::DealStatus.REJECTED::::ashleyspamm@gmail.com
+1398814200::::1::::Greenwich Village::::Chinese::::10.0::::8.33333333333::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1399069800::::4::::Midtown East::::Burgers::::15.0::::13.75::::0::::DealStatus.REJECTED::::aschwartzburg1@mac.com
+1399075200::::5::::Midtown::::Bar::::20.0::::17.5::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
+1399077000::::5::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1399095000::::5::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1399118400::::5::::Gramercy::::French African::::20.0::::17.5::::0::::DealStatus.REJECTED::::aschwartzburg1@mac.com
+1400742027::::3::::::::Asian::::20.0::::17.5::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
+1370966400::::1::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1371057240::::2::::Midtown East::::Bar::::31.0::::31.0::::15.0::::DealStatus.AVAILED::::markmansfield@hotmail.com
+1371144600::::3::::Flatiron::::Salads::::20.0::::11.0::::0::::DealStatus.EXPIRED::::jdrooz@mac.com
+1371160500::::3::::Midtown East::::Bar::::31.0::::31.0::::0::::DealStatus.EXPIRED::::cmcboland@gmail.com
+1372096680::::0::::Flatiron::::Salads::::20.0::::12.0::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
+1372099680::::0::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
+1374081180::::2::::Flatiron::::Salads::::20.0::::18.0::::0::::DealStatus.EXPIRED::::alissa.jagarnath@gmail.com
+1374690540::::2::::Flatiron::::Salads::::20.0::::20.0::::10.0::::DealStatus.AVAILED::::ajbellarosa@gmail.com
+1376077620::::4::::Flatiron::::Salads::::15.0::::15.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1379533560::::2::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1383845400::::3::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1387215000::::0::::Midtown East::::Ethiopian::::11.0::::11.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1387407600::::2::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.AVAILED::::rsalimath@gmail.com
+1389153600::::2::::lower manhattan::::Lounge::::24.0::::22.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1389897000::::3::::::::BBQ Joint::::13.0::::13.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1391439600::::0::::Nolita::::Cafe::::8.0::::8.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1391457600::::0::::lower manhattan::::American Restaurant::::5.0::::5.0::::0::::DealStatus.EXPIRED::::adamjaxon@gmail.com
+1391808600::::4::::Midtown::::Bar::::10.0::::10.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1391896800::::5::::Nolita::::Cafe::::18.0::::18.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1392053400::::0::::::::Cocktail Bar::::13.0::::13.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392084000::::1::::midtown::::Seafood Restaurant::::20.0::::11.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392255000::::3::::Midtown East::::Indian::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392255000::::3::::Nolita::::Cafe::::0.0::::0.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392309000::::3::::Midtown East::::Greek::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392309000::::3::::lower manhattan::::Vegetarian / Vegan Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392314400::::3::::lower manhattan::::Lounge::::17.0::::17.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1392319800::::3::::lower manhattan::::Italian Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392330600::::3::::lower manhattan::::Swiss Restaurant::::23.0::::23.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392375600::::4::::midtown::::Bagel Shop::::20.0::::18.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392595200::::0::::West Village::::Wine Bar, Desserts, Mediterranean::::20.0::::20.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1392647400::::0::::Midtown::::Bar::::24.0::::24.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392764400::::1::::::::BBQ Joint::::30.0::::30.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1393261200::::0::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393261200::::0::::Midtown East::::Bar::::28.0::::28.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393261200::::0::::Midtown East::::Bar::::29.0::::29.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393263000::::0::::Midtown East::::Bar::::27.0::::27.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393264800::::0::::Midtown East::::Bar::::27.0::::27.0::::23.0::::DealStatus.AVAILED::::rsalimath@gmail.com
+1393264800::::0::::Midtown East::::Bar::::30.0::::30.0::::22.0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393387200::::2::::lower manhattan::::Mediterranean Restaurant::::10.0::::10.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393444800::::2::::Midtown::::Cafe::::16.0::::16.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1393560000::::4::::midtown::::New American::::16.0::::16.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1394656200::::2::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.AVAILED::::rsalimath@gmail.com
+1395160200::::1::::Midtown East::::Mediterranean::::18.0::::18.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1395284400::::3::::Midtown East::::Bar::::27.0::::27.0::::0::::DealStatus.REJECTED::::keldornfirecam@gmail.com
+1395331200::::3::::Midtown East::::Mexican::::18.0::::18.0::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1395682200::::0::::Gramercy::::French African::::17.0::::17.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1395711000::::1::::Midtown East::::Mexican::::20.0::::17.5::::0::::DealStatus.EXPIRED::::camden.gaultney@gmail.com
+1395891000::::3::::Midtown::::Bar::::10.0::::10.0::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
+1396105200::::5::::Midtown::::Bar::::20.0::::15.0::::0::::DealStatus.EXPIRED::::samanthao@bellsouth.net
+1396665000::::5::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.EXPIRED::::ecforster@gmail.com
+1397255400::::4::::Midtown::::Bar::::20.0::::15.0::::0::::DealStatus.EXPIRED::::amairahasan@hotmail.com
+1397365200::::6::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.EXPIRED::::goh.sharmaine@gmail.com
+1397593800::::1::::Gramercy::::French African::::10.0::::10.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1397602800::::1::::Midtown East::::Mexican::::20.0::::17.5::::0::::DealStatus.REJECTED::::aanderson@rewardsnetwork.com
+1397608200::::2::::Midtown::::Bar::::10.0::::10.0::::0::::DealStatus.EXPIRED::::aramharack@gmail.com
+1397613600::::2::::Midtown East::::Mexican::::17.0::::17.0::::0::::DealStatus.EXPIRED::::mahesh.santhana@gmail.com
+1398616200::::6::::Flatiron::::Mexican::::15.0::::15.0::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
+1399059000::::4::::Greenwich Village::::Mexican::::15.0::::15.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399096800::::5::::Midtown::::Bar::::10.0::::10.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1399127400::::5::::Greenwich Village::::Cafe::::12.0::::12.0::::0::::DealStatus.EXPIRED::::amit.shettyk@gmail.com
+1399226400::::6::::Greenwich Village::::Cafe::::12.0::::12.0::::0::::DealStatus.EXPIRED::::anna.tevini@gmail.com
+1399363529::::1::::::::Indian::::20.0::::16.6666666667::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1370968200::::1::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::gavindunaway@gmail.com
+1370968500::::1::::Midtown East::::Bar::::40.0::::37.0::::0::::DealStatus.REJECTED::::joshua.r.weaver@gmail.com
+1371067260::::2::::Flatiron::::Salads::::15.0::::15.0::::0::::DealStatus.EXPIRED::::nate9289@gmail.com
+1371159600::::3::::Midtown East::::Bar::::36.0::::36.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1371834000::::4::::lower manhattan::::Taco Place::::20.0::::19.0::::0::::DealStatus.EXPIRED::::alissa.jagarnath@gmail.com
+1372030320::::6::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.REJECTED::::shanewolf777@yahoo.com
+1372783860::::1::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1373314080::::0::::Midtown East::::Bar::::32.0::::32.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1374080400::::2::::Flatiron::::Salads::::20.0::::12.0::::0::::DealStatus.EXPIRED::::christinenicole87@gmail.com
+1375999200::::3::::lower manhattan::::Taco Place::::11.0::::11.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1376782200::::5::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1382990400::::0::::lower manhattan::::Taco Place::::17.0::::17.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1383845400::::3::::Midtown East::::Bar::::31.0::::31.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1386799200::::2::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1388169000::::4::::midtown::::Middle Eastern Restaurant::::8.0::::8.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1388710800::::4::::Midtown East::::Bar::::18.0::::18.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1389479400::::5::::::::Italian Restaurant::::12.0::::12.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1390314600::::1::::Midtown East::::Greek::::18.0::::18.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1390496400::::3::::lower manhattan::::Coffee Shop::::15.0::::15.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1390532400::::4::::Midtown East::::Bar::::30.0::::30.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1391238000::::5::::Nolita::::Cafe::::5.0::::5.0::::0::::DealStatus.EXPIRED::::adamjaxon@gmail.com
+1391439600::::0::::Nolita::::Cafe::::18.0::::16.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1391554800::::1::::midtown::::Restaurant/cafe::::18.0::::18.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1391634000::::2::::Flatiron::::Salads::::10.0::::10.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1391754600::::4::::lower manhattan::::American Restaurant::::5.0::::5.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1391961600::::6::::Nolita::::Cafe::::18.0::::15.0::::0::::DealStatus.AVAILED::::fahmsikder@gmail.com
+1392049800::::0::::lower manhattan::::Vegetarian / Vegan Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392053400::::0::::midtown::::Tapas Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392066000::::0::::midtown::::Bagel Shop::::20.0::::17.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392071400::::0::::Flatiron::::Salads::::20.0::::20.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1392157800::::1::::midtown::::New American::::15.0::::15.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1392161400::::1::::lower manhattan::::American Restaurant::::20.0::::20.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392165000::::2::::Midtown::::Bar::::25.0::::22.0::::0::::DealStatus.REJECTED::::venesaur@gmail.com
+1392165000::::2::::lower manhattan::::American Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::venesaur@gmail.com
+1392235200::::2::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1392255000::::3::::lower manhattan::::New American Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392296400::::3::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392330600::::3::::lower manhattan::::Swiss Restaurant::::17.0::::17.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392332400::::3::::lower manhattan::::New American Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392343200::::4::::Nolita::::Cafe::::16.0::::16.0::::20.69::::DealStatus.AVAILED::::svallima@gmail.com
+1392345000::::4::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1392386400::::4::::midtown::::Burger Joint::::20.0::::20.0::::25.8::::DealStatus.AVAILED::::aiyappa@b-eagles.com
+1392399000::::4::::lower manhattan::::Vegetarian / Vegan Restaurant::::16.0::::16.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1392431400::::5::::midtown::::Burger Joint::::10.0::::10.0::::0::::DealStatus.EXPIRED::::paulmiard@hotmail.com
+1392937200::::3::::lower manhattan::::Lounge::::24.0::::22.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1393297200::::1::::midtown::::New American::::30.0::::30.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393468200::::3::::midtown::::Wine Bar::::15.0::::15.0::::0::::DealStatus.EXPIRED::::fahmsikder@gmail.com
+1395099000::::0::::Kips Bay::::Indian::::20.0::::18.3333333333::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
+1395160200::::1::::Gramercy::::French African::::20.0::::16.6666666667::::0::::DealStatus.EXPIRED::::xwing101@gmail.com
+1396384200::::1::::Greenwich Village::::Indian::::9.0::::8.33333333333::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1396639800::::4::::Nolita::::Cafe::::20.0::::17.5::::0::::DealStatus.REJECTED::::ruther44@yahoo.com
+1397107800::::3::::Midtown East::::Bar::::15.0::::15.0::::0::::DealStatus.EXPIRED::::mdwarrenjr@gmail.com
+1398376800::::3::::East Village::::Diner::::18.0::::18.0::::0::::DealStatus.EXPIRED::::casey+y@datacoup.com
+1398987000::::3::::West Village::::Asian::::7.0::::5.0::::0::::DealStatus.EXPIRED::::mdwarrenjr@gmail.com
+1399046400::::4::::Greenwich Village::::Mexican::::15.0::::15.0::::0::::DealStatus.REJECTED::::clairejhuang@gmail.com
+1399050000::::4::::Flatiron::::Mexican::::10.0::::10.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1399062600::::4::::Kips Bay::::Indian::::10.0::::10.0::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
+1399073400::::4::::Greenwich Village::::Indian::::2.0::::2.0::::0::::DealStatus.EXPIRED::::tejaswini_ravindra@yahoo.com
+1399132800::::5::::Greenwich Village::::Chinese::::0.0::::0.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1399145400::::5::::Midtown East::::Mexican::::20.0::::17.5::::0::::DealStatus.REJECTED::::noah.litvin@gmail.com
+1399307400::::0::::Flatiron::::Mexican::::17.0::::17.0::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1400211000::::4::::Midtown::::Bar::::20.0::::18.3333333333::::0::::DealStatus.EXPIRED::::louisau0@gmail.com
+1400691600::::2::::Midtown::::Bar::::15.0::::12.5::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1370994780::::1::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::joshua.r.weaver@gmail.com
+1371504600::::0::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
+1371774600::::4::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1371851460::::4::::lower manhattan::::Taco Place::::25.0::::25.0::::0::::DealStatus.EXPIRED::::venesaur@gmail.com
+1372179180::::1::::lower manhattan::::Taco Place::::15.0::::15.0::::0::::DealStatus.EXPIRED::::ajbellarosa@gmail.com
+1372616760::::6::::Midtown East::::Bar::::33.0::::33.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1372794540::::1::::Flatiron::::Salads::::20.0::::20.0::::3.0::::DealStatus.AVAILED::::venesaur@gmail.com
+1373655780::::4::::Midtown East::::Bar::::40.0::::40.0::::0::::DealStatus.EXPIRED::::bkwarshaw@gmail.com
+1374262860::::4::::lower manhattan::::Taco Place::::20.0::::20.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1375221600::::1::::Flatiron::::Salads::::10.0::::10.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1375990200::::3::::Flatiron::::Salads::::15.0::::15.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1380650400::::1::::Midtown East::::Bar::::25.0::::25.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1386975600::::4::::midtown::::Middle Eastern Restaurant::::14.0::::14.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1387411200::::3::::lower manhattan::::Italian Restaurant::::21.0::::21.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1391236200::::5::::lower manhattan::::Burger Joint::::15.0::::15.0::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1391450400::::0::::Midtown East::::Bar::::20.0::::20.0::::0::::DealStatus.AVAILED::::fahmsikder@gmail.com
+1391522400::::1::::Point Loma::::Brewery::::30.0::::26.0::::0::::DealStatus.REJECTED::::ashray.velapanur@gmail.com
+1391792400::::4::::midtown::::Pizza Place::::11.0::::11.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1391821200::::5::::Midtown East::::Burgers::::20.0::::20.0::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
+1391965200::::6::::lower manhattan::::French Restaurant::::14.0::::14.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1392006600::::0::::lower manhattan::::American Restaurant::::5.0::::5.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392049800::::0::::Greenwich Village::::Thai::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392051600::::0::::::::Chinese Restaurant::::30.0::::30.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392055200::::0::::::::BBQ Joint::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392084000::::1::::midtown::::Seafood Restaurant::::20.0::::12.0::::0::::DealStatus.REJECTED::::aiyappa.cg@rediffmail.com
+1392161400::::1::::midtown::::New American::::50.0::::50.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392165000::::2::::lower manhattan::::American Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::resnick.matthew@gmail.com
+1392206400::::2::::Nolita::::Cafe::::4.0::::4.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1392255000::::3::::midtown::::Pizza Place::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392255000::::3::::midtown::::Seafood Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392258600::::3::::lower manhattan::::Vegetarian / Vegan Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392330600::::3::::West Village::::Asian Fusion Restaurant::::10.0::::10.0::::0::::DealStatus.REJECTED::::fahmsikder@gmail.com
+1392375600::::4::::Flatiron::::Salads::::30.0::::26.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392400800::::4::::midtown::::Pizza Place::::29.0::::25.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1392733800::::1::::lower manhattan::::Coffee Shop::::16.0::::16.0::::0::::DealStatus.REJECTED::::aiyappa@b-eagles.com
+1393036200::::5::::lower manhattan::::Italian Restaurant::::30.0::::26.0::::0::::DealStatus.REJECTED::::svallima@gmail.com
+1393549200::::4::::midtown::::New American::::25.0::::25.0::::0::::DealStatus.EXPIRED::::rsalimath@gmail.com
+1393558200::::4::::midtown::::Burger Joint::::20.0::::20.0::::0::::DealStatus.EXPIRED::::aiyappa@b-eagles.com
+1393639200::::5::::Midtown East::::Indian::::30.0::::30.0::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
+1393727400::::6::::midtown::::Seafood Restaurant::::17.0::::13.0::::0::::DealStatus.REJECTED::::puru.polaris@gmail.com
+1393729200::::6::::midtown::::Pizza Place::::30.0::::27.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1393731000::::6::::Midtown::::Bar::::15.0::::14.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1394555400::::1::::Kips Bay::::Indian::::15.0::::15.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1394661600::::2::::midtown::::New American::::10.0::::10.0::::0::::DealStatus.REJECTED::::rsalimath@gmail.com
+1394737200::::3::::lower manhattan::::American Restaurant::::10.0::::10.0::::0::::DealStatus.EXPIRED::::resnick.matthew@gmail.com
+1395599400::::6::::Kips Bay::::Indian::::10.0::::10.0::::0::::DealStatus.EXPIRED::::imschiffer@gmail.com
+1396317600::::1::::Greenwich Village::::Thai::::20.0::::17.5::::0::::DealStatus.REJECTED::::camden.gaultney@gmail.com
+1396407600::::2::::Midtown East::::Bar::::15.0::::15.0::::0::::DealStatus.EXPIRED::::alexandesigner@gmail.com
+1397070000::::2::::Midtown East::::Indian::::15.0::::13.75::::0::::DealStatus.REJECTED::::daniel@canadaveiculos.com.br
+1397179800::::4::::Midtown East::::Bar::::15.0::::15.0::::0::::DealStatus.REJECTED::::mikebstephens@gmail.com
+1397599200::::1::::Midtown East::::Ethiopian::::10.0::::10.0::::0::::DealStatus.EXPIRED::::neeldhwajp55@gmail.com
+1397862000::::4::::East Village::::Diner::::20.0::::20.0::::0::::DealStatus.EXPIRED::::zsilver1@babson.edu
+1398567600::::6::::Kingsbridge::::Bar::::20.0::::17.5::::0::::DealStatus.REJECTED::::niranjan.salimath@gmail.com
+1398816000::::2::::Greenwich Village::::Indian::::0.0::::0.0::::0::::DealStatus.EXPIRED::::gnageswaran@gmail.com
+1398816000::::2::::Greenwich Village::::Indian::::10.0::::7.5::::0::::DealStatus.REJECTED::::gnageswaran@gmail.com
+1398979800::::3::::Greenwich Village::::Mexican::::20.0::::17.5::::0::::DealStatus.EXPIRED::::celina009@gmail.com
+1399059000::::4::::West Village::::Asian::::7.0::::7.0::::0::::DealStatus.EXPIRED::::svallima@gmail.com
+1399077000::::5::::Midtown East::::Burgers::::15.0::::14.1666666667::::0::::DealStatus.REJECTED::::anna.tevini@gmail.com
+1399127400::::5::::Gramercy::::French African::::20.0::::17.5::::0::::DealStatus.REJECTED::::amit.shettyk@gmail.com
+1399172400::::6::::Gramercy::::French African::::20.0::::17.5::::0::::DealStatus.EXPIRED::::candace@thepeppercat.com
+1399307400::::0::::Flatiron::::Mexican::::19.0::::16.6666666667::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1399307400::::0::::Midtown East::::Mexican::::20.0::::17.5::::0::::DealStatus.REJECTED::::xwing101@gmail.com
+1399338000::::1::::Midtown East::::Mexican::::20.0::::17.5::::0::::DealStatus.REJECTED::::mollyeboyle@gmail.com
+1399338000::::1::::Midtown::::Bar::::20.0::::17.5::::0::::DealStatus.REJECTED::::mollyeboyle@gmail.com
+1399395600::::1::::Greenwich Village::::Mexican::::15.0::::15.0::::0::::DealStatus.EXPIRED::::gregrmay@gmail.com
+1400702400::::2::::Midtown::::Cafe::::6.0::::6.0::::0::::DealStatus.EXPIRED::::tarafougner@gmail.com
