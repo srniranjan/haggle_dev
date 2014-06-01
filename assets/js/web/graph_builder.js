@@ -7,6 +7,10 @@ function loadGraphTypes(){
 }
 
 function loadModels(){
+    $('#graph_area #choosing_area #model_type_chooser').empty();
+    $('#graph_area #choosing_area #dimension_chooser').empty();
+    $('#graph-submit').hide();
+    d3.select("#plot_area").select("svg").remove();
     var graph_type = $('#graph_area #choosing_area #graph_type_chooser select :selected').val();
     if(graph_type.length > 0){
         $.get('/marketers/graph_options', {'req_type' : 'models',
@@ -19,6 +23,9 @@ function loadModels(){
 }
 
 function loadDimensions(){
+    $('#graph_area #choosing_area #dimension_chooser').empty();
+    $('#graph-submit').hide();
+    d3.select("#plot_area").select("svg").remove();
     var model_type = $('#graph_area #choosing_area #model_type_chooser select :selected').val();
     var graph_type = $('#graph_area #choosing_area #graph_type_chooser select :selected').val();
     if(model_type.length > 0){
