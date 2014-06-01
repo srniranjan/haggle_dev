@@ -11,6 +11,8 @@
 
     function loadFilterValues(){
         var sel_value = $('#primary_dimensions select :selected').val();
+        $('#dimension_vals_' + sel_value).remove();
+        var all_values = convertToTextField('primary_dimensions');
         $('#filters_container div').each(function(idx, div){
             var retDiv = $('#' + div.id).remove();
             if(div.id != 'dimension_vals_' + sel_value) {

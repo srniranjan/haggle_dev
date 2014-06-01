@@ -6,6 +6,7 @@ from django.template import loader
 from platforms_graphs.populate import get_graph_view
 from platforms_graphs.graph_mappings import graphs
 from platforms_graphs.populate import get_graph_view
+from platforms_graphs.util import get_class
 from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list
 
 class WebRequestHandler(webapp2.RequestHandler):
@@ -45,8 +46,15 @@ class ChartDataHandler(RequestHandler):
         graph_model = view_to_graphmodel_mapping[graph_type]
         curr_graph = {'model':model,'graph_model':graph_model,'dimension_ids':dimensions,'filter_ids':filter_ids,'graph_view':graph_type}
         graph_view = get_graph_view(curr_graph)
+        dimension_id = graph_view.graph_model.xaxis_id
+        metric_id = graph_view.graph_model.yaxis_id
+        model_class = get_class(model)
+        dimension = model_class.property_titles[dimension_id]
+        metric = model_class.property_titles[metric_id]
         chart_data_json = {'chart_data':graph_view.translate_to_json(filters),
-                           'chart_type':curr_graph['graph_view']}
+                           'chart_type':curr_graph['graph_view'],
+                           'dimension':dimension,
+                           'metric':metric}
         self.write(json.dumps(chart_data_json))
 
 app = webapp2.WSGIApplication([

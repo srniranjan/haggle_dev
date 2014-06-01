@@ -45,6 +45,10 @@ function getAllFilterValues(){
         if($(this).val() != '')
             retVal += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
     });
+    $('#secondary_dimension_values_container .options-list').each(function(){
+        if($(this).val() != '')
+            retVal += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
+    });
     return retVal;
 }
 
@@ -63,16 +67,16 @@ function updateChart() {
     $.post("/api/marketers", params)
         .done(function(data){
             var chart_data = JSON.parse(data);
-            render_graph('plot_area', chart_data.chart_type, chart_data.chart_data);
+            render_graph('plot_area', chart_data.chart_type, chart_data.chart_data, chart_data.metric, chart_data.dimension);
     });
 }
 
-function render_graph(graph_id, chart_type, chart_data){
+function render_graph(graph_id, chart_type, chart_data, metric, dimension){
     if(chart_type == 'LineGraphView'){
-        drawLineChart(graph_id, chart_data, graph_id);
+        drawLineChart(graph_id, chart_data, metric, dimension);
     }
     else if(chart_type == 'BarGraphView' ||
             chart_type == 'AggregateBarGraphView'){
-        drawStackedBarChart(graph_id, chart_data, graph_id);
+        drawStackedBarChart(graph_id, chart_data, metric, dimension);
     }
 }

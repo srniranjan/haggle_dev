@@ -89,6 +89,8 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
     .call(make_x_axis()
         .tickSize(-height, 0, 0)
     )
+    .attr("font-family", "sans-serif")
+    .attr("font-size", "12px")
     .selectAll("text")
     .attr("y", 15);
 
