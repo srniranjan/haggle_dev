@@ -6,20 +6,27 @@
 
 <div id="graph_area">
     <div id="choosing_area">
-        <p>Choose Graph Type:</p>
-        <div id="graph_type_chooser">
-
+        <div class="block">
+            <div class="inline graph-menu">
+                <div id="graph_type_chooser">
+                </div>
+            </div>
+            <div class="inline graph-menu">
+                <div id="model_type_chooser">
+                </div>
+            </div>
         </div>
-        <p>Choose data set</p>
-        <div id="model_type_chooser">
-
+        <div class="metrics-dimensions-block">
+            <div class="graph-dimensions-menu">
+                <div id="dimension_chooser">
+                </div>
+            </div>
+            <div id="filters_chooser">
+            </div>
         </div>
-        <div id="dimension_chooser">
-
-        </div>
-        <div id="filters_chooser">
-
-        </div>
+    </div>
+    <div>
+        <input id="graph-submit" type="submit" style="display:none" value="GET GRAPH" onclick="updateChart()">
     </div>
     <div id="plot_area">
 

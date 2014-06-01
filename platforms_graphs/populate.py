@@ -1,10 +1,9 @@
-from model_factory import get_model_objs_for
-from graph_model import get_graph_model_for
+from model_factory import get_model_objs_for, get_model_obj_for
 from graph_view import get_graph_view_for
 
 def get_graph_view(graph_obj):
     model_objs = get_model_objs_for(graph_obj['model'])
-    graph_model = get_graph_model_for(graph_obj['graph_model'])
+    graph_model = get_model_obj_for(graph_obj['graph_model'])
     dimensions = graph_obj['dimension_ids']
     filters = graph_obj['filter_ids']
     graph_model.populate(model_objs,

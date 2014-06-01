@@ -804,3 +804,31 @@ td {
 .stacked-bar {
     stroke-width: 2;
 }
+
+.graph-menu {
+    width: 200px;
+}
+
+.options-list {
+    width: 90%;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    height: 220px;
+}
+
+.metrics-dimensions-block {
+    display: block;
+    width: 100%;
+    height: 320px;
+}
+
+.dimensions-filters-menu {
+    height: 200px;
+}
+
+.metrics-menu {
+    height: 100px;
+}

@@ -2,8 +2,6 @@
     function convertToTextField(drop_down_id){
         var all_values = $.map($('#' + drop_down_id + ' select option') ,function(option) {return option;});
         var sel_value = $('#' + drop_down_id + ' select :selected');
-        $('#' + drop_down_id + ' select').remove();
-        $('#' + drop_down_id).append('<label>' + sel_value.text() + '</label>');
         return $.map(all_values, function(option){
                 if(sel_value.val() != option.value)
                     return option;
@@ -17,10 +15,11 @@
         for(var val in all_values){
             var curr_val = all_values[val].value;
             var curr_text = all_values[val].text;
-            if(curr_text == 0)
-                curr_text = '--SELECT--';
+            if(curr_text == '--PRIMARY DIMENSION--')
+                curr_text = '--ADDITIONAL DIMENSION--';
             $('#secondary_dimensions select').append("<option value='" + curr_val + "'>" + curr_text + "</option>");
         }
+        $('#secondary_dimensions').show();
     }
 
     function loadFilterValues(){
@@ -39,42 +38,52 @@
             }
         });
         convertToTextField('secondary_dimensions');
+        $('#graph-submit').show();
     }
 </script>
-<div>
-    <p>Choose primary X parameter</p>
-    <div id="primary_dimensions">
+<div class="metrics-menu">
+    <div class="inline graph-menu"><p>METRIC:</p></div>
+    <div id="metric_dimensions" class="inline graph-menu">
+        <select class="options-list">
+            <option value="">--METRIC--</option>
+            {% for y_candidate in  y_candidates %}
+                <option value="{{y_candidate.0}}">{{y_candidate.1}}</option>
+            {%endfor%}
+        </select>
+    </div>
+</div>
+<div class="dimensions-filters-menu">
+    <div class="inline graph-menu"><p>DIMENSIONS:</p></div>
+    <div id="primary_dimensions" class="inline graph-menu">
         <select class="options-list" onchange="loadSecondaryDimension()">
-            <option value="">--SELECT--</option>
+            <option value="">--PRIMARY DIMENSION--</option>
             {% for x_candidate in  x_candidates %}
                 <option value="{{x_candidate.0}}">{{x_candidate.1}}</option>
             {%endfor%}
         </select>
     </div>
-    <p>Choose secondary X parameter</p>
-    <div id="secondary_dimensions">
+    <div id="secondary_dimensions" style="display:none" class="inline graph-menu">
         <select class="options-list" onchange="loadFilterValues()">
         </select>
     </div>
-    <div id="secondary_dimension_values" style="display:none">
-        <p>Pick a value for chosen secondary dimension</p>
+    <div id="secondary_dimension_values" style="display:none" class="inline graph-menu">
         <div id="secondary_dimension_values_container">
-
         </div>
     </div>
-    <div id="filter_values" style="display:none">
-        <p>Choose filters:</p>
-        <div id="filter_values_container">
-
+    <div id="filter_values" style="display:none" class="inline">
+        <div class="inline graph-menu"><p>FILTERS:</p></div>
+        <div id="filter_values_container" class="inline">
         </div>
     </div>
     <div id="filters_container">
         {% for dimension, values in dimension_vals.items %}
             <div id="dimension_vals_{{dimension.0}}" style="display:none">
-                <p>{{ dimension.1 }}</p>
+                <select name="{{ dimension.0 }}" class="options-list" multiple>
+                <option value="">--{{ dimension.1 }}--</option>
                 {% for val in values %}
-                    <input type="checkbox" name="{{val}}" value="{{val}}" checked>{{val}}<br>
+                    <option value="{{val}}" selected>{{val}}</option>
                 {% endfor %}
+                </select>
             </div>
         {% endfor %}
     </div>

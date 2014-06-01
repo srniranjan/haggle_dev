@@ -6,6 +6,7 @@ from django.template import loader
 from platforms_graphs.populate import get_graph_view
 from platforms_graphs.graph_mappings import graphs
 from platforms_graphs.populate import get_graph_view
+from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list
 
 class WebRequestHandler(webapp2.RequestHandler):
     def render_template(self, template_name, template_values = None):
@@ -27,14 +28,24 @@ class ChartDataHandler(RequestHandler):
         return [(param.split(val_sep)[0], param.split(val_sep)[1]) for param in filter_params if len(param) > 0]
 
     def post(self):
-        chart_name = self['id']
+        graph_type = self['graph_type']
+        model_type = self['model_type']
         filters = []
+        filter_ids = ''
         if len(self['filters']) > 0:
             filters = self.get_filters(self['filters'])
-        curr_graph = graphs[chart_name]
+            count = 0
+            for t in filters:
+                count += 1
+                filter_ids=filter_ids+t[0]
+                if count < len(filters):
+                    filter_ids += ','
+        dimensions = self['dimensions']
+        model = model_list[model_type]
+        graph_model = view_to_graphmodel_mapping[graph_type]
+        curr_graph = {'model':model,'graph_model':graph_model,'dimension_ids':dimensions,'filter_ids':filter_ids,'graph_view':graph_type}
         graph_view = get_graph_view(curr_graph)
-        chart_data_json = {'graph_id':chart_name,
-                           'chart_data':graph_view.translate_to_json(filters),
+        chart_data_json = {'chart_data':graph_view.translate_to_json(filters),
                            'chart_type':curr_graph['graph_view']}
         self.write(json.dumps(chart_data_json))
 

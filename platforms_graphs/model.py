@@ -82,9 +82,7 @@ class Model():
             prop.raw_value = comp
             prop.unique_id = idx
             prop.title = self.property_titles[idx]
-            if idx == 0:
-                prop.value_strategy = time_value_strategy
-            elif idx == 1:
+            if idx == 1:
                 prop.value_strategy = day_value_strategy
             self.properties.append(prop)
             idx += 1
@@ -92,8 +90,8 @@ class Model():
 class AvailedDeal(Model):
     property_titles = ["Time", "Day of week", "Neighborhood", "Cuisine", "$ Spent", "Status", "User ID"]
     separator = '::::'
-    x_candidates = [1, 2, 3]
-    y_candidates = [0, 4]
+    x_candidates = [0, 1, 2, 3]
+    y_candidates = [4]
     file_name = 'platforms_graphs/data/availed_deals_with_price'
 
 class UserScore(Model):
