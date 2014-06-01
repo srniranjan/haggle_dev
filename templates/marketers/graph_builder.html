@@ -5,7 +5,10 @@
 </script>
 
 <div id="graph_area">
-    <div id="choosing_area">
+    <div>
+        <input id="graph-options-button" type="button" value="SHOW GRAPH OPTIONS" onclick="$('#choosing_area').show();$(this).hide();">
+    </div>
+    <div id="choosing_area" style="display:none">
         <div class="block">
             <div class="inline graph-menu">
                 <div id="graph_type_chooser">
@@ -24,10 +27,11 @@
             <div id="filters_chooser">
             </div>
         </div>
+        <div>
+            <input id="graph-submit" type="submit" style="display:none" value="GET GRAPH" onclick="updateChart();$('#choosing_area').hide();$('#graph-options-button').show();">
+        </div>
     </div>
-    <div>
-        <input id="graph-submit" type="submit" style="display:none" value="GET GRAPH" onclick="updateChart()">
-    </div>
+
     <div id="plot_area">
 
     </div>

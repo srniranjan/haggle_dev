@@ -816,13 +816,13 @@ td {
 .block {
     display: block;
     width: 100%;
-    height: 220px;
+    height: 190px;
 }
 
 .metrics-dimensions-block {
     display: block;
     width: 100%;
-    height: 320px;
+    height: 250px;
 }
 
 .dimensions-filters-menu {
@@ -830,5 +830,5 @@ td {
 }
 
 .metrics-menu {
-    height: 100px;
+    height: 60px;
 }

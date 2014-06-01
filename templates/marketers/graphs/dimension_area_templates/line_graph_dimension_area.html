@@ -2,6 +2,7 @@
     function convertToTextField(drop_down_id){
         var all_values = $.map($('#' + drop_down_id + ' select option') ,function(option) {return option;});
         var sel_value = $('#' + drop_down_id + ' select :selected');
+        $($('#' + drop_down_id + ' select')[0]).prop('disabled', true);
         return $.map(all_values, function(option){
                 if(sel_value.val() != option.value)
                     return option;
@@ -77,7 +78,7 @@
     </div>
     <div id="filters_container">
         {% for dimension, values in dimension_vals.items %}
-            <div id="dimension_vals_{{dimension.0}}" style="display:none">
+            <div id="dimension_vals_{{dimension.0}}" style="display:none" class="inline graph-menu">
                 <select name="{{ dimension.0 }}" class="options-list" multiple>
                 <option value="">--{{ dimension.1 }}--</option>
                 {% for val in values %}
