@@ -137,11 +137,11 @@ select {
 	width: 940px;
 	float: left;
 	font-weight: bold;
-	margin-top: 70px;
+	padding-top: 70px;
 	border-bottom: 2px solid #eee;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
-
+    background-color: #ffffff;
 }
 
 .section-menu li {
@@ -303,15 +303,15 @@ select {
 .gender-dist {
 
 	width: 240px;
-	height: 200px;
-	margin-right: 20px;
+	margin-left: 20px;
 	float: left;
 
 }
 
 .age-dist {
 
-	width: 340px;
+	width: 240px;
+	height: 200px;
 	margin-right: 20px;
 	float: left;
 
@@ -339,7 +339,7 @@ select {
 
 .med-chart {
 
-	width: 300px;
+	width: 200px;
 	height: 200px;
 	padding: 20px;
 	margin-right: 20px;
@@ -394,7 +394,7 @@ select {
 
 	width: 300px;
 	margin-top: 10px;
-	padding-left: 20px;
+	padding-right: 20px;
 	float: left;
 
 }
@@ -756,10 +756,8 @@ td {
 }
 
 .graph-area {
-    width: 940px;
+    width: 936px;
     height: 100%;
-    border: 1px lightgray solid;
-    border-radius: 5px;
 }
 
 .bold-font {
@@ -816,7 +814,7 @@ td {
 .block {
     display: block;
     width: 100%;
-    height: 190px;
+    height: 60px;
 }
 
 .metrics-dimensions-block {
@@ -831,4 +829,43 @@ td {
 
 .metrics-menu {
     height: 60px;
+}
+
+.chart-area {
+    margin-top: 30px;
+    border-bottom: 2px solid gray;
+}
+
+.chart-desc {
+}
+
+.chart-page {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.charts-tab-menu {
+    height:60px;
+    background-color:#ffffff;
+    text-align:center;
+    padding-top: 125px;
+}
+
+.tab-select {
+    margin-bottom:0px;
+    text-align:left;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size:25px;
+    color:#9c9c9c;
+    padding-top:20px;
+    line-height:20px;
+    display:inline-block;
+    float:left;
+    cursor:pointer;
+    padding-right: 25px;
+}
+
+.overview {
+    height: 360px;
 }

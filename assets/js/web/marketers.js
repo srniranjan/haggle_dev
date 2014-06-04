@@ -64,3 +64,16 @@ $(document).ready(function(){
     .style("text-anchor", "middle")
     .text(function(d) { return d.data.age; });
 });
+
+
+
+function showChartTab(page) {
+    $('.tab-select').each(function(){
+        $(this).css('color','#9c9c9c');
+    });
+    $('.chart-page').each(function(){
+        $(this).fadeOut(500);
+    });
+    $('#' + page + '-select').css('color','#c62530');
+    $('#' + page + '-page').fadeIn(1500);
+}
