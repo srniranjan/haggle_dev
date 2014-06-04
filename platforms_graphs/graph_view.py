@@ -1,5 +1,6 @@
 import logging
 from math import ceil
+from platforms_graphs.util import get_class
 
 def get_graph_view_for(graph_name):
     if graph_name == 'LineGraphView':
@@ -19,7 +20,6 @@ def average_aggregator(aggregator_dimension_map):
                 agg_count += len(plot_vals)
                 for (x, y) in plot_vals:
                     curr_agg_dim_sum += float(y)
-            logging.info(str(dimension1) + ' :::::::::: '+str(curr_agg_dim_sum) + ' :::::::::: ' +str(agg_count))
             agg_dim_sum[dimension1] = round((curr_agg_dim_sum / agg_count), 2) if agg_count > 0 else 0.0
         return agg_dim_sum
 
@@ -104,7 +104,11 @@ class LineGraphView(GraphView):
 
     def translate_to_json(self, filters):
         chart_data = []
-        for curr_dimension, plot_vals in self.graph_model.lines_map.iteritems():
+        model_name = self.graph_model.lines_map[self.graph_model.lines_map.keys()[0]][0].model.__class__.__name__
+        dimension_idx = self.graph_model.xaxis_id
+        model_cls = get_class('platforms_graphs.model.'+model_name)
+        sorted_lines_map = sorted(self.graph_model.lines_map.items(), key=lambda (k,v):model_cls.get_sort_value(dimension_idx, k))
+        for (curr_dimension, plot_vals) in sorted_lines_map:
             matches = self.find_matches_in(plot_vals, filters)
             data_row = {'dimension1':curr_dimension}
             for co_ord in matches:

@@ -31,6 +31,10 @@ def user_score_type_strategy(type_id):
     types = {'H':'History','L':'Loyalty','I':'Influence'}
     return types[type_id]
 
+def day_value_sort_strategy(day_of_week):
+    days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    return days.index(day_of_week)
+
 class Property():
     def __init__(self):
         self.raw_value = ''
@@ -77,6 +81,10 @@ class Model():
     def populate(self, line):
         pass
 
+    @staticmethod
+    def get_sort_value(dimension_idx, dimension_value):
+        pass
+
 class AvailedDeal(Model):
     property_titles = ["Time", "Day of week", "Neighborhood", "Cuisine", "$ Spent", "Status", "User ID"]
     separator = '::::'
@@ -100,6 +108,17 @@ class AvailedDeal(Model):
             self.properties.append(prop)
             idx += 1
 
+    @staticmethod
+    def get_sort_value(dimension_idx, dimension_value):
+        if dimension_idx == 1:
+            return day_value_sort_strategy(dimension_value)
+        elif dimension_idx == 2:
+            return dimension_value.lower()
+        elif dimension_idx == 3:
+            return dimension_value.lower()
+        else:
+            return dimension_value
+
 class Deal(Model):
     property_titles = ["Time", "Day of week", "Neighborhood", "Cuisine", "Bid Discount(%)", "Offered Discount(%)", "$ Spent", "Status", "User ID"]
     separator = '::::'
@@ -122,6 +141,17 @@ class Deal(Model):
                 prop.value_strategy = day_value_strategy
             self.properties.append(prop)
             idx += 1
+
+    @staticmethod
+    def get_sort_value(dimension_idx, dimension_value):
+        if dimension_idx == 1:
+            return day_value_sort_strategy(dimension_value)
+        elif dimension_idx == 2:
+            return dimension_value.lower()
+        elif dimension_idx == 3:
+            return dimension_value.lower()
+        else:
+            return dimension_value
 
 class UserScore(Model):
     property_titles = ["Restaurant", "User Email", "User Name", "Misc1", "Score Type", "Misc2", "Score", "Cuisine", "Neighborhood"]
