@@ -336,21 +336,63 @@
                 <p><b>DIMENSION</b> (X-Axis) : Cuisine</p>
                 <p><b>METRIC</b> (Y-Axis) : Score</p>
                 <p><b>AGGREGATOR</b> : User</p>
-                <p><b>AGGREGATOR STRATEGY</b> : Average</p>
+                <div id="agg_history_score_aggregator_strategy_values_container" class="graph-menu">
+                    <select class="options-list">
+                        <option value="">--Aggregation Strategy--</option>
+                            <option value="Median">Median</option>
+                            <option value="Blind Addition">Blind Addition</option>
+                            <option value="Average" selected>Average</option>
+                    </select>
+                </div>
             </div>
             <div class="filters">
                 <p><b>FILTERS:</b></p>
-                <p>Score Type: History</p>
-                <p>Neighborhoods: Point Loma, midtown, Nolita, Flatiron, East Village, lower manhattan, Humboldt Park, Castro, Midtown, South End, Greenwich Village</p>
+                <div id="agg_history_score_filter_values_container" class="inline">
+                    <div id="agg_history_score_dimension_vals_8" style="" class="inline graph-menu">
+                        <select name="8" class="options-list" multiple="">
+                            <option value="">--Neighborhood--</option>
+                            <option value=" midtown" selected> midtown</option>
+                            <option value=" Nolita" selected> Nolita</option>
+                            <option value=" Humboldt Park" selected> Humboldt Park</option>
+                            <option value=" Castro" selected> Castro</option>
+                            <option value=" East Village" selected> East Village</option>
+                            <option value=" Flatiron" selected> Flatiron</option>
+                            <option value=" lower manhattan" selected> lower manhattan</option>
+                            <option value=" South End" selected> South End</option>
+                            <option value=" Point Loma" selected> Point Loma</option>
+                            <option value=" Greenwich Village" selected> Greenwich Village</option>
+                            <option value=" Midtown" selected> Midtown</option>
+                        </select>
+                    </div>
+                    <div id="agg_history_score_dimension_vals_4" style="" class="inline graph-menu">
+                        <select name="4" class="options-list" multiple="">
+                            <option value="">--Score Type--</option>
+                            <option value=" H " selected> H </option>
+                            <option value=" I "> I </option>
+                            <option value=" L "> L </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateAggHistoryScore()">
             </div>
         </div>
         <script>
             $(document).ready(function(){
+                updateAggHistoryScore();
+            });
+            function updateAggHistoryScore() {
+                d3.select("#aggregate-history-score .graph-area").select("svg").remove();
                 var dimensions = '7,6,1';
-                var filters = "4:::: H ,,,,8::::Point Loma, midtown, Nolita, Flatiron, East Village, lower manhattan, Humboldt Park, Castro, Midtown, South End, Greenwich Village,,,,";
+                var filters = '';
+                $('#agg_history_score_filter_values_container .options-list').each(function(){
+                    if($(this).val() != '')
+                        filters += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
+                });
                 var graph_type = 'AggregateBarGraphView';
                 var model_type = 'UserScore';
-                var aggregator_strategy = 'Average';
+                var aggregator_strategy = $('#agg_history_score_aggregator_strategy_values_container .options-list').val();
                 var params = {
                                 'dimensions':dimensions,
                                 'graph_type':graph_type,
@@ -363,7 +405,7 @@
                         var chart_data = JSON.parse(data);
                         render_graph('aggregate-history-score .graph-area', chart_data.chart_type, chart_data.chart_data, chart_data.metric, chart_data.dimension);
                 });
-            });
+            }
         </script>
         <div class="graph-area"></div>
     </div>
