@@ -32,13 +32,16 @@ def median_aggregator(aggregator_dimension_map):
                 for (x, y) in plot_vals:
                     plot_vals_array.append((x,y))
             plot_vals_array.sort(key=lambda tup: float(tup[1]))
-            if len(plot_vals_array)%2 == 0:
-                median_idx_low = len(plot_vals_array)/2
-                median_idx_high = median_idx_low + 1
-                median = (float(plot_vals_array[median_idx_low][1]) + float(plot_vals_array[median_idx_high][1]))/2
-            else:
-                median_idx = ceil(len(plot_vals_array)/2)
-                median = float(plot_vals_array[median_idx][1])
+            if len(plot_vals_array) > 1:
+                if len(plot_vals_array)%2 == 0:
+                    median_idx_low = (len(plot_vals_array)/2) - 1
+                    median_idx_high = median_idx_low + 1
+                    median = (float(plot_vals_array[median_idx_low][1]) + float(plot_vals_array[median_idx_high][1]))/2
+                else:
+                    median_idx = int(ceil(len(plot_vals_array)/2))
+                    median = float(plot_vals_array[median_idx][1])
+            elif len(plot_vals_array) == 1:
+                median = float(plot_vals_array[0][1])
             agg_dim_sum[dimension1] = round(median, 2)
         return agg_dim_sum
 
@@ -148,7 +151,7 @@ class AggregateBarGraphView(GraphView):
                     curr_agg.append((x, y))
                 agg_map[agg_dim] = curr_agg
             agg_dim_map[dimension1] = agg_map
-        processed_data = self.aggregator_strategy(agg_dim_map)
+        processed_data = self.aggregator_strategy(agg_dim_map) if self.aggregator_strategy else average_aggregator(agg_dim_map)
         for dimension1, avg_value in processed_data.iteritems():
             curr_dict = {'dimension1' : dimension1,
                          'All' : avg_value}
