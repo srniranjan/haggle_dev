@@ -9,43 +9,25 @@
               });
     }
 
-    function loadSecondaryDimension(){
+    function loadFilterValues(){
         var sel_value = $('#primary_dimensions select :selected').val();
         $('#dimension_vals_' + sel_value).remove();
-        var all_values = convertToTextField('primary_dimensions');
-        for(var val in all_values){
-            var curr_val = all_values[val].value;
-            var curr_text = all_values[val].text;
-            if(curr_text == '--PRIMARY DIMENSION--')
-                curr_text = '--ADDITIONAL DIMENSION--';
-            $('#secondary_dimensions select').append("<option value='" + curr_val + "'>" + curr_text + "</option>");
-        }
-        $('#secondary_dimensions').show();
-    }
-
-    function loadFilterValues(){
-        var sel_value = $('#secondary_dimensions select :selected').val();
         $('#filters_container div').each(function(idx, div){
             var retDiv = $('#' + div.id).remove();
-            if(div.id == 'dimension_vals_' + sel_value){
-                $('#secondary_dimension_values').show();
-                $('#secondary_dimension_values #secondary_dimension_values_container').append(retDiv[0]);
-                $('#secondary_dimension_values #secondary_dimension_values_container #' + retDiv[0].id).show();
-            }
-            else{
+            if(div.id != 'dimension_vals_' + sel_value){
                 $('#filter_values').show();
                 $('#filter_values #filter_values_container').append(retDiv[0]);
                 $('#filter_values #filter_values_container #' + retDiv[0].id).show();
             }
         });
-        convertToTextField('secondary_dimensions');
+        convertToTextField('primary_dimensions');
         $('#graph-submit').show();
     }
 
     function getDimensionsList(){
         var retVal = "";
         var primary_dimension = $('#primary_dimensions select :selected').val();
-        var secondary_dimension = $('#secondary_dimensions select :selected').val();
+        var secondary_dimension = $($('#filter_values_container .options-list')[0]).attr('name');
         var metric_dimension = $('#metric_dimensions select :selected').val();
         retVal = primary_dimension + ',' + secondary_dimension + ',' + metric_dimension;
         return retVal;
@@ -65,20 +47,12 @@
 <div class="dimensions-filters-menu">
     <div class="inline graph-menu"><p>DIMENSIONS:</p></div>
     <div id="primary_dimensions" class="inline graph-menu">
-        <select class="options-list" onchange="loadSecondaryDimension()">
+        <select class="options-list" onchange="loadFilterValues()">
             <option value="">--PRIMARY DIMENSION--</option>
             {% for x_candidate in  x_candidates %}
                 <option value="{{x_candidate.0}}">{{x_candidate.1}}</option>
             {%endfor%}
         </select>
-    </div>
-    <div id="secondary_dimensions" style="display:none" class="inline graph-menu">
-        <select class="options-list" onchange="loadFilterValues()">
-        </select>
-    </div>
-    <div id="secondary_dimension_values" style="display:none" class="inline graph-menu">
-        <div id="secondary_dimension_values_container">
-        </div>
     </div>
     <div id="filter_values" style="display:none" class="inline">
         <div class="inline graph-menu"><p>FILTERS:</p></div>
