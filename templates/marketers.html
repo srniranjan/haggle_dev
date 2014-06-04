@@ -85,52 +85,6 @@
         <li><a href="/marketers">Case Studies</a></li>
     </ul>
 </div>
-        <!--
-<div class="reports-nav">
-    <select class="reports-list">
-      <option value="spending-report">Spending Report</option>
-      <option value="social-report">Social Report</option>
-      <option value="restaurant-report">Restaurant Report</option>
-    </select>
-</div>
-<div class="full-width-line">
-    <div class="overview-results">
-        <div class="gender-dist">
-            <h5>Gender Distribution</h5>
-            <div class="small-chart">Gender donut chart</div>
-        </div>
-        <div class="age-dist">
-            <h5>Age Distribution</h5>
-            <div class="med-chart">Age distribution line chart</div>
-        </div>
-        <div class="summary">
-            <h5>General</h5>
-            <table class="summary-table">
-                <tr class="row">
-                    <td class="tb-left">Number of Haggles Initiated</td>
-                    <td class="tb-right">150</td>
-                </tr>
-                <tr class="row">
-                    <td class="tb-left">Average Discount Offered (%)</td>
-                    <td class="tb-right">18.43</td>
-                </tr>
-                <tr class="row">
-                    <td class="tb-left">Average Amount Spent ($)</td>
-                    <td class="tb-right">40</td>
-                </tr>
-                <tr class="row">
-                    <td class="tb-left">Average Party Size</td>
-                    <td class="tb-right">2.4</td>
-                </tr>
-                <tr class="row">
-                    <td class="tb-left">Most Popular Score</td>
-                    <td class="tb-right">Loyalty</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-</div>
--->
 <div class="charts-tab-menu">
     <p class="tab-select" id="spending-select" onclick="showChartTab('spending')" style="color:#c62530;">SPENDING</p>
     <p class="tab-select" id="social-select" onclick="showChartTab('social')">SOCIAL</p>
@@ -182,17 +136,78 @@
             <div class="dimensions">
                 <p><b>DIMENSION</b> (X-Axis) : Day of Week</p>
                 <p><b>METRIC</b> (Y-Axis) : $ Spent</p>
-                <p><b>SERIES</b> (Neighborhoods) : Midtown East, lower manhattan, Midtown, Flatiron</p>
             </div>
             <div class="filters">
                 <p><b>FILTERS:</b></p>
-                <p>Cuisines: Diner, Salads, Burger Joint, Middle Eastern Restaurant, Bar, Mexican, Mediterranean, Cafe</p>
+                <div id="dollars_spent_filter_values_container" class="inline">
+                    <div id="dollars_spent_dimension_vals_2" style="" class="inline graph-menu">
+                        <select name="2" class="options-list" multiple="">
+                            <option value="">--Neighborhood--</option>
+
+                            <option value="Midtown East" selected="">Midtown East</option>
+
+                            <option value="Midtown" selected="">Midtown</option>
+
+                            <option value="Flatiron" selected="">Flatiron</option>
+
+                            <option value="Gramercy" selected="">Gramercy</option>
+
+                            <option value="East Village" selected="">East Village</option>
+
+                            <option value="lower manhattan" selected="">lower manhattan</option>
+
+                            <option value="Nolita" selected="">Nolita</option>
+
+                            <option value="midtown" selected="">midtown</option>
+
+                        </select>
+                    </div>
+                    <div id="dollars_spent_dimension_vals_3" style="" class="inline graph-menu">
+                        <select name="3" class="options-list" multiple="">
+                            <option value="">--Cuisine--</option>
+
+                            <option value="Italian Restaurant" selected="">Italian Restaurant</option>
+
+                            <option value="Mediterranean" selected="">Mediterranean</option>
+
+                            <option value="Middle Eastern Restaurant" selected="">Middle Eastern Restaurant</option>
+
+                            <option value="Diner" selected="">Diner</option>
+
+                            <option value="Bar" selected="">Bar</option>
+
+                            <option value="Taco Place" selected="">Taco Place</option>
+
+                            <option value="French African" selected="">French African</option>
+
+                            <option value="Cafe" selected="">Cafe</option>
+
+                            <option value="Mexican" selected="">Mexican</option>
+
+                            <option value="Burgers" selected="">Burgers</option>
+
+                            <option value="Burger Joint" selected="">Burger Joint</option>
+
+                            <option value="Salads" selected="">Salads</option>
+
+                        </select>
+                    </div>
+                </div>
             </div>
+            <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateDollarsSpent()">
         </div>
         <script>
             $(document).ready(function(){
+                updateDollarsSpent();
+            });
+            function updateDollarsSpent() {
+                d3.select("#dollars-spent .graph-area").select("svg").remove();
                 var dimensions = '1,2,4';
-                var filters = '3::::Diner,Salads,Burger Joint,Middle Eastern Restaurant,Bar,Mexican,Mediterranean,Cafe,,,,2::::Midtown East,lower manhattan,Midtown,Flatiron,,,,';
+                var filters = "";
+                $('#dollars_spent_filter_values_container .options-list').each(function(){
+                    if($(this).val() != '')
+                        filters += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
+                });
                 var graph_type = 'LineGraphView';
                 var model_type = 'AvailedDeal';
                 var params = {
@@ -206,7 +221,7 @@
                         var chart_data = JSON.parse(data);
                         render_graph('dollars-spent .graph-area', chart_data.chart_type, chart_data.chart_data, chart_data.metric, chart_data.dimension);
                 });
-            });
+            }
         </script>
         <div class="graph-area"></div>
     </div>

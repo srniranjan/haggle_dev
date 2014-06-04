@@ -879,3 +879,14 @@ td {
     cursor: pointer;
     border-radius: 5px;
 }
+
+.graph-submit-button {
+    background-image: none;
+    border: none;
+    height: 20px;
+    background-color: rgb(198, 37, 48);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}

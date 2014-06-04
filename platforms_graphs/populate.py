@@ -7,9 +7,10 @@ def get_graph_view(graph_obj):
     graph_model = get_model_obj_for(graph_obj['graph_model'])
     dimensions = graph_obj['dimension_ids']
     filters = graph_obj['filter_ids']
+    filter_ids = [int(f.strip()) for f in filters.split(',')] if filters != '' else []
     graph_model.populate(model_objs,
                          [int(d.strip()) for d in dimensions.split(',')],
-                         [int(f.strip()) for f in filters.split(',')],
+                         filter_ids,
                          model_objs[0].property_titles)
     graph_view = get_graph_view_for(graph_obj['graph_view'])
     graph_view.graph_model = graph_model

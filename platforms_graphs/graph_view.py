@@ -76,7 +76,7 @@ class GraphView():
                 for filter_val in filter_vals:
                     idx = filter_val[0]
                     val = filter_val[1]
-                    if model.properties[int(idx)].value not in val:
+                    if model.properties[int(idx)].value not in val.split(','):
                         add_co_ord = False
                         break
             if add_co_ord:
