@@ -869,3 +869,13 @@ td {
 .overview {
     height: 360px;
 }
+
+.graph-options-button {
+    background-image: none;
+    border: none;
+    height: 50px;
+    background-color: rgb(198, 37, 48);
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
