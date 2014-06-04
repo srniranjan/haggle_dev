@@ -69,8 +69,18 @@
         </select>
     </div>
     <div id="secondary_dimensions" style="display:none" class="inline graph-menu">
-        <select class="options-list" onchange="loadFilterValues()">
+        <select class="options-list" onchange="$('#aggregator_strategy_values').show();">
         </select>
+    </div>
+    <div id="aggregator_strategy_values" style="display:none" class="inline graph-menu">
+        <div id="aggregator_strategy_values_container">
+            <select class="options-list" onchange="loadFilterValues()">
+                <option value="">--AGGREGATOR STRATEGY--</option>
+                {% for val in aggregator_strategy_vals %}
+                    <option value="{{val}}">{{val}}</option>
+                {% endfor %}
+            </select>
+        </div>
     </div>
     <div id="filter_values" style="display:none" class="inline">
         <div class="inline graph-menu"><p>FILTERS:</p></div>

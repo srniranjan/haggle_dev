@@ -58,11 +58,13 @@ function updateChart() {
     var filters = getAllFilterValues();
     var graph_type = $('#graph_area #choosing_area #graph_type_chooser select :selected').val();
     var model_type = $('#graph_area #choosing_area #model_type_chooser select :selected').val();
+    var aggregator_strategy = $('#aggregator_strategy_values_container .options-list').val();
     var params = {
                     'dimensions':dimensions,
                     'graph_type':graph_type,
                     'model_type':model_type,
-                    'filters':filters
+                    'filters':filters,
+                    'agg_idx':aggregator_strategy
                  }
     $.post("/api/marketers", params)
         .done(function(data){

@@ -7,7 +7,7 @@ from platforms_graphs.populate import get_graph_view
 from platforms_graphs.graph_mappings import graphs
 from platforms_graphs.populate import get_graph_view
 from platforms_graphs.util import get_class
-from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list
+from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list, aggregator_strategy_list
 
 class WebRequestHandler(webapp2.RequestHandler):
     def render_template(self, template_name, template_values = None):
@@ -44,7 +44,9 @@ class ChartDataHandler(RequestHandler):
         dimensions = self['dimensions']
         model = model_list[model_type]
         graph_model = view_to_graphmodel_mapping[graph_type]
-        curr_graph = {'model':model,'graph_model':graph_model,'dimension_ids':dimensions,'filter_ids':filter_ids,'graph_view':graph_type}
+        aggregator_index = self['agg_idx'] if self['agg_idx'] else aggregator_strategy_list.keys()[0]
+        aggregator_strategy = aggregator_strategy_list[aggregator_index] if aggregator_index else None
+        curr_graph = {'model':model,'graph_model':graph_model,'dimension_ids':dimensions,'filter_ids':filter_ids,'graph_view':graph_type,'aggregator_strategy':aggregator_strategy}
         graph_view = get_graph_view(curr_graph)
         dimension_id = graph_view.graph_model.xaxis_id
         metric_id = graph_view.graph_model.yaxis_id

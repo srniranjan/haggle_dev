@@ -1,4 +1,5 @@
 import logging
+from math import ceil
 
 def get_graph_view_for(graph_name):
     if graph_name == 'LineGraphView':
@@ -9,9 +10,52 @@ def get_graph_view_for(graph_name):
         return AggregateBarGraphView()
     return None
 
+def average_aggregator(aggregator_dimension_map):
+        agg_dim_sum = {}
+        for dimension1, agg_dim_dict in aggregator_dimension_map.iteritems():
+            curr_agg_dim_sum = 0.0
+            agg_count = 0
+            for agg_dim, plot_vals in agg_dim_dict.iteritems():
+                agg_count += len(plot_vals)
+                for (x, y) in plot_vals:
+                    curr_agg_dim_sum += float(y)
+            logging.info(str(dimension1) + ' :::::::::: '+str(curr_agg_dim_sum) + ' :::::::::: ' +str(agg_count))
+            agg_dim_sum[dimension1] = round((curr_agg_dim_sum / agg_count), 2) if agg_count > 0 else 0.0
+        return agg_dim_sum
+
+def median_aggregator(aggregator_dimension_map):
+        agg_dim_sum = {}
+        for dimension1, agg_dim_dict in aggregator_dimension_map.iteritems():
+            median = 0.0
+            plot_vals_array = []
+            for agg_dim, plot_vals in agg_dim_dict.iteritems():
+                for (x, y) in plot_vals:
+                    plot_vals_array.append((x,y))
+            plot_vals_array.sort(key=lambda tup: float(tup[1]))
+            if len(plot_vals_array)%2 == 0:
+                median_idx_low = len(plot_vals_array)/2
+                median_idx_high = median_idx_low + 1
+                median = (float(plot_vals_array[median_idx_low][1]) + float(plot_vals_array[median_idx_high][1]))/2
+            else:
+                median_idx = ceil(len(plot_vals_array)/2)
+                median = float(plot_vals_array[median_idx][1])
+            agg_dim_sum[dimension1] = round(median, 2)
+        return agg_dim_sum
+
+def blind_addition_aggregator(aggregator_dimension_map):
+        agg_dim_sum = {}
+        for dimension1, agg_dim_dict in aggregator_dimension_map.iteritems():
+            curr_agg_dim_sum = 0.0
+            for agg_dim, plot_vals in agg_dim_dict.iteritems():
+                for (x, y) in plot_vals:
+                    curr_agg_dim_sum += float(y)
+            agg_dim_sum[dimension1] = curr_agg_dim_sum
+        return agg_dim_sum
+
 class GraphView():
     def __init__(self):
         self.graph_model = None
+        self.aggregator_strategy = None
 
     def get_dimension(self):
         dimension_title = self.graph_model.property_titles[self.graph_model.xaxis_id]
@@ -41,7 +85,6 @@ class GraphView():
 
     def translate_to_json(self, filters):
         pass
-
 
 class LineGraphView(GraphView):
     def get_dimension(self):
@@ -91,15 +134,18 @@ class AggregateBarGraphView(GraphView):
     def translate_to_json(self, filters):
         chart_data = []
         agg_data = self.graph_model.aggregated_data
-        agg_dim_sum = {}
+        agg_dim_map = {}
         for dimension1, agg_dim_dict in agg_data.iteritems():
-            curr_agg_dim_sum = 0.0
+            agg_map = {}
             for agg_dim, plot_vals in agg_dim_dict.iteritems():
+                curr_agg = []
                 matches = self.find_matches_in(plot_vals, filters)
                 for (x, y) in matches:
-                    curr_agg_dim_sum += float(y)
-            agg_dim_sum[dimension1] = round((curr_agg_dim_sum / len(agg_dim_dict)), 2)
-        for dimension1, avg_value in agg_dim_sum.iteritems():
+                    curr_agg.append((x, y))
+                agg_map[agg_dim] = curr_agg
+            agg_dim_map[dimension1] = agg_map
+        processed_data = self.aggregator_strategy(agg_dim_map)
+        for dimension1, avg_value in processed_data.iteritems():
             curr_dict = {'dimension1' : dimension1,
                          'All' : avg_value}
             chart_data.append(curr_dict)
