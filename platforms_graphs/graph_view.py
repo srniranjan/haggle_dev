@@ -130,7 +130,10 @@ class BarGraphView(GraphView):
         for (x, y) in matches:
             if x not in plot_dict:
                 plot_dict[x] = 0.0
-            plot_dict[x] += float(y)
+            try:
+                plot_dict[x] += float(y)
+            except ValueError:
+                plot_dict[x] += 0
         for k, v in plot_dict.iteritems():
             curr_dict = {'dimension1' : k, 'All' : v}
             chart_data.append(curr_dict)
