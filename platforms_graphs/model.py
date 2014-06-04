@@ -126,7 +126,7 @@ class Deal(Model):
 class UserScore(Model):
     property_titles = ["Restaurant", "User Email", "User Name", "Misc1", "Score Type", "Misc2", "Score", "Cuisine", "Neighborhood"]
     separator = '####'
-    x_candidates = [4, 7, 8]
+    x_candidates = [0, 1, 4, 7, 8]
     y_candidates = [6]
     file_name = 'platforms_graphs/data/user_scores'
 
