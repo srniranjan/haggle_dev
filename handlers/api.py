@@ -59,7 +59,61 @@ class ChartDataHandler(RequestHandler):
                            'metric':metric}
         self.write(json.dumps(chart_data_json))
 
+class Restaurant():
+    def __init__(self, line):
+        comps = line.strip().split('^')
+        self.dlr_rating = comps[0]
+        self.cuisine = comps[1]
+        self.loc = comps[2]
+        self.name = comps[3]
+        self.user_rating = comps[4]
+        self.neigh = comps[5]
+
+    def str_match(self, str1, str2):
+        if str1 == str2 or \
+                str1 in str2 or \
+                str2 in str1:
+            return True
+        return False
+
+    def matches(self, reqHandler):
+        keys = self.__dict__.keys()
+        for key in keys:
+            param_to_match = reqHandler[key].lower()
+            if len(param_to_match) > 0:
+                param = getattr(self, key).lower()
+                if self.str_match(param, param_to_match):
+                    return True
+        return False
+
+class RestaurantsDataHandler(RequestHandler):
+    def get_restaurants(self):
+        rests = None
+        rest_objs = []
+        with open('assets/data/rests_with_neigh') as f:
+            rests = f.readlines()
+        for rest in rests:
+            rest_obj = Restaurant(rest)
+            rest_objs.append(rest_obj)
+        return rest_objs
+
+    def get_matches_in(self, rests):
+        matches = []
+        for rest in rests:
+            if rest.matches(self):
+                matches.append(rest)
+        return matches
+
+    def get(self):
+        rests = self.get_restaurants()
+        matches = self.get_matches_in(rests)
+        ret_json = {'count' : len(matches), 'matches' : []}
+        for match in matches:
+            ret_json['matches'].append(match.__dict__)
+        self.write(json.dumps(ret_json))
+
 app = webapp2.WSGIApplication([
     ('/api/discount_map', DiscountsMap),
-    ('/api/marketers', ChartDataHandler)
+    ('/api/marketers', ChartDataHandler),
+    ('/api/restaurants', RestaurantsDataHandler)
 ])
