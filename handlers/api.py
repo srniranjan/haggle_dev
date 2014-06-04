@@ -4,8 +4,6 @@ import logging
 from handlers import RequestHandler
 from django.template import loader
 from platforms_graphs.populate import get_graph_view
-from platforms_graphs.graph_mappings import graphs
-from platforms_graphs.populate import get_graph_view
 from platforms_graphs.util import get_class
 from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list, aggregator_strategy_list
 
@@ -70,6 +68,8 @@ class Restaurant():
         self.neigh = comps[5]
 
     def str_match(self, str1, str2):
+        str1 = str1.decode('utf-8')
+        str2 = str2.decode('utf-8')
         if str1 == str2 or \
                 str1 in str2 or \
                 str2 in str1:

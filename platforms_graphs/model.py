@@ -171,3 +171,22 @@ class UserScore(Model):
             prop.title = self.property_titles[idx]
             self.properties.append(prop)
             idx += 1
+
+class Restaurant(Model):
+    property_titles = ["$ Rating", "Cuisine", "Location", "Name", "User Rating", "Neighborhood"]
+    separator = '^'
+    x_candidates = [1, 5]
+    y_candidates = [0, 4]
+    file_name = 'assets/data/rests_with_neigh'
+
+    def populate(self, line):
+        comps = line.strip().split(self.separator)
+        self.property_size = len(comps)
+        idx = 0
+        for comp in comps:
+            prop = Property()
+            prop.raw_value = comp
+            prop.unique_id = idx
+            prop.title = self.property_titles[idx]
+            self.properties.append(prop)
+            idx += 1
