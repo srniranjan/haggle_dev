@@ -86,17 +86,17 @@ class Restaurant():
                     return True
         return False
 
-class RestaurantsDataHandler(RequestHandler):
-    def get_restaurants(self):
-        rests = None
-        rest_objs = []
-        with open('assets/data/rests_with_neigh') as f:
-            rests = f.readlines()
-        for rest in rests:
-            rest_obj = Restaurant(rest)
-            rest_objs.append(rest_obj)
-        return rest_objs
+def get_restaurants():
+    rests = None
+    rest_objs = []
+    with open('assets/data/rests_with_neigh') as f:
+        rests = f.readlines()
+    for rest in rests:
+        rest_obj = Restaurant(rest)
+        rest_objs.append(rest_obj)
+    return rest_objs
 
+class RestaurantsDataHandler(RequestHandler):
     def get_matches_in(self, rests):
         matches = []
         for rest in rests:
@@ -105,15 +105,34 @@ class RestaurantsDataHandler(RequestHandler):
         return matches
 
     def get(self):
-        rests = self.get_restaurants()
+        rests = get_restaurants()
         matches = self.get_matches_in(rests)
         ret_json = {'count' : len(matches), 'matches' : []}
         for match in matches:
             ret_json['matches'].append(match.__dict__)
         self.write(json.dumps(ret_json))
 
+class RestaurantsOverviewHandler(RequestHandler):
+    def get(self):
+        rests = get_restaurants()
+        ret_json = {'rest_count' : len(rests)}
+        attrs = ['neigh', 'cuisine']
+        attrs_dict = {}
+        for rest in rests:
+            for attr in attrs:
+                val = getattr(rest, attr)
+                if attr not in attrs_dict:
+                    attrs_dict[attr] = set()
+                attrs_dict[attr].add(val)
+
+        for attr, vals in attrs_dict.iteritems():
+            ret_json[attr] = {'count' : len(vals),
+                              'values' : [v for v in vals]}
+        self.write(json.dumps(ret_json))
+
 app = webapp2.WSGIApplication([
     ('/api/discount_map', DiscountsMap),
     ('/api/marketers', ChartDataHandler),
-    ('/api/restaurants', RestaurantsDataHandler)
+    ('/api/restaurants', RestaurantsDataHandler),
+    ('/api/restaurants_overview', RestaurantsOverviewHandler)
 ])
