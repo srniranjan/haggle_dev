@@ -837,6 +837,7 @@ td {
 }
 
 .chart-desc {
+    min-height: 400px;
 }
 
 .chart-page {

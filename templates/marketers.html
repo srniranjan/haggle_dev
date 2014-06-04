@@ -194,7 +194,9 @@
                     </div>
                 </div>
             </div>
-            <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateDollarsSpent()">
+            <div>
+                <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateDollarsSpent()">
+            </div>
         </div>
         <script>
             $(document).ready(function(){
@@ -233,21 +235,81 @@
                 <p><b>DIMENSION</b> (X-Axis) : Cuisine</p>
                 <p><b>METRIC</b> (Y-Axis) : $ Spent</p>
                 <p><b>AGGREGATOR</b> : User</p>
-                <p><b>AGGREGATOR STRATEGY</b> : Average</p>
+                <div id="sales_per_head_aggregator_strategy_values_container" class="graph-menu">
+                    <select class="options-list">
+                        <option value="">--Aggregation Strategy--</option>
+                            <option value="Median">Median</option>
+                            <option value="Blind Addition">Blind Addition</option>
+                            <option value="Average" selected>Average</option>
+                    </select>
+                </div>
             </div>
             <div class="filters">
                 <p><b>FILTERS:</b></p>
-                <p>Neighborhoods: Flatiron, Midtown, Gramercy, East Village, lower manhattan, Nolita, midtown, Midtown East</p>
-                <p>Day of Week: Thu,Wed,Sun,Sat,Fri,Tue,Mon</p>
+                <div id="sales_per_head_filter_values_container" class="inline">
+                    <div id="sales_per_head_dimension_vals_2" style="" class="inline graph-menu">
+                        <select name="2" class="options-list" multiple="">
+                            <option value="">--Neighborhood--</option>
+
+                            <option value="Midtown East" selected="">Midtown East</option>
+
+                            <option value="Midtown" selected="">Midtown</option>
+
+                            <option value="Flatiron" selected="">Flatiron</option>
+
+                            <option value="Gramercy" selected="">Gramercy</option>
+
+                            <option value="East Village" selected="">East Village</option>
+
+                            <option value="lower manhattan" selected="">lower manhattan</option>
+
+                            <option value="Nolita" selected="">Nolita</option>
+
+                            <option value="midtown" selected="">midtown</option>
+
+                        </select>
+                    </div>
+                    <div id="sales_per_head_dimension_vals_1" style="" class="inline graph-menu">
+                        <select name="1" class="options-list" multiple="">
+                        <option value="">--Day of week--</option>
+
+                            <option value="Fri" selected="">Fri</option>
+
+                            <option value="Sat" selected="">Sat</option>
+
+                            <option value="Thu" selected="">Thu</option>
+
+                            <option value="Tue" selected="">Tue</option>
+
+                            <option value="Wed" selected="">Wed</option>
+
+                            <option value="Sun" selected="">Sun</option>
+
+                            <option value="Mon" selected="">Mon</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateSalesPerHead()">
             </div>
         </div>
         <script>
             $(document).ready(function(){
+                updateSalesPerHead();
+            });
+            function updateSalesPerHead() {
+                d3.select("#sales-per-head .graph-area").select("svg").remove();
                 var dimensions = '3,4,6';
-                var filters = '2::::Flatiron,Midtown,Gramercy,East Village,lower manhattan,Nolita,midtown,Midtown East,,,,1::::Thu,Wed,Sun,Sat,Fri,Tue,Mon,,,,';
+                var filters = '';
+                $('#sales_per_head_filter_values_container .options-list').each(function(){
+                    if($(this).val() != '')
+                        filters += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
+                });
                 var graph_type = 'AggregateBarGraphView';
                 var model_type = 'AvailedDeal';
-                var aggregator_strategy = 'Average';
+                var aggregator_strategy = $('#sales_per_head_aggregator_strategy_values_container .options-list').val();
                 var params = {
                                 'dimensions':dimensions,
                                 'graph_type':graph_type,
@@ -260,7 +322,7 @@
                         var chart_data = JSON.parse(data);
                         render_graph('sales-per-head .graph-area', chart_data.chart_type, chart_data.chart_data, chart_data.metric, chart_data.dimension);
                 });
-            });
+            }
         </script>
         <div class="graph-area"></div>
     </div>

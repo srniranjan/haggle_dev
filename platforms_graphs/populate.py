@@ -1,6 +1,5 @@
 from model_factory import get_model_objs_for, get_model_obj_for
 from graph_view import get_graph_view_for
-from platforms_graphs.graph_mappings import aggregator_strategy_list
 
 def get_graph_view(graph_obj):
     model_objs = get_model_objs_for(graph_obj['model'])
