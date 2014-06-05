@@ -6,6 +6,8 @@ from django.template import loader
 from platforms_graphs.populate import get_graph_view
 from platforms_graphs.util import get_class
 from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list, aggregator_strategy_list
+from geo import geomath
+from google.appengine.ext import db
 
 class WebRequestHandler(webapp2.RequestHandler):
     def render_template(self, template_name, template_values = None):
@@ -86,6 +88,11 @@ class Restaurant():
                     return True
         return False
 
+    def in_radius(self, reqHandler):
+        distance = geomath.distance(db.GeoPt(self.loc), db.GeoPt(reqHandler['loc']))
+        radius = float(reqHandler['radius'])
+        return True if distance < radius else False
+
 def get_restaurants():
     rests = None
     rest_objs = []
@@ -130,9 +137,26 @@ class RestaurantsOverviewHandler(RequestHandler):
                               'values' : [v for v in vals]}
         self.write(json.dumps(ret_json))
 
+class RestaurantsDistanceHandler(RequestHandler):
+    def get_matches_in(self, rests):
+        matches = []
+        for rest in rests:
+            if rest.in_radius(self):
+                matches.append(rest)
+        return matches
+
+    def get(self):
+        rests = get_restaurants()
+        matches = self.get_matches_in(rests)
+        ret_json = {'count' : len(matches), 'matches' : []}
+        for match in matches:
+            ret_json['matches'].append(match.__dict__)
+        self.write(json.dumps(ret_json))
+
 app = webapp2.WSGIApplication([
     ('/api/discount_map', DiscountsMap),
     ('/api/marketers', ChartDataHandler),
     ('/api/restaurants', RestaurantsDataHandler),
+    ('/api/restaurants_distance', RestaurantsDistanceHandler),
     ('/api/restaurants_overview', RestaurantsOverviewHandler)
 ])
