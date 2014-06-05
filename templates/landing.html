@@ -1,6 +1,22 @@
 {% extends "base.html" %}
 {% block Content %}
-	<div class="grid-wrap" style="margin-top:100px;">
+    <div class="grid-wrap developers-copy" style="margin-top:100px;">
+        <p>
+            The Haggle platform allows users to leverage their social data and "haggle" for a personalised price. To allow people to be able to do this, we:
+        </p>
+        <ul class="developers-list">
+            <li>Have crawlers which fetch restaurant info from various social networks</li>
+            <li>We harmonize and cache this information in our datastore to be able to quickly mine user preferences</li>
+            <li>We allow users to leverage their social data on Facebook, Foursquare and Twitter</li>
+            <li>Our nightly jobs pull all users' data from these networks harmonize them and mine for patterns in this data</li>
+        </ul>
+        <br>
+        <p>
+            Through the Haggle platform we have now made all this available to you!<br>
+            Read on, to figure out how you can get all the Haggle awesomeness integrated with your app.
+        </p>
+    </div>
+	<div class="grid-wrap" style="margin-top:30px;">
         <a href="/integrate"><div class="select-platforms">
             <img src="/assets/img/icon_integrate.png">
             <h3>Integrate</h3>

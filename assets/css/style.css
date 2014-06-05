@@ -892,3 +892,21 @@ td {
     border-radius: 5px;
     text-align: center;
 }
+
+.developers-copy {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+.developers-copy ul {
+    list-style: square;
+}
+
+.developers-copy ul ul {
+    list-style: circle;
+}
+
+.developers-copy ul {
+	line-height: 1.6;
+	font-size: 14px;
+	padding-left: 20px;
+}
