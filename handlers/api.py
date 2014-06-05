@@ -72,11 +72,7 @@ class Restaurant():
     def str_match(self, str1, str2):
         str1 = str1.decode('utf-8')
         str2 = str2.decode('utf-8')
-        if str1 == str2 or \
-                str1 in str2 or \
-                str2 in str1:
-            return True
-        return False
+        return True if str2 in str1 else False
 
     def matches(self, reqHandler):
         keys = self.__dict__.keys()
