@@ -606,6 +606,7 @@ select {
 	border: 2px solid #e07c77;
 	outline: none;
 	margin-top: 25px;
+	cursor: pointer;
 }
 
 .btn-hollow:hover {

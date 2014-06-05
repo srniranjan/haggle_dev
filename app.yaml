@@ -38,6 +38,14 @@ handlers:
   script: handlers.endpoints.app
   secure: always
 
+- url: /integrate.*
+  script: handlers.web.integrate.app
+  secure: always
+
+- url: /developers.*
+  script: handlers.web.developers.app
+  secure: always
+
 - url: /api/.*
   script: handlers.api.app
   secure: always

@@ -1,25 +1,15 @@
-{% extends "integrate.html" %}
+{% extends "developers/developers.html" %}
 {% block Styles %}
     <link href="/assets/css/endpoints.css" type="text/css" rel="stylesheet">
-    <title>Haggle Platforms | Integrate / Docs</title>
+    <title>Haggle Platforms | Developers / Docs</title>
 {% endblock %}
 {% block SidebarList %}
     <li class="active"><a href="#oauth">OAuth 2.0</a></li>
     <li><a href="#connecting">Connecting to Haggle</a></li>
     <li><a href="#oauth_endpoints">OAuth Endpoints</a></li>
     <li><a href="#rate_limits">Rate Limits</a></li>
-    <li><a href="#sdk">SDK Platform</a></li>
-    <li><a href="#iphone">iPhone Redirect</a></li>
-    <li><a href="#api_endpoints">Api Endpoints</a></li>
-    <ul class="sub-sidebar-menu-1">
-        <li><a href="#">Vendors</a></li>
-        <li><a href="#">Aggregate Campaigns</a></li>
-        <li><a href="#">Aggregate Deals</a></li>
-    </ul>
-    <li><a href="#errors">Responses & Errors</a></li>
-    <li><a href="#changelog">Changelog</a></li>
 {% endblock %}
-{% block IntegrateContent %}
+{% block DevelopersContent %}
     <div class="tab-pane active fade in" id="oauth">
         <p>Haggle API uses <a href='http://oauth.net/2/'>OAuth 2.0</a>. Here is some information about OAuth.</p>
         <div style="width:600px;height:400px">
@@ -109,130 +99,5 @@
             <li>RateLimit-Remaining - This header gives the number of calls remaining in the current time window.</li>
             <li>RateLimit-ResetTime - Once the limit is reached, this header gives the time (in minutes) to wait before making another call.</li>
         </ul>
-    </div>
-    <div class="tab-pane fade" id="sdk">
-        <h2>SDK Platform</h2>
-        <p>Our SDK is almost ready! Be sure to look out for our fast and easy way to connect your app to Haggle!</p>
-    </div>
-    <div class="tab-pane fade" id="iphone">
-        <h2>iPhone Redirect</h2>
-        <p>Our iPhone redirect process lets you quickly access a Haggler's information, so you don't need to do the dirty work.
-            Follow these easy steps:
-        <ul>
-            <li>Add a redirect link to your iPhone app, including your authorization credentials.</li>
-            <li>We handle the rest and return a JSON response to your app!</li>
-        </ul>
-        For more information on authorization, please read our redirect documentation <a href="#">here</a>.
-    </div>
-    <div class="tab-pane fade endpoints" id="api_endpoints">
-        <p>Below is a list of our endpoints.</p>
-        <br>
-        <h3>API for Businesses:</h3>
-        <table cellpadding="0" cellspacing="0" class="table table-striped table-bordered table-hover" style="background-color: #f0f0f0">
-            <tbody>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    General
-                </td>
-                <td>
-                    Aspects
-                </td>
-                <td>
-                    Actions
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        Vendors
-                    </p>
-                </td>
-                <td>
-                    <p>
-                        <a href="/endpoints/render?property=vendors_categories">Categories</a>
-                    </p>
-                </td>
-                <td>
-                    <p>
-                        <a href="/endpoints/render?property=vendors_campaigns">Campaigns</a>
-                    </p>
-                    <p>
-                        <a href="/endpoints/render?property=vendors_user_trends">User Trends</a>
-                    </p>
-                    <p>
-                        <a href="/endpoints/render?property=vendors_time_trends">Time Trends</a>
-                    </p>
-                    <p>
-                        <a href="/endpoints/render?property=vendors_average_spending">Average Spending</a>
-                    </p>
-                    <p>
-                        <a href="/endpoints/render?property=vendors_current_deals">Current Deals</a>
-                    </p>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        Aggregate Campaigns
-                    </p>
-                </td>
-                <td>
-                </td>
-                <td>
-                    <p>
-                        <a href="/endpoints/render?property=discount_trends" >Discount Trends</a>
-                    </p>
-                    <p>
-                        <a href="/api/discount_map" >Discount Trends Map</a>
-                    </p>
-                    <p>
-                        <a href="/endpoints/render?property=score_preference_trends" >Score Preference Trends</a>
-                    </p>
-                    <p>
-                        <a href="/endpoints/render?property=aggregate_campaigns_hours_trends">Campaign Hours Trends</a>
-                    </p>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        Aggregate Deals
-                    </p>
-                </td>
-                <td>
-                </td>
-                <td>
-                    <p>
-                        <a href="/endpoints/render?property=bids_trends" >Bids Trends</a>
-                    </p>
-                    <p>
-                        <a href="/endpoints/render?property=user_trends" >User Trends</a>
-                    </p>
-                    <p>
-                        <a href="/endpoints/render?property=time_trends" >Time Trends</a>
-                    </p>
-                    <p>
-                        <a href="/endpoints/render?property=average_spending" >Average Spending</a>
-                    </p>
-                </td>
-                <td>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="tab-pane fade" id="errors">
-        <h2>Error Responses</h2>
-        <p>Below is a list of common booboos you might make using our API:</p>
-    </div>
-    <div class="tab-pane fade" id="changelog">
-        <h2>Changelog</h2>
-        <p>Below is a list of our changes:</p>
     </div>
 {% endblock %}

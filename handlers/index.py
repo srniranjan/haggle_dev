@@ -1,7 +1,6 @@
 import webapp2
 import json
-from django.template import loader
-from handlers import RequestHandler
+from handlers.web.web_request_handler import WebRequestHandler
 from google.appengine.api import urlfetch
 from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list
 from platforms_graphs.util import get_class
@@ -9,21 +8,9 @@ from platforms_graphs.model_factory import get_model_objs_for
 
 URL = 'https://haggle-test1.appspot.com/api/analytics/'
 
-class WebRequestHandler(RequestHandler):
-    def render_template(self, template_name, template_values = None):
-        self.response.out.write(self.get_rendered_html(template_name, template_values))
-
-    def get_rendered_html(self, template_name, template_values = None):
-        return loader.render_to_string(template_name, template_values)
-
 class HomepageHandler(WebRequestHandler):
     def get(self):
         path = 'index.html'
-        self.response.out.write(self.get_rendered_html(path, dict()))
-
-class Overview(WebRequestHandler):
-    def get(self):
-        path = 'integrate_code.html'
         self.response.out.write(self.get_rendered_html(path, dict()))
 
 class Tutorial(WebRequestHandler):
@@ -59,11 +46,6 @@ class ServerFetchHandler(webapp2.RequestHandler):
         url = URL + endpoint + '?' + data
         response = urlfetch.fetch(url).content
         self.response.out.write(response)
-
-class CaseStudies(WebRequestHandler):
-    def get(self):
-        path = 'integrate_case-studies.html'
-        self.response.out.write(self.get_rendered_html(path, dict()))
 
 class Landing(WebRequestHandler):
     def get(self):
@@ -123,14 +105,12 @@ class GraphOptions(WebRequestHandler):
         return {req_type : html}
 
 app = webapp2.WSGIApplication([('/', HomepageHandler),
-                               ('/overview', Overview),
                                ('/tutorial', Tutorial),
                                ('/documentation', Documentation),
                                ('/rest_api', RestAPI),
                                ('/iphone_app', AppRedirect),
                                ('/fetch_from_api_server', ServerFetchHandler),
                                ('/contact', Contact),
-                               ('/case_studies', CaseStudies),
                                ('/landing', Landing),
                                ('/marketers', Marketers),
                                ('/marketers/options', MarketersOptions),
