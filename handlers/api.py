@@ -85,7 +85,7 @@ class Restaurant():
         return False
 
     def in_radius(self, reqHandler):
-        distance = geomath.distance(db.GeoPt(self.loc), db.GeoPt(reqHandler['loc']))
+        distance = geomath.distance(db.GeoPt(self.loc), db.GeoPt("%s,%s"%(reqHandler['lat'], reqHandler['lon'])))
         radius = float(reqHandler['radius'])
         return True if distance < radius else False
 
@@ -103,6 +103,8 @@ class RestaurantsDataHandler(RequestHandler):
     def get_matches_in(self, rests):
         matches = []
         for rest in rests:
+            if self['lat'] and not rest.in_radius(self):
+                continue
             if rest.matches(self):
                 matches.append(rest)
         return matches
