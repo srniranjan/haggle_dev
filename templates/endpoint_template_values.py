@@ -929,6 +929,13 @@ TEMPLATE_VALUES = {
                     }
                 }
             },
+            'vendors_general_overview': {
+            'header': 'Overview',
+            'url': 'local',
+            'description': 'Returns an overview of the harmonized restaurants in our datastore',
+            'endpoint': '/api/restaurants_overview',
+            'params': {}
+            }
         }
 
 client_id = 'MQ2SDSAN0EVC11ZX0QV6O411GQJZP2KZ1T10L'
