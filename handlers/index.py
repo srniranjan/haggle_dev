@@ -43,7 +43,8 @@ class ServerFetchHandler(webapp2.RequestHandler):
         data = self.request.get('data')
         endpoint = self.request.get('endpoint')
         token = self.request.get('token')
-        url = URL + endpoint + '?' + data
+        url = URL + endpoint + '?token='+token+'&'+data
+
         response = urlfetch.fetch(url).content
         self.response.out.write(response)
 

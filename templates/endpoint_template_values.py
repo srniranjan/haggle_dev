@@ -452,7 +452,7 @@ TEMPLATE_VALUES = {
                     'description': 'property_desc'
                     },
                 'vendor_id': {
-                    'value': 166069,
+                    'value': 5692188943974400,
                     'description': 'Vendor ID'
                     },
                 }
@@ -468,7 +468,7 @@ TEMPLATE_VALUES = {
                     'description': 'property_desc'
                     },
                 'vendor_id': {
-                    'value': 166069,
+                    'value': 5692188943974400,
                     'description': 'Vendor ID'
                     },
                 }
@@ -484,7 +484,7 @@ TEMPLATE_VALUES = {
                     'description': 'property_desc'
                     },
                 'vendor_id': {
-                    'value': 166069,
+                    'value': 5692188943974400,
                     'description': 'Vendor ID'
                     },
                 }
@@ -500,7 +500,7 @@ TEMPLATE_VALUES = {
                     'description': 'property_desc'
                     },
                 'vendor_id': {
-                    'value': 166069,
+                    'value': 5692188943974400,
                     'description': 'Vendor ID'
                     },
                 }

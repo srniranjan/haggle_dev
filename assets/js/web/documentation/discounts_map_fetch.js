@@ -28,7 +28,7 @@ $('#params').submit(function(){
 			console.log(JSON.parse(data));
 
 			$('#loading_indicator').hide();
-			injectMap(JSON.parse(data));
+			//injectMap(JSON.parse(data));
 		}
 	});
 	return false;

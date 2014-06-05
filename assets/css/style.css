@@ -284,9 +284,17 @@ select {
 
 }
 
+.grid-6 {
+
+	width: 660px;
+	float: left;
+	margin: 0 10px;
+
+}
+
 .grid-4 {
 
-	width: 220px;
+	width: 440px;
 	float: left;
 	margin: 0 10px;
 
@@ -909,4 +917,15 @@ td {
 	line-height: 1.6;
 	font-size: 14px;
 	padding-left: 20px;
+}
+
+.endpoints-response {
+    background-color:#404040;
+    color:#ffffff;
+    min-height:150px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+    display:none;
 }
