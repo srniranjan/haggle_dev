@@ -15,7 +15,7 @@
             {% for key, values in params.items %}
                 <div {% if key == "property" %} hidden {% endif %}>
                     <h5>{{ values.description }}</h5>
-                    <input class="endpoints-input" type="text" name={{ key }} value={{ values.value }} style="width:75% !important"/>
+                    <input class="endpoints-input" type="text" name={{ key }} value="{{ values.value }}" style="width:75% !important"/>
                 </div>
             {% endfor %}
             <button class="btn" id="params-submit">Submit</button>

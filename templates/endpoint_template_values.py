@@ -935,6 +935,42 @@ TEMPLATE_VALUES = {
             'description': 'Returns an overview of the harmonized restaurants in our datastore',
             'endpoint': '/api/restaurants_overview',
             'params': {}
+            },
+            'vendors_general_explore': {
+            'header': 'Explore',
+            'url': 'local',
+            'description': 'Returns harmonized restaurants from our datastore which match your search criteria',
+            'endpoint': '/api/restaurants',
+            'params': {
+                    'dlr_rating': {
+                        'value': '',
+                        'description': 'Dollar Rating'
+                        },
+                    'lat': {
+                        'value': '',
+                        'description': 'Latitude'
+                        },
+                    'lon': {
+                        'value': '',
+                        'description': 'Longitude'
+                        },
+                    'radius': {
+                        'value': '',
+                        'description': 'Radius (in meters).'
+                        },
+                    'cuisine': {
+                        'value': '',
+                        'description': 'Cuisine'
+                        },
+                    'name': {
+                        'value': '',
+                        'description': 'Restaurant name'
+                        },
+                    'neigh': {
+                        'value': '',
+                        'description': 'Neighborhood'
+                        }
+                }
             }
         }
 

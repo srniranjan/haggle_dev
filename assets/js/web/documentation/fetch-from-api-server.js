@@ -1,16 +1,19 @@
 $('#params-submit').click(function(){
     var fetch_url = $('#url').val();
     var method = "POST";
+    var data = null;
     if( fetch_url == 'local') {
         fetch_url = endpoint;
         method = "GET";
+        data = $("#params").serialize();
     } else {
         fetch_url = "/fetch_from_api_server";
+        data = {"endpoint": endpoint, "data": $("#params").serialize(), "token": $("#token").val()};
     }
 	$.ajax({
 		type: method,
 		url: fetch_url,
-		data: {"endpoint": endpoint, "data": $("#params").serialize(), "token": $("#token").val()},
+		data: data,
 		beforeSend: function(){
 		    $('#response').hide();
 			$('#loading_indicator').show();
