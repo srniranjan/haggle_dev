@@ -1,69 +1,53 @@
 {% extends "integrate/integrate.html" %}
-{% block Styles %}
-<title>Haggle Platforms | Integrate / Code</title>
+{% block Title %}
+Haggle Platforms | Integrate / Code
 {% endblock %}
 {% block SidebarList %}
-    <li class="active"><a href="#getstarted">Get Started</a></li>
-    <li><a href="#doityourself" class="show-content">Do it yourself</a></li>
-    <li><a href="#SDK">Use our SDK</a></li>
-    <li><a href="#app">Delegate to App</a></li>
+    <li class="active"><a href="#overview">Overview</a></li>
 {% endblock %}
 {% block IntegrateContent %}
-    <h3>Android SDK</h3>
-    <div class="tab-pane active fade in" id="getstarted">
-        <div class="breadcrumbs">Get Started</div>
+    <div class="tab-pane active fade in" id="overview">
         <p>
-            Gain access to our vast network of API endpoints to improve your app.<br>
-            Apps connect to the Haggle API using Oauth2. <br>
-            You can connect to our endpoints using one of the following mechanisms:
+            Integrate your Android app with Haggle and give your users the power of leveraging their social data!<br>
+            We offer:
         </p>
+        <div class="sdk-table">
+            <p>Easy access to the Haggle API:</p>
+            <div class="sdk-row">
+                <div class="sdk-column">
+                    <p class="sdk-copy">Query our vast database of restaurants harmonised across multiple social networks</p>
+                </div>
+                <div class="sdk-column">
+                    <p class="sdk-copy">Query for trends in user haggling behavior, broken by cuisine, neighborhoods etc..</p>
+                </div>
+            </div>
+            <div class="sdk-row">
+                <div class="sdk-column">
+                    <p class="sdk-copy">Query for trends in restaurant user preferences, bids, discounts etc...</p>
+                </div>
+                <div class="sdk-column">
+                    <p class="sdk-copy">Offer him choices on where he wants to haggle and haggle on his behalf</p>
+                </div>
+            </div>
+            <div class="sdk-row">
+                <div class="sdk-column">
+                    <p class="sdk-copy">Query for your user's Haggling trends</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sdk-table">
+            <p>UI elements - Leverage our pre-packed UI elements to</p>
+            <div class="sdk-row">
+                <div class="sdk-column">
+                    <p class="sdk-copy">Allow users to haggle easily within your app</p>
+                </div>
+                <div class="sdk-column">
+                    <p class="sdk-copy">Show users the choices they have in haggling</p>
+                </div>
+            </div>
+        </div>
         <div class="pages"></div>
-    </div>
-    <div class="tab-pane fade" id="doityourself">
-        <div class="breadcrumbs">Get Started / Do it yourself</div>
-        <p>
-            Apps connect to the Haggle API using Oauth2.
-            You can connect by following these easy steps:
-        </p>
-        <br>
-        <h4>Register</h4>
-        <p>
-            <a href='/developers/my_apps'>Register</a> with us to obtain a Client ID and Secret.
-            You will have to use this information to make any call to our platform.
-        </p>
-        <br>
-        <h4>Obtain Access Token</h4>
-        <p>
-            Some of our endpoints require explicit user approval.
-            You will need an access token to use such endpoints.
-            Here are the steps taken to obtain and use an access token.
-        </p>
-        <br>
-        <p>You can explore our API by checking out our
-            <a href='/endpoints'>endpoints</a>.
-            Check our <a href='/documentation'>documentation</a> to learn more about accessing our API</p>
-    </div>
-    <div class="tab-pane fade" id="SDK">
-        <div class="breadcrumbs">Get Started / Use our SDK</div>
-        <p>
-            Our SDK will take care of the hard stuff so your app can easily use our API.
-        </p>
-        <br>
-        <h4>iPhone and Android SDK</h4>
-        <p>Our SDK packages make obtaining and using access tokens a cinch</p>
-        <a href="http://github.com/linktoSDK">
-            <input type="button"
-                   value="Download latest SDK"
-                   class="haggle-font-type"
-                   style="height: 40px; width: 200px; border-radius: 5px; background-color: #45acbf; font-weight: 200;font-size: 15px; color:#ffffff"/>
-        </a>
-        <p>If you have specific endpoints in mind, we may have prepackaged what you're looking for in one of our Haggling screens built for third party use</p>
-    </div>
-    <div class="tab-pane fade" id="app">
-        <div class="breadcrumbs">Get Started / Delegate to Haggle App</div>
-        <p>See how your iPhone app can harness the power of Haggle without the need to talk to our API</p>
-        <br>
-        <p>By simply redirecting to our Haggle app, you can skip the line and get the info you need without authenticating or accessing our API.</p>
     </div>
 {% endblock %}
 

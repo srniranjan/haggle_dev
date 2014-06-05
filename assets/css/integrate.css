@@ -1,0 +1,51 @@
+.snippet {
+    background-color: #404040;
+    height: 500px;
+    width: 720px;
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.snippet-request, .snippet-response {
+    width: 358px;
+    height: 500px;
+    display: inline-block;
+    float: left;
+    border: 1px solid black;
+}
+
+.snippet-header {
+    height: 40px;
+    width: 358px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.snippet-content {
+    width: 338px;
+    height: 440px;
+    padding-top: 10px;
+    padding-left: 20px;
+    overflow: scroll;
+}
+
+.sdk-table {
+    margin-bottom: 30px;
+    min-height: 300px;
+}
+
+.sdk-row {
+    width: 720px;
+}
+
+.sdk-column {
+    width: 350px;
+    display: inline-block;
+    float: left;
+    background-color: lightgray;
+    margin: 5px;
+}
+
+.sdk-copy {
+    padding-right: 15px;
+}

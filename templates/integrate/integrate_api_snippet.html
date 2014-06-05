@@ -1,69 +1,195 @@
 {% extends "integrate/integrate.html" %}
-{% block Styles %}
-<title>Haggle Platforms | Integrate / Code</title>
+{% block Title %}
+Haggle Platforms | Integrate / API Snippet
 {% endblock %}
 {% block SidebarList %}
-    <li class="active"><a href="#getstarted">Get Started</a></li>
-    <li><a href="#doityourself" class="show-content">Do it yourself</a></li>
-    <li><a href="#SDK">Use our SDK</a></li>
-    <li><a href="#app">Delegate to App</a></li>
+    <li class="active"><a href="#snippet">Overview</a></li>
+    <li><a href="#restaurants" class="show-content">Restaurants</a></li>
+    <li><a href="#campaigntrends">Campaign Trends</a></li>
+    <li><a href="#bargaintrends">Bargain Trends</a></li>
 {% endblock %}
 {% block IntegrateContent %}
-    <h3>REST API Snippet</h3>
-    <div class="tab-pane active fade in" id="getstarted">
-        <div class="breadcrumbs">Get Started</div>
+    <div class="tab-pane active fade in" id="snippet">
+        <p>Overview</p>
         <p>
-            Gain access to our vast network of API endpoints to improve your app.<br>
-            Apps connect to the Haggle API using Oauth2. <br>
-            You can connect to our endpoints using one of the following mechanisms:
+            To integrate with our REST API, you should create an app on Foursquare.
+            This will give you a client ID and client secret which are needed for using our API.
+            Here we will give you a high-level conceptual overview of the Haggle platform, and help you understand the API’s most popular features.
+            See our detailed documentation for a more in-depth reference.
         </p>
+        <div class="snippet">
+            <div class="snippet-request">
+                <div class="snippet-header">REQUEST</div>
+                <div class="snippet-content">
+                    <pre>$ curl -X GET https://devhaggle.appspot.com/api/restaurants?name=shake%20shack \</pre>
+                    <pre>      -d  client_id=test_id \</pre>
+                    <pre>      -d  secret=test_secret \</pre>
+                    <pre>      -d  access_token=test_accesstoken</pre>
+                </div>
+            </div>
+            <div class="snippet-response">
+                <div class="snippet-header">RESPONSE</div>
+                <div class="snippet-content">
+                <pre>
+{
+    "count": 15,
+    "matches": [
+        {
+          "cuisine": "American",
+          "name": "Shake Shack",
+          "loc": "40.741407503,-73.9884379506",
+          "neigh": "Gramercy-Flatiron",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        },
+        {
+          "cuisine": "American",
+          "name": "Shake Shack",
+          "loc": "40.758456775,-73.9891404661",
+          "neigh": "Midtown West",
+          "user_rating": "0.0",
+          "dlr_rating": "2"
+        },
+        {
+          "cuisine": "American",
+          "name": "Shake Shack",
+          "loc": "40.780755,-73.976327",
+          "neigh": "Upper West Side",
+          "user_rating": "0.0",
+          "dlr_rating": "2"
+        },
+        {
+          "cuisine": "Other",
+          "name": "Shake Shack. :)",
+          "loc": "40.86354,-73.9234",
+          "neigh": "Inwood",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        },
+        {
+          "cuisine": "Other",
+          "name": "Shake Shack, 76th Street, Columbus Ave.",
+          "loc": "40.7931272,-73.9722349",
+          "neigh": "Upper West Side",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        },
+        {
+          "cuisine": "American",
+          "name": "Shake Shack",
+          "loc": "40.7152976249,-74.0147852898",
+          "neigh": "Battery Park City",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        },
+        {
+          "cuisine": "Other",
+          "name": "The Shake Shack",
+          "loc": "40.75317,-73.94849",
+          "neigh": "None",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        },
+        {
+          "cuisine": "American",
+          "name": "Shake Shack DC",
+          "loc": "38.9064759207,-77.0417679747",
+          "neigh": "None",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        },
+        {
+          "cuisine": "Cafe",
+          "name": "C",
+          "loc": "40.72196,-73.980888",
+          "neigh": "East Village",
+          "user_rating": "0.0",
+          "dlr_rating": "2"
+        },
+        {
+          "cuisine": "Other",
+          "name": "Shake Shack Burger, NY",
+          "loc": "40.7180711899,-74.0125949336",
+          "neigh": "Tribeca",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        },
+        {
+          "cuisine": "Other",
+          "name": "Shake Shack Battery Park",
+          "loc": "40.71900659,-74.01409173",
+          "neigh": "Battery Park City",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        },
+        {
+          "cuisine": "American",
+          "name": "Shake Shack",
+          "loc": "40.6922966787,-73.9886989524",
+          "neigh": "None",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        },
+        {
+          "cuisine": "Other",
+          "name": "Shake Shack",
+          "loc": "40.7876180777,-73.9456168746",
+          "neigh": "East Harlem",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        },
+        {
+          "cuisine": "American",
+          "name": "Shake Shack",
+          "loc": "40.7791260657,-73.9549048946",
+          "neigh": "Upper East Side",
+          "user_rating": "0.0",
+          "dlr_rating": "2"
+        },
+        {
+          "cuisine": "Other",
+          "name": "Shake Shack",
+          "loc": "40.7414996513,-73.9882695459",
+          "neigh": "Gramercy-Flatiron",
+          "user_rating": "0.0",
+          "dlr_rating": "None"
+        }
+    ]
+}
+                </pre>
+                </div>
+            </div>
+        </div>
         <div class="pages"></div>
     </div>
-    <div class="tab-pane fade" id="doityourself">
-        <div class="breadcrumbs">Get Started / Do it yourself</div>
+    <div class="tab-pane fade" id="restaurants">
+        <p>Restaurants</p>
         <p>
-            Apps connect to the Haggle API using Oauth2.
-            You can connect by following these easy steps:
+            Query the haggle platform for our harmonized set of restaurants.
+            We employ backend crawlers which pull restaurant data from social networks such as Facebook, Foursquare and Menu Pages.
+            This restaurants' information is harmonized across the social networks and saved in our datastore.
+            We provide rich restaurant information such as their user ratings, dollar ratings, cuisines, location etc...
+            Our API is very flexible and gives you a rich set of options to query based on neighborhoods, cuisines, dollar rating etc...
         </p>
-        <br>
-        <h4>Register</h4>
-        <p>
-            <a href='/developers/my_apps'>Register</a> with us to obtain a Client ID and Secret.
-            You will have to use this information to make any call to our platform.
-        </p>
-        <br>
-        <h4>Obtain Access Token</h4>
-        <p>
-            Some of our endpoints require explicit user approval.
-            You will need an access token to use such endpoints.
-            Here are the steps taken to obtain and use an access token.
-        </p>
-        <br>
-        <p>You can explore our API by checking out our
-            <a href='/endpoints'>endpoints</a>.
-            Check our <a href='/documentation'>documentation</a> to learn more about accessing our API</p>
     </div>
-    <div class="tab-pane fade" id="SDK">
-        <div class="breadcrumbs">Get Started / Use our SDK</div>
+    <div class="tab-pane fade" id="campaigntrends">
+        <p>Campaign Trends</p>
         <p>
-            Our SDK will take care of the hard stuff so your app can easily use our API.
+            Our restaurant partners start campaigns with us to allow users to get a personalised price at their establishment.
+            Some very important facts and trends can be gleaned from this data alone.
+            The API allows you to learn trends in discounts offerred in neighborhoods, the closing and opening hours of places by locality, the hours when neighborhoods are busy etc...
         </p>
-        <br>
-        <h4>iPhone and Android SDK</h4>
-        <p>Our SDK packages make obtaining and using access tokens a cinch</p>
-        <a href="http://github.com/linktoSDK">
-            <input type="button"
-                   value="Download latest SDK"
-                   class="haggle-font-type"
-                   style="height: 40px; width: 200px; border-radius: 5px; background-color: #45acbf; font-weight: 200;font-size: 15px; color:#ffffff"/>
-        </a>
-        <p>If you have specific endpoints in mind, we may have prepackaged what you're looking for in one of our Haggling screens built for third party use</p>
     </div>
-    <div class="tab-pane fade" id="app">
-        <div class="breadcrumbs">Get Started / Delegate to Haggle App</div>
-        <p>See how your iPhone app can harness the power of Haggle without the need to talk to our API</p>
-        <br>
-        <p>By simply redirecting to our Haggle app, you can skip the line and get the info you need without authenticating or accessing our API.</p>
+    <div class="tab-pane fade" id="bargaintrends">
+        <p>Bargain Trends</p>
+        <p>
+            Users use our iPhone app to haggle with restaurants, avail discounts and record transaction data.
+            This part is really unique to the Haggle platform and we don't know of any place else where you can get this sort of data.
+            If people now have the power of being to Haggle, how much are people bidding and how does it vary by neighborhoods, time of day cuisine etc...
+            Which neighborhoods to social butterflies frequent and which neighborhoods to italian afficianados go to?
+            Which neighborhood am I most likely to get the best bargain?
+            You ask the haggle platform all these questions and more!
+        </p>
     </div>
 {% endblock %}
 
