@@ -12,19 +12,24 @@ function enableFilters(graph_id, index) {
     updateChart(graph_id);
 }
 
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function(){
-    var width = $('.small-chart').width(),
-    height = $('.small-chart').height(),
+    var ageData = [{age:'18-25',population:30},
+            {age:'25-30',population:40},
+            {age:'30-32',population:20},
+            {age:'32-40',population:10}];
+    addDonut(ageData, '.small-chart');
+    var genderData = [{gender:'Male',population:65},
+                      {gender:'Female',population:35}];
+    addDonut(genderData, '.med-chart');
+});
+
+function addLineChart(){
+
+}
+
+function addDonut(data, sel){
+    var width = $(sel).width(),
+    height = $(sel).height(),
     radius = Math.min(width, height) / 2;
 
     var color = d3.scale.ordinal()
@@ -38,18 +43,14 @@ $(document).ready(function(){
     .sort(null)
     .value(function(d) { return d.population; });
 
-    var svg = d3.select(".small-chart").append("svg")
+    var svg = d3.select(sel).append("svg")
     .attr("width", width)
     .attr("height", height)
     .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-    data = [{age:'18-25',population:30},
-            {age:'25-30',population:40},
-            {age:'30-32',population:20},
-            {age:'32-40',population:10}];
     data.forEach(function(d) {
-    d.population = +d.population;
+        d.population = +d.population;
     });
 
     var g = svg.selectAll(".arc")
@@ -59,16 +60,22 @@ $(document).ready(function(){
 
     g.append("path")
     .attr("d", arc)
-    .style("fill", function(d) { return color(d.data.age); });
+    .style("fill", function(d) {
+        if(sel == '.small-chart')
+            return color(d.data.age);
+        return color(d.data.gender);
+    });
 
     g.append("text")
     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
     .attr("dy", ".35em")
     .style("text-anchor", "middle")
-    .text(function(d) { return d.data.age; });
-});
-
-
+    .text(function(d) {
+        if(sel == '.small-chart')
+            return d.data.age;
+        return d.data.gender;
+    });
+}
 
 function showChartTab(page) {
     $('.tab-select').each(function(){
