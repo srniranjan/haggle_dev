@@ -170,7 +170,7 @@ TEMPLATE_VALUES = {
                     'value': 3000,
                     'description': 'Radius (in meters).'
                     }
-                }
+                },
             'response': {
                     'average_spend_dollars':'Average amount spent in the area specified',
                 }
