@@ -444,7 +444,7 @@ TEMPLATE_VALUES = {
             'vendors_user_trends': {
             'header': 'Vendors User Trends',
             'url': 'https://'+ENV_NAME+'/api/analytics/',
-            'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
+            'description': 'Lets you understand trends in the profiles of users who are visiting your restaurant',
             'endpoint': 'vendors_campaigns',
             'params': {
                 'property': { 
@@ -455,12 +455,18 @@ TEMPLATE_VALUES = {
                     'value': 5692188943974400,
                     'description': 'Vendor ID'
                     },
-                }
+                },
+            'response':{
+                'High Loyalty': 'The number of users who were offered a discount because of their loyalty towards you',
+                'High History': 'The number of users who were offered a discount because of their history of liking your cuisine',
+                'High Influence': 'The number of users who were offered a discount because of their influence in your neighborhood',
+                'High Power': 'The number of users who were offered a discount because of their high purchasing power',
+            }
             },
             'vendors_time_trends': {
             'header': 'Vendors Time Trends',
             'url': 'https://'+ENV_NAME+'/api/analytics/',
-            'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
+            'description': 'Find trends in the times users have been visiting your restaurant',
             'endpoint': 'vendors_campaigns',
             'params': {
                 'property': { 
@@ -471,6 +477,13 @@ TEMPLATE_VALUES = {
                     'value': 5692188943974400,
                     'description': 'Vendor ID'
                     },
+                },
+            'response': {
+                    'late_dinner':'Number of people who visited in the late hours',
+                    'brunch': 'Number of people who visited for brunch',
+                    'lunch': 'Number of people who visited for dinner',
+                    'breakfast': 'Number of people who visited for breakfast',
+                    'dinner': 'Number of people who visited for dinner'
                 }
             },
             'vendors_average_spending': {
@@ -934,7 +947,12 @@ TEMPLATE_VALUES = {
             'url': 'local',
             'description': 'Returns an overview of the harmonized restaurants in our datastore',
             'endpoint': '/api/restaurants_overview',
-            'params': {}
+            'params': {},
+            'response':{
+                'cuisine': 'A unique set of all the cuisines our harmonized restaurants belong to',
+                'neigh': 'A unique set of all the neighborhoods our harmonized restaurants belong to',
+                'rest_count': 'The total number of harmonized restaurants in our datastore'
+            }
             },
             'vendors_general_explore': {
             'header': 'Explore',
@@ -970,6 +988,11 @@ TEMPLATE_VALUES = {
                         'value': '',
                         'description': 'Neighborhood'
                         }
+                },
+            'response': {
+                    'count': 'Total number of restaurants which match your search query',
+                    'matches': 'List of all the restaurants which match you search query'
+
                 }
             }
         }
