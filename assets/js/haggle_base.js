@@ -68,5 +68,7 @@ $(document).ready(function(){
         event.preventDefault();
         $('.tab-pane').hide();
         $($(event.currentTarget).attr('href')).show();
+        $("#sidebar li a").css('color','#666');
+        $(this).css('color','#e07c77');
     });
 });
