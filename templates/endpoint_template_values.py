@@ -12,22 +12,26 @@ TEMPLATE_VALUES = {
                     },
                 'lat': {
                     'value': 40.745619,
-                    'description': 'Latitude of the location.'
+                    'description': 'Latitude'
                     },
                 'lon': {
                     'value': -73.985296,
-                    'description': 'Longitude of the location.'
+                    'description': 'Longitude'
                     },
                 'radius': { 
                     'value': 3000,
                     'description': 'Radius (in meters).'
                     }
+                },
+            'response':{
+                    'average_max_discount': 'The average maximum discount being offered in a specified area',
+                    'average_min_discount': 'The average minimum discount being offered in a specified area'
                 }
             },
         'score_preference_trends': {
             'header': 'Score Preference Trends',
             'url': 'https://'+ENV_NAME+'/api/analytics/',
-            'description': 'Returns the score preference trends in the given area.',
+            'description': 'Returns trends in user profile preferences restaurants have in a given area',
             'endpoint': 'aggregate_campaigns',
             'params': {
                 'property': { 
@@ -36,16 +40,22 @@ TEMPLATE_VALUES = {
                     },
                 'lat': {
                     'value': 40.745619,
-                    'description': 'Latitude of the location.'
+                    'description': 'Latitude'
                     },
                 'lon': {
                     'value': -73.985296,
-                    'description': 'Longitude of the location.'
+                    'description': 'Longitude'
                     },
                 'radius': { 
                     'value': 3000,
-                    'description': 'Radius (in meters).'
+                    'description': 'Radius (in meters)'
                     }
+                },
+            'response': {
+                    'High History': "Number of restaurants which prefer users who have a history of eating the restaurant's own cuisine",
+                    'High Loyalty': 'Number of restaurants which prefer users who frequent their place',
+                    'Social Influence': 'Number of restaurants which prefer social influencers',
+                    'High Roller': 'Number of restaurants which prefer users with high bank roll'
                 }
             },
         'bids_trends': {
@@ -60,22 +70,27 @@ TEMPLATE_VALUES = {
                     },
                 'lat': {
                     'value': 40.745619,
-                    'description': 'Latitude of the location.'
+                    'description': 'Latitude'
                     },
                 'lon': {
                     'value': -73.985296,
-                    'description': 'Longitude of the location.'
+                    'description': 'Longitude'
                     },
                 'radius': { 
                     'value': 3000,
-                    'description': 'Radius (in meters).'
+                    'description': 'Radius (in meters)'
                     }
+                },
+            'response': {
+                    'got close':'Number of users who got a final offer quite close to what they bid for',
+                    'got what they wanted':'Number of users who were offered what they bid for',
+                    'way off': 'Number of users who got an offer much less than what they bid for'
                 }
             },
         'user_trends': {
             'header': 'User Trends',
             'url': 'https://'+ENV_NAME+'/api/analytics/',
-            'description': 'Placeholder description for User Trends',
+            'description': 'Trends in profiles of all users who are Haggling via the Haggle platform',
             'endpoint': 'aggregate_deals',
             'params': {
                 'property': { 
@@ -84,16 +99,22 @@ TEMPLATE_VALUES = {
                     },
                 'lat': {
                     'value': 40.745619,
-                    'description': 'Latitude of the location.'
+                    'description': 'Latitude'
                     },
                 'lon': {
                     'value': -73.985296,
-                    'description': 'Longitude of the location.'
+                    'description': 'Longitude'
                     },
                 'radius': { 
                     'value': 3000,
                     'description': 'Radius (in meters).'
                     }
+                },
+            'response': {
+                    'High Loyalty': 'The number of users who were offered a discount because of their high loyalty',
+                    'High History': 'The number of users who were offered a discount because of their high history',
+                    'Social Butterfly': 'The number of users who were offered a discount because of their high influence',
+                    'High Roller': 'The number of users who were offered a discount because of their high purchasing power'
                 }
             },
         'time_trends': {
@@ -108,16 +129,23 @@ TEMPLATE_VALUES = {
                     },
                 'lat': {
                     'value': 40.745619,
-                    'description': 'Latitude of the location.'
+                    'description': 'Latitude'
                     },
                 'lon': {
                     'value': -73.985296,
-                    'description': 'Longitude of the location.'
+                    'description': 'Longitude'
                     },
                 'radius': { 
                     'value': 3000,
                     'description': 'Radius (in meters).'
                     }
+                },
+            'response': {
+                    'late_dinner':'Number of people who visited in the late hours',
+                    'brunch': 'Number of people who visited for brunch',
+                    'lunch': 'Number of people who visited for dinner',
+                    'breakfast': 'Number of people who visited for breakfast',
+                    'dinner': 'Number of people who visited for dinner'
                 }
             },
         'average_spending': {
@@ -132,16 +160,19 @@ TEMPLATE_VALUES = {
                     },
                 'lat': {
                     'value': 40.745619,
-                    'description': 'Latitude of the location.'
+                    'description': 'Latitude'
                     },
                 'lon': {
                     'value': -73.985296,
-                    'description': 'Longitude of the location.'
+                    'description': 'Longitude'
                     },
                 'radius': { 
                     'value': 3000,
                     'description': 'Radius (in meters).'
                     }
+                }
+            'response': {
+                    'average_spend_dollars':'Average amount spent in the area specified',
                 }
             },
             'users_search': {
@@ -459,8 +490,8 @@ TEMPLATE_VALUES = {
             'response':{
                 'High Loyalty': 'The number of users who were offered a discount because of their loyalty towards you',
                 'High History': 'The number of users who were offered a discount because of their history of liking your cuisine',
-                'High Influence': 'The number of users who were offered a discount because of their influence in your neighborhood',
-                'High Power': 'The number of users who were offered a discount because of their high purchasing power',
+                'Social Butterfly': 'The number of users who were offered a discount because of their influence in your neighborhood',
+                'High Roller': 'The number of users who were offered a discount because of their high purchasing power',
             }
             },
             'vendors_time_trends': {
@@ -489,7 +520,7 @@ TEMPLATE_VALUES = {
             'vendors_average_spending': {
             'header': 'Vendors Average Spending',
             'url': 'https://'+ENV_NAME+'/api/analytics/',
-            'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
+            'description': 'Find out the average amount people are spending in your restaurant',
             'endpoint': 'vendors_campaigns',
             'params': {
                 'property': { 
@@ -500,6 +531,9 @@ TEMPLATE_VALUES = {
                     'value': 5692188943974400,
                     'description': 'Vendor ID'
                     },
+                },
+            'response': {
+                    'average_spend_dollars': 'Average amount spent in your restaurant'
                 }
             },
             'vendors_current_deals': {
@@ -516,6 +550,10 @@ TEMPLATE_VALUES = {
                     'value': 5692188943974400,
                     'description': 'Vendor ID'
                     },
+                },
+            'response': {
+                    'bargains': "A list of all the current bargains which still haven't been claimed",
+                    'count': "A count of the current bargains which still haven't been claimed"
                 }
             },
             'vendors_links': {
