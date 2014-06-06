@@ -31,24 +31,32 @@
 
 .sdk-table {
     margin-bottom: 100px;
-    margin-top: 50px;
     min-height: 300px;
 }
 
 .sdk-row {
-    width: 720px;
+    width: 940px;
     min-height: 230px;
 }
 
+.sdk-row-pad {
+    width: 100%;
+    height: 60px;
+}
+
 .sdk-column {
-    width: 340px;
+    width: 260px;
     min-height: 210px;
     display: inline-block;
     float: left;
-    background-color: lightgray;
-    margin: 5px;
-    padding-left: 10px;
     padding-top: 10px;
+}
+
+.sdk-column-pad {
+    width: 80px;
+    min-height: 210px;
+    display: inline-block;
+    float: left;
 }
 
 .sdk-copy {
@@ -57,4 +65,6 @@
 
 .sdk-copy-title {
     font-weight: 600;
+    font-size: 20px;
+    color: #363636;
 }
