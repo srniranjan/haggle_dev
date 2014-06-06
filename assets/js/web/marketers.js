@@ -15,8 +15,8 @@ function enableFilters(graph_id, index) {
 $(document).ready(function(){
     var ageData = [{age:'18-25',population:30},
             {age:'25-30',population:40},
-            {age:'30-32',population:20},
-            {age:'32-40',population:10}];
+            {age:'30-35',population:20},
+            {age:'35-40',population:10}];
     addDonut(ageData, '.small-chart');
     var genderData = [{gender:'Male',population:65},
                       {gender:'Female',population:35}];
