@@ -3,21 +3,24 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/integrate.css">
 {% endblock %}
 {% block Content %}
-<div class="top-bar">
-    <ul class="section-menu">
-        <li><a href="/integrate/case_studies">Case Studies</a></li>
-        <li><a href="/integrate/ios">iOS SDK</a></li>
-        <li><a href="/integrate/api-snippet">Rest API Snippet</a></li>
-    </ul>
-</div>
-<div id="main">
-    <div id="sidebar">
-        <ul id="navTab" class="sidebar-menu">
-            {% block SidebarList %}{% endblock %}
+<div class="wrapper">
+    <div class="top-bar">
+        <ul class="section-menu">
+            <li><a href="/integrate/case_studies">Case Studies</a></li>
+            <li><a href="/integrate/ios">iOS SDK</a></li>
+            <li><a href="/integrate/android">Android SDK</a></li>
+            <li><a href="/integrate/api-snippet">Rest API Snippet</a></li>
         </ul>
     </div>
-    <div class="tab-content content developers-copy" id="mainpage">
-        {% block IntegrateContent %}{% endblock %}
+    <div id="main">
+        <div id="sidebar">
+            <ul id="navTab" class="sidebar-menu">
+                {% block SidebarList %}{% endblock %}
+            </ul>
+        </div>
+        <div class="tab-content content developers-copy" id="mainpage">
+            {% block IntegrateContent %}{% endblock %}
+        </div>
     </div>
 </div>
 {% endblock %}

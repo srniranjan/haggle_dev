@@ -1,36 +1,52 @@
 {% extends "base.html" %}
 {% block Content %}
-    <div class="grid-wrap developers-copy" style="margin-top:100px;">
-        <p>
-            The Haggle platform allows users to leverage their social data and "haggle" for a personalised price. To allow people to be able to do this, we:
-        </p>
-        <ul class="developers-list">
-            <li>Have crawlers which fetch restaurant info from various social networks</li>
-            <li>We harmonize and cache this information in our datastore to be able to quickly mine user preferences</li>
-            <li>We allow users to leverage their social data on Facebook, Foursquare and Twitter</li>
-            <li>Our nightly jobs pull all users' data from these networks harmonize them and mine for patterns in this data</li>
-        </ul>
-        <br>
-        <p>
-            Through the Haggle platform we have now made all this available to you!<br>
-            Read on, to figure out how you can get all the Haggle awesomeness integrated with your app.
-        </p>
-    </div>
-	<div class="grid-wrap" style="margin-top:30px;">
-        <a href="/integrate"><div class="select-platforms">
-            <img src="/assets/img/icon_integrate.png">
-            <h3>Integrate</h3>
-            <p>Add Haggle to your product with code and instructions.</p>
-        </div></a>
-        <a href="/developers"><div class="select-platforms">
-                <img src="/assets/img/icon_devs.png">
-                <h3>Develop</h3>
-                <p>Access our API and get the endpoints you need.</p>
+	<div class="grid-full landing-menu">
+        <div class="grid-wrap">
+            <a href="/integrate"><div class="select-platforms">
+                <img src="/assets/img/icon_integrate.png">
+                <h3>Integrate</h3>
+                <p>Add Haggle to your product with code and instructions.</p>
             </div></a>
-        <a href="/marketers"><div class="select-platforms">
-            <img src="/assets/img/icon_market.png">
-            <h3>Market</h3>
-            <p>Understand audience trends & engagement with reports.</p>
-        </div></a>
+            <a href="/developers"><div class="select-platforms">
+                    <img src="/assets/img/icon_devs.png">
+                    <h3>Develop</h3>
+                    <p>Access our API and get the endpoints you need.</p>
+                </div></a>
+            <a href="/marketers"><div class="select-platforms">
+                <img src="/assets/img/icon_market.png">
+                <h3>Market</h3>
+                <p>Understand audience trends & engagement with reports.</p>
+            </div></a>
+        </div>
+    </div>
+    <div class="grid-full landing-copy">
+        <div class="grid-wrap landing-copy-grid">
+            <p class="landing-copy-title">
+                The Haggle platform allows users to leverage their social data and "haggle" for a personalised price.
+            </p>
+            <p class="landing-copy-sub-title">
+                To allow people to be able to do this, we:
+            </p>
+            <div class="landing-copy-grid-row">
+                <div class="landing-copy-grid-cell">
+                    <p class="landing-copy-grid-cell-title">Crawl</p>
+                    <p class="landing-copy-grid-cell-copy">Have crawlers which fetch restaurant info from various social networks</p>
+                </div>
+                <div class="landing-copy-grid-cell">
+                    <p class="landing-copy-grid-cell-title">Leverage</p>
+                    <p class="landing-copy-grid-cell-copy">We allow users to leverage their social data on Facebook, Foursquare and Twitter</p>
+                </div>
+            </div>
+            <div class="landing-copy-grid-row">
+                <div class="landing-copy-grid-cell">
+                    <p class="landing-copy-grid-cell-title">Harmonize</p>
+                    <p class="landing-copy-grid-cell-copy">We harmonize and cache this information in our datastore to be able to quickly mine user preferences</p>
+                </div>
+                <div class="landing-copy-grid-cell">
+                    <p class="landing-copy-grid-cell-title">Pull</p>
+                    <p class="landing-copy-grid-cell-copy">Our nightly jobs pull all users' data from these networks harmonize them and mine for patterns in this data</p>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}

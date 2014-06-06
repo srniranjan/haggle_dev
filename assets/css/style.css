@@ -284,6 +284,11 @@ select {
 
 }
 
+.grid-full {
+	width: 100%;
+	margin: 0 auto;
+}
+
 .grid-6 {
 
 	width: 660px;
@@ -901,24 +906,6 @@ td {
     text-align: center;
 }
 
-.developers-copy {
-    font-family: 'Proxima Nova', sans-serif;
-}
-
-.developers-copy ul {
-    list-style: square;
-}
-
-.developers-copy ul ul {
-    list-style: circle;
-}
-
-.developers-copy ul {
-	line-height: 1.6;
-	font-size: 14px;
-	padding-left: 20px;
-}
-
 .endpoints-response {
     background-color:#404040;
     color:#ffffff;
@@ -948,4 +935,55 @@ td {
     padding-left: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.landing-copy-title {
+    font-size: 27px;
+    text-align: center;
+    font-weight: 600;
+    color: #e47b79;
+}
+
+.landing-copy-sub-title {
+    font-size: 23px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 65px;
+}
+
+.landing-copy-grid {
+    width: 700px !important;
+    font-family: 'Lato', sans-serif;
+}
+
+.landing-copy-grid-row {
+    width: 100%;
+    height: 135px;
+}
+
+.landing-copy-grid-cell {
+    display: inline-block;
+    float: left;
+    width: 300px;
+    padding-right: 50px;
+}
+
+.landing-copy-grid-cell-title {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.landing-copy-grid-cell-title, .landing-copy-grid-cell-copy {
+    font-size: 16px;
+}
+
+.landing-copy {
+    padding-top:65px;
+    height:600px;
+    background-color:#f3f3f3;
+}
+
+.landing-menu {
+    margin-top:100px;
+    height: 400px;
 }
