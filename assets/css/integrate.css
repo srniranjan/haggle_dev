@@ -1,6 +1,6 @@
 .snippet {
     background-color: #404040;
-    height: 500px;
+    height: 445px;
     width: 720px;
     color: #ffffff;
     margin-bottom: 100px;
@@ -8,10 +8,10 @@
 
 .snippet-request, .snippet-response {
     width: 358px;
-    height: 500px;
+    height: 443px;
     display: inline-block;
     float: left;
-    border: 1px solid black;
+    border: 1px solid #4f4f4f;
 }
 
 .snippet-header {
@@ -27,6 +27,8 @@
     padding-top: 10px;
     padding-left: 20px;
     overflow: scroll;
+    font-size: 16px;
+    font-family: 'VT323';
 }
 
 .sdk-table {
@@ -67,4 +69,11 @@
     font-weight: 600;
     font-size: 20px;
     color: #363636;
+}
+
+.snippet-title-button {
+    width: 80px;
+    text-align: center;
+    font-weight: 800;
+    cursor: default;
 }
