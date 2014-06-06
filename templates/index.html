@@ -4,9 +4,65 @@
 {% endblock %}
 {% block Content %}
     <div class="landing">
-        <h1>Platform for Local Commerce Data</h1>
-        <a href="/landing"><button class="btn-hollow">Get Started</button></a>
-        <img src="/assets/img/machine.png" style="border-bottom:2px solid lightgray">
+        <h1>The API for personalized pricing</h1>
+        <img src="/assets/img/machine.png" style="margin-top:55px;border-bottom:2px solid lightgray">
+    </div>
+    <div class="grid-full landing-menu">
+        <div class="grid-wrap">
+            <a href="/integrate"><div class="select-platforms">
+                <img src="/assets/img/icon_integrate.png">
+                <h3>Integrate</h3>
+                <p>Add Haggle to your product with code and instructions.</p>
+            </div></a>
+            <a href="/developers"><div class="select-platforms">
+                    <img src="/assets/img/icon_devs.png">
+                    <h3>Develop</h3>
+                    <p>Access our API and get the endpoints you need.</p>
+                </div></a>
+            <a href="/marketers"><div class="select-platforms">
+                <img src="/assets/img/icon_market.png">
+                <h3>Market</h3>
+                <p>Understand audience trends & engagement with reports.</p>
+            </div></a>
+        </div>
+    </div>
+    <div class="grid-full landing-copy">
+        <div class="landing-copy-grid">
+            <p class="landing-copy-title">
+                Haggle enables developers to access intelligent, harmonized local commerce data and marketers to access smart reports and trends on local commerce data.
+            </p>
+            <p class="landing-copy-sub-title">
+                We NEVER give access to any individual user's data, but allow you to query and play with aggregate data. We want you to do what you do best - build your local commerce app, access your loyal users, give personalized pricing to your best customers and increase the reach of your brand - and leave the rest to us. The dirty nitty gritty stuff.
+            </p>
+            <div class="landing-copy-grid-row">
+                <div class="landing-copy-grid-cell">
+                    <p class="landing-copy-grid-cell-title">Data crawls</p>
+                    <p class="landing-copy-grid-cell-copy">Our distributed system of crawlers crawl for local commerce data across several commerce data stores</p>
+                </div>
+                <div class="landing-copy-grid-padding"></div>
+                <div class="landing-copy-grid-cell">
+                    <p class="landing-copy-grid-cell-title">Harmonizing</p>
+                    <p class="landing-copy-grid-cell-copy">Our proprietary harmonizing algorithms built on top of semantic web and NLP modules harmonize the crawled data so when you want to access Joe’s Deli at 29th and Park, you know for sure that Joe’s Sandwich Place, Joe’s Cafe, with checkins and likes on different social networks all with slightly different locations, are all harmonized into one unique establishment.</p>
+                </div>
+                <div class="landing-copy-grid-padding"></div>
+                <div class="landing-copy-grid-cell">
+                    <p class="landing-copy-grid-cell-title">Geo Co-ordiantes</p>
+                    <p class="landing-copy-grid-cell-copy">Through crowdsourcing and AI, we tag every atomic level social network activity related to every establishment with geo co-ordinates so you know for sure which starbucks got some love from the customer and which one left her jaded with a lukewarm latte.</p>
+                </div>
+            </div>
+            <div class="landing-copy-grid-row">
+                <div class="landing-copy-grid-cell">
+                    <p class="landing-copy-grid-cell-title">Mapping user transactions</p>
+                    <p class="landing-copy-grid-cell-copy">We have built a process for pulling data for user in our system across all social networks he/she has given access to, and map these transactions to the user’s past transactions</p>
+                </div>
+                <div class="landing-copy-grid-padding"></div>
+                <div class="landing-copy-grid-cell">
+                    <p class="landing-copy-grid-cell-title">Consolidated social graph</p>
+                    <p class="landing-copy-grid-cell-copy">We map the user's activity across multiple social networks into a consolidated social graph using vector math and we do this every time there is new activity.</p>
+                </div>
+
+            </div>
+        </div>
     </div>
 {% endblock %}
 
