@@ -27,7 +27,7 @@ TEMPLATE_VALUES = {
         'score_preference_trends': {
             'header': 'Score Preference Trends',
             'url': 'https://'+ENV_NAME+'/api/analytics/',
-            'description': 'Returns trends on the profile of users frequenting a specified area',
+            'description': 'Returns the score preference trends in the given area.',
             'endpoint': 'aggregate_campaigns',
             'params': {
                 'property': { 
@@ -311,17 +311,635 @@ TEMPLATE_VALUES = {
                     </tr>
                 </table>''',
             },
+            'vendors_explore': {
+            'header': 'Vendors Explore',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns our REST API output for finding nearby vendors.',
+            'endpoint': 'vendors_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude of your search point'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'vendors_search': {
+            'header': 'Vendors Search',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns vendors that match your parameters. See our <a href="/endpoints/render?property=vendors_explore">Explore API</a> if you want our REST API vendor search.',
+            'endpoint': 'vendors_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'WAIT WHAT VARIABLES DO I PUT IN.'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'vendors_campaigns': {
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'header': 'Vendors Campaigns',
+            'description': 'Returns a list of active campaigns based on your search query. See also our VENDORS EXPLORE api call for finding nearby campaigns.',
+            'endpoint': 'vendors_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters)'
+                    },
+                'time_start': { 
+                    'value': 1230,
+                    'description': 'Time in HHMM format of campaign start time'
+                    },
+                'time_end': { 
+                    'value': 2359,
+                    'description': 'Time in HHMM format of campaign end time'
+                    },
+                }
+            },
+            'vendors_hours': {
+            'header': 'Vendors Hours',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            #TOFIX
+            'description': 'Returns analytic hours of campaigns? I do not remember why we thought this was a good api endpoint.',
+            'endpoint': 'vendors_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'WAIT WHAT VARIABLES DO I PUT IN.'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'vendors_tips': {
+            'header': 'Vendors Explore',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            #TOFIX
+            'description': 'Returns tips about a given restaurant ID? Do we even have an implementation for tips?',
+            'endpoint': 'vendors_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'WAIT WHAT VARIABLES DO I PUT IN.'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'vendors_user_trends': {
+            'header': 'Vendors User Trends',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
+            'endpoint': 'vendors_campaigns',
+            'params': {
+                'property': { 
+                    'value': 'vendors_user_trends',
+                    'description': 'property_desc'
+                    },
+                'vendor_id': {
+                    'value': 5692188943974400,
+                    'description': 'Vendor ID'
+                    },
+                }
+            },
+            'vendors_time_trends': {
+            'header': 'Vendors Time Trends',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
+            'endpoint': 'vendors_campaigns',
+            'params': {
+                'property': { 
+                    'value': 'vendors_time_trends',
+                    'description': 'property_desc'
+                    },
+                'vendor_id': {
+                    'value': 5692188943974400,
+                    'description': 'Vendor ID'
+                    },
+                }
+            },
+            'vendors_average_spending': {
+            'header': 'Vendors Average Spending',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
+            'endpoint': 'vendors_campaigns',
+            'params': {
+                'property': { 
+                    'value': 'vendors_average_spending',
+                    'description': 'property_desc'
+                    },
+                'vendor_id': {
+                    'value': 5692188943974400,
+                    'description': 'Vendor ID'
+                    },
+                }
+            },
+            'vendors_current_deals': {
+            'header': 'Vendors Current Deals',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns a list of users who have pending deals with your store',
+            'endpoint': 'vendors_deals',
+            'params': {
+                'property': { 
+                    'value': 'vendors_current_deals',
+                    'description': 'property_desc'
+                    },
+                'vendor_id': {
+                    'value': 5692188943974400,
+                    'description': 'Vendor ID'
+                    },
+                }
+            },
+            'vendors_links': {
+            'header': 'Vendors Links',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns analytical data of your business and its customers. You can give permissions to which apps access this data at /vendor_admin_permissions_edit',
+            'endpoint': 'vendors_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'WAIT WHAT VARIABLES DO I PUT IN.'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude of the location.'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'vendors_accept_deal': {
+            'header': 'Vendors Accept Deal',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to accept an offer made by a customer. You can give permissions to which apps can make this post for you at /vendor_admin_permissions_edit',
+            'endpoint': 'vendors_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'uID': {
+                    'value': 40.745619,
+                    'description': 'User ID'
+                    },
+                'dID': {
+                    'value': -73.985296,
+                    'description': 'Deal ID'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'vendors_request_deal': {
+            'header': 'Vendors Request Deal',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to request a deal to a vendor. I think.',
+            'endpoint': 'vendors_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'uID': {
+                    'value': 40.745619,
+                    'description': 'User ID'
+                    },
+                'dID': {
+                    'value': -73.985296,
+                    'description': 'Deal ID'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'aggregate_campaigns_hours_trends': {
+            'header': 'Campaign Hours Trends',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to request a deal to a vendor. I think.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'individual_campaigns_search': {
+            'header': 'Vendors Request Deal',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to request a deal to a vendor. I think.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'individual_campaigns_hours': {
+            'header': 'Individual Campaign Hours',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns individual campaign hours.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'individual_campaigns_score_preferences': {
+            'header': 'Individual Campaign Score Preferences',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns individual campaign score preferences.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'individual_campaigns_max_discount': {
+            'header': 'Individual Campaign Maximum Discount',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns individual campaign maximum discount.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'individual_campaigns_minimum_discount': {
+            'header': 'Individual Campaign Minimum Discount',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns individual campaign minimum discount.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'lat': {
+                    'value': 40.745619,
+                    'description': 'Latitude'
+                    },
+                'lon': {
+                    'value': -73.985296,
+                    'description': 'Longitude'
+                    },
+                'radius': { 
+                    'value': 3000,
+                    'description': 'Radius (in meters).'
+                    }
+                }
+            },
+            'individual_campaigns_delete': {
+            'header': 'Delete Campaign',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to delete a campaign.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Campaign ID.'
+                    }
+                }
+            },
+            'individual_campaigns_end': {
+            'header': 'End Campaign',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to delete a campaign.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Campaign ID.'
+                    }
+                }
+            },
+            'individual_campaigns_start': {
+            'header': 'Start Campaign',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to start a campaign.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Campaign ID.'
+                    }
+                }
+            },
+            'individual_deals_search': {
+            'header': 'Search Deals',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns information about your deals.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
+            'individual_deals_delete': {
+            'header': 'Start Campaign',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to delete a deal.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
+            'individual_deals_user_id': {
+            'header': 'UID of Deals',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns information about your deals.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
+            'individual_deals_bid': {
+            'header': 'Bids Deals?',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns information about your deals.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
+            'individual_deals_offer': {
+            'header': 'Offers Deals?',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'Returns information about your deals.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
+            'individual_deals_delete': {
+            'header': 'Start Campaign',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to delete a deal.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
+            'individual_deals_delete': {
+            'header': 'Start Campaign',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to delete a deal.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
+            'individual_deals_delete': {
+            'header': 'Start Campaign',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to delete a deal.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
+            'individual_deals_make_public': {
+            'header': 'Make Public',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to make a deal public.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
+            'individual_deals_make_private': {
+            'header': 'Make Private',
+            'url': 'https://'+ENV_NAME+'/api/analytics/',
+            'description': 'POST method to make a deal priate.',
+            'endpoint': 'users_search',
+            'params': {
+                'property': { 
+                    'value': 'discount_trends',
+                    'description': 'property_desc'
+                    },
+                'id': { 
+                    'value': 34523323,
+                    'description': 'Deal ID.'
+                    }
+                }
+            },
             'vendors_general_overview': {
             'header': 'Overview',
             'url': 'local',
-            'description': 'Returns an overview of the harmonized restaurants in our datastore. Use this endpoint to learn the different cuisines, neighborhoods etc... you can query by.',
+            'description': 'Returns an overview of the harmonized restaurants in our datastore',
             'endpoint': '/api/restaurants_overview',
             'params': {}
             },
             'vendors_general_explore': {
             'header': 'Explore',
             'url': 'local',
-            'description': 'Returns a list of harmonized restaurants from our datastore. The restaurants returned have their data harmonized across 3 social networks.',
+            'description': 'Returns harmonized restaurants from our datastore which match your search criteria',
             'endpoint': '/api/restaurants',
             'params': {
                     'dlr_rating': {
