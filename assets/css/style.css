@@ -918,25 +918,6 @@ td {
     overflow: scroll;
 }
 
-.endpoints-table {
-    margin-bottom: 100px;
-}
-
-.endpoints-table td {
-    border: 1px solid #404040;
-    min-width: 165px;
-    padding-left: 10px;
-}
-
-.endpoints-table th {
-    border: 1px solid #404040;
-    font-weight: 700;
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
 .landing-copy-title {
     font-size: 27px;
     text-align: center;
