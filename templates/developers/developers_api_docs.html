@@ -5,11 +5,6 @@
 {% endblock %}
 {% block SidebarList %}
     <li class="active"><a href="#api_endpoints">Api Endpoints</a></li>
-    <ul class="sub-sidebar-menu-1">
-        <li><a href="#">Vendors</a></li>
-        <li><a href="#">Aggregate Campaigns</a></li>
-        <li><a href="#">Aggregate Deals</a></li>
-    </ul>
     <li><a href="#errors">Responses & Errors</a></li>
     <li><a href="#changelog">Changelog</a></li>
 {% endblock %}
@@ -119,4 +114,8 @@
         <h2>Changelog</h2>
         <p>Below is a list of our changes:</p>
     </div>
+    <div class="tab-pane fade" id="endpoint-view"></div>
+{% endblock %}
+{% block Scripts %}
+    <script src='/assets/js/web/documentation/fetch-from-api-server.js' type='text/javascript'></script>
 {% endblock %}
