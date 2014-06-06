@@ -77,3 +77,8 @@
     font-weight: 800;
     cursor: default;
 }
+
+.case-studies-image {
+    width:580px;
+    text-align:center;
+}

@@ -27,6 +27,19 @@ html {
 
 }
 
+#mainpage ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+#mainpage ul ul {
+    list-style: circle;
+}
+
+#oauth_endpoints ul {
+    list-style: none;
+}
+
 p {
 
 	line-height: 1.6;
