@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block Scripts %}
+    <script src="/assets/js/lib/d3.v3.min.js"></script>
+    <script src="/assets/js/lib/d3/line.js"></script>
+    <script src="/assets/js/lib/d3/stackedbar.js"></script>
+    <script src="/assets/js/web/generic_template.js"></script>
+    <script src="/assets/js/web/graph_builder.js"></script>
+    <script src="/assets/js/web/marketers.js"></script>
+{% endblock %}
+{% block Title %}
+Haggle Platforms | Marketers
+{% endblock %}
+{% block Styles %}
+    <link href="/assets/css/marketers.css" type="text/css" rel="stylesheet">
+{% endblock %}
+{% block Content %}
+<div class="wrapper">
+    <div class="top-bar">
+        <ul class="section-menu">
+            <li><a href="/marketers/spending">Spending Reports</a></li>
+            <li><a href="/marketers/social">Social Reports</a></li>
+            <li><a href="/marketers/custom">Custom Report</a></li>
+            <li><a href="/marketers/custom">Case Studies</a></li>
+        </ul>
+    </div>
+    {% block MarketersContent %}
+    {% endblock %}
+</div>
+{% endblock %}

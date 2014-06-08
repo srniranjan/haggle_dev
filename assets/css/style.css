@@ -860,7 +860,14 @@ td {
 
 .chart-area {
     margin-top: 30px;
+}
+
+.chart-area-top, .chart-area {
     border-bottom: 2px solid gray;
+}
+
+.chart-area-top {
+    padding-top: 107px;
 }
 
 .chart-desc {
@@ -895,7 +902,7 @@ td {
 }
 
 .overview {
-    height: 360px;
+    height: 380px;
 }
 
 .graph-options-button {

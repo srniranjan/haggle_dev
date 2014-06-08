@@ -46,6 +46,10 @@ handlers:
   script: handlers.web.developers.app
   secure: always
 
+- url: /marketers.*
+  script: handlers.web.marketers.app
+  secure: always
+
 - url: /api/.*
   script: handlers.api.app
   secure: always
