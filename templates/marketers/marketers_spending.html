@@ -121,78 +121,72 @@ Haggle Platforms | Marketers-Spending
                         });
                     }
                 </script>
-                <div class="graph-area"></div>
+                <div class="graph-area" style="margin-top: 50px;"></div>
             </div>
             <div id="sales-per-head" class="chart-area">
                 <div class="chart-desc">
-                    <h1>SALES PER HEAD</h1>
+                    <h1>Sales Per Head</h1>
                     <p></p>
                     <div class="dimensions">
-                        <p><b>DIMENSION</b> (X-Axis) : Cuisine</p>
-                        <p><b>METRIC</b> (Y-Axis) : $ Spent</p>
-                        <p><b>AGGREGATOR</b> : User</p>
                         <div id="sales_per_head_aggregator_strategy_values_container" class="graph-menu">
-                            <select class="options-list">
-                                <option value="">--Aggregation Strategy--</option>
-                                    <option value="Median">Median</option>
-                                    <option value="Blind Addition">Blind Addition</option>
-                                    <option value="Average" selected>Average</option>
+                            <h4>Aggregation Strategy</h4>
+                            <select id="sales-per-head-aggregation-strategy" class="options-list">
+                                <option value="Average" selected>Average</option>
+                                <option value="Median">Median</option>
+                                <option value="Blind Addition">Blind Addition</option>
                             </select>
                         </div>
                     </div>
-                    <div class="filters">
-                        <p><b>FILTERS:</b></p>
-                        <div id="sales_per_head_filter_values_container" class="inline">
-                            <div id="sales_per_head_dimension_vals_2" style="" class="inline graph-menu">
-                                <select name="2" class="options-list" multiple="">
-                                    <option value="">--Neighborhood--</option>
-
-                                    <option value="Midtown East" selected="">Midtown East</option>
-
-                                    <option value="Midtown" selected="">Midtown</option>
-
-                                    <option value="Flatiron" selected="">Flatiron</option>
-
-                                    <option value="Gramercy" selected="">Gramercy</option>
-
-                                    <option value="East Village" selected="">East Village</option>
-
-                                    <option value="lower manhattan" selected="">lower manhattan</option>
-
-                                    <option value="Nolita" selected="">Nolita</option>
-
-                                    <option value="midtown" selected="">midtown</option>
-
-                                </select>
-                            </div>
-                            <div id="sales_per_head_dimension_vals_1" style="" class="inline graph-menu">
-                                <select name="1" class="options-list" multiple="">
-                                <option value="">--Day of week--</option>
-
-                                    <option value="Fri" selected="">Fri</option>
-
-                                    <option value="Sat" selected="">Sat</option>
-
-                                    <option value="Thu" selected="">Thu</option>
-
-                                    <option value="Tue" selected="">Tue</option>
-
-                                    <option value="Wed" selected="">Wed</option>
-
-                                    <option value="Sun" selected="">Sun</option>
-
-                                    <option value="Mon" selected="">Mon</option>
-
-                                </select>
+                    <p></p>
+                    <div>
+                        <div class="filters inline">
+                            <div id="sales_per_head_filter_values_container" class="inline">
+                                <div id="sales_per_head_dimension_vals_2" style="" class="inline graph-menu">
+                                    <h4>Neighborhoods</h4>
+                                    <select id="sales-per-head-neighborhoods" name="2" class="options-list" multiple="">
+                                        <option value="Midtown East" selected="">Midtown East</option>
+                                        <option value="Midtown" selected="">Midtown</option>
+                                        <option value="Flatiron" selected="">Flatiron</option>
+                                        <option value="Gramercy" selected="">Gramercy</option>
+                                        <option value="East Village">East Village</option>
+                                        <option value="lower manhattan">lower manhattan</option>
+                                        <option value="Nolita">Nolita</option>
+                                        <option value="midtown">midtown</option>
+                                    </select>
+                                </div>
+                                <div id="sales_per_head_dimension_vals_1" style="" class="inline graph-menu">
+                                    <h4>Days of week</h4>
+                                    <select id="sales-per-head-days-of-week" name="1" class="options-list" multiple="">
+                                        <option value="Fri" selected="">Fri</option>
+                                        <option value="Sat" selected="">Sat</option>
+                                        <option value="Thu">Thu</option>
+                                        <option value="Tue">Tue</option>
+                                        <option value="Wed" selected="">Wed</option>
+                                        <option value="Sun">Sun</option>
+                                        <option value="Mon" selected="">Mon</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateSalesPerHead()">
+                        <div class="inline">
+                            <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateSalesPerHead()">
+                        </div>
                     </div>
                 </div>
                 <script>
                     $(document).ready(function(){
+                        $("#sales-per-head-aggregation-strategy").chosen({
+                            placeholder_text_single : 'Choose aggregation strategy',
+                            max_selected_options : 1
+                        });
+                        $("#sales-per-head-neighborhoods").chosen({
+                            placeholder_text_multiple : 'Choose neighborhoods',
+                            max_selected_options : 4
+                        });
+                        $("#sales-per-head-days-of-week").chosen({
+                            placeholder_text_multiple : 'Choose days of week',
+                            max_selected_options : 4
+                        });
                         updateSalesPerHead();
                     });
                     function updateSalesPerHead() {
@@ -220,7 +214,7 @@ Haggle Platforms | Marketers-Spending
                         });
                     }
                 </script>
-                <div class="graph-area"></div>
+                <div class="graph-area" style="margin-top: 130px;"></div>
             </div>
         </div>
 {% endblock %}
