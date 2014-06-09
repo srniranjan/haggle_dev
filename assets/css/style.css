@@ -86,8 +86,6 @@ h3 {
 }
 
 h4 {
-
-	display: inline-block;
 	width: 100%;
 	border-bottom: 2px solid #eee;
 	padding-bottom: 10px;
@@ -327,30 +325,25 @@ select {
 
 
 .gender-dist {
-
 	width: 240px;
-	margin-left: 20px;
+	height: 267px;
 	float: left;
-
 }
 
 .age-dist {
-
-	width: 240px;
-	height: 200px;
-	margin-right: 20px;
+	width: 340px;
+	height: 267px;
+	margin-right: 10px;
 	float: left;
-
 }
 
 
 .small-chart {
-
-	width: 200px;
-	height: 200px;
-	padding: 20px;
-	margin-right: 20px;
+	width: 220px;
+	height: 250px;
+	padding: 10px;
 	float: left;
+	background-color: #ffffff;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -360,16 +353,16 @@ select {
 	-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
 	position: relative;
 	overflow: hidden;
-
 }
 
 .med-chart {
-
-	width: 200px;
-	height: 200px;
-	padding: 20px;
-	margin-right: 20px;
+	width: 338px;
+	height: 250px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 10px;
 	float: left;
+	background-color: #ffffff;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -379,7 +372,6 @@ select {
 	-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
 	position: relative;
 	overflow: hidden;
-
 }
 
 .big-chart {
@@ -388,6 +380,7 @@ select {
 	padding: 0px;
 	height: 500px;
 	float: left;
+	background-color: #ffffff;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -417,12 +410,9 @@ select {
 }
 
 .summary {
-
 	width: 300px;
-	margin-top: 10px;
-	padding-right: 20px;
+	padding-right: 10px;
 	float: left;
-
 }
 
 .full-width-line {
@@ -435,11 +425,22 @@ select {
 }
 
 .overview-results {
-
 	width: 100%;
-	margin-top: 40px;
+	margin-top: 30px;
 	float: left;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+	-moz-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+    height: 342px;
+}
 
+.overview-container {
+    margin  : 20px;
 }
 
 .well {
@@ -656,17 +657,21 @@ select {
 
 
 .summary-table {
-
-	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+    position: relative;
+    overflow: hidden;
 }
 
 tr {
-
 	border-bottom: 1px solid #eee;
-
 }
 
 td {
@@ -676,20 +681,20 @@ td {
 }
 
 .tb-left {
-
 	text-align: left;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 13px;
-	color: rgba(0,0,0,.3);
-
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    color: rgba(0,0,0,.3);
+    padding-left: 15px;
 }
 
 .tb-right {
-	font-size: 16px;
-	text-align: right;
-	color: #363636;
-	font-weight: bold;
+	font-size: 13px;
+    text-align: left;
+    color: #363636;
+    font-weight: bold;
+    padding-right: 10px;
 }
 
 #navbar ul {
