@@ -6,56 +6,66 @@ Haggle Platforms | Marketers-Social
         <div id="social-page" class="social-charts">
             <div id="aggregate-history-score" class="chart-area-top">
                 <div class="chart-desc">
-                    <h1>AGGREGATE HISTORY SCORE</h1>
+                    <h1>Aggregate History Score</h1>
                     <p></p>
                     <div class="dimensions">
-                        <p><b>DIMENSION</b> (X-Axis) : Cuisine</p>
-                        <p><b>METRIC</b> (Y-Axis) : Score</p>
-                        <p><b>AGGREGATOR</b> : User</p>
                         <div id="agg_history_score_aggregator_strategy_values_container" class="graph-menu">
-                            <select class="options-list">
-                                <option value="">--Aggregation Strategy--</option>
-                                    <option value="Median">Median</option>
-                                    <option value="Blind Addition">Blind Addition</option>
-                                    <option value="Average" selected>Average</option>
+                            <select id="agg-history-score-aggregation-strategy" class="options-list">
+                                <option value="Average" selected>Average</option>
+                                <option value="Median">Median</option>
+                                <option value="Blind Addition">Blind Addition</option>
                             </select>
                         </div>
                     </div>
-                    <div class="filters">
-                        <p><b>FILTERS:</b></p>
-                        <div id="agg_history_score_filter_values_container" class="inline">
-                            <div id="agg_history_score_dimension_vals_8" style="" class="inline graph-menu">
-                                <select name="8" class="options-list" multiple="">
-                                    <option value="">--Neighborhood--</option>
-                                    <option value=" midtown" selected> midtown</option>
-                                    <option value=" Nolita" selected> Nolita</option>
-                                    <option value=" Humboldt Park" selected> Humboldt Park</option>
-                                    <option value=" Castro" selected> Castro</option>
-                                    <option value=" East Village" selected> East Village</option>
-                                    <option value=" Flatiron" selected> Flatiron</option>
-                                    <option value=" lower manhattan" selected> lower manhattan</option>
-                                    <option value=" South End" selected> South End</option>
-                                    <option value=" Point Loma" selected> Point Loma</option>
-                                    <option value=" Greenwich Village" selected> Greenwich Village</option>
-                                    <option value=" Midtown" selected> Midtown</option>
-                                </select>
-                            </div>
-                            <div id="agg_history_score_dimension_vals_4" style="" class="inline graph-menu">
-                                <select name="4" class="options-list" multiple="">
-                                    <option value="">--Score Type--</option>
-                                    <option value=" H " selected> H </option>
-                                    <option value=" I "> I </option>
-                                    <option value=" L "> L </option>
-                                </select>
+                    <p></p>
+                    <div>
+                        <div class="filters inline">
+                            <div id="agg_history_score_filter_values_container" class="inline">
+                                <div id="agg_history_score_dimension_vals_8" style="" class="inline graph-menu">
+                                    <h4>Neighborhoods</h4>
+                                    <select id="agg-history-score-neighborhoods" name="8" class="options-list" multiple="">
+                                        <option value=" midtown" selected> midtown</option>
+                                        <option value=" Nolita" selected> Nolita</option>
+                                        <option value=" Humboldt Park" selected> Humboldt Park</option>
+                                        <option value=" Castro" selected> Castro</option>
+                                        <option value=" East Village"> East Village</option>
+                                        <option value=" Flatiron"> Flatiron</option>
+                                        <option value=" lower manhattan"> lower manhattan</option>
+                                        <option value=" South End"> South End</option>
+                                        <option value=" Point Loma"> Point Loma</option>
+                                        <option value=" Greenwich Village"> Greenwich Village</option>
+                                        <option value=" Midtown"> Midtown</option>
+                                    </select>
+                                </div>
+                                <div id="agg_history_score_dimension_vals_4" style="" class="inline graph-menu">
+                                    <h4>Score Types</h4>
+                                    <select id="agg-history-score-types" name="4" class="options-list" multiple="">
+                                        <option value=" H " selected> History </option>
+                                        <option value=" I "> Influence </option>
+                                        <option value=" L "> Loyalty </option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateAggHistoryScore()">
+                        <div class="inline">
+                            <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateAggHistoryScore()">
+                        </div>
                     </div>
                 </div>
                 <script>
                     $(document).ready(function(){
+                        $("#agg-history-score-aggregation-strategy").chosen({
+                            placeholder_text_single : 'Choose aggregation strategy',
+                            max_selected_options : 1
+                        });
+                        $("#agg-history-score-neighborhoods").chosen({
+                            placeholder_text_multiple : 'Choose neighborhoods',
+                            max_selected_options : 4
+                        });
+                        $("#agg-history-score-types").chosen({
+                            placeholder_text_multiple : 'Choose score types',
+                            max_selected_options : 4
+                        });
                         updateAggHistoryScore();
                     });
                     function updateAggHistoryScore() {
@@ -83,7 +93,7 @@ Haggle Platforms | Marketers-Social
                         });
                     }
                 </script>
-                <div class="graph-area"></div>
+                <div class="graph-area" style="margin-top: 130px;"></div>
             </div>
         </div>
 {% endblock %}
