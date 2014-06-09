@@ -3,7 +3,7 @@
 Haggle Platforms | Marketers-Spending
 {% endblock %}
 {% block MarketersContent %}
-        <div id="spending-page" class="spending-charts">
+        <div id="spending-page" class="spending-charts main-content">
             <div id="spending-overview" class="chart-area-top overview">
                 <h1>Overview</h1>
                 <div class="overview-results">
@@ -48,75 +48,54 @@ Haggle Platforms | Marketers-Spending
             </div>
             <div id="dollars-spent" class="chart-area">
                 <div class="chart-desc">
-                    <h1>DOLLARS SPENT</h1>
+                    <h1>Dollars Spent</h1>
                     <p></p>
-                    <div class="dimensions">
-                        <p><b>DIMENSION</b> (X-Axis) : Day of Week</p>
-                        <p><b>METRIC</b> (Y-Axis) : $ Spent</p>
-                    </div>
                     <div class="filters">
-                        <p><b>FILTERS:</b></p>
                         <div id="dollars_spent_filter_values_container" class="inline">
                             <div id="dollars_spent_dimension_vals_2" style="" class="inline graph-menu">
-                                <select name="2" class="options-list" multiple="">
-                                    <option value="">--Neighborhood--</option>
-
+                                <h4>Neighborhoods</h4>
+                                <select id="dollars-spent-neighborhoods" name="2" class="options-list" multiple="">
                                     <option value="Midtown East" selected="">Midtown East</option>
-
-                                    <option value="Midtown" selected="">Midtown</option>
-
                                     <option value="Flatiron" selected="">Flatiron</option>
-
                                     <option value="Gramercy" selected="">Gramercy</option>
-
                                     <option value="East Village" selected="">East Village</option>
-
-                                    <option value="lower manhattan" selected="">lower manhattan</option>
-
-                                    <option value="Nolita" selected="">Nolita</option>
-
-                                    <option value="midtown" selected="">midtown</option>
-
+                                    <option value="Midtown">Midtown</option>
+                                    <option value="lower manhattan">lower manhattan</option>
+                                    <option value="Nolita">Nolita</option>
+                                    <option value="midtown">midtown</option>
                                 </select>
                             </div>
                             <div id="dollars_spent_dimension_vals_3" style="" class="inline graph-menu">
-                                <select name="3" class="options-list" multiple="">
-                                    <option value="">--Cuisine--</option>
-
-                                    <option value="Italian Restaurant" selected="">Italian Restaurant</option>
-
-                                    <option value="Mediterranean" selected="">Mediterranean</option>
-
-                                    <option value="Middle Eastern Restaurant" selected="">Middle Eastern Restaurant</option>
-
+                                <h4>Cuisine Types</h4>
+                                <select id="dollars-spent-cuisines" name="3" class="options-list" multiple="">
                                     <option value="Diner" selected="">Diner</option>
-
                                     <option value="Bar" selected="">Bar</option>
-
-                                    <option value="Taco Place" selected="">Taco Place</option>
-
-                                    <option value="French African" selected="">French African</option>
-
-                                    <option value="Cafe" selected="">Cafe</option>
-
-                                    <option value="Mexican" selected="">Mexican</option>
-
-                                    <option value="Burgers" selected="">Burgers</option>
-
-                                    <option value="Burger Joint" selected="">Burger Joint</option>
-
                                     <option value="Salads" selected="">Salads</option>
-
+                                    <option value="Cafe" selected="">Cafe</option>
+                                    <option value="Italian Restaurant">Italian Restaurant</option>
+                                    <option value="Mediterranean">Mediterranean</option>
+                                    <option value="Middle Eastern Restaurant">Middle Eastern Restaurant</option>
+                                    <option value="Taco Place">Taco Place</option>
+                                    <option value="French African">French African</option>
+                                    <option value="Mexican">Mexican</option>
+                                    <option value="Burgers">Burgers</option>
+                                    <option value="Burger Joint">Burger Joint</option>
                                 </select>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateDollarsSpent()">
-                    </div>
+                    <input type="button" class="graph-submit-button" value="APPLY FILTERS" onclick="updateDollarsSpent()">
                 </div>
                 <script>
                     $(document).ready(function(){
+                        $("#dollars-spent-neighborhoods").chosen({
+                            placeholder_text_multiple : 'Choose neighborhoods',
+                            max_selected_options : 4
+                        });
+                        $("#dollars-spent-cuisines").chosen({
+                            placeholder_text_multiple : 'Choose cuisine types',
+                            max_selected_options : 4
+                        });
                         updateDollarsSpent();
                     });
                     function updateDollarsSpent() {

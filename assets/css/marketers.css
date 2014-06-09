@@ -21,7 +21,7 @@
 }
 
 .grid .tick line {
-    stroke-dasharray: 3,3;
+    stroke-dasharray: 0,0;
 }
 
 .x.axis path {

@@ -3,7 +3,7 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
     var dataCirclesGroup = null;
     var pointRadius = 10;
     var interpolation_mode = "linear";
-    var margin = {top: 20, right: 80, bottom: 30, left: 50},
+    var margin = {top: 85, right: 40, bottom: 40, left: 40},
     width = 940 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -84,7 +84,6 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
     ]);
 
     svg.append("g")
-    .attr("class", "grid")
     .attr("transform", "translate(0," + height + ")")
     .call(make_x_axis()
         .tickSize(-height, 0, 0)
@@ -98,7 +97,11 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
     .attr("class", "grid")
     .call(make_y_axis()
         .tickSize(-width, 0, 0)
-    ).append("text")
+    ).attr("font-family", "sans-serif")
+    .attr("font-size", "11px")
+    .attr("font-weight", "600")
+    .attr("fill","#868686")
+    .append("text")
     .attr("transform", "rotate(-90)")
     .attr("y", -(margin.left))
     .attr("dy", ".71em")
@@ -125,22 +128,25 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
     var legend = svg.selectAll(".legend")
     .data(color.domain().slice().reverse())
     .enter().append("g")
-    .attr("class", "legend")
-    .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+    .attr("class", "legend");
 
     legend.append("rect")
-    .attr("x", width + 55)
+    .attr("y", -50)
+    .attr("x", function(d,i){return width-(100*(i+1));})
     .attr("width", 18)
     .attr("height", 18)
     .style("fill", color);
 
     legend.append("text")
-    .attr("x", width + 50)
-    .attr("y", 9)
-    .attr("dy", ".35em")
+    .attr("y", -50)
+    .attr("x", function(d,i){return width-(100*(i+1));})
+    .attr("dy", "1em")
     .style("text-anchor", "end")
     .text(function(d) { return d; })
-    .attr("fill", color);
+    .attr("fill", color)
+    .attr("font-family", "sans-serif")
+    .attr("font-size", "11px")
+    .attr("font-weight", "600");
 
     for (var i=0; i<dimension2s.length; i++) {
         dimension2 = dimension2s[i];
@@ -149,10 +155,12 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
         var circles = dataCirclesGroup.selectAll('.data-point')
             .data(dimension2.values);
 
-        circles
+        var circle = circles
             .enter()
                 .append('svg:circle')
-                    .attr('class', 'data-point')
+                    .attr('class', 'data-point');
+
+        circle.attr('class', 'data-point')
                     .style('opacity', 1e-6)
                     .attr('cx', function(d) { return x(d.dimension1) })
                     .attr('cy', function() { return y(0); })
@@ -164,6 +172,8 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
                     .attr('cy', function(d) { if(d.metric){return y(+(d.metric))} else {return y(0)} })
                     .attr('r', pointRadius)
                     .style("fill", function(d){ return color(dimension2.name) });
+
+        circle.append("svg:title").text(function(d) { if(d.metric){return +(d.metric)} else {return 0} });
     }
 
     $('.area').mouseover(function(){

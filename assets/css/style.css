@@ -63,11 +63,10 @@ body, html {
 }
 
 h1 {
-
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 1.5;
-
+    color: #000000;
 }
 
 h2 {
@@ -87,7 +86,6 @@ h3 {
 
 h4 {
 	width: 100%;
-	border-bottom: 2px solid #eee;
 	padding-bottom: 10px;
 	font-size: 12px;
 	font-weight: bold;
@@ -425,17 +423,17 @@ select {
 }
 
 .overview-results {
-	width: 100%;
-	margin-top: 30px;
-	float: left;
+    width: 100%;
+    margin-top: 20px;
+    float: left;
     background-color: #f5f5f5;
     border: 1px solid #e0e0e0;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
-	box-shadow: 0px 1px 5px rgba(0,0,0,.1);
-	-moz-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
-	-webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
     height: 342px;
 }
 
@@ -788,8 +786,9 @@ td {
 }
 
 .graph-area {
-    width: 936px;
-    height: 100%;
+    width: 940px;
+    height: 500px;
+    border: 1px solid rgba(0,0,0,0.2);
 }
 
 .bold-font {
@@ -864,19 +863,19 @@ td {
 }
 
 .chart-area {
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .chart-area-top, .chart-area {
-    border-bottom: 2px solid gray;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .chart-area-top {
-    padding-top: 107px;
+    padding-top: 0px;
 }
 
 .chart-desc {
-    min-height: 400px;
+    min-height: 200px;
 }
 
 .chart-page {
@@ -907,7 +906,7 @@ td {
 }
 
 .overview {
-    height: 380px;
+    height: 450px;
 }
 
 .graph-options-button {
@@ -922,13 +921,26 @@ td {
 
 .graph-submit-button {
     background-image: none;
-    border: none;
-    height: 20px;
-    background-color: rgb(198, 37, 48);
-    color: #ffffff;
+    width: 135px;
+    height: 40px;
+    border: 1px solid #AFAFAF;
+    background-color: #f3f3f3;
+    color: #6a6a6a;
     cursor: pointer;
-    border-radius: 5px;
     text-align: center;
+    font-weight: 700;
+    margin-top: 22px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    outline: none;
+    box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+}
+
+.graph-submit-button:hover {
+    background-color: #e0e0e0;
 }
 
 .endpoints-response {
@@ -1010,4 +1022,8 @@ td {
 
 .case-studies-image {
     margin-bottom: 30px;
+}
+
+.main-content {
+    padding-top: 108px;
 }
