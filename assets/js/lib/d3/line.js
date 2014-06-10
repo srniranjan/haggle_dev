@@ -65,7 +65,7 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
         return {
             name: name,
             values: data.map(function(d) {
-                if (d[name]) {
+                if (d[name] && d[name].toLowerCase() != 'none' && d[name].toLowerCase() != '') {
                     return {dimension1: d.dimension1, metric: +d[name]};
                 } else {
                     return {dimension1: d.dimension1, metric: 0};
@@ -173,7 +173,15 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
                     .attr('r', pointRadius)
                     .style("fill", function(d){ return color(dimension2.name) });
 
-        circle.append("svg:title").text(function(d) { if(d.metric){return +(d.metric)} else {return 0} });
+        circle.append("svg:title").text(function(d)
+            {
+                var y_val = 0;
+                if(d.metric){
+                    y_val = +(d.metric);
+                }
+                return d.dimension1+' : '+dimension2.name+' : '+y_val;
+            }
+        );
     }
 
     $('.area').mouseover(function(){

@@ -17,9 +17,10 @@ def average_aggregator(aggregator_dimension_map):
             curr_agg_dim_sum = 0.0
             agg_count = 0
             for agg_dim, plot_vals in agg_dim_dict.iteritems():
-                agg_count += len(plot_vals)
                 for (x, y) in plot_vals:
-                    curr_agg_dim_sum += float(y)
+                    if y!= None and y!= '' and y.lower() !='none':
+                        agg_count += 1
+                        curr_agg_dim_sum += float(y)
             agg_dim_sum[dimension1] = round((curr_agg_dim_sum / agg_count), 2) if agg_count > 0 else 0.0
         return agg_dim_sum
 
@@ -30,7 +31,8 @@ def median_aggregator(aggregator_dimension_map):
             plot_vals_array = []
             for agg_dim, plot_vals in agg_dim_dict.iteritems():
                 for (x, y) in plot_vals:
-                    plot_vals_array.append((x,y))
+                    if y and y != '' and y.lower() != 'none':
+                        plot_vals_array.append((x,y))
             plot_vals_array.sort(key=lambda tup: float(tup[1]))
             if len(plot_vals_array) > 1:
                 if len(plot_vals_array)%2 == 0:
@@ -51,7 +53,8 @@ def blind_addition_aggregator(aggregator_dimension_map):
             curr_agg_dim_sum = 0.0
             for agg_dim, plot_vals in agg_dim_dict.iteritems():
                 for (x, y) in plot_vals:
-                    curr_agg_dim_sum += float(y)
+                    if y and y != '' and y.lower() != 'none':
+                        curr_agg_dim_sum += float(y)
             agg_dim_sum[dimension1] = curr_agg_dim_sum
         return agg_dim_sum
 
