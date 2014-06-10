@@ -18,6 +18,10 @@
                 $('#filter_values').show();
                 $('#filter_values #filter_values_container').append(retDiv[0]);
                 $('#filter_values #filter_values_container #' + retDiv[0].id).show();
+                $("#"+retDiv[0].id+' select').chosen({
+                    placeholder_text_multiple : $("#"+retDiv[0].id+' select').attr('data-placeholder'),
+                    max_selected_options : 4
+                });
             }
         });
         convertToTextField('primary_dimensions');
@@ -34,38 +38,52 @@
     }
 </script>
 <div class="metrics-menu">
-    <div class="inline graph-menu"><p>METRIC:</p></div>
     <div id="metric_dimensions" class="inline graph-menu">
-        <select class="options-list">
-            <option value="">--METRIC--</option>
+        <select id="metrics" class="options-list" multiple>
             {% for y_candidate in  y_candidates %}
                 <option value="{{y_candidate.0}}">{{y_candidate.1}}</option>
             {%endfor%}
         </select>
+        <script>
+            $(document).ready(function(){
+                $("#metrics").chosen({
+                    placeholder_text_multiple : 'Metric',
+                    max_selected_options : 1
+                });
+            });
+        </script>
     </div>
-</div>
-<div class="dimensions-filters-menu">
-    <div class="inline graph-menu"><p>DIMENSIONS:</p></div>
     <div id="primary_dimensions" class="inline graph-menu">
-        <select class="options-list" onchange="loadFilterValues()">
-            <option value="">--PRIMARY DIMENSION--</option>
+        <select id="primary-dimension" class="options-list" onchange="loadFilterValues()" multiple>
             {% for x_candidate in  x_candidates %}
                 <option value="{{x_candidate.0}}">{{x_candidate.1}}</option>
             {%endfor%}
         </select>
+        <script>
+            $(document).ready(function(){
+                $("#primary-dimension").chosen({
+                    placeholder_text_multiple : 'Dimension',
+                    max_selected_options : 1
+                });
+            });
+        </script>
     </div>
+</div>
+
+<div class="dimensions-filters-menu">
     <div id="filter_values" style="display:none" class="inline">
-        <div class="inline graph-menu"><p>FILTERS:</p></div>
         <div id="filter_values_container" class="inline">
+            <p>FILTERS</p>
         </div>
+        <input class="inline graph-submit-button" id="graph-submit" type="submit" style="display:none;margin-top:66px;" value="GET GRAPH" onclick="updateChart();">
     </div>
     <div id="filters_container">
         {% for dimension, values in dimension_vals.items %}
             <div id="dimension_vals_{{dimension.0}}" style="display:none" class="inline graph-menu">
-                <select name="{{ dimension.0 }}" class="options-list" multiple>
-                <option value="">--{{ dimension.1 }}--</option>
+                <h4>{{ dimension.1 }}</h4>
+                <select data-placeholder="{{ dimension.1 }}" id="dimension-{{ dimension.0 }}" name="{{ dimension.0 }}" class="options-list" multiple>
                 {% for val in values %}
-                    <option value="{{val}}" selected>{{val}}</option>
+                    <option value="{{val}}" {% if forloop.counter <= 4 %}selected{% endif %}>{{val}}</option>
                 {% endfor %}
                 </select>
             </div>

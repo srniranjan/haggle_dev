@@ -1,10 +1,17 @@
 <div>
     <select id="model-types-container"
             class="options-list"
-            onchange="loadDimensions()">
-        <option value="">--DATA SET--</option>
+            onchange="loadDimensions()" multiple>
         {% for type in  types %}
             <option value="{{type}}">{{type}}</option>
         {%endfor%}
     </select>
+    <script>
+        $(document).ready(function(){
+            $("#model-types-container").chosen({
+                placeholder_text_multiple : 'Data set',
+                max_selected_options : 1
+            });
+        });
+    </script>
 </div>

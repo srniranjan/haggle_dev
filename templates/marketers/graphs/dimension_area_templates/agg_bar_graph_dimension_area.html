@@ -86,6 +86,7 @@
         <div class="inline graph-menu"><p>FILTERS:</p></div>
         <div id="filter_values_container" class="inline">
         </div>
+        <input class="inline graph-submit-button" id="graph-submit" type="submit" style="display:none;margin-top:66px;" value="GET GRAPH" onclick="updateChart();">
     </div>
     <div id="filters_container">
         {% for dimension, values in dimension_vals.items %}

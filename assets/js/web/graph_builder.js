@@ -12,7 +12,7 @@ function loadModels(){
     $('#graph-submit').hide();
     d3.select("#plot_area").select("svg").remove();
     var graph_type = $('#graph_area #choosing_area #graph_type_chooser select :selected').val();
-    if(graph_type.length > 0){
+    if(graph_type && graph_type.length > 0){
         $.get('/marketers/graph_options', {'req_type' : 'models',
                                            'graph_type' : graph_type})
         .done(function(data){
@@ -28,7 +28,7 @@ function loadDimensions(){
     d3.select("#plot_area").select("svg").remove();
     var model_type = $('#graph_area #choosing_area #model_type_chooser select :selected').val();
     var graph_type = $('#graph_area #choosing_area #graph_type_chooser select :selected').val();
-    if(model_type.length > 0){
+    if(model_type && model_type.length > 0){
         $.get('/marketers/graph_options', {'req_type' : 'dimensions',
                                            'model' : model_type,
                                            'graph_type' : graph_type})
@@ -42,11 +42,11 @@ function loadDimensions(){
 function getAllFilterValues(){
     var retVal = "";
     $('#filter_values_container .options-list').each(function(){
-        if($(this).val() != '')
+        if($(this).val() && $(this).val() != '')
             retVal += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
     });
     $('#secondary_dimension_values_container .options-list').each(function(){
-        if($(this).val() != '')
+        if($(this).val() && $(this).val() != '')
             retVal += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
     });
     return retVal;
