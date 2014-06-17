@@ -9,6 +9,7 @@ function loadGraphTypes(){
 function loadModels(){
     $('#graph_area #choosing_area #model_type_chooser').empty();
     $('#graph_area #choosing_area #dimension_chooser').empty();
+    $('#plot_area').css('border', 'none');
     $('#graph-submit').hide();
     d3.select("#plot_area").select("svg").remove();
     var graph_type = $('#graph_area #choosing_area #graph_type_chooser select :selected').val();
@@ -24,6 +25,7 @@ function loadModels(){
 
 function loadDimensions(){
     $('#graph_area #choosing_area #dimension_chooser').empty();
+    $('#plot_area').css('border', 'none');
     $('#graph-submit').hide();
     d3.select("#plot_area").select("svg").remove();
     var model_type = $('#graph_area #choosing_area #model_type_chooser select :selected').val();
@@ -70,6 +72,7 @@ function updateChart() {
         .done(function(data){
             var chart_data = JSON.parse(data);
             render_graph('plot_area', chart_data.chart_type, chart_data.chart_data, chart_data.metric, chart_data.dimension);
+            $('#plot_area').css('border', '1px solid lightgray');
     });
 }
 

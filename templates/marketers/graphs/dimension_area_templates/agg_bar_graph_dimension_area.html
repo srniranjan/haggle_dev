@@ -2,7 +2,7 @@
     function convertToTextField(drop_down_id){
         var all_values = $.map($('#' + drop_down_id + ' select option') ,function(option) {return option;});
         var sel_value = $('#' + drop_down_id + ' select :selected');
-        $($('#' + drop_down_id + ' select')[0]).prop('disabled', true);
+        $($('#' + drop_down_id + ' select')[0]).prop('disabled', true).trigger('chosen:updated');
         return $.map(all_values, function(option){
                 if(sel_value.val() != option.value)
                     return option;
@@ -55,7 +55,7 @@
         return retVal;
     }
 </script>
-<div class="metrics-menu">
+<div class="metrics-menu block">
     <div id="metric_dimensions" class="inline graph-menu">
         <select id="metrics" class="options-list" multiple>
             {% for y_candidate in  y_candidates %}
@@ -111,7 +111,7 @@
         </div>
     </div>
 </div>
-<div class="dimensions-filters-menu">
+<div class="dimensions-filters-menu block">
     <div id="filter_values" style="display:none" class="inline">
         <div id="filter_values_container" class="inline">
             <p>FILTERS</p>

@@ -5,7 +5,7 @@ function drawStackedBarChart(id, data, metricTitle, dimensionTitle) {
     height = 500 - margin.top - margin.bottom;
 
     var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
+    .rangeRoundBands([0, width], 0.7);
 
     var y = d3.scale.linear()
     .rangeRound([height, 0]);
@@ -37,7 +37,7 @@ function drawStackedBarChart(id, data, metricTitle, dimensionTitle) {
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var color = d3.scale.ordinal()
-    .range(["#ff3912", "#35ab45", "#35ab45", "#25de33", "#12dc54", "#ab21ef", "#ff3912"]);
+    .range(["#2bcac4", "#ffc000", "#35ab45", "#25de33", "#12dc54", "#ab21ef", "#ff3912"]);
 
     color.domain(d3.keys(data[0]).filter(function(key) { return key !== "dimension1"; }));
 
@@ -62,7 +62,6 @@ function drawStackedBarChart(id, data, metricTitle, dimensionTitle) {
     .attr("font-size", "12px");*/
 
     svg.append("g")
-    .attr("class", "grid")
     .attr("transform", "translate(0," + height + ")")
     .call(make_x_axis()
         .tickSize(-height, 0, 0)
@@ -110,7 +109,7 @@ function drawStackedBarChart(id, data, metricTitle, dimensionTitle) {
     .attr("y", function(d) { return y(d.y1); })
     .attr("height", 0)
     .transition()
-    .duration(1000)
+    .duration(500)
     .ease("linear")
     .attr("height", function(d) { return y(d.y0) - y(d.y1); })
     .style("stroke", function(d) { return color(d.name); })

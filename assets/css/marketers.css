@@ -52,13 +52,24 @@
     opacity: 1;
 }
 
-.grid .tick {
+.grid .tick line {
     stroke: lightgrey;
-    opacity: 0.7;
 }
+
+.tick text {
+    text-transform: uppercase;
+}
+
 .grid path {
     stroke-width: 0;
 }
+
 .stacked-bar {
-    fill-opacity: 0.15;
+    fill-opacity: 0.2;
+    stroke-width: 3;
+    width: 40px !important;
+}
+
+.stacked-bar:hover {
+    fill-opacity: 0.75;
 }
