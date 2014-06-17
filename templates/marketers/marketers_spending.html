@@ -103,7 +103,7 @@ Haggle Platforms | Marketers-Spending
                         var dimensions = '1,2,4';
                         var filters = "";
                         $('#dollars_spent_filter_values_container .options-list').each(function(){
-                            if($(this).val() != '')
+                            if($(this).val() && $(this).val() != '')
                                 filters += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
                         });
                         var graph_type = 'LineGraphView';
@@ -194,7 +194,7 @@ Haggle Platforms | Marketers-Spending
                         var dimensions = '3,4,6';
                         var filters = '';
                         $('#sales_per_head_filter_values_container .options-list').each(function(){
-                            if($(this).val() != '')
+                            if($(this).val() && $(this).val() != '')
                                 filters += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
                         });
                         var graph_type = 'AggregateBarGraphView';
@@ -214,7 +214,7 @@ Haggle Platforms | Marketers-Spending
                         });
                     }
                 </script>
-                <div class="graph-area" style="margin-top: 130px;"></div>
+                <div class="graph-area" style="margin-top: 130px;margin-bottom: 50px;"></div>
             </div>
         </div>
 {% endblock %}

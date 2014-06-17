@@ -6,7 +6,7 @@ Haggle Platforms | Marketers-Social
         <div id="social-page" class="social-charts">
             <div id="aggregate-history-score" class="chart-area-top">
                 <div class="chart-desc">
-                    <h1>Aggregate History Score</h1>
+                    <h1>Aggregate Score</h1>
                     <p></p>
                     <div class="dimensions">
                         <div id="agg_history_score_aggregator_strategy_values_container" class="graph-menu">
@@ -64,7 +64,7 @@ Haggle Platforms | Marketers-Social
                         });
                         $("#agg-history-score-types").chosen({
                             placeholder_text_multiple : 'Choose score types',
-                            max_selected_options : 4
+                            max_selected_options : 1
                         });
                         updateAggHistoryScore();
                     });
@@ -73,7 +73,7 @@ Haggle Platforms | Marketers-Social
                         var dimensions = '7,6,1';
                         var filters = '';
                         $('#agg_history_score_filter_values_container .options-list').each(function(){
-                            if($(this).val() != '')
+                            if($(this).val() && $(this).val() != '')
                                 filters += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
                         });
                         var graph_type = 'AggregateBarGraphView';
@@ -93,7 +93,7 @@ Haggle Platforms | Marketers-Social
                         });
                     }
                 </script>
-                <div class="graph-area" style="margin-top: 130px;"></div>
+                <div class="graph-area" style="margin-top: 130px;margin-bottom: 50px;"></div>
             </div>
         </div>
 {% endblock %}
