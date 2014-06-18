@@ -31,7 +31,14 @@
     function getDimensionsList(){
         var retVal = "";
         var primary_dimension = $('#primary_dimensions select :selected').val();
-        var secondary_dimension = $($('#filter_values_container .options-list')[0]).attr('name');
+        var filter_dims = $('#filter_values_container .options-list');
+        var secondary_dimension = '';
+        for(var i=0; i< filter_dims.length; i++) {
+            if($(filter_dims[i]).attr('name') && $(filter_dims[i]).attr('name') != '') {
+                secondary_dimension = $(filter_dims[i]).attr('name');
+                break;
+            }
+        }
         var metric_dimension = $('#metric_dimensions select :selected').val();
         retVal = primary_dimension + ',' + secondary_dimension + ',' + metric_dimension;
         return retVal;
@@ -80,12 +87,38 @@
     <div id="filters_container">
         {% for dimension, values in dimension_vals.items %}
             <div id="dimension_vals_{{dimension.0}}" style="display:none" class="inline graph-menu">
-                <h4>{{ dimension.1 }}</h4>
-                <select data-placeholder="{{ dimension.1 }}" id="dimension-{{ dimension.0 }}" name="{{ dimension.0 }}" class="options-list" multiple>
-                {% for val in values %}
-                    <option value="{{val}}" {% if forloop.counter <= 4 %}selected{% endif %}>{{val}}</option>
-                {% endfor %}
-                </select>
+                {% if dimension.1 == 'Time' %}
+                    <h4>Time Strategy</h4>
+                    <select data-placeholder="Select Time Strategy" id="time-strategy" class="options-list" onchange="fetchTimeForStrategy()" multiple>
+                        {% for val in time_strategy_vals %}
+                            <option value="{{val}}">{{val}}</option>
+                        {% endfor %}
+                    </select>
+                    <br><br>
+                    <h4>{{ dimension.1 }}</h4>
+                    <select data-placeholder="Time" id="dimension-{{ dimension.0 }}" name="{{ dimension.0 }}" class="options-list time-vals" disabled multiple>
+                    </select>
+                    <script>
+                        function fetchTimeForStrategy() {
+                            var strategy = $('#time-strategy').val()[0];
+                            var params = {'strategy':strategy, 'vals':'{% for val in values %}{{val}},{% endfor %}'}
+                            $.get('/marketers/time', params)
+                            .done(function(data){
+                                $('#dimension-{{ dimension.0 }}').html(data);
+                                $('#dimension-{{ dimension.0 }}').trigger('chosen:updated');
+                                $('#dimension-{{ dimension.0 }}').prop('disabled', false).trigger('chosen:updated');
+                                $('#time-strategy').prop('disabled', true).trigger('chosen:updated');
+                            });
+                        }
+                    </script>
+                {% else %}
+                    <h4>{{ dimension.1 }}</h4>
+                    <select data-placeholder="{{ dimension.1 }}" id="dimension-{{ dimension.0 }}" name="{{ dimension.0 }}" class="options-list" multiple>
+                        {% for val in values %}
+                            <option value="{{val}}" {% if forloop.counter <= 4 %}selected{% endif %}>{{val}}</option>
+                        {% endfor %}
+                    </select>
+                {% endif %}
             </div>
         {% endfor %}
     </div>

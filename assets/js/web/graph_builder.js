@@ -44,7 +44,7 @@ function loadDimensions(){
 function getAllFilterValues(){
     var retVal = "";
     $('#filter_values_container .options-list').each(function(){
-        if($(this).val() && $(this).val() != '')
+        if($(this).val() && $(this).val() != '' && $(this).attr('name'))
             retVal += $(this).attr('name') + "::::" + $(this).val() + ",,,,";
     });
     $('#secondary_dimension_values_container .options-list').each(function(){
@@ -61,12 +61,14 @@ function updateChart() {
     var graph_type = $('#graph_area #choosing_area #graph_type_chooser select :selected').val();
     var model_type = $('#graph_area #choosing_area #model_type_chooser select :selected').val();
     var aggregator_strategy = $('#aggregator_strategy_values_container select :selected').val();
+    var time_strategy = $('#time-strategy :selected').val();
     var params = {
                     'dimensions':dimensions,
                     'graph_type':graph_type,
                     'model_type':model_type,
                     'filters':filters,
-                    'agg_idx':aggregator_strategy
+                    'agg_idx':aggregator_strategy,
+                    'time_strategy':time_strategy
                  }
     $.post("/api/marketers", params)
         .done(function(data){

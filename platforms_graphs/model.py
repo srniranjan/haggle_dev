@@ -6,7 +6,7 @@ def time_value_strategy(timestamp):
     time_array = []
     eastern = timezone('US/Eastern')
     dt = datetime.datetime.fromtimestamp(float(timestamp), eastern)
-    return dt.__str__()
+    return timestamp
     #today = datetime.datetime.now().date()
     #timedelta = today - dt.date()
     #days = timedelta.days

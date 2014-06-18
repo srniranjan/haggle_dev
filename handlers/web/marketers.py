@@ -1,9 +1,10 @@
 import webapp2
 import json
 from handlers.web.web_request_handler import WebRequestHandler
-from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list
+from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list, time_strategy_list
 from platforms_graphs.util import get_class
 from platforms_graphs.model_factory import get_model_objs_for
+from platforms_graphs.time_strategies import time_horizon
 
 class Spending(WebRequestHandler):
     def get(self):
@@ -48,10 +49,25 @@ class GraphOptions(WebRequestHandler):
             html = self.get_rendered_html(name, params)
         return {req_type : html}
 
+class TimeDataHandler(WebRequestHandler):
+    def get(self):
+        values = self['vals'].split(',')
+        strategy = time_strategy_list[self['strategy']] if self['strategy'] else time_horizon
+        processed_vals = set()
+        for val in values:
+            if val:
+                times = strategy(val)
+                for time in times:
+                    processed_vals.add(time)
+        params = {'values' : processed_vals }
+        html = self.get_rendered_html('marketers/graphs/dimension_area_templates/time_vals.html', params)
+        self.write(json.dumps(html))
+
 app = webapp2.WSGIApplication([('/marketers/spending', Spending),
                                ('/marketers/social', Social),
                                ('/marketers/custom', Custom),
                                ('/marketers', Spending),
                                ('/marketers/options', MarketersOptions),
-                               ('/marketers/graph_options',GraphOptions)
-   ])
+                               ('/marketers/graph_options',GraphOptions),
+                               ('/marketers/time', TimeDataHandler)
+])

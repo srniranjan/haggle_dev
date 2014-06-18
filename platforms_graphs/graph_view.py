@@ -1,6 +1,7 @@
 import logging
 from math import ceil
 from platforms_graphs.util import get_class
+from platforms_graphs.time_strategies import time_horizon
 
 def get_graph_view_for(graph_name):
     if graph_name == 'LineGraphView':
@@ -62,6 +63,7 @@ class GraphView():
     def __init__(self):
         self.graph_model = None
         self.aggregator_strategy = None
+        self.time_strategy = None
 
     def get_dimension(self):
         dimension_title = self.graph_model.property_titles[self.graph_model.xaxis_id]
@@ -82,7 +84,17 @@ class GraphView():
                 for filter_val in filter_vals:
                     idx = filter_val[0]
                     val = filter_val[1]
-                    if model.properties[int(idx)].value not in val.split(','):
+                    model_val = model.properties[int(idx)].value
+                    f_vals = [str(v) for v in val.split(',')]
+                    if model.property_titles[model.properties[int(idx)].unique_id] == 'Time':
+                        model_val = self.time_strategy(model_val) if self.time_strategy else time_horizon(model_val)
+                        temp_add = False
+                        for v in model_val:
+                            if v in f_vals:
+                                temp_add = True
+                        if not temp_add:
+                            add_co_ord = False
+                    elif model_val not in f_vals:
                         add_co_ord = False
                         break
             if add_co_ord:
@@ -118,7 +130,13 @@ class LineGraphView(GraphView):
             matches = self.find_matches_in(plot_vals, filters)
             data_row = {'dimension1':curr_dimension}
             for co_ord in matches:
-                data_row[co_ord[0]] = co_ord[1]
+                key = co_ord[0]
+                if self.graph_model.property_titles[self.graph_model.additional_xaxis_id] == 'Time':
+                    times = self.time_strategy(key) if self.time_strategy else time_horizon(key)
+                    for time in times:
+                        data_row[time] = co_ord[1]
+                else:
+                    data_row[co_ord[0]] = co_ord[1]
             chart_data.append(data_row)
         return chart_data
 

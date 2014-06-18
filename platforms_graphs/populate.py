@@ -14,4 +14,5 @@ def get_graph_view(graph_obj):
     graph_view = get_graph_view_for(graph_obj['graph_view'])
     graph_view.graph_model = graph_model
     graph_view.aggregator_strategy = graph_obj['aggregator_strategy']
+    graph_view.time_strategy = graph_obj['time_strategy']
     return graph_view

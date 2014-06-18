@@ -5,7 +5,7 @@ from handlers import RequestHandler
 from django.template import loader
 from platforms_graphs.populate import get_graph_view
 from platforms_graphs.util import get_class
-from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list, aggregator_strategy_list
+from platforms_graphs.graph_mappings import view_to_graphmodel_mapping, model_list, aggregator_strategy_list, time_strategy_list
 from geo import geomath
 from google.appengine.ext import db
 
@@ -45,8 +45,10 @@ class ChartDataHandler(RequestHandler):
         model = model_list[model_type]
         graph_model = view_to_graphmodel_mapping[graph_type]
         aggregator_index = self['agg_idx'] if self['agg_idx'] else aggregator_strategy_list.keys()[0]
+        time_strategy_index = self['time_strategy'] if self['time_strategy'] else time_strategy_list.keys()[0]
         aggregator_strategy = aggregator_strategy_list[aggregator_index] if aggregator_index else None
-        curr_graph = {'model':model,'graph_model':graph_model,'dimension_ids':dimensions,'filter_ids':filter_ids,'graph_view':graph_type,'aggregator_strategy':aggregator_strategy}
+        time_strategy = time_strategy_list[time_strategy_index] if time_strategy_index else None
+        curr_graph = {'model':model,'graph_model':graph_model,'dimension_ids':dimensions,'filter_ids':filter_ids,'graph_view':graph_type,'aggregator_strategy':aggregator_strategy,'time_strategy':time_strategy}
         graph_view = get_graph_view(curr_graph)
         dimension_id = graph_view.graph_model.xaxis_id
         metric_id = graph_view.graph_model.yaxis_id
