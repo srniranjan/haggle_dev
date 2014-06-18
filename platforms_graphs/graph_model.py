@@ -94,6 +94,7 @@ class BarGraphModelBuilder(GraphModelBuilder):
         template_vals = {'x_candidates' : [(x, model_cls.property_titles[x]) for x in model_cls.get_x_candidates()],
                          'y_candidates' : [(y, model_cls.property_titles[y]) for y in model_cls.get_y_candidates()]}
         template_vals['dimension_vals'] = self.get_unique_dimension_vals(model_cls, model_objs)
+        template_vals['time_strategy_vals'] = time_strategy_list.keys()
         return 'marketers/graphs/dimension_area_templates/bar_graph_dimension_area.html', template_vals
 
     def populate(self, model_objs, dimension_ids, filter_ids, property_titles):
