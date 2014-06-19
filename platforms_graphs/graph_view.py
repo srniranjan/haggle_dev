@@ -165,14 +165,27 @@ class BarGraphView(GraphView):
     def translate_to_json(self, filters):
         chart_data = []
         matches = self.find_matches_in(self.graph_model.plots, filters)
+        time_dim_strategy = None
+        if self.graph_model.property_titles[self.graph_model.xaxis_id] == 'Time':
+            time_dim_strategy = self.time_as_dimension_strategy if self.time_as_dimension_strategy else time_horizon
         plot_dict = {}
         for (x, y) in matches:
-            if x not in plot_dict:
-                plot_dict[x] = 0.0
-            try:
-                plot_dict[x] += float(y)
-            except ValueError:
-                plot_dict[x] += 0
+            dim = time_dim_strategy(x) if time_dim_strategy else x
+            if time_dim_strategy:
+                for d in dim:
+                    if d not in plot_dict:
+                        plot_dict[d] = 0.0
+                    try:
+                        plot_dict[d] += float(y)
+                    except ValueError:
+                        plot_dict[d] += 0
+            else:
+                if dim not in plot_dict:
+                    plot_dict[dim] = 0.0
+                try:
+                    plot_dict[dim] += float(y)
+                except ValueError:
+                    plot_dict[dim] += 0
         for k, v in plot_dict.iteritems():
             curr_dict = {'dimension1' : k, 'All' : v}
             chart_data.append(curr_dict)
