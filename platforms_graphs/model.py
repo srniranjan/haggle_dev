@@ -35,6 +35,13 @@ def day_value_sort_strategy(day_of_week):
     days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     return days.index(day_of_week)
 
+def time_value_sort_strategy(time, strategy):
+    times = {
+        'time_horizon' : ['Last Day', 'Last Week', 'Last Month', 'Last Year'],
+        'meal_time' : ['Breakfast', 'Lunch', 'Snack', 'Dinner']
+    }
+    return times[strategy].index(time) if strategy else times['time_horizon'].index(time)
+
 class Property():
     def __init__(self):
         self.raw_value = ''
@@ -82,7 +89,7 @@ class Model():
         pass
 
     @staticmethod
-    def get_sort_value(dimension_idx, dimension_value):
+    def get_sort_value(dimension_idx, dimension_value, dimension_strategy=None):
         pass
 
 class AvailedDeal(Model):
@@ -109,8 +116,10 @@ class AvailedDeal(Model):
             idx += 1
 
     @staticmethod
-    def get_sort_value(dimension_idx, dimension_value):
-        if dimension_idx == 1:
+    def get_sort_value(dimension_idx, dimension_value, dimension_strategy=None):
+        if dimension_idx == 0:
+            return time_value_sort_strategy(dimension_value, dimension_strategy)
+        elif dimension_idx == 1:
             return day_value_sort_strategy(dimension_value)
         elif dimension_idx == 2:
             return dimension_value.lower()
@@ -143,8 +152,10 @@ class Deal(Model):
             idx += 1
 
     @staticmethod
-    def get_sort_value(dimension_idx, dimension_value):
-        if dimension_idx == 1:
+    def get_sort_value(dimension_idx, dimension_value, dimension_strategy=None):
+        if dimension_idx == 0:
+            return time_value_sort_strategy(dimension_value, dimension_strategy)
+        elif dimension_idx == 1:
             return day_value_sort_strategy(dimension_value)
         elif dimension_idx == 2:
             return dimension_value.lower()
