@@ -849,6 +849,10 @@ td {
     height: 60px;
 }
 
+.dimensions-block {
+    height: 115px;
+}
+
 .metrics-dimensions-block {
     display: block;
 }

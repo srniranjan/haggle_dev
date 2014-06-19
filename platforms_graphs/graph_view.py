@@ -196,8 +196,25 @@ class AggregateBarGraphView(GraphView):
     def translate_to_json(self, filters):
         chart_data = []
         agg_data = self.graph_model.aggregated_data
+        time_dim_strategy = None
+        if self.graph_model.property_titles[self.graph_model.xaxis_id] == 'Time':
+            time_dim_strategy = self.time_as_dimension_strategy if self.time_as_dimension_strategy else time_horizon
         agg_dim_map = {}
-        for dimension1, agg_dim_dict in agg_data.iteritems():
+        agg_data_strat = {}
+        if time_dim_strategy:
+            for dimension1, agg_dim_dict in agg_data.iteritems():
+                dim = time_dim_strategy(dimension1)
+                for d in dim:
+                    if not d in agg_data_strat:
+                        agg_data_strat[d] = {}
+                    for ad, pvals in agg_dim_dict.iteritems():
+                        if not ad in agg_data_strat[d]:
+                            agg_data_strat[d][ad] = []
+                        for pval in pvals:
+                            agg_data_strat[d][ad].append(pval)
+        else:
+            agg_data_strat = agg_data
+        for dimension1, agg_dim_dict in agg_data_strat.iteritems():
             agg_map = {}
             for agg_dim, plot_vals in agg_dim_dict.iteritems():
                 curr_agg = []
