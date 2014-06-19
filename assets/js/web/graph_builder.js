@@ -62,13 +62,15 @@ function updateChart() {
     var model_type = $('#graph_area #choosing_area #model_type_chooser select :selected').val();
     var aggregator_strategy = $('#aggregator_strategy_values_container select :selected').val();
     var time_strategy = $('#time-strategy :selected').val();
+    var time_as_dimension_strategy = $('#time-as-dimension-strategy :selected').val();
     var params = {
                     'dimensions':dimensions,
                     'graph_type':graph_type,
                     'model_type':model_type,
                     'filters':filters,
                     'agg_idx':aggregator_strategy,
-                    'time_strategy':time_strategy
+                    'time_strategy':time_strategy,
+                    'time_as_dimension_strategy':time_as_dimension_strategy
                  }
     $.post("/api/marketers", params)
         .done(function(data){

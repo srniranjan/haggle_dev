@@ -10,6 +10,15 @@
     }
 
     function loadFilterValues(){
+        var sel_text = $('#primary_dimensions select :selected').text();
+        if (sel_text == 'Time') {
+            $('#time-as-dimension').show(0, function(){
+                $("#time-as-dimension-strategy").chosen({
+                    placeholder_text_multiple : 'Select Time Strategy',
+                    max_selected_options : 1
+                });
+            });
+        }
         var sel_value = $('#primary_dimensions select :selected').val();
         $('#dimension_vals_' + sel_value).remove();
         $('#filters_container div').each(function(idx, div){
@@ -66,6 +75,15 @@
                 <option value="{{x_candidate.0}}">{{x_candidate.1}}</option>
             {%endfor%}
         </select>
+        <br><br>
+        <div id="time-as-dimension" style="display:none;">
+            <h4>Time Strategy</h4>
+            <select data-placeholder="Select Time Strategy" id="time-as-dimension-strategy" class="options-list" multiple>
+                {% for val in time_strategy_vals %}
+                    <option value="{{val}}">{{val}}</option>
+                {% endfor %}
+            </select>
+        </div>
         <script>
             $(document).ready(function(){
                 $("#primary-dimension").chosen({

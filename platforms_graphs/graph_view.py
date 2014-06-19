@@ -64,6 +64,7 @@ class GraphView():
         self.graph_model = None
         self.aggregator_strategy = None
         self.time_strategy = None
+        self.time_as_dimension_strategy = None
 
     def get_dimension(self):
         dimension_title = self.graph_model.property_titles[self.graph_model.xaxis_id]
@@ -125,7 +126,24 @@ class LineGraphView(GraphView):
         model_name = self.graph_model.lines_map[self.graph_model.lines_map.keys()[0]][0].model.__class__.__name__
         dimension_idx = self.graph_model.xaxis_id
         model_cls = get_class('platforms_graphs.model.'+model_name)
-        sorted_lines_map = sorted(self.graph_model.lines_map.items(), key=lambda (k,v):model_cls.get_sort_value(dimension_idx, k))
+        time_dim_strategy = None
+        if self.graph_model.property_titles[self.graph_model.xaxis_id] == 'Time':
+            time_dim_strategy = self.time_as_dimension_strategy if self.time_as_dimension_strategy else time_horizon
+        lines_map = {}
+        for curr_dim, pvals in self.graph_model.lines_map.items():
+            dim = time_dim_strategy(curr_dim) if time_dim_strategy else curr_dim
+            if time_dim_strategy:
+                for d in dim:
+                    if d not in lines_map:
+                        lines_map[d] = []
+                    for pval in pvals:
+                        lines_map[d].append(pval)
+            else:
+                if dim not in lines_map:
+                    lines_map[dim] = []
+                for pval in pvals:
+                        lines_map[dim].append(pval)
+        sorted_lines_map = sorted(lines_map.items(), key=lambda (k,v):model_cls.get_sort_value(dimension_idx, k, time_dim_strategy.__name__)) if time_dim_strategy else sorted(lines_map.items(), key=lambda (k,v):model_cls.get_sort_value(dimension_idx, k))
         for (curr_dimension, plot_vals) in sorted_lines_map:
             matches = self.find_matches_in(plot_vals, filters)
             data_row = {'dimension1':curr_dimension}
