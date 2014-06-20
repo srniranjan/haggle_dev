@@ -99,7 +99,6 @@ Haggle Platforms | Marketers-Spending
                         updateDollarsSpent();
                     });
                     function updateDollarsSpent() {
-                        d3.select("#dollars-spent .graph-area").select("svg").remove();
                         var dimensions = '1,2,4';
                         var filters = "";
                         $('#dollars_spent_filter_values_container .options-list').each(function(){
@@ -117,6 +116,7 @@ Haggle Platforms | Marketers-Spending
                         $.post("/api/marketers", params)
                             .done(function(data){
                                 var chart_data = JSON.parse(data);
+                                d3.select("#dollars-spent .graph-area").select("svg").remove();
                                 render_graph('dollars-spent .graph-area', chart_data.chart_type, chart_data.chart_data, chart_data.metric, chart_data.dimension);
                         });
                     }
@@ -190,7 +190,6 @@ Haggle Platforms | Marketers-Spending
                         updateSalesPerHead();
                     });
                     function updateSalesPerHead() {
-                        d3.select("#sales-per-head .graph-area").select("svg").remove();
                         var dimensions = '3,4,6';
                         var filters = '';
                         $('#sales_per_head_filter_values_container .options-list').each(function(){
@@ -210,6 +209,7 @@ Haggle Platforms | Marketers-Spending
                         $.post("/api/marketers", params)
                             .done(function(data){
                                 var chart_data = JSON.parse(data);
+                                d3.select("#sales-per-head .graph-area").select("svg").remove();
                                 render_graph('sales-per-head .graph-area', chart_data.chart_type, chart_data.chart_data, chart_data.metric, chart_data.dimension);
                         });
                     }

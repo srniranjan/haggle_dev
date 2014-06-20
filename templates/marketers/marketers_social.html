@@ -70,7 +70,6 @@ Haggle Platforms | Marketers-Social
                         updateAggHistoryScore();
                     });
                     function updateAggHistoryScore() {
-                        d3.select("#aggregate-history-score .graph-area").select("svg").remove();
                         var dimensions = '7,6,1';
                         var filters = '';
                         $('#agg_history_score_filter_values_container .options-list').each(function(){
@@ -90,6 +89,7 @@ Haggle Platforms | Marketers-Social
                         $.post("/api/marketers", params)
                             .done(function(data){
                                 var chart_data = JSON.parse(data);
+                                d3.select("#aggregate-history-score .graph-area").select("svg").remove();
                                 render_graph('aggregate-history-score .graph-area', chart_data.chart_type, chart_data.chart_data, chart_data.metric, chart_data.dimension);
                         });
                     }

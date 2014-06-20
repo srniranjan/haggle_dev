@@ -55,7 +55,6 @@ function getAllFilterValues(){
 }
 
 function updateChart() {
-    d3.select("#plot_area").select("svg").remove();
     var dimensions = getDimensionsList();
     var filters = getAllFilterValues();
     var graph_type = $('#graph_area #choosing_area #graph_type_chooser select :selected').val();
@@ -75,6 +74,7 @@ function updateChart() {
     $.post("/api/marketers", params)
         .done(function(data){
             var chart_data = JSON.parse(data);
+            d3.select("#plot_area").select("svg").remove();
             render_graph('plot_area', chart_data.chart_type, chart_data.chart_data, chart_data.metric, chart_data.dimension);
             $('#plot_area').css('border', '1px solid lightgray');
     });
