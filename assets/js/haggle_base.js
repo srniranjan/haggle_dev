@@ -82,9 +82,6 @@ $(document).ready(function(){
         if(curr_link_url == page_url) {
             $(this).css('color','#e07c77');
             $(this).css('border-bottom','2px solid #e07c77');
-        } else {
-            $(this).css('color','#a5a5a5');
-            $(this).css('border-bottom','none');
         }
     });
 });
