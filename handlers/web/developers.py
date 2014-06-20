@@ -1,6 +1,10 @@
 import webapp2
 from handlers.web.web_request_handler import WebRequestHandler
 
+class DefaultHandler(WebRequestHandler):
+    def get(self):
+        self.redirect('/developers/api-docs')
+
 class ApiDocumentation(WebRequestHandler):
     def get(self):
         path = 'developers/developers_api_docs.html'
@@ -13,5 +17,5 @@ class OauthIntegrate(WebRequestHandler):
 
 app = webapp2.WSGIApplication([('/developers/api-docs', ApiDocumentation),
                                ('/developers/oauth-integrate', OauthIntegrate),
-                               ('/developers', ApiDocumentation)
+                               ('/developers', DefaultHandler)
    ])

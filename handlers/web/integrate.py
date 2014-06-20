@@ -1,6 +1,10 @@
 import webapp2
 from handlers.web.web_request_handler import WebRequestHandler
 
+class DefaultHandler(WebRequestHandler):
+    def get(self):
+        self.redirect('/integrate/case_studies')
+
 class CaseStudies(WebRequestHandler):
     def get(self):
         path = 'integrate/integrate_case_studies.html'
@@ -25,5 +29,5 @@ app = webapp2.WSGIApplication([('/integrate/case_studies', CaseStudies),
                                ('/integrate/ios', iOSHandler),
                                ('/integrate/android', AndroidHandler),
                                ('/integrate/api-snippet', ApiSnippetHandler),
-                               ('/integrate', CaseStudies)
+                               ('/integrate', DefaultHandler)
    ])

@@ -6,6 +6,10 @@ from platforms_graphs.util import get_class
 from platforms_graphs.model_factory import get_model_objs_for
 from platforms_graphs.time_strategies import time_horizon
 
+class DefaultHandler(WebRequestHandler):
+    def get(self):
+        self.redirect('/marketers/spending')
+
 class Spending(WebRequestHandler):
     def get(self):
         path = 'marketers/marketers_spending.html'
@@ -66,7 +70,7 @@ class TimeDataHandler(WebRequestHandler):
 app = webapp2.WSGIApplication([('/marketers/spending', Spending),
                                ('/marketers/social', Social),
                                ('/marketers/custom', Custom),
-                               ('/marketers', Spending),
+                               ('/marketers', DefaultHandler),
                                ('/marketers/options', MarketersOptions),
                                ('/marketers/graph_options',GraphOptions),
                                ('/marketers/time', TimeDataHandler)

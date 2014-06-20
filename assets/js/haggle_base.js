@@ -72,3 +72,19 @@ $(document).ready(function(){
         $(this).css('color','#e07c77');
     });
 });
+
+$(document).ready(function(){
+    var url = this.URL;
+    var page_url = url.substring(url.lastIndexOf('/'));
+    $(".section-menu li a").each(function(){
+        var link_url = $(this).attr('href');
+        var curr_link_url = link_url.substring(link_url.lastIndexOf('/'));
+        if(curr_link_url == page_url) {
+            $(this).css('color','#e07c77');
+            $(this).css('border-bottom','2px solid #e07c77');
+        } else {
+            $(this).css('color','#a5a5a5');
+            $(this).css('border-bottom','none');
+        }
+    });
+});
