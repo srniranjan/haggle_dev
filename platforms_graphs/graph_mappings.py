@@ -3,7 +3,7 @@ from platforms_graphs.time_strategies import time_horizon, meal_time
 
 view_to_graphmodel_mapping = {'LineGraphView':'platforms_graphs.graph_model.LineGraphModelBuilder',
                          'BarGraphView':'platforms_graphs.graph_model.BarGraphModelBuilder',
-                         'AggregateBarGraphView':'platforms_graphs.graph_model.AggregateBarGraphModelBuilder'}
+                         'AggregateBarGraph':'platforms_graphs.graph_model.AggregateBarGraphModelBuilder'}
 
 model_list = {'AvailedDeal' : 'platforms_graphs.model.AvailedDeal',
               'Deal' : 'platforms_graphs.model.Deal',

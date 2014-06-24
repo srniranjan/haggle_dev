@@ -44,7 +44,7 @@ function render_graph(graph_id, chart_type, chart_data){
         drawLineChart(graph_id + ' .graph-area', chart_data, graph_id);
     }
     else if(chart_type == 'BarGraphView' ||
-            chart_type == 'AggregateBarGraphView'){
+            chart_type == 'AggregateBarGraph'){
         drawStackedBarChart(graph_id + ' .graph-area', chart_data, graph_id);
     }
 }

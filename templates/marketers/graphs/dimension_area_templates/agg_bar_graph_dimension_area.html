@@ -37,10 +37,10 @@
 
     function loadFilterValues(){
         var sel_value = $('#secondary_dimensions select :selected').val();
+        $('#filter_values').show();
         $('#filters_container div').each(function(idx, div){
             var retDiv = $('#' + div.id).remove();
             if(div.id != 'dimension_vals_' + sel_value){
-                $('#filter_values').show();
                 $('#filter_values #filter_values_container').append(retDiv[0]);
                 $('#filter_values #filter_values_container #' + retDiv[0].id).show();
                 $("#"+retDiv[0].id+' select').chosen({
@@ -95,7 +95,7 @@
                 });
             </script>
         </div>
-        <br><br>
+        <br>
         <div id="time-as-dimension" style="display:none;">
             <h4>Time Strategy</h4>
             <select data-placeholder="Select Time Strategy" id="time-as-dimension-strategy" class="options-list" multiple>
@@ -131,10 +131,10 @@
 </div>
 <div class="dimensions-filters-menu block">
     <div id="filter_values" style="display:none" class="inline">
+        <p>FILTERS</p>
         <div id="filter_values_container" class="inline">
-            <p>FILTERS</p>
         </div>
-        <input class="inline graph-submit-button" id="graph-submit" type="submit" style="display:none;margin-top:66px;" value="GET GRAPH" onclick="updateChart();">
+        <input class="inline graph-submit-button" id="graph-submit" type="submit" style="display:none;margin-top:22px;" value="GET GRAPH" onclick="updateChart();">
     </div>
     <div id="filters_container">
         {% for dimension, values in dimension_vals.items %}

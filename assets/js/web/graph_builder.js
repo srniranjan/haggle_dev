@@ -89,7 +89,7 @@ function render_graph(graph_id, chart_type, chart_data, metric, dimension){
         drawLineChart(graph_id, chart_data, metric, dimension);
     }
     else if(chart_type == 'BarGraphView' ||
-            chart_type == 'AggregateBarGraphView'){
+            chart_type == 'AggregateBarGraph'){
         drawStackedBarChart(graph_id, chart_data, metric, dimension);
     }
 }

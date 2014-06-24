@@ -8,7 +8,7 @@ def get_graph_view_for(graph_name):
         return LineGraphView()
     elif graph_name == 'BarGraphView':
         return BarGraphView()
-    elif graph_name == 'AggregateBarGraphView':
+    elif graph_name == 'AggregateBarGraph':
         return AggregateBarGraphView()
     return None
 
