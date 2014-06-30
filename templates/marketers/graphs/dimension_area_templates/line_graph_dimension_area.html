@@ -120,7 +120,7 @@
                         function fetchTimeForStrategy() {
                             var strategy = $('#time-strategy').val()[0];
                             var params = {'strategy':strategy, 'vals':'{% for val in values %}{{val}},{% endfor %}'}
-                            $.get('/marketers/time', params)
+                            $.post('/marketers/time', params)
                             .done(function(data){
                                 $('#dimension-{{ dimension.0 }}').html(data);
                                 $('#dimension-{{ dimension.0 }}').trigger('chosen:updated');

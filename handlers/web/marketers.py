@@ -54,7 +54,7 @@ class GraphOptions(WebRequestHandler):
         return {req_type : html}
 
 class TimeDataHandler(WebRequestHandler):
-    def get(self):
+    def post(self):
         values = self['vals'].split(',')
         strategy = time_strategy_list[self['strategy']] if self['strategy'] else time_horizon
         processed_vals = set()
