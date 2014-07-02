@@ -831,6 +831,10 @@ td {
 	stroke-width: 5;
 }
 
+.data-point:hover {
+	stroke: #3e3e3e;
+}
+
 .stacked-bar {
     stroke-width: 2;
 }

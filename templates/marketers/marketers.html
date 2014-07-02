@@ -8,6 +8,7 @@
     <script src="/assets/js/web/marketers.js"></script>
     <script src="/assets/js/lib/chosen.jquery.min.js"></script>
     <script src="/assets/js/lib/chosen.proto.min.js"></script>
+    <script type='text/javascript' src='/assets/js/lib/jquery.tipsy.js'></script>
 {% endblock %}
 {% block Title %}
 Haggle Platforms | Marketers
@@ -15,6 +16,7 @@ Haggle Platforms | Marketers
 {% block Styles %}
     <link href="/assets/css/marketers.css" type="text/css" rel="stylesheet">
     <link href="/assets/css/chosen.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/tipsy.css" type="text/css" />
 {% endblock %}
 {% block Content %}
 <div class="wrapper">
@@ -29,4 +31,9 @@ Haggle Platforms | Marketers
     {% block MarketersContent %}
     {% endblock %}
 </div>
+<script type='text/javascript'>
+ $(function() {
+   $('a[rel=tipsy]').tipsy({fade: true, gravity: 'n'});
+ });
+</script>
 {% endblock %}

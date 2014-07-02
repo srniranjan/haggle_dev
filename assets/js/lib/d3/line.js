@@ -74,8 +74,6 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
         };
     });
 
-    //dimension2s = dimension2s.slice(0,3);
-
     x.domain(data.map(function(d) { return d.dimension1; }));
 
     y.domain([
@@ -179,9 +177,21 @@ function drawLineChart(id, data, metricTitle, dimensionTitle) {
                 if(d.metric){
                     y_val = +(d.metric);
                 }
-                return d.dimension1+' : '+dimension2.name+' : '+y_val;
+                var ttl = d.dimension1+' : '+dimension2.name+' : '+y_val;
+                $($(this).parent()).attr('original-title',ttl);
+                $(this).remove();
+                return;
             }
         );
+
+        $('svg circle').tipsy({
+            gravity: 's',
+            html: true,
+            fade: true,
+            title: function() {
+                return $(this).attr('original-title');
+            }
+        });
     }
 
     $('.area').mouseover(function(){

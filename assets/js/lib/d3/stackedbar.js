@@ -54,13 +54,6 @@ function drawStackedBarChart(id, data, metricTitle, dimensionTitle) {
     x.domain(data.map(function(d) { return d.dimension1; }));
     y.domain([0, d3.max(data, function(d) { return d.total; })]);
 
-    /*svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
-    .call(xAxis)
-    .attr("font-family", "sans-serif")
-    .attr("font-size", "12px");*/
-
     svg.append("g")
     .attr("transform", "translate(0," + height + ")")
     .call(make_x_axis()
@@ -70,16 +63,6 @@ function drawStackedBarChart(id, data, metricTitle, dimensionTitle) {
     .attr("font-size", "12px")
     .selectAll("text")
     .attr("y", 15);
-
-    /*svg.append("g")
-    .attr("class", "y axis")
-    .call(yAxis)
-    .append("text")
-    .attr("transform", "rotate(-90)")
-    .attr("y", 6)
-    .attr("dy", ".71em")
-    .style("text-anchor", "end")
-    .text(metricTitle);*/
 
     svg.append("g")
     .attr("class", "grid")
@@ -115,22 +98,13 @@ function drawStackedBarChart(id, data, metricTitle, dimensionTitle) {
     .style("stroke", function(d) { return color(d.name); })
     .style("fill", function(d) { return color(d.name); });
 
-    /*var legend = svg.selectAll(".legend")
-    .data(color.domain().slice().reverse())
-    .enter().append("g")
-    .attr("class", "legend")
-    .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
-
-    legend.append("rect")
-    .attr("x", width - 18)
-    .attr("width", 18)
-    .attr("height", 18)
-    .style("fill", color);
-
-    legend.append("text")
-    .attr("x", width - 24)
-    .attr("y", 9)
-    .attr("dy", ".35em")
-    .style("text-anchor", "end")
-    .text(function(d) { return d; });*/
+    $('svg rect').tipsy({
+        gravity: 's',
+        html: true,
+        fade: true,
+        title: function() {
+            var d  = this.__data__;
+            return d.y1;
+        }
+    });
 }
