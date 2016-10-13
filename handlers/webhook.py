@@ -3,6 +3,7 @@ import webapp2
 import logging
 import urllib
 import base64
+from customers import customers_dict
 from handlers import RequestHandler
 from google.appengine.ext import db
 from google.appengine.api import urlfetch
@@ -21,33 +22,19 @@ def get_context(context_name, contexts):
 
 class WebhookHandler(RequestHandler):
     def post(self):
-        response = json.loads(self.request.body)['result']
-        print(response)
-        displayText = ''
-        print(response)
-        if response['action'] == 'determine.customer':
-            context = get_context('welcome-context', response['contexts'])
-            vertical = context['parameters']['vertical']
-            if vertical == 'Gas Station':
-                displayText = 'Thanks %s. I can help you diagnose the problem in your %s. I need some information to help you diagnose the issue. Can I have your customer ID?' % (context['parameters']['userName'], vertical)
-            else:
-                displayText = 'Thanks %s. I can help you diagnose the problem in your %s. Can you describe the issue to me?' % (context['parameters']['userName'], vertical)
-        elif response['action'] == 'determine.customer':
-            context = get_context('site-context', response['contexts'])
-            customer = context['parameters']['CustomerID']
-            location = context['parameters']['LocationID']
-            customerID = customer + ' :: ' + location
-            if customerID == '105892 :: 1':
-                displayText = 'Thanks for the info, looks like you have Gilbarco dispensers on site. What seems to be the problem?'
-            else:
-                displayText = "Thanks for the info, I don't have your equipment at site on record. Can you please tell me what type of dispensers you have?"
-        resp = {
-            "speech": displayText,
-            "displayText": displayText,
-            "data": {},
-            "contextOut": [],
-            "source": "Pirates ML"
-        }
+        resp = {}
+        logging.info(self.request)
+        if self['botID'] == '11321' and self['moduleID'] == '147610':
+            address = self['reply']
+            logging.info(address)
+            customer_name = 'a Sunoco Gas Station'
+            if address in customers_dict:
+                customer_name = customers_dict[address]
+            logging.info(customer_name)
+            resp = {
+                "customer_address": address,
+                "customer_name": customer_name
+            }
         self.response.headers['Content-Type'] = 'application/json'
         self.response.out.write(json.dumps(resp))
 
