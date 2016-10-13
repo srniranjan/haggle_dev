@@ -160,5 +160,5 @@ app = webapp2.WSGIApplication([
     ('/api/marketers', ChartDataHandler),
     ('/api/restaurants', RestaurantsDataHandler),
     ('/api/restaurants_distance', RestaurantsDistanceHandler),
-    ('/api/restaurants_overview', RestaurantsOverviewHandler)
+    ('/api/restaurants_overview', RestaurantsOverviewHandler),
 ])

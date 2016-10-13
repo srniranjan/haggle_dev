@@ -54,6 +54,9 @@ handlers:
   script: handlers.api.app
   secure: always
 
+- url: /webhook
+  script: handlers.webhook.app
+
 - url: /.*
   script: handlers.index.app
   secure: always
